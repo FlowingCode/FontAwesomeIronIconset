@@ -652,7 +652,7 @@ public final class FontAwesome {
         /**
          * The HTML resource that contains the far iconset
          */
-        public static final String URL = "frontend://font-awesome-iron-iconset/far.html";
+        public static final String URL = "frontend://bower_components/font-awesome-iron-iconset/far.html";
 
         /**
          * The Iconset name, i.e. {@code "far"}."
@@ -4454,7 +4454,7 @@ public final class FontAwesome {
         /**
          * The HTML resource that contains the fas iconset
          */
-        public static final String URL = "frontend://font-awesome-iron-iconset/fas.html";
+        public static final String URL = "frontend://bower_components/font-awesome-iron-iconset/fas.html";
 
         /**
          * The Iconset name, i.e. {@code "fas"}."
@@ -6224,7 +6224,7 @@ public final class FontAwesome {
         /**
          * The HTML resource that contains the fab iconset
          */
-        public static final String URL = "frontend://font-awesome-iron-iconset/fab.html";
+        public static final String URL = "frontend://bower_components/font-awesome-iron-iconset/fab.html";
 
         /**
          * The Iconset name, i.e. {@code "fab"}."

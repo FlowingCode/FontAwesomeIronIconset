@@ -122,7 +122,7 @@ public class IconsetEnumGenerator {
 		sources = getRequiredDirectory("codegen.sources"); //the location of generated sources
 		resources = getRequiredDirectory("codegen.resources"); //the location of generated resources
 		
-		resources = new File(resources, "META-INF/resources/frontend");
+		resources = new File(resources, "META-INF/resources/frontend/bower_components");
 		resources = new File(resources, RESOURCE_PATH);
 		resources.mkdirs();
 		
@@ -279,7 +279,7 @@ public class IconsetEnumGenerator {
 		}
 
 		String componentName = repositoryName.split("/",2)[1];
-		String url = "frontend://"+RESOURCE_PATH+"/"+iconset+".html"; 
+		String url = "frontend://bower_components/"+RESOURCE_PATH+"/"+iconset+".html"; 
 		decl.addFieldWithInitializer("String", "URL", new StringLiteralExpr(url), PUBLIC, STATIC, FINAL)
 			.setJavadocComment(new JavadocComment(String.format("The HTML resource that contains the %s iconset", iconset)));
 
