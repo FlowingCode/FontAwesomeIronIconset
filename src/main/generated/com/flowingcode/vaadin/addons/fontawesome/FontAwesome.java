@@ -24,7 +24,7 @@ import com.vaadin.flow.component.icon.IronIcon;
 import com.vaadin.flow.component.dependency.HtmlImport;
 
 /**
- * FontAwesome 5.8.2 icons.
+ * FontAwesome 5.9.0 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -919,6 +919,14 @@ public final class FontAwesome {
          */
         BALANCE_SCALE,
         /**
+         * The solid balance-scale-left icon.See <a href='https://fontawesome.com/icons/balance-scale-left?style=solid'>example</a>
+         */
+        BALANCE_SCALE_LEFT,
+        /**
+         * The solid balance-scale-right icon.See <a href='https://fontawesome.com/icons/balance-scale-right?style=solid'>example</a>
+         */
+        BALANCE_SCALE_RIGHT,
+        /**
          * The solid ban icon.See <a href='https://fontawesome.com/icons/ban?style=solid'>example</a>
          */
         BAN,
@@ -995,6 +1003,10 @@ public final class FontAwesome {
          */
         BICYCLE,
         /**
+         * The solid biking icon.See <a href='https://fontawesome.com/icons/biking?style=solid'>example</a>
+         */
+        BIKING,
+        /**
          * The solid binoculars icon.See <a href='https://fontawesome.com/icons/binoculars?style=solid'>example</a>
          */
         BINOCULARS,
@@ -1066,6 +1078,18 @@ public final class FontAwesome {
          * The solid bookmark icon.See <a href='https://fontawesome.com/icons/bookmark?style=solid'>example</a>
          */
         BOOKMARK,
+        /**
+         * The solid border-all icon.See <a href='https://fontawesome.com/icons/border-all?style=solid'>example</a>
+         */
+        BORDER_ALL,
+        /**
+         * The solid border-none icon.See <a href='https://fontawesome.com/icons/border-none?style=solid'>example</a>
+         */
+        BORDER_NONE,
+        /**
+         * The solid border-style icon.See <a href='https://fontawesome.com/icons/border-style?style=solid'>example</a>
+         */
+        BORDER_STYLE,
         /**
          * The solid bowling-ball icon.See <a href='https://fontawesome.com/icons/bowling-ball?style=solid'>example</a>
          */
@@ -1891,6 +1915,10 @@ public final class FontAwesome {
          */
         EYE_SLASH,
         /**
+         * The solid fan icon.See <a href='https://fontawesome.com/icons/fan?style=solid'>example</a>
+         */
+        FAN,
+        /**
          * The solid fast-backward icon.See <a href='https://fontawesome.com/icons/fast-backward?style=solid'>example</a>
          */
         FAST_BACKWARD,
@@ -2535,6 +2563,10 @@ public final class FontAwesome {
          */
         ICICLES,
         /**
+         * The solid icons icon.See <a href='https://fontawesome.com/icons/icons?style=solid'>example</a>
+         */
+        ICONS,
+        /**
          * The solid id-badge icon.See <a href='https://fontawesome.com/icons/id-badge?style=solid'>example</a>
          */
         ID_BADGE,
@@ -3143,6 +3175,10 @@ public final class FontAwesome {
          */
         PHONE,
         /**
+         * The solid phone-alt icon.See <a href='https://fontawesome.com/icons/phone-alt?style=solid'>example</a>
+         */
+        PHONE_ALT,
+        /**
          * The solid phone-slash icon.See <a href='https://fontawesome.com/icons/phone-slash?style=solid'>example</a>
          */
         PHONE_SLASH,
@@ -3151,9 +3187,17 @@ public final class FontAwesome {
          */
         PHONE_SQUARE,
         /**
+         * The solid phone-square-alt icon.See <a href='https://fontawesome.com/icons/phone-square-alt?style=solid'>example</a>
+         */
+        PHONE_SQUARE_ALT,
+        /**
          * The solid phone-volume icon.See <a href='https://fontawesome.com/icons/phone-volume?style=solid'>example</a>
          */
         PHONE_VOLUME,
+        /**
+         * The solid photo-video icon.See <a href='https://fontawesome.com/icons/photo-video?style=solid'>example</a>
+         */
+        PHOTO_VIDEO,
         /**
          * The solid piggy-bank icon.See <a href='https://fontawesome.com/icons/piggy-bank?style=solid'>example</a>
          */
@@ -3342,6 +3386,10 @@ public final class FontAwesome {
          * The solid registered icon.See <a href='https://fontawesome.com/icons/registered?style=solid'>example</a>
          */
         REGISTERED,
+        /**
+         * The solid remove-format icon.See <a href='https://fontawesome.com/icons/remove-format?style=solid'>example</a>
+         */
+        REMOVE_FORMAT,
         /**
          * The solid reply icon.See <a href='https://fontawesome.com/icons/reply?style=solid'>example</a>
          */
@@ -3671,17 +3719,33 @@ public final class FontAwesome {
          */
         SORT_ALPHA_DOWN,
         /**
+         * The solid sort-alpha-down-alt icon.See <a href='https://fontawesome.com/icons/sort-alpha-down-alt?style=solid'>example</a>
+         */
+        SORT_ALPHA_DOWN_ALT,
+        /**
          * The solid sort-alpha-up icon.See <a href='https://fontawesome.com/icons/sort-alpha-up?style=solid'>example</a>
          */
         SORT_ALPHA_UP,
+        /**
+         * The solid sort-alpha-up-alt icon.See <a href='https://fontawesome.com/icons/sort-alpha-up-alt?style=solid'>example</a>
+         */
+        SORT_ALPHA_UP_ALT,
         /**
          * The solid sort-amount-down icon.See <a href='https://fontawesome.com/icons/sort-amount-down?style=solid'>example</a>
          */
         SORT_AMOUNT_DOWN,
         /**
+         * The solid sort-amount-down-alt icon.See <a href='https://fontawesome.com/icons/sort-amount-down-alt?style=solid'>example</a>
+         */
+        SORT_AMOUNT_DOWN_ALT,
+        /**
          * The solid sort-amount-up icon.See <a href='https://fontawesome.com/icons/sort-amount-up?style=solid'>example</a>
          */
         SORT_AMOUNT_UP,
+        /**
+         * The solid sort-amount-up-alt icon.See <a href='https://fontawesome.com/icons/sort-amount-up-alt?style=solid'>example</a>
+         */
+        SORT_AMOUNT_UP_ALT,
         /**
          * The solid sort-down icon.See <a href='https://fontawesome.com/icons/sort-down?style=solid'>example</a>
          */
@@ -3691,9 +3755,17 @@ public final class FontAwesome {
          */
         SORT_NUMERIC_DOWN,
         /**
+         * The solid sort-numeric-down-alt icon.See <a href='https://fontawesome.com/icons/sort-numeric-down-alt?style=solid'>example</a>
+         */
+        SORT_NUMERIC_DOWN_ALT,
+        /**
          * The solid sort-numeric-up icon.See <a href='https://fontawesome.com/icons/sort-numeric-up?style=solid'>example</a>
          */
         SORT_NUMERIC_UP,
+        /**
+         * The solid sort-numeric-up-alt icon.See <a href='https://fontawesome.com/icons/sort-numeric-up-alt?style=solid'>example</a>
+         */
+        SORT_NUMERIC_UP_ALT,
         /**
          * The solid sort-up icon.See <a href='https://fontawesome.com/icons/sort-up?style=solid'>example</a>
          */
@@ -3706,6 +3778,10 @@ public final class FontAwesome {
          * The solid space-shuttle icon.See <a href='https://fontawesome.com/icons/space-shuttle?style=solid'>example</a>
          */
         SPACE_SHUTTLE,
+        /**
+         * The solid spell-check icon.See <a href='https://fontawesome.com/icons/spell-check?style=solid'>example</a>
+         */
+        SPELL_CHECK,
         /**
          * The solid spider icon.See <a href='https://fontawesome.com/icons/spider?style=solid'>example</a>
          */
@@ -4334,6 +4410,10 @@ public final class FontAwesome {
          * The solid vihara icon.See <a href='https://fontawesome.com/icons/vihara?style=solid'>example</a>
          */
         VIHARA,
+        /**
+         * The solid voicemail icon.See <a href='https://fontawesome.com/icons/voicemail?style=solid'>example</a>
+         */
+        VOICEMAIL,
         /**
          * The solid volleyball-ball icon.See <a href='https://fontawesome.com/icons/volleyball-ball?style=solid'>example</a>
          */
@@ -5520,10 +5600,6 @@ public final class FontAwesome {
          * The brands nimblr icon.See <a href='https://fontawesome.com/icons/nimblr?style=brands'>example</a>
          */
         NIMBLR,
-        /**
-         * The brands nintendo-switch icon.See <a href='https://fontawesome.com/icons/nintendo-switch?style=brands'>example</a>
-         */
-        NINTENDO_SWITCH,
         /**
          * The brands node icon.See <a href='https://fontawesome.com/icons/node?style=brands'>example</a>
          */

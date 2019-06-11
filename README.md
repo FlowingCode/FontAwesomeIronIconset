@@ -17,7 +17,7 @@ To see the demo, navigate to http://localhost:8080/
 
 ## Release notes
 
-- **Version 1.0.0** Initial Version (based on FontAwesome 5.8.2)
+- **Version 1.0.0** Initial Version (based on FontAwesome 5.9.0)
 
 ## Issue tracking
 
@@ -39,7 +39,7 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 IronFontAwesome Addon is written by Flowing Code S.A.
 
-Font Awesome Free 5.8.1 by @fontawesome is distributed under CC BY 4.0 license. For license terms see THIRD-PARTY.txt
+Font Awesome Free 5.9.0 by @fontawesome is distributed under CC BY 4.0 license. For license terms see THIRD-PARTY.txt
 
 
 # Developer Guide
