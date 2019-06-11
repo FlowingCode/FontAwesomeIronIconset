@@ -116,7 +116,7 @@ public class IconsetEnumGenerator {
 	
 	public static void main(String[] args) throws IOException {
 		
-		repositoryName = "FortAwesome/Font-Awesome/5.8.1"; //the name of repository to be parsed
+		repositoryName = "FortAwesome/Font-Awesome"; //the name of repository to be parsed
 		tagName = getRequiredProperty("codegen.tag"); //the tag in the repository to be parsed
 		target = new File(getRequiredProperty("codegen.target")); //the target directory of this build
 		sources = getRequiredDirectory("codegen.sources"); //the location of generated sources
