@@ -17,6 +17,7 @@
  * limitations under the License.
  * #L%
  */
+
 package com.flowingcode.vaadin.addons.fontawesome;
 
 
@@ -32,11 +33,11 @@ import java.util.stream.Stream;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.flowingcode.vaadin.addons.fontawesome.FontAwesome;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.HtmlImport;
+import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H4;
 import com.vaadin.flow.component.html.Span;
@@ -85,7 +86,7 @@ public class DemoView extends Div {
 			for (Object e : type.getEnumConstants()) {
 				String name = ((Enum<?>)e).name().toLowerCase().replace('_', '-').replaceFirst("^-", "");				
 				Button btn = new Button(name, create(type, e));
-				//btn.addClickListener(ev->showDetails(e));
+				btn.addClickListener(ev->showDetails(e));
 				layout.add(btn);
 				layout.setFlexGrow(0, btn);
 				icons.put(name, btn);
@@ -99,15 +100,15 @@ public class DemoView extends Div {
 		addAttachListener(ev->getUI().map(searchString::get).ifPresent(filter::setValue));
 	}
 	
-/*	private void showDetails(IronIconEnum e) {
+	private void showDetails(Object icon) {
 		DemoViewSingle view = new DemoViewSingle();
-		Button close = new Button(IronIcons.CLOSE.create());
+		Button close = new Button(FontAwesome.Regular.WINDOW_CLOSE.create());
 		close.addClassName("close-button");
-		view.setParameter(null, e.getIconName().replace(':', '/'));
+		view.setParameter(null, FontAwesomeReflect.getIconName(icon).replace(':', '/'));
 		Dialog dlg = new Dialog(close, view);
 		dlg.open();
 		close.addClickListener(ev->dlg.close());
-	}*/
+	}
 	
 	private Component create(Class<?> type, Object e) {
 		try {
