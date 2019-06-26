@@ -58,6 +58,11 @@ add(new Button("SAVE", FontAwesome.Solid.SAVE.create()));
 	).withProperty("takeoff_time", Flight::getTakeOffTime));
 ```
 
+In this latter case, you'll need to import the corresponding iconset:
+```
+@HtmlImport(FontAwesome.Regular.URL)
+```
+
 ## Code generation
 
 For recreating the sources, you need to activate the `generate` maven profile (i.e. `mvn -Pgenerate compile`). This will download the SVG icons from github, and run the code generator (`IconsetEnumGenerator`). The resulting Java enums will be written into `src/main/generated` and the HTML iconsets will be written into `src/main/resources`.
