@@ -18,6 +18,7 @@ To see the demo, navigate to http://localhost:8080/
 ## Release notes
 
 - **Version 1.0.0** Initial Version (based on FontAwesome 5.9.0)
+- **Version 1.0.1** Add overload of `create` method that receives a click listener.
 
 ## Issue tracking
 

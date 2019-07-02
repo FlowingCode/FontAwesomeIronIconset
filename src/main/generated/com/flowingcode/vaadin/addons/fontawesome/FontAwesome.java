@@ -22,6 +22,9 @@ package com.flowingcode.vaadin.addons.fontawesome;
 
 import com.vaadin.flow.component.icon.IronIcon;
 import com.vaadin.flow.component.dependency.HtmlImport;
+import com.vaadin.flow.component.ClickEvent;
+import com.vaadin.flow.component.ClickNotifier;
+import com.vaadin.flow.component.ComponentEventListener;
 
 /**
  * FontAwesome 5.9.0 icons.
@@ -680,11 +683,22 @@ public final class FontAwesome {
         }
 
         /**
+         * Create a new {@link IronIcon} instance with the icon determined by the name and a listener for click events.
+         * @param listener the event listener for click events
+         * @return a new instance of {@link IronIcon} component
+         */
+        public Icon create(ComponentEventListener<ClickEvent<IronIcon>> listener) {
+            Icon icon = create();
+            icon.addClickListener(listener);
+            return icon;
+        }
+
+        /**
          * Server side component for {@code Regular}
          */
         @HtmlImport(Regular.URL)
         @SuppressWarnings("serial")
-        public static final class Icon extends IronIcon {
+        public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
              Icon(String icon) {
                 super(ICONSET, icon);
@@ -4562,11 +4576,22 @@ public final class FontAwesome {
         }
 
         /**
+         * Create a new {@link IronIcon} instance with the icon determined by the name and a listener for click events.
+         * @param listener the event listener for click events
+         * @return a new instance of {@link IronIcon} component
+         */
+        public Icon create(ComponentEventListener<ClickEvent<IronIcon>> listener) {
+            Icon icon = create();
+            icon.addClickListener(listener);
+            return icon;
+        }
+
+        /**
          * Server side component for {@code Solid}
          */
         @HtmlImport(Solid.URL)
         @SuppressWarnings("serial")
-        public static final class Icon extends IronIcon {
+        public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
              Icon(String icon) {
                 super(ICONSET, icon);
@@ -6328,11 +6353,22 @@ public final class FontAwesome {
         }
 
         /**
+         * Create a new {@link IronIcon} instance with the icon determined by the name and a listener for click events.
+         * @param listener the event listener for click events
+         * @return a new instance of {@link IronIcon} component
+         */
+        public Icon create(ComponentEventListener<ClickEvent<IronIcon>> listener) {
+            Icon icon = create();
+            icon.addClickListener(listener);
+            return icon;
+        }
+
+        /**
          * Server side component for {@code Brands}
          */
         @HtmlImport(Brands.URL)
         @SuppressWarnings("serial")
-        public static final class Icon extends IronIcon {
+        public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
              Icon(String icon) {
                 super(ICONSET, icon);
