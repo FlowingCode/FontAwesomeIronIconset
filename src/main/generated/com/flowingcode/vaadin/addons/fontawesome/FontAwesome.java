@@ -27,7 +27,7 @@ import com.vaadin.flow.component.ClickNotifier;
 import com.vaadin.flow.component.ComponentEventListener;
 
 /**
- * FontAwesome 5.9.0 icons.
+ * FontAwesome 5.10.0 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -4901,6 +4901,10 @@ public final class FontAwesome {
          * The brands contao icon.See <a href='https://fontawesome.com/icons/contao?style=brands'>example</a>
          */
         CONTAO,
+        /**
+         * The brands cotton-bureau icon.See <a href='https://fontawesome.com/icons/cotton-bureau?style=brands'>example</a>
+         */
+        COTTON_BUREAU,
         /**
          * The brands cpanel icon.See <a href='https://fontawesome.com/icons/cpanel?style=brands'>example</a>
          */
