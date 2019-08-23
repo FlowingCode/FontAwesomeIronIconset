@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
-        <fontawesome.version>5.10.0</fontawesome.version>
+        <fontawesome.version>5.10.2</fontawesome.version>
     </properties>
     
 	<scm>
