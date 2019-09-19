@@ -20,6 +20,7 @@ To see the demo, navigate to http://localhost:8080/
 - **Version 1.0.0** Initial Version (based on FontAwesome 5.9.0)
 - **Version 1.0.1** Add overload of `create` method that receives a click listener.
 - **Version 1.0.2** Based on FontAwesome 5.10.0
+- **Version 1.0.3** Based on FontAwesome 5.11.1
 
 ## Issue tracking
 

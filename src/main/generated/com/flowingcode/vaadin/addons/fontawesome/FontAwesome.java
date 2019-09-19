@@ -27,7 +27,7 @@ import com.vaadin.flow.component.ClickNotifier;
 import com.vaadin.flow.component.ComponentEventListener;
 
 /**
- * FontAwesome 5.10.2 icons.
+ * FontAwesome 5.11.1 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -2437,6 +2437,14 @@ public final class FontAwesome {
          */
         HASHTAG,
         /**
+         * The solid hat-cowboy icon.See <a href='https://fontawesome.com/icons/hat-cowboy?style=solid'>example</a>
+         */
+        HAT_COWBOY,
+        /**
+         * The solid hat-cowboy-side icon.See <a href='https://fontawesome.com/icons/hat-cowboy-side?style=solid'>example</a>
+         */
+        HAT_COWBOY_SIDE,
+        /**
          * The solid hat-wizard icon.See <a href='https://fontawesome.com/icons/hat-wizard?style=solid'>example</a>
          */
         HAT_WIZARD,
@@ -3013,6 +3021,10 @@ public final class FontAwesome {
          */
         MOUNTAIN,
         /**
+         * The solid mouse icon.See <a href='https://fontawesome.com/icons/mouse?style=solid'>example</a>
+         */
+        MOUSE,
+        /**
          * The solid mouse-pointer icon.See <a href='https://fontawesome.com/icons/mouse-pointer?style=solid'>example</a>
          */
         MOUSE_POINTER,
@@ -3384,6 +3396,10 @@ public final class FontAwesome {
          * The solid receipt icon.See <a href='https://fontawesome.com/icons/receipt?style=solid'>example</a>
          */
         RECEIPT,
+        /**
+         * The solid record-vinyl icon.See <a href='https://fontawesome.com/icons/record-vinyl?style=solid'>example</a>
+         */
+        RECORD_VINYL,
         /**
          * The solid recycle icon.See <a href='https://fontawesome.com/icons/recycle?style=solid'>example</a>
          */
@@ -4806,6 +4822,10 @@ public final class FontAwesome {
          */
         BUROMOBELEXPERTE,
         /**
+         * The brands buy-n-large icon.See <a href='https://fontawesome.com/icons/buy-n-large?style=brands'>example</a>
+         */
+        BUY_N_LARGE,
+        /**
          * The brands buysellads icon.See <a href='https://fontawesome.com/icons/buysellads?style=brands'>example</a>
          */
         BUYSELLADS,
@@ -5566,6 +5586,10 @@ public final class FontAwesome {
          */
         MAXCDN,
         /**
+         * The brands mdb icon.See <a href='https://fontawesome.com/icons/mdb?style=brands'>example</a>
+         */
+        MDB,
+        /**
          * The brands medapps icon.See <a href='https://fontawesome.com/icons/medapps?style=brands'>example</a>
          */
         MEDAPPS,
@@ -5677,6 +5701,10 @@ public final class FontAwesome {
          * The brands optin-monster icon.See <a href='https://fontawesome.com/icons/optin-monster?style=brands'>example</a>
          */
         OPTIN_MONSTER,
+        /**
+         * The brands orcid icon.See <a href='https://fontawesome.com/icons/orcid?style=brands'>example</a>
+         */
+        ORCID,
         /**
          * The brands osi icon.See <a href='https://fontawesome.com/icons/osi?style=brands'>example</a>
          */
@@ -6042,6 +6070,10 @@ public final class FontAwesome {
          */
         SUSE,
         /**
+         * The brands swift icon.See <a href='https://fontawesome.com/icons/swift?style=brands'>example</a>
+         */
+        SWIFT,
+        /**
          * The brands symfony icon.See <a href='https://fontawesome.com/icons/symfony?style=brands'>example</a>
          */
         SYMFONY,
@@ -6125,6 +6157,10 @@ public final class FontAwesome {
          * The brands uikit icon.See <a href='https://fontawesome.com/icons/uikit?style=brands'>example</a>
          */
         UIKIT,
+        /**
+         * The brands umbraco icon.See <a href='https://fontawesome.com/icons/umbraco?style=brands'>example</a>
+         */
+        UMBRACO,
         /**
          * The brands uniregistry icon.See <a href='https://fontawesome.com/icons/uniregistry?style=brands'>example</a>
          */
