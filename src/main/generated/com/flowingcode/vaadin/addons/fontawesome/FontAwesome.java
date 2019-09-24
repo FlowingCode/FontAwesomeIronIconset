@@ -27,7 +27,7 @@ import com.vaadin.flow.component.ClickNotifier;
 import com.vaadin.flow.component.ComponentEventListener;
 
 /**
- * FontAwesome 5.11.1 icons.
+ * FontAwesome 5.11.2 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
