@@ -122,7 +122,7 @@ public class IconsetEnumGenerator {
 		sources = getRequiredDirectory("codegen.sources"); //the location of generated sources
 		resources = getRequiredDirectory("codegen.resources"); //the location of generated resources
 		
-		resources = new File(resources, "META-INF/resources/frontend/bower_components");
+		resources = new File(resources, "META-INF/resources/frontend");
 		resources = new File(resources, RESOURCE_PATH);
 		resources.mkdirs();
 		
@@ -178,12 +178,13 @@ public class IconsetEnumGenerator {
 		String enumName = StringUtils.capitalize(path.replaceAll(".*/", "").replaceAll("\\..*", ""));
 		File file = convertIconset(repo, family, path);
 		List<String> icons = readIconNames(file);
+		modularize(file);
 		cu.getType(0).addMember(createEnumDeclaration(enumName, family, icons));
 	}
 	
 	
 	private static File convertIconset(GHRepository repo, String family, String path) throws IOException {
-		File file = new File(resources,family+".html");
+		File file = new File(resources,family+".js");
 		
 		try (
 			InputStream in = repo.getFileContent(path, tagName).read();	
@@ -218,11 +219,28 @@ public class IconsetEnumGenerator {
 		}
 	}
 	
+	private static void modularize(File file) throws IOException {
+		File dst = new File(file.getParent(), file.getName()+".2");
+		try (
+			InputStream in = new FileInputStream(file);
+			InputStream xslt = new FileInputStream("modularize.xslt");
+			OutputStream out = new FileOutputStream(dst)
+		) {
+			Transformer t = new TransformerFactoryImpl().newTransformer(new StreamSource(xslt));
+			Result outputTarget = new StreamResult(out);
+			t.transform(new StreamSource(in), outputTarget);
+		} catch (TransformerException e) {
+			throw new IOException(e);
+		}
+		file.delete();
+		dst.renameTo(file);
+	}
+	
 	private static CompilationUnit createCompilationUnit() throws FileNotFoundException {
 		CompilationUnit cu = new CompilationUnit();
 		cu.setPackageDeclaration(PACKAGE_NAME);
 		cu.addImport("com.vaadin.flow.component.icon.IronIcon");
-		cu.addImport("com.vaadin.flow.component.dependency.HtmlImport");
+		cu.addImport("com.vaadin.flow.component.dependency.JsModule");
 		cu.addImport("com.vaadin.flow.component.ClickEvent");
 		cu.addImport("com.vaadin.flow.component.ClickNotifier");
 		cu.addImport("com.vaadin.flow.component.ComponentEventListener");
@@ -270,7 +288,7 @@ public class IconsetEnumGenerator {
 		for (String icon : icons) {
 			String name = icon.toUpperCase().replace("-", "_");
 			boolean thisHasUnderscorePrefix = false;
-			if (!Character.isJavaIdentifierStart(name.charAt(0)) || name.equals("ICONSET") || name.equals("URL")) {
+			if (!Character.isJavaIdentifierStart(name.charAt(0)) || name.equals("ICONSET")) {
 				name = "_"+name;
 				hasUnderscorePrefix = thisHasUnderscorePrefix = true;
 			}
@@ -282,9 +300,8 @@ public class IconsetEnumGenerator {
 		}
 
 		String componentName = repositoryName.split("/",2)[1];
-		String url = "frontend://bower_components/"+RESOURCE_PATH+"/"+iconset+".html"; 
-		decl.addFieldWithInitializer("String", "URL", new StringLiteralExpr(url), PUBLIC, STATIC, FINAL)
-			.setJavadocComment(new JavadocComment(String.format("The HTML resource that contains the %s iconset", iconset)));
+		String url = "./"+RESOURCE_PATH+"/"+iconset+".js"; 
+		
 
 		decl.addFieldWithInitializer("String", "ICONSET", new StringLiteralExpr(iconset), PUBLIC, STATIC, FINAL)
 			.setJavadocComment(new JavadocComment(String.format("The Iconset name, i.e. {@code \"%s\"}.\"",iconset)));
@@ -321,7 +338,7 @@ public class IconsetEnumGenerator {
 		icon.addExtendedType("IronIcon");
 		icon.addImplementedType("ClickNotifier<IronIcon>");
 		icon.setJavadocComment(new JavadocComment(String.format("Server side component for {@code %s}", decl.getName())));
-		icon.addSingleMemberAnnotation("HtmlImport", new NameExpr(decl.getName()+".URL"));
+		icon.addSingleMemberAnnotation("JsModule", new StringLiteralExpr(url));
 		icon.addSingleMemberAnnotation("SuppressWarnings", new StringLiteralExpr("serial"));
 		decl.addMember(icon);
 		

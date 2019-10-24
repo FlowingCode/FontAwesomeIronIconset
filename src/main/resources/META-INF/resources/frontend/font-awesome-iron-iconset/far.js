@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
+
+/*@license
 Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
--->
-<!--
-  #%L
+*/
+
+/*@license
   FontAwesome Iron Iconset
-  %%
   Copyright (C) 2019 Flowing Code
-  %%
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
@@ -20,8 +18,13 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
-  #L%
- -->
+ */
+
+import '@polymer/iron-icon/iron-icon.js';
+import '@polymer/iron-iconset-svg/iron-iconset-svg.js';
+import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+
+const template = html`
 <iron-iconset-svg name="far">
    <svg xmlns:svg="http://www.w3.org/2000/svg">
       <defs>
@@ -939,4 +942,6 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
          </g>
       </defs>
    </svg>
-</iron-iconset-svg>
+</iron-iconset-svg>`;
+
+document.head.appendChild(template.content);

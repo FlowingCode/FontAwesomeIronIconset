@@ -36,7 +36,8 @@ import org.apache.commons.lang3.tuple.Pair;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.dependency.HtmlImport;
+import com.vaadin.flow.component.dependency.CssImport;
+import com.vaadin.flow.component.dependency.Uses;
 import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H4;
@@ -51,10 +52,10 @@ import com.vaadin.flow.router.Route;
  */
 @Route("")
 @SuppressWarnings("serial")
-@HtmlImport("frontend://styles/shared-styles.html")
-@HtmlImport(FontAwesome.Regular.URL)
-@HtmlImport(FontAwesome.Solid.URL)
-@HtmlImport(FontAwesome.Brands.URL)
+@CssImport("./styles/shared-styles.css")
+@Uses(FontAwesome.Regular.Icon.class)
+@Uses(FontAwesome.Solid.Icon.class)
+@Uses(FontAwesome.Brands.Icon.class)
 public class DemoView extends Div {
 //this demo uses reflection, for a simple example that does not use reflection see SimpleDemoView 	
 	private static final Map<UI, String> searchString = new WeakHashMap<>();

@@ -2,3 +2,8 @@ target
 .settings
 .project
 .classpath
+/node_modules
+/package-lock.json
+/webpack.config.js
+/webpack.generated.js
+/package.json

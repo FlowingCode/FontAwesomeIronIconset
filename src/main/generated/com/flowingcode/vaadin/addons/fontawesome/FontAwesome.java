@@ -21,7 +21,7 @@
 package com.flowingcode.vaadin.addons.fontawesome;
 
 import com.vaadin.flow.component.icon.IronIcon;
-import com.vaadin.flow.component.dependency.HtmlImport;
+import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.ClickEvent;
 import com.vaadin.flow.component.ClickNotifier;
 import com.vaadin.flow.component.ComponentEventListener;
@@ -653,11 +653,6 @@ public final class FontAwesome {
         WINDOW_RESTORE;
 
         /**
-         * The HTML resource that contains the far iconset
-         */
-        public static final String URL = "frontend://bower_components/font-awesome-iron-iconset/far.html";
-
-        /**
          * The Iconset name, i.e. {@code "far"}."
          */
         public static final String ICONSET = "far";
@@ -696,7 +691,7 @@ public final class FontAwesome {
         /**
          * Server side component for {@code Regular}
          */
-        @HtmlImport(Regular.URL)
+        @JsModule("./font-awesome-iron-iconset/far.js")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
@@ -4562,11 +4557,6 @@ public final class FontAwesome {
         YIN_YANG;
 
         /**
-         * The HTML resource that contains the fas iconset
-         */
-        public static final String URL = "frontend://bower_components/font-awesome-iron-iconset/fas.html";
-
-        /**
          * The Iconset name, i.e. {@code "fas"}."
          */
         public static final String ICONSET = "fas";
@@ -4605,7 +4595,7 @@ public final class FontAwesome {
         /**
          * Server side component for {@code Solid}
          */
-        @HtmlImport(Solid.URL)
+        @JsModule("./font-awesome-iron-iconset/fas.js")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
@@ -6363,11 +6353,6 @@ public final class FontAwesome {
         ZHIHU;
 
         /**
-         * The HTML resource that contains the fab iconset
-         */
-        public static final String URL = "frontend://bower_components/font-awesome-iron-iconset/fab.html";
-
-        /**
          * The Iconset name, i.e. {@code "fab"}."
          */
         public static final String ICONSET = "fab";
@@ -6406,7 +6391,7 @@ public final class FontAwesome {
         /**
          * Server side component for {@code Brands}
          */
-        @HtmlImport(Brands.URL)
+        @JsModule("./font-awesome-iron-iconset/fab.js")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
