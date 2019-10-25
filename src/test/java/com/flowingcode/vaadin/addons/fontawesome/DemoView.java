@@ -20,9 +20,6 @@
 
 package com.flowingcode.vaadin.addons.fontawesome;
 
-
-
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -37,6 +34,7 @@ import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.CssImport;
+import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.dependency.Uses;
 import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.html.Div;
@@ -50,12 +48,14 @@ import com.vaadin.flow.router.Route;
 /**
  * @author Javier Godoy / Flowing Code
  */
-@Route("")
+
 @SuppressWarnings("serial")
-@CssImport("./styles/shared-styles.css")
+@Route("")
 @Uses(FontAwesome.Regular.Icon.class)
 @Uses(FontAwesome.Solid.Icon.class)
 @Uses(FontAwesome.Brands.Icon.class)
+@StyleSheet("./styles/shared-styles.css")
+@CssImport(value = "./styles/vaadin-button.css", themeFor = "vaadin-button")
 public class DemoView extends Div {
 //this demo uses reflection, for a simple example that does not use reflection see SimpleDemoView 	
 	private static final Map<UI, String> searchString = new WeakHashMap<>();
@@ -87,6 +87,7 @@ public class DemoView extends Div {
 			for (Object e : type.getEnumConstants()) {
 				String name = ((Enum<?>)e).name().toLowerCase().replace('_', '-').replaceFirst("^-", "");				
 				Button btn = new Button(name, create(type, e));
+				btn.setClassName("text-align-left");
 				btn.addClickListener(ev->showDetails(e));
 				layout.add(btn);
 				layout.setFlexGrow(0, btn);
@@ -108,6 +109,7 @@ public class DemoView extends Div {
 		view.setParameter(null, FontAwesomeReflect.getIconName(icon).replace(':', '/'));
 		Dialog dlg = new Dialog(close, view);
 		dlg.open();
+		dlg.setWidth("600px");
 		close.addClickListener(ev->dlg.close());
 	}
 	

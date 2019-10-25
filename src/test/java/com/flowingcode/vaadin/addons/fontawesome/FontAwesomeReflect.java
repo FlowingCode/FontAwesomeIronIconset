@@ -42,11 +42,6 @@ public abstract class FontAwesomeReflect {
 	public static List<Class<?>> getIconTypes() {
 		return Arrays.asList(Brands.class, Regular.class, Solid.class);
 	}
-		
-	/**Return the URL of the The HTML resource that contains the iconset for an {@code IronIconEnum} type.*/
-	public static String getUrl(Class<?> type) {
-		return getStaticField("URL", type); 
-	}
 	
 	/**Return the iconset name of the given {@code IronIconEnum} type.*/
 	public static String getIconset(Class<?> type) {

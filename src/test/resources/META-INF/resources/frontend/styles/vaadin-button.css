@@ -1,0 +1,7 @@
+:host(.text-align-left) [part="label"] {
+	padding-left: 30px;
+}	
+
+:host(.text-align-left) .vaadin-button-container {
+    justify-content: start;
+}
