@@ -65,6 +65,10 @@ vaadin-dialog-overlay {
 	margin-left: 16px;
 }
 
+.single-icon-view iron-icon {
+	margin: 16px;
+}
+
 .single-icon-view iron-icon:nth-of-type(1) {
 	width:  16px;
 	height: 16px;
@@ -93,20 +97,21 @@ vaadin-dialog-overlay {
 	flex-wrap: wrap;
 }
 
-.close-button {
-  		color: black;
-    background: white;
- 		    cursor: pointer;
-  		position: absolute;
-  		right: 0;
-  		top: 0;
-  	}
-  	
-  	.close-button:hover::before { 
-  		background: white;
-  	}
-  	
-  	.close-button:hover::before {
-  		opacity: 0 !important;
-  	}
+.details-dialog {
+	overflow: hidden;	
+}
 
+.details-dialog .close-button {
+  	color: black;
+    background: white;
+ 	cursor: pointer;
+ 	margin-left: auto;
+}
+  	
+.details-dialog .close-button:hover::before { 
+	background: white;
+}
+  	
+.details-dialog .close-button:hover::before {
+	opacity: 0 !important;
+}

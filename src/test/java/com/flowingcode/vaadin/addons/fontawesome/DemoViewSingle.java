@@ -41,7 +41,6 @@ import com.vaadin.flow.router.WildcardParameter;
 
 @Route("view")
 @SuppressWarnings("serial")
-@HtmlImport("frontend://styles/shared-styles.html")
 public class DemoViewSingle extends Div implements HasUrlParameter<String> {
 		
 	Object icon;
@@ -93,7 +92,6 @@ public class DemoViewSingle extends Div implements HasUrlParameter<String> {
 			layout.add(new Span(type+"."+name));
 			
 			layout.add(new H4("Java Example"));
-			layout.add(new Span(String.format("@HtmlImport(%s.URL)", type)));
 			layout.add(new Span(String.format("add(%s.%s.create());",type,name)));
 			
 			add(layout);

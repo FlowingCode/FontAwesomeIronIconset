@@ -41,6 +41,7 @@ import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H4;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.orderedlayout.FlexLayout;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.Route;
@@ -104,13 +105,17 @@ public class DemoView extends Div {
 	
 	private void showDetails(Object icon) {
 		DemoViewSingle view = new DemoViewSingle();
-		Button close = new Button(FontAwesome.Regular.WINDOW_CLOSE.create());
-		close.addClassName("close-button");
+		Button closeButton = new Button(FontAwesome.Regular.WINDOW_CLOSE.create());
+		closeButton.addClassName("close-button");
+		HorizontalLayout top = new HorizontalLayout(closeButton);
+		
 		view.setParameter(null, FontAwesomeReflect.getIconName(icon).replace(':', '/'));
-		Dialog dlg = new Dialog(close, view);
+		Div div = new Div(top, view);
+		div.addClassName("details-dialog");
+		Dialog dlg = new Dialog(div);		
 		dlg.open();
 		dlg.setWidth("600px");
-		close.addClickListener(ev->dlg.close());
+		closeButton.addClickListener(ev->dlg.close());
 	}
 	
 	private Component create(Class<?> type, Object e) {
