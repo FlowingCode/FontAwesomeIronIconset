@@ -6,7 +6,7 @@ Integration of FontAwesome and iron-icon for Vaadin 10+
 
 ## Online demo
 
-[Online demo here](http://addonsv10.flowingcode.com/font-awesome-iron-iconset)
+[Online demo here](http://addonsv14.flowingcode.com/font-awesome-iron-iconset)
 
 ## Building and running demo
 
@@ -17,11 +17,8 @@ To see the demo, navigate to http://localhost:8080/
 
 ## Release notes
 
-- **Version 1.0.0** Initial Version (based on FontAwesome 5.9.0)
-- **Version 1.0.1** Add overload of `create` method that receives a click listener.
-- **Version 1.0.2** Based on FontAwesome 5.10.0
-- **Version 1.0.3** Based on FontAwesome 5.11.1
-- **Version 1.0.4** Based on FontAwesome 5.11.2
+- **Version 1.0.4** Based on FontAwesome 5.11.2, Vaadin 10-13 and Vaadin 14 in compatibility mode.
+- **Version 2.0.0** Based on FontAwesome 5.11.2, Vaadin 14 in npm mode.
 
 ## Issue tracking
 
@@ -64,7 +61,7 @@ add(new Button("SAVE", FontAwesome.Solid.SAVE.create()));
 
 In this latter case, you'll need to import the corresponding iconset:
 ```
-@HtmlImport(FontAwesome.Regular.URL)
+@Uses(FontAwesome.Regular.Icon.class)
 ```
 
 ## Code generation
