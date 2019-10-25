@@ -125,6 +125,9 @@
 				  <excludes>
 					<exclude>**/font-awesome-iron-iconset/*</exclude>
 				  </excludes>
+				  <extraExtensions>
+					<xslt>xml</xslt>
+				  </extraExtensions>
 				</configuration>
 			</plugin>
 	
