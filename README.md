@@ -1,4 +1,4 @@
-[![Build Status](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-addon/badge/icon)](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-addon)
+[![Build Status](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-14-addon/badge/icon)](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-14-addon)
 
 # Iron iconset based on FontAwesome
 
