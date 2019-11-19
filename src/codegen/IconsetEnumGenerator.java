@@ -43,6 +43,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.regex.Matcher;
@@ -244,6 +245,7 @@ public class IconsetEnumGenerator {
 		cu.addImport("com.vaadin.flow.component.ClickEvent");
 		cu.addImport("com.vaadin.flow.component.ClickNotifier");
 		cu.addImport("com.vaadin.flow.component.ComponentEventListener");
+		cu.addImport("java.util.Locale");
 		
 		ClassOrInterfaceDeclaration type = new ClassOrInterfaceDeclaration();
 		type.setName("FontAwesome");
@@ -275,7 +277,7 @@ public class IconsetEnumGenerator {
 		
 		decl.setJavadocComment(new JavadocComment(
 			Stream.of(
-				String.format("Enumeration of all icons in the FontAwesome %s iconset", enumName.toLowerCase()),
+				String.format("Enumeration of all icons in the FontAwesome %s iconset", enumName.toLowerCase(Locale.ENGLISH)),
 				"<p>",
 				"These instances can be used to create {@link IronIcon} components either by using",
 				"their {@link #create()} method or by passing them to Icon's constructor.",
@@ -286,7 +288,7 @@ public class IconsetEnumGenerator {
 						
 		boolean hasUnderscorePrefix = false;
 		for (String icon : icons) {
-			String name = icon.toUpperCase().replace("-", "_");
+			String name = icon.toUpperCase(Locale.ENGLISH).replace("-", "_");
 			boolean thisHasUnderscorePrefix = false;
 			if (!Character.isJavaIdentifierStart(name.charAt(0)) || name.equals("ICONSET")) {
 				name = "_"+name;
@@ -296,7 +298,7 @@ public class IconsetEnumGenerator {
 			String seeExample = "See <a href='"+DEMO_URL+"'>example</a>";
 			
 			EnumConstantDeclaration constant = decl.addEnumConstant(name);
-			constant.setJavadocComment(new JavadocComment(String.format("The %1$s %2$s icon."+seeExample, enumName.toLowerCase(), icon)));			
+			constant.setJavadocComment(new JavadocComment(String.format("The %1$s %2$s icon."+seeExample, enumName.toLowerCase(Locale.ENGLISH), icon)));			
 		}
 
 		String componentName = repositoryName.split("/",2)[1];
@@ -314,7 +316,7 @@ public class IconsetEnumGenerator {
 		String removeUnderscorePrefix = hasUnderscorePrefix?".replaceFirst(\"^-\", \"\")":"";
 		MethodDeclaration getIconPart = decl.addMethod("getIconPart", PRIVATE);
 		getIconPart.setType("String");
-		getIconPart.getBody().get().addStatement(new ReturnStmt("this.name().toLowerCase().replace('_', '-')"+removeUnderscorePrefix));
+		getIconPart.getBody().get().addStatement(new ReturnStmt("this.name().toLowerCase(Locale.ENGLISH).replace('_', '-')"+removeUnderscorePrefix));
 				
 		MethodDeclaration create = decl.addMethod("create", PUBLIC);
 		create.setJavadocComment(new JavadocComment("Create a new {@link IronIcon} instance with the icon determined by the name.\n@return a new instance of {@link IronIcon} component"));

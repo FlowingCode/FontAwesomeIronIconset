@@ -25,6 +25,7 @@ import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.ClickEvent;
 import com.vaadin.flow.component.ClickNotifier;
 import com.vaadin.flow.component.ComponentEventListener;
+import java.util.Locale;
 
 /**
  * FontAwesome 5.11.2 icons.
@@ -666,7 +667,7 @@ public final class FontAwesome {
         }
 
         private String getIconPart() {
-            return this.name().toLowerCase().replace('_', '-');
+            return this.name().toLowerCase(Locale.ENGLISH).replace('_', '-');
         }
 
         /**
@@ -4570,7 +4571,7 @@ public final class FontAwesome {
         }
 
         private String getIconPart() {
-            return this.name().toLowerCase().replace('_', '-');
+            return this.name().toLowerCase(Locale.ENGLISH).replace('_', '-');
         }
 
         /**
@@ -6366,7 +6367,7 @@ public final class FontAwesome {
         }
 
         private String getIconPart() {
-            return this.name().toLowerCase().replace('_', '-').replaceFirst("^-", "");
+            return this.name().toLowerCase(Locale.ENGLISH).replace('_', '-').replaceFirst("^-", "");
         }
 
         /**
