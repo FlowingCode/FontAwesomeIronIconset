@@ -17,7 +17,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
         <jetty.version>9.4.15.v20190215</jetty.version>
-        <fontawesome.version>5.11.2</fontawesome.version>
+        <fontawesome.version>5.12.0</fontawesome.version>
     </properties>
     
 	<scm>

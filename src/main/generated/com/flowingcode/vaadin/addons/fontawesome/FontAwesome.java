@@ -28,7 +28,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import java.util.Locale;
 
 /**
- * FontAwesome 5.11.2 icons.
+ * FontAwesome 5.12.0 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -925,6 +925,10 @@ public final class FontAwesome {
          */
         BACON,
         /**
+         * The solid bahai icon.See <a href='https://fontawesome.com/icons/bahai?style=solid'>example</a>
+         */
+        BAHAI,
+        /**
          * The solid balance-scale icon.See <a href='https://fontawesome.com/icons/balance-scale?style=solid'>example</a>
          */
         BALANCE_SCALE,
@@ -1260,6 +1264,10 @@ public final class FontAwesome {
          * The solid car-side icon.See <a href='https://fontawesome.com/icons/car-side?style=solid'>example</a>
          */
         CAR_SIDE,
+        /**
+         * The solid caravan icon.See <a href='https://fontawesome.com/icons/caravan?style=solid'>example</a>
+         */
+        CARAVAN,
         /**
          * The solid caret-down icon.See <a href='https://fontawesome.com/icons/caret-down?style=solid'>example</a>
          */
@@ -1597,6 +1605,10 @@ public final class FontAwesome {
          */
         COMPRESS,
         /**
+         * The solid compress-alt icon.See <a href='https://fontawesome.com/icons/compress-alt?style=solid'>example</a>
+         */
+        COMPRESS_ALT,
+        /**
          * The solid compress-arrows-alt icon.See <a href='https://fontawesome.com/icons/compress-arrows-alt?style=solid'>example</a>
          */
         COMPRESS_ARROWS_ALT,
@@ -1900,6 +1912,10 @@ public final class FontAwesome {
          * The solid expand icon.See <a href='https://fontawesome.com/icons/expand?style=solid'>example</a>
          */
         EXPAND,
+        /**
+         * The solid expand-alt icon.See <a href='https://fontawesome.com/icons/expand-alt?style=solid'>example</a>
+         */
+        EXPAND_ALT,
         /**
          * The solid expand-arrows-alt icon.See <a href='https://fontawesome.com/icons/expand-arrows-alt?style=solid'>example</a>
          */
@@ -2444,10 +2460,6 @@ public final class FontAwesome {
          * The solid hat-wizard icon.See <a href='https://fontawesome.com/icons/hat-wizard?style=solid'>example</a>
          */
         HAT_WIZARD,
-        /**
-         * The solid haykal icon.See <a href='https://fontawesome.com/icons/haykal?style=solid'>example</a>
-         */
-        HAYKAL,
         /**
          * The solid hdd icon.See <a href='https://fontawesome.com/icons/hdd?style=solid'>example</a>
          */
@@ -4173,6 +4185,10 @@ public final class FontAwesome {
          */
         TRAFFIC_LIGHT,
         /**
+         * The solid trailer icon.See <a href='https://fontawesome.com/icons/trailer?style=solid'>example</a>
+         */
+        TRAILER,
+        /**
          * The solid train icon.See <a href='https://fontawesome.com/icons/train?style=solid'>example</a>
          */
         TRAIN,
@@ -5169,6 +5185,10 @@ public final class FontAwesome {
          */
         FIREFOX,
         /**
+         * The brands firefox-browser icon.See <a href='https://fontawesome.com/icons/firefox-browser?style=brands'>example</a>
+         */
+        FIREFOX_BROWSER,
+        /**
          * The brands first-order icon.See <a href='https://fontawesome.com/icons/first-order?style=brands'>example</a>
          */
         FIRST_ORDER,
@@ -5413,6 +5433,10 @@ public final class FontAwesome {
          */
         HUBSPOT,
         /**
+         * The brands ideal icon.See <a href='https://fontawesome.com/icons/ideal?style=brands'>example</a>
+         */
+        IDEAL,
+        /**
          * The brands imdb icon.See <a href='https://fontawesome.com/icons/imdb?style=brands'>example</a>
          */
         IMDB,
@@ -5609,6 +5633,10 @@ public final class FontAwesome {
          */
         MENDELEY,
         /**
+         * The brands microblog icon.See <a href='https://fontawesome.com/icons/microblog?style=brands'>example</a>
+         */
+        MICROBLOG,
+        /**
          * The brands microsoft icon.See <a href='https://fontawesome.com/icons/microsoft?style=brands'>example</a>
          */
         MICROSOFT,
@@ -5760,6 +5788,10 @@ public final class FontAwesome {
          * The brands pied-piper-pp icon.See <a href='https://fontawesome.com/icons/pied-piper-pp?style=brands'>example</a>
          */
         PIED_PIPER_PP,
+        /**
+         * The brands pied-piper-square icon.See <a href='https://fontawesome.com/icons/pied-piper-square?style=brands'>example</a>
+         */
+        PIED_PIPER_SQUARE,
         /**
          * The brands pinterest icon.See <a href='https://fontawesome.com/icons/pinterest?style=brands'>example</a>
          */
@@ -6156,6 +6188,10 @@ public final class FontAwesome {
          * The brands uniregistry icon.See <a href='https://fontawesome.com/icons/uniregistry?style=brands'>example</a>
          */
         UNIREGISTRY,
+        /**
+         * The brands unity icon.See <a href='https://fontawesome.com/icons/unity?style=brands'>example</a>
+         */
+        UNITY,
         /**
          * The brands untappd icon.See <a href='https://fontawesome.com/icons/untappd?style=brands'>example</a>
          */
