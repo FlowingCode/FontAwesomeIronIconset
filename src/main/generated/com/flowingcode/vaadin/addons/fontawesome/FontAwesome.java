@@ -28,7 +28,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import java.util.Locale;
 
 /**
- * FontAwesome 5.12.0 icons.
+ * FontAwesome 5.12.1 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -5017,6 +5017,10 @@ public final class FontAwesome {
          */
         D_AND_D_BEYOND,
         /**
+         * The brands dailymotion icon.See <a href='https://fontawesome.com/icons/dailymotion?style=brands'>example</a>
+         */
+        DAILYMOTION,
+        /**
          * The brands dashcube icon.See <a href='https://fontawesome.com/icons/dashcube?style=brands'>example</a>
          */
         DASHCUBE,
@@ -5445,6 +5449,10 @@ public final class FontAwesome {
          */
         INSTAGRAM,
         /**
+         * The brands instagram-square icon.See <a href='https://fontawesome.com/icons/instagram-square?style=brands'>example</a>
+         */
+        INSTAGRAM_SQUARE,
+        /**
          * The brands intercom icon.See <a href='https://fontawesome.com/icons/intercom?style=brands'>example</a>
          */
         INTERCOM,
@@ -5648,6 +5656,10 @@ public final class FontAwesome {
          * The brands mixcloud icon.See <a href='https://fontawesome.com/icons/mixcloud?style=brands'>example</a>
          */
         MIXCLOUD,
+        /**
+         * The brands mixer icon.See <a href='https://fontawesome.com/icons/mixer?style=brands'>example</a>
+         */
+        MIXER,
         /**
          * The brands mizuni icon.See <a href='https://fontawesome.com/icons/mizuni?style=brands'>example</a>
          */
@@ -5948,6 +5960,10 @@ public final class FontAwesome {
          * The brands shirtsinbulk icon.See <a href='https://fontawesome.com/icons/shirtsinbulk?style=brands'>example</a>
          */
         SHIRTSINBULK,
+        /**
+         * The brands shopify icon.See <a href='https://fontawesome.com/icons/shopify?style=brands'>example</a>
+         */
+        SHOPIFY,
         /**
          * The brands shopware icon.See <a href='https://fontawesome.com/icons/shopware?style=brands'>example</a>
          */
