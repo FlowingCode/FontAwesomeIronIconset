@@ -28,7 +28,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import java.util.Locale;
 
 /**
- * FontAwesome 5.12.1 icons.
+ * FontAwesome 5.13.0 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -1117,6 +1117,10 @@ public final class FontAwesome {
          */
         BOX_OPEN,
         /**
+         * The solid box-tissue icon.See <a href='https://fontawesome.com/icons/box-tissue?style=solid'>example</a>
+         */
+        BOX_TISSUE,
+        /**
          * The solid boxes icon.See <a href='https://fontawesome.com/icons/boxes?style=solid'>example</a>
          */
         BOXES,
@@ -1749,6 +1753,10 @@ public final class FontAwesome {
          */
         DIRECTIONS,
         /**
+         * The solid disease icon.See <a href='https://fontawesome.com/icons/disease?style=solid'>example</a>
+         */
+        DISEASE,
+        /**
          * The solid divide icon.See <a href='https://fontawesome.com/icons/divide?style=solid'>example</a>
          */
         DIVIDE,
@@ -1952,6 +1960,10 @@ public final class FontAwesome {
          * The solid fast-forward icon.See <a href='https://fontawesome.com/icons/fast-forward?style=solid'>example</a>
          */
         FAST_FORWARD,
+        /**
+         * The solid faucet icon.See <a href='https://fontawesome.com/icons/faucet?style=solid'>example</a>
+         */
+        FAUCET,
         /**
          * The solid fax icon.See <a href='https://fontawesome.com/icons/fax?style=solid'>example</a>
          */
@@ -2373,9 +2385,17 @@ public final class FontAwesome {
          */
         HAND_HOLDING_HEART,
         /**
+         * The solid hand-holding-medical icon.See <a href='https://fontawesome.com/icons/hand-holding-medical?style=solid'>example</a>
+         */
+        HAND_HOLDING_MEDICAL,
+        /**
          * The solid hand-holding-usd icon.See <a href='https://fontawesome.com/icons/hand-holding-usd?style=solid'>example</a>
          */
         HAND_HOLDING_USD,
+        /**
+         * The solid hand-holding-water icon.See <a href='https://fontawesome.com/icons/hand-holding-water?style=solid'>example</a>
+         */
+        HAND_HOLDING_WATER,
         /**
          * The solid hand-lizard icon.See <a href='https://fontawesome.com/icons/hand-lizard?style=solid'>example</a>
          */
@@ -2421,6 +2441,10 @@ public final class FontAwesome {
          */
         HAND_SCISSORS,
         /**
+         * The solid hand-sparkles icon.See <a href='https://fontawesome.com/icons/hand-sparkles?style=solid'>example</a>
+         */
+        HAND_SPARKLES,
+        /**
          * The solid hand-spock icon.See <a href='https://fontawesome.com/icons/hand-spock?style=solid'>example</a>
          */
         HAND_SPOCK,
@@ -2433,9 +2457,21 @@ public final class FontAwesome {
          */
         HANDS_HELPING,
         /**
+         * The solid hands-wash icon.See <a href='https://fontawesome.com/icons/hands-wash?style=solid'>example</a>
+         */
+        HANDS_WASH,
+        /**
          * The solid handshake icon.See <a href='https://fontawesome.com/icons/handshake?style=solid'>example</a>
          */
         HANDSHAKE,
+        /**
+         * The solid handshake-alt-slash icon.See <a href='https://fontawesome.com/icons/handshake-alt-slash?style=solid'>example</a>
+         */
+        HANDSHAKE_ALT_SLASH,
+        /**
+         * The solid handshake-slash icon.See <a href='https://fontawesome.com/icons/handshake-slash?style=solid'>example</a>
+         */
+        HANDSHAKE_SLASH,
         /**
          * The solid hanukiah icon.See <a href='https://fontawesome.com/icons/hanukiah?style=solid'>example</a>
          */
@@ -2464,6 +2500,22 @@ public final class FontAwesome {
          * The solid hdd icon.See <a href='https://fontawesome.com/icons/hdd?style=solid'>example</a>
          */
         HDD,
+        /**
+         * The solid head-side-cough icon.See <a href='https://fontawesome.com/icons/head-side-cough?style=solid'>example</a>
+         */
+        HEAD_SIDE_COUGH,
+        /**
+         * The solid head-side-cough-slash icon.See <a href='https://fontawesome.com/icons/head-side-cough-slash?style=solid'>example</a>
+         */
+        HEAD_SIDE_COUGH_SLASH,
+        /**
+         * The solid head-side-mask icon.See <a href='https://fontawesome.com/icons/head-side-mask?style=solid'>example</a>
+         */
+        HEAD_SIDE_MASK,
+        /**
+         * The solid head-side-virus icon.See <a href='https://fontawesome.com/icons/head-side-virus?style=solid'>example</a>
+         */
+        HEAD_SIDE_VIRUS,
         /**
          * The solid heading icon.See <a href='https://fontawesome.com/icons/heading?style=solid'>example</a>
          */
@@ -2545,6 +2597,10 @@ public final class FontAwesome {
          */
         HOSPITAL_SYMBOL,
         /**
+         * The solid hospital-user icon.See <a href='https://fontawesome.com/icons/hospital-user?style=solid'>example</a>
+         */
+        HOSPITAL_USER,
+        /**
          * The solid hot-tub icon.See <a href='https://fontawesome.com/icons/hot-tub?style=solid'>example</a>
          */
         HOT_TUB,
@@ -2576,6 +2632,10 @@ public final class FontAwesome {
          * The solid house-damage icon.See <a href='https://fontawesome.com/icons/house-damage?style=solid'>example</a>
          */
         HOUSE_DAMAGE,
+        /**
+         * The solid house-user icon.See <a href='https://fontawesome.com/icons/house-user?style=solid'>example</a>
+         */
+        HOUSE_USER,
         /**
          * The solid hryvnia icon.See <a href='https://fontawesome.com/icons/hryvnia?style=solid'>example</a>
          */
@@ -2709,6 +2769,10 @@ public final class FontAwesome {
          */
         LAPTOP_CODE,
         /**
+         * The solid laptop-house icon.See <a href='https://fontawesome.com/icons/laptop-house?style=solid'>example</a>
+         */
+        LAPTOP_HOUSE,
+        /**
          * The solid laptop-medical icon.See <a href='https://fontawesome.com/icons/laptop-medical?style=solid'>example</a>
          */
         LAPTOP_MEDICAL,
@@ -2824,6 +2888,14 @@ public final class FontAwesome {
          * The solid luggage-cart icon.See <a href='https://fontawesome.com/icons/luggage-cart?style=solid'>example</a>
          */
         LUGGAGE_CART,
+        /**
+         * The solid lungs icon.See <a href='https://fontawesome.com/icons/lungs?style=solid'>example</a>
+         */
+        LUNGS,
+        /**
+         * The solid lungs-virus icon.See <a href='https://fontawesome.com/icons/lungs-virus?style=solid'>example</a>
+         */
+        LUNGS_VIRUS,
         /**
          * The solid magic icon.See <a href='https://fontawesome.com/icons/magic?style=solid'>example</a>
          */
@@ -3185,6 +3257,10 @@ public final class FontAwesome {
          */
         PENCIL_RULER,
         /**
+         * The solid people-arrows icon.See <a href='https://fontawesome.com/icons/people-arrows?style=solid'>example</a>
+         */
+        PEOPLE_ARROWS,
+        /**
          * The solid people-carry icon.See <a href='https://fontawesome.com/icons/people-carry?style=solid'>example</a>
          */
         PEOPLE_CARRY,
@@ -3260,6 +3336,10 @@ public final class FontAwesome {
          * The solid plane-departure icon.See <a href='https://fontawesome.com/icons/plane-departure?style=solid'>example</a>
          */
         PLANE_DEPARTURE,
+        /**
+         * The solid plane-slash icon.See <a href='https://fontawesome.com/icons/plane-slash?style=solid'>example</a>
+         */
+        PLANE_SLASH,
         /**
          * The solid play icon.See <a href='https://fontawesome.com/icons/play?style=solid'>example</a>
          */
@@ -3352,6 +3432,14 @@ public final class FontAwesome {
          * The solid project-diagram icon.See <a href='https://fontawesome.com/icons/project-diagram?style=solid'>example</a>
          */
         PROJECT_DIAGRAM,
+        /**
+         * The solid pump-medical icon.See <a href='https://fontawesome.com/icons/pump-medical?style=solid'>example</a>
+         */
+        PUMP_MEDICAL,
+        /**
+         * The solid pump-soap icon.See <a href='https://fontawesome.com/icons/pump-soap?style=solid'>example</a>
+         */
+        PUMP_SOAP,
         /**
          * The solid puzzle-piece icon.See <a href='https://fontawesome.com/icons/puzzle-piece?style=solid'>example</a>
          */
@@ -3601,6 +3689,10 @@ public final class FontAwesome {
          */
         SHIELD_ALT,
         /**
+         * The solid shield-virus icon.See <a href='https://fontawesome.com/icons/shield-virus?style=solid'>example</a>
+         */
+        SHIELD_VIRUS,
+        /**
          * The solid ship icon.See <a href='https://fontawesome.com/icons/ship?style=solid'>example</a>
          */
         SHIP,
@@ -3740,6 +3832,10 @@ public final class FontAwesome {
          * The solid snowplow icon.See <a href='https://fontawesome.com/icons/snowplow?style=solid'>example</a>
          */
         SNOWPLOW,
+        /**
+         * The solid soap icon.See <a href='https://fontawesome.com/icons/soap?style=solid'>example</a>
+         */
+        SOAP,
         /**
          * The solid socks icon.See <a href='https://fontawesome.com/icons/socks?style=solid'>example</a>
          */
@@ -3905,6 +4001,10 @@ public final class FontAwesome {
          */
         STOPWATCH,
         /**
+         * The solid stopwatch-20 icon.See <a href='https://fontawesome.com/icons/stopwatch-20?style=solid'>example</a>
+         */
+        STOPWATCH_20,
+        /**
          * The solid store icon.See <a href='https://fontawesome.com/icons/store?style=solid'>example</a>
          */
         STORE,
@@ -3912,6 +4012,14 @@ public final class FontAwesome {
          * The solid store-alt icon.See <a href='https://fontawesome.com/icons/store-alt?style=solid'>example</a>
          */
         STORE_ALT,
+        /**
+         * The solid store-alt-slash icon.See <a href='https://fontawesome.com/icons/store-alt-slash?style=solid'>example</a>
+         */
+        STORE_ALT_SLASH,
+        /**
+         * The solid store-slash icon.See <a href='https://fontawesome.com/icons/store-slash?style=solid'>example</a>
+         */
+        STORE_SLASH,
         /**
          * The solid stream icon.See <a href='https://fontawesome.com/icons/stream?style=solid'>example</a>
          */
@@ -4152,6 +4260,10 @@ public final class FontAwesome {
          * The solid toilet-paper icon.See <a href='https://fontawesome.com/icons/toilet-paper?style=solid'>example</a>
          */
         TOILET_PAPER,
+        /**
+         * The solid toilet-paper-slash icon.See <a href='https://fontawesome.com/icons/toilet-paper-slash?style=solid'>example</a>
+         */
+        TOILET_PAPER_SLASH,
         /**
          * The solid toolbox icon.See <a href='https://fontawesome.com/icons/toolbox?style=solid'>example</a>
          */
@@ -4452,6 +4564,18 @@ public final class FontAwesome {
          * The solid vihara icon.See <a href='https://fontawesome.com/icons/vihara?style=solid'>example</a>
          */
         VIHARA,
+        /**
+         * The solid virus icon.See <a href='https://fontawesome.com/icons/virus?style=solid'>example</a>
+         */
+        VIRUS,
+        /**
+         * The solid virus-slash icon.See <a href='https://fontawesome.com/icons/virus-slash?style=solid'>example</a>
+         */
+        VIRUS_SLASH,
+        /**
+         * The solid viruses icon.See <a href='https://fontawesome.com/icons/viruses?style=solid'>example</a>
+         */
+        VIRUSES,
         /**
          * The solid voicemail icon.See <a href='https://fontawesome.com/icons/voicemail?style=solid'>example</a>
          */
