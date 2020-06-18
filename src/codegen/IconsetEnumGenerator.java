@@ -123,7 +123,6 @@ public class IconsetEnumGenerator {
 		sources = getRequiredDirectory("codegen.sources"); //the location of generated sources
 		resources = getRequiredDirectory("codegen.resources"); //the location of generated resources
 		
-		resources = new File(resources, "META-INF/resources/frontend");
 		resources = new File(resources, RESOURCE_PATH);
 		resources.mkdirs();
 		

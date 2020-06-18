@@ -16,6 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
+		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
         <jetty.version>9.4.15.v20190215</jetty.version>
         <fontawesome.version>5.13.0</fontawesome.version>
     </properties>
@@ -123,7 +124,7 @@
 				  <licenseName>apache_v2</licenseName>
 				  <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
 				  <excludes>
-					<exclude>**/font-awesome-iron-iconset/*</exclude>
+					<exclude>**/main/javascript/font-awesome-iron-iconset/*</exclude>
 				  </excludes>
 				  <extraExtensions>
 					<xslt>xml</xslt>
@@ -320,7 +321,6 @@
 							      <filesets>
 							        <fileset>
 							          <directory>${project.build.generatedSources}</directory>
-							          <directory>${project.build.resources[0].directory}</directory>
 							        </fileset>
 						      	   </filesets>
 						    	</configuration>
@@ -351,7 +351,7 @@
 									<argument>-Pgenerate</argument>
 									<argument>-Dcodegen.tag=${fontawesome.version}</argument>
 									<argument>-Dcodegen.sources=${project.build.generatedSources}</argument>
-									<argument>-Dcodegen.resources=${project.build.resources[0].directory}</argument>
+									<argument>-Dcodegen.resources=${project.build.generatedResources}</argument>
 								  </arguments>
 								</configuration>
 						    </execution>							
