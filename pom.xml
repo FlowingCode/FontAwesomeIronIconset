@@ -20,7 +20,7 @@
         <jetty.version>9.4.15.v20190215</jetty.version>
         <fontawesome.version>5.13.0</fontawesome.version>
         <npm.package>@flowingcode/font-awesome-iron-iconset</npm.package>
-        <npm.version>2.0.5</npm.version>
+        <npm.version>2.1.0</npm.version>
     </properties>
     
 	<scm>
