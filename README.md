@@ -4,6 +4,19 @@
 
 Integration of FontAwesome and iron-icon for Vaadin 10+
 
+## Download release
+
+[Available in Vaadin Directory](https://vaadin.com/directory/component/app-layout-addon)
+
+[Available in npm.js](https://www.npmjs.com/package/@flowingcode/font-awesome-iron-iconset) (since 2.0.5)
+
+## Versions
+
+- **Version 1.0.4** (based on FontAwesome 5.11.2) is compatible with Vaadin 10-13 and Vaadin 14 in bower mode 
+- **Version 2.0.x** (based on the latest version of FontAwesome 5) is compatible with Vaadin 14+ in npm mode.
+
+For details on which version of FontAwesome is used by each release of this addon, see the [Release Notes](https://github.com/FlowingCode/FontAwesomeIronIconset/releases)
+
 ## Online demo
 
 [Online demo here](http://addonsv14.flowingcode.com/font-awesome-iron-iconset)
@@ -14,11 +27,6 @@ Integration of FontAwesome and iron-icon for Vaadin 10+
 - mvn clean install jetty:run
 
 To see the demo, navigate to http://localhost:8080/
-
-## Release notes
-
-- **Version 1.0.4** Based on FontAwesome 5.11.2, Vaadin 10-13 and Vaadin 14 in compatibility mode.
-- **Version 2.0.0** Based on FontAwesome 5.11.2, Vaadin 14 in npm mode.
 
 ## Issue tracking
 
@@ -40,7 +48,7 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 IronFontAwesome Addon is written by Flowing Code S.A.
 
-Font Awesome Free 5.9.0 by @fontawesome is distributed under CC BY 4.0 license. For license terms see THIRD-PARTY.txt
+Font Awesome Free 5.13.0 by @fontawesome is distributed under CC BY 4.0 license. For license terms see THIRD-PARTY.txt
 
 
 # Developer Guide
@@ -48,11 +56,13 @@ Font Awesome Free 5.9.0 by @fontawesome is distributed under CC BY 4.0 license. 
 ## Using the icons
 
 - Use the `create` method from the enum type, for instantiating a new `IronIcon` component based on that icon. There is an enum type for each font family (solid, regular and brands)
+
 ```
 add(new Button("SAVE", FontAwesome.Solid.SAVE.create()));
 ```
 
 - You can also use the enumerated value for obtaining the qualified icon name (e.g. `fas:plane-departure`), that can be set in the `icon` attribute of the `iron-icon` element. This can be helpful if you are writing a template renderer, such as:
+
 ```
 	grid.addColumn(TemplateRenderer.<Flight>of(
 	   "<iron-icon icon='"+FontAwesome.Solid.PLANE_DEPARTURE+"'></iron-icon>[[item.takeoff_time]]"
@@ -64,6 +74,17 @@ In this latter case, you'll need to import the corresponding iconset:
 @Uses(FontAwesome.Regular.Icon.class)
 ```
 
+- Use in a Polymer template:
+
+```
+import '@polymer/iron-icon/iron-icon.js';
+import '@flowingcode/font-awesome-iron-iconset/fab.js';
+```
+
+```
+<iron-icon icon="fab:font-awesome" style="width: 48px; height: 48px"></iron-icon>
+```
+
 ## Code generation
 
-For recreating the sources, you need to activate the `generate` maven profile (i.e. `mvn -Pgenerate compile`). This will download the SVG icons from github, and run the code generator (`IconsetEnumGenerator`). The resulting Java enums will be written into `src/main/generated` and the HTML iconsets will be written into `src/main/resources`.
+For recreating the sources, you need to activate the `generate` maven profile (i.e. `mvn -Pgenerate compile`). This will download the SVG icons from github, and run the code generator (`IconsetEnumGenerator`). The resulting Java enums will be written into `src/main/generated` and the iconsets will be wrapped as JavaScript modules and written into `src/main/javascript`.
