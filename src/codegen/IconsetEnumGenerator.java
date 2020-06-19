@@ -112,7 +112,10 @@ public class IconsetEnumGenerator {
 	private static File resources;
 	
 	private static File target;
+
+	private static String npmPackage;
 	
+	private static String npmVersion;
 	private static BlockComment license;
 	
 	public static void main(String[] args) throws IOException {
@@ -125,6 +128,11 @@ public class IconsetEnumGenerator {
 		
 		resources = new File(resources, RESOURCE_PATH);
 		resources.mkdirs();
+		
+		npmPackage = System.getProperty("codegen.npmPackage");
+		if (npmPackage!=null) {
+			npmVersion = getRequiredProperty("codegen.npmVersion");
+		}
 		
 		license = getLicenseInformation();
 		
@@ -241,6 +249,7 @@ public class IconsetEnumGenerator {
 		cu.setPackageDeclaration(PACKAGE_NAME);
 		cu.addImport("com.vaadin.flow.component.icon.IronIcon");
 		cu.addImport("com.vaadin.flow.component.dependency.JsModule");
+		cu.addImport("com.vaadin.flow.component.dependency.NpmPackage");
 		cu.addImport("com.vaadin.flow.component.ClickEvent");
 		cu.addImport("com.vaadin.flow.component.ClickNotifier");
 		cu.addImport("com.vaadin.flow.component.ComponentEventListener");
@@ -340,7 +349,11 @@ public class IconsetEnumGenerator {
 		icon.addImplementedType("ClickNotifier<IronIcon>");
 		icon.setJavadocComment(new JavadocComment(String.format("Server side component for {@code %s}", decl.getName())));
 		icon.addSingleMemberAnnotation("JsModule", new StringLiteralExpr(url));
-		icon.addSingleMemberAnnotation("SuppressWarnings", new StringLiteralExpr("serial"));
+		
+		icon.addAndGetAnnotation("NpmPackage")
+			.addPair("value", new StringLiteralExpr(npmPackage))
+			.addPair("version", new StringLiteralExpr(npmVersion));	
+		icon.addSingleMemberAnnotation("SuppressWarnings", new StringLiteralExpr("serial"));		
 		decl.addMember(icon);
 		
 		ConstructorDeclaration ctor = icon.addConstructor(PACKAGE_PRIVATE);
