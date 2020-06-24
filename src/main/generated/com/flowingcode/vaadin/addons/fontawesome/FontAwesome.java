@@ -29,7 +29,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import java.util.Locale;
 
 /**
- * FontAwesome 5.13.0 icons.
+ * FontAwesome 5.13.1 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -694,7 +694,7 @@ public final class FontAwesome {
          * Server side component for {@code Regular}
          */
         @JsModule("./font-awesome-iron-iconset/far.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.1")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
@@ -926,6 +926,14 @@ public final class FontAwesome {
          * The solid bacon icon.See <a href='https://fontawesome.com/icons/bacon?style=solid'>example</a>
          */
         BACON,
+        /**
+         * The solid bacteria icon.See <a href='https://fontawesome.com/icons/bacteria?style=solid'>example</a>
+         */
+        BACTERIA,
+        /**
+         * The solid bacterium icon.See <a href='https://fontawesome.com/icons/bacterium?style=solid'>example</a>
+         */
+        BACTERIUM,
         /**
          * The solid bahai icon.See <a href='https://fontawesome.com/icons/bahai?style=solid'>example</a>
          */
@@ -3755,6 +3763,10 @@ public final class FontAwesome {
          */
         SIM_CARD,
         /**
+         * The solid sink icon.See <a href='https://fontawesome.com/icons/sink?style=solid'>example</a>
+         */
+        SINK,
+        /**
          * The solid sitemap icon.See <a href='https://fontawesome.com/icons/sitemap?style=solid'>example</a>
          */
         SITEMAP,
@@ -4523,6 +4535,10 @@ public final class FontAwesome {
          */
         USERS_COG,
         /**
+         * The solid users-slash icon.See <a href='https://fontawesome.com/icons/users-slash?style=solid'>example</a>
+         */
+        USERS_SLASH,
+        /**
          * The solid utensil-spoon icon.See <a href='https://fontawesome.com/icons/utensil-spoon?style=solid'>example</a>
          */
         UTENSIL_SPOON,
@@ -4739,7 +4755,7 @@ public final class FontAwesome {
          * Server side component for {@code Solid}
          */
         @JsModule("./font-awesome-iron-iconset/fas.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.1")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
@@ -5152,6 +5168,10 @@ public final class FontAwesome {
          */
         DASHCUBE,
         /**
+         * The brands deezer icon.See <a href='https://fontawesome.com/icons/deezer?style=brands'>example</a>
+         */
+        DEEZER,
+        /**
          * The brands delicious icon.See <a href='https://fontawesome.com/icons/delicious?style=brands'>example</a>
          */
         DELICIOUS,
@@ -5239,6 +5259,10 @@ public final class FontAwesome {
          * The brands edge icon.See <a href='https://fontawesome.com/icons/edge?style=brands'>example</a>
          */
         EDGE,
+        /**
+         * The brands edge-legacy icon.See <a href='https://fontawesome.com/icons/edge-legacy?style=brands'>example</a>
+         */
+        EDGE_LEGACY,
         /**
          * The brands elementor icon.See <a href='https://fontawesome.com/icons/elementor?style=brands'>example</a>
          */
@@ -5479,6 +5503,10 @@ public final class FontAwesome {
          * The brands google-drive icon.See <a href='https://fontawesome.com/icons/google-drive?style=brands'>example</a>
          */
         GOOGLE_DRIVE,
+        /**
+         * The brands google-pay icon.See <a href='https://fontawesome.com/icons/google-pay?style=brands'>example</a>
+         */
+        GOOGLE_PAY,
         /**
          * The brands google-play icon.See <a href='https://fontawesome.com/icons/google-play?style=brands'>example</a>
          */
@@ -6048,6 +6076,10 @@ public final class FontAwesome {
          */
         ROCKRMS,
         /**
+         * The brands rust icon.See <a href='https://fontawesome.com/icons/rust?style=brands'>example</a>
+         */
+        RUST,
+        /**
          * The brands safari icon.See <a href='https://fontawesome.com/icons/safari?style=brands'>example</a>
          */
         SAFARI,
@@ -6276,6 +6308,10 @@ public final class FontAwesome {
          */
         THINK_PEAKS,
         /**
+         * The brands tiktok icon.See <a href='https://fontawesome.com/icons/tiktok?style=brands'>example</a>
+         */
+        TIKTOK,
+        /**
          * The brands trade-federation icon.See <a href='https://fontawesome.com/icons/trade-federation?style=brands'>example</a>
          */
         TRADE_FEDERATION,
@@ -6335,6 +6371,10 @@ public final class FontAwesome {
          * The brands unity icon.See <a href='https://fontawesome.com/icons/unity?style=brands'>example</a>
          */
         UNITY,
+        /**
+         * The brands unsplash icon.See <a href='https://fontawesome.com/icons/unsplash?style=brands'>example</a>
+         */
+        UNSPLASH,
         /**
          * The brands untappd icon.See <a href='https://fontawesome.com/icons/untappd?style=brands'>example</a>
          */
@@ -6572,7 +6612,7 @@ public final class FontAwesome {
          * Server side component for {@code Brands}
          */
         @JsModule("./font-awesome-iron-iconset/fab.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.1")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 

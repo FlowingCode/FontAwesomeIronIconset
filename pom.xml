@@ -18,9 +18,9 @@
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
 		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
         <jetty.version>9.4.15.v20190215</jetty.version>
-        <fontawesome.version>5.13.0</fontawesome.version>
+        <fontawesome.version>5.13.1</fontawesome.version>
         <npm.package>@flowingcode/font-awesome-iron-iconset</npm.package>
-        <npm.version>2.1.0</npm.version>
+        <npm.version>2.1.1</npm.version>
     </properties>
     
 	<scm>
