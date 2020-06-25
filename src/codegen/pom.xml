@@ -68,59 +68,67 @@
 			<artifactId>Saxon-HE</artifactId>
 			<version>9.8.0-14</version>
 		</dependency>
-		        
+		
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.5</version>
+		</dependency>
+		
     </dependencies>
 
     <build>
         <sourceDirectory>.</sourceDirectory>
         <directory>../../target/codegen</directory>
         
-        <plugins>				
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>license-maven-plugin</artifactId>
-                <version>1.14</version>
-                <configuration>
-                  <licenseName>apache_v2</licenseName>
-                </configuration>
-            </plugin>
-        </plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<configuration>
+						<systemProperties>
+								<systemProperty>
+									<key>codegen.target</key>
+									<value>${project.build.directory}</value>
+								</systemProperty>
+						</systemProperties>
+					</configuration>
+					<executions>
+						<execution>
+							<id>download</id>
+							<phase>prepare-package</phase>
+							<goals>
+								<goal>java</goal>
+							</goals>
+							<configuration>
+								<mainClass>Downloader</mainClass>
+							</configuration>
+						</execution>
+						<execution>
+							<id>generate</id>
+							<phase>prepare-package</phase>
+							<goals>
+								<goal>java</goal>
+							</goals>
+							<configuration>
+								<mainClass>IconsetEnumGenerator</mainClass>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+    	
     </build>
     
-    <profiles>
-    	<profile>
-    		<id>generate</id>
-    		<build>
-    			<defaultGoal>compile</defaultGoal>
-    			
-    			<plugins>    			
-	      	    			
-    				<plugin>	
-    					<groupId>org.codehaus.mojo</groupId>
-    					<artifactId>exec-maven-plugin</artifactId>
-    					<configuration>
-    						<mainClass>IconsetEnumGenerator</mainClass>
-    						<systemProperties>
-                    			<systemProperty>
-                        			<key>codegen.target</key>
-                        			<value>${project.build.directory}</value>
-                    			</systemProperty>
-                    		</systemProperties>
-    					</configuration>
-    					<executions>
-    						<execution>
-								<phase>compile</phase>
-								<goals>
-									<goal>java</goal>
-								</goals>
-						    </execution>
-						</executions>		    					
-    				</plugin>
-    			
-    			</plugins>    		
-    		</build>
+	<profiles>
+		<profile>
+			<id>generate</id>
+			<build>
+				<defaultGoal>prepare-package</defaultGoal>
+			</build>
     	</profile>
-    
     </profiles>
 
 </project>

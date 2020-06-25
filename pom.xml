@@ -333,8 +333,8 @@
 						    </execution>
 						</executions>				    	
 				  	</plugin>
-				  	
-    				<plugin>	
+			
+					<plugin>
     					<groupId>org.codehaus.mojo</groupId>
     					<artifactId>exec-maven-plugin</artifactId>
     					<configuration>
@@ -350,7 +350,10 @@
 								</goals>
 								<configuration>
 								  <arguments>
-									<argument>-Pgenerate</argument>
+									<argument>clean</argument>
+									<argument>compile</argument>
+									<argument>exec:java@download</argument>
+									<argument>exec:java@generate</argument>
 									<argument>-Dcodegen.tag=${fontawesome.version}</argument>
 									<argument>-Dcodegen.sources=${project.build.generatedSources}</argument>
 									<argument>-Dcodegen.resources=${project.build.generatedResources}</argument>
