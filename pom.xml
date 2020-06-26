@@ -314,19 +314,27 @@
     			<defaultGoal>generate-sources</defaultGoal>
     			
     			<plugins>
-    				<!-- clean src/main/generated -->
+					
     				<plugin>
 				    	<artifactId>maven-clean-plugin</artifactId>
     					<executions>
     						<execution>
 						    	<configuration>
 							      <filesets>
+									<!-- clean src/main/generated -->
 							        <fileset>
 							          <directory>${project.build.generatedSources}</directory>
 							        </fileset>
+									<!-- clean src/main/javascript -->
+									<fileset>
+										<directory>${project.build.generatedResources}</directory>
+											<includes>
+												<include>**/*.js</include>
+											</includes>
+									</fileset>
 						      	   </filesets>
 						    	</configuration>
-								<phase>generate-sources</phase>
+								<phase>clean</phase>
 								<goals>
 									<goal>clean</goal>
 								</goals>
