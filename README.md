@@ -104,13 +104,13 @@ The JAR created in this way will include a copy of the Font Awesome Pro icons, t
 2. Download Font Awesome Pro SVG sprites into `src/main/sprites`
 3. Modify the groupId, artifactId and version in the `pom.xml` file.
 4. Modify the following properties in the `pom.xml` file:
-    ```
+```
 <fontawesome.version>Pro 5.13.1</fontawesome.version>
 <project.build.generatedResources>${project.basedir}/src/main/resources/META-INF/resources/frontend</project.build.generatedResources>
 <codegen.sprites>${project.basedir}/src/main/sprites</codegen.sprites>
 <codegen.skipDownload>true</codegen.skipDownload>
 <codegen.embedded>true</codegen.embedded>
-    ```    
+```
 5. Execute `mvn -Pgenerate clean package`. The code generation process will use the sprites provided in `/src/main/sprites/` (it will not check out Font Awesome Free), and resources will be embedded in the JAR file instead of being available as npm dependencies (the properties `npm.package` and `npm.version` will be ignored).
 
 If you want to import the JS iconset from a Polymer Template when using the integration with Font Awesome Pro, the js module is  
