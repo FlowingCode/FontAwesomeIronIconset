@@ -44,17 +44,22 @@ public class Downloader {
 
 	private static String repositoryName;
 
-	private static File target;
+	private static File spritesDirectory;
 
 	public static void main(String[] args) throws IOException {
 
+		if (Boolean.parseBoolean(System.getProperty("codegen.skipDownload"))) {
+			System.out.println("Skipping download phase");
+			return;
+		}
+		
 		repositoryName = "FortAwesome/Font-Awesome"; //the name of repository to be parsed
 		tagName = getRequiredProperty("codegen.tag"); //the tag in the repository to be parsed
-		target = new File(getRequiredProperty("codegen.target"), "download"); //the target directory of this build
-		createDirectory(target);
+		spritesDirectory = new File(getRequiredProperty("codegen.sprites")); //the location of the downloaded sprites
+		createDirectory(spritesDirectory);
 
 		System.out.println("Using "+repositoryName+" version "+tagName);
-		System.out.println("Downloading sources to "+Paths.get(target.getAbsolutePath()).normalize());
+		System.out.println("Downloading sources to "+Paths.get(spritesDirectory.getAbsolutePath()).normalize());
 
 		try {
 			execute();
@@ -95,7 +100,7 @@ public class Downloader {
 
 	private static void download(GHRepository repo, String filename) throws IOException {
 		String path = "sprites/"+filename;
-		File file = new File(target, filename);
+		File file = new File(spritesDirectory, filename);
 		try (
 			InputStream in = repo.getFileContent(path, tagName).read();
 		) {

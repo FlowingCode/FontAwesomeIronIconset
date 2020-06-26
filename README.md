@@ -18,6 +18,8 @@ Integration of FontAwesome and iron-icon for Vaadin 10+
 
 For details on which version of FontAwesome is used by each release of this addon, see the [Release Notes](https://github.com/FlowingCode/FontAwesomeIronIconset/releases)
 
+If you want to use Font Awesome Pro icons with this addon, see [here](#integration-with-font-awesome-pro)
+
 ## Online demo
 
 [Online demo here](http://addonsv14.flowingcode.com/font-awesome-iron-iconset)
@@ -86,6 +88,30 @@ import '@flowingcode/font-awesome-iron-iconset/fab.js';
 <iron-icon icon="fab:font-awesome" style="width: 48px; height: 48px"></iron-icon>
 ```
 
-## Code generation
+## Integration with Font Awesome Pro
 
-For recreating the sources, you need to activate the `generate` maven profile (i.e. `mvn -Pgenerate compile`). This will download the SVG icons from github, and run the code generator (`IconsetEnumGenerator`). The resulting Java enums will be written into `src/main/generated` and the iconsets will be wrapped as JavaScript modules and written into `src/main/javascript`.
+Because of Font Awesome Pro [license terms](https://fontawesome.com/license#what-creators-may-do), the Pro icons cannot published as part of an open source addon. 
+However, if you have a Font Awesome Pro license, you can recompile this addon in order to embed the Pro Icons. 
+
+This process will:
+- Update the enumerations so that they define constants for the additional Pro Icons
+- Create new enumerations for the Ligth and Duotone icon families.
+- Embed the Pro Icons as Polymer iron-iconset.
+
+The JAR created in this way will include a copy of the Font Awesome Pro icons, thus it will be subject to the Font Awesome Pro restrictions. You'll need to install it locally or make it available from your internal artifact repository. 
+ 
+1. Checkout a copy of this project: `git clone git@github.com:FlowingCode/FontAwesomeIronIconset.git`
+2. Download Font Awesome Pro SVG sprites into `src/main/sprites`
+3. Modify the groupId, artifactId and version in the `pom.xml` file.
+4. Modify the following properties in the `pom.xml` file:
+    ```
+<fontawesome.version>Pro 5.13.1</fontawesome.version>
+<project.build.generatedResources>${project.basedir}/src/main/resources/META-INF/resources/frontend</project.build.generatedResources>
+<codegen.sprites>${project.basedir}/src/main/sprites</codegen.sprites>
+<codegen.skipDownload>true</codegen.skipDownload>
+<codegen.embedded>true</codegen.embedded>
+    ```    
+5. Execute `mvn -Pgenerate clean package`. The code generation process will use the sprites provided in `/src/main/sprites/` (it will not check out Font Awesome Free), and resources will be embedded in the JAR file instead of being available as npm dependencies (the properties `npm.package` and `npm.version` will be ignored).
+
+If you want to import the JS iconset from a Polymer Template when using the integration with Font Awesome Pro, the js module is  
+`@vaadin/flow-frontend/font-awesome-iron-iconset/fab.js` instead of `@flowingcode/font-awesome-iron-iconset/fab.js` (you'll need to execute the `mvn vaadin:prepare-frontend` on your project in order to extract the module from the JAR file).

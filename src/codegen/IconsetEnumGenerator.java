@@ -81,13 +81,13 @@ public class IconsetEnumGenerator {
 
 	private static final String DEMO_URL = "https://fontawesome.com/icons/%2$s?style=%1$s";
 
-	private static String tagName;
+	private static String fontAwesomeVersion;
 
 	private static File sources;
 
 	private static File resources;
 
-	private static File target;
+	private static File sprites;
 	
 	private static File download;
 
@@ -107,28 +107,30 @@ public class IconsetEnumGenerator {
 	}};
 
 	public static void main(String[] args) throws IOException {
-		tagName = getRequiredProperty("codegen.tag"); //the tag in the repository to be parsed
-		target = new File(getRequiredProperty("codegen.target")); //the target directory of this build
+		fontAwesomeVersion = getRequiredProperty("codegen.tag"); //the version to be mentioned in the documentation
+		sprites = new File(getRequiredProperty("codegen.sprites")); //the location of the SVG sprites
 		sources = getRequiredDirectory("codegen.sources"); //the location of generated sources
 		resources = getRequiredDirectory("codegen.resources"); //the location of generated resources
 
 		resources = new File(resources, RESOURCE_PATH);
 		resources.mkdirs();
 		
-		download = new File(target,"download");
-		if (!download.isDirectory()) {
-			System.err.println(download+ "does not exist or is not a directory");
+		if (!sprites.isDirectory()) {
+			System.err.println(sprites+ "does not exist or is not a directory");
 			System.exit(1);
 		}
 
-		npmPackage = System.getProperty("codegen.npmPackage");
-		if (npmPackage!=null) {
-			npmVersion = getRequiredProperty("codegen.npmVersion");
+		boolean embedded = Boolean.parseBoolean(getRequiredProperty("codegen.embedded"));
+		if (!embedded) {
+			npmPackage = System.getProperty("codegen.npmPackage");
+			if (npmPackage!=null) {
+				npmVersion = getRequiredProperty("codegen.npmVersion");
+			}
 		}
 
 		license = getLicenseInformation();
 
-		System.out.println("Input directory is "+Paths.get(download.getAbsolutePath()).normalize());
+		System.out.println("Sprites directory is "+Paths.get(sprites.getAbsolutePath()).normalize());
 		System.out.println("Output sources directory is "+Paths.get(sources.getAbsolutePath()).normalize());
 		System.out.println("Output resources directory is "+Paths.get(resources.getAbsolutePath()).normalize());
 
@@ -149,19 +151,26 @@ public class IconsetEnumGenerator {
 	}
 
 	private static void execute()  throws IOException {
+		boolean found = false;
 		CompilationUnit cu = createCompilationUnit();
 		for (Map.Entry<String,String> e:mappings.entrySet())  {
-			File file = new File(download, e.getValue());
+			File file = new File(sprites, e.getValue());
 			if (file.exists()) {
 				String family = e.getKey();
 				process(cu, family, file);
+				found = true;
 			}
+		}
+		if (!found) {
+			System.err.println("No sprites found in "+sprites);
+			System.exit(1);
 		}
 		save(cu);
 	}
 
 	private static void process(CompilationUnit cu, String family, File sprites) throws IOException {
-		String enumName = StringUtils.capitalize(FilenameUtils.getBaseName(sprites.getName()));
+		String enumName = StringUtils.capitalize(FilenameUtils.getBaseName(sprites.getName()));		
+		System.out.println(String.format("Generate %s icons (%s)", enumName, family));
 		File iconset = convertIconset(family, sprites);
 		List<String> icons = readIconNames(iconset);
 		modularize(iconset);
@@ -227,7 +236,9 @@ public class IconsetEnumGenerator {
 		cu.setPackageDeclaration(PACKAGE_NAME);
 		cu.addImport("com.vaadin.flow.component.icon.IronIcon");
 		cu.addImport("com.vaadin.flow.component.dependency.JsModule");
-		cu.addImport("com.vaadin.flow.component.dependency.NpmPackage");
+		if (npmPackage!=null) {
+			cu.addImport("com.vaadin.flow.component.dependency.NpmPackage");
+		}
 		cu.addImport("com.vaadin.flow.component.ClickEvent");
 		cu.addImport("com.vaadin.flow.component.ClickNotifier");
 		cu.addImport("com.vaadin.flow.component.ComponentEventListener");
@@ -239,7 +250,7 @@ public class IconsetEnumGenerator {
 		//icon.setJavadocComment(new JavadocComment(String.format("Server side component for {@code %s}", decl.getName())));
 		type.setJavadocComment(new JavadocComment(
 				Stream.of(
-					String.format("FontAwesome %s icons.", tagName),
+					String.format("FontAwesome %s icons.", fontAwesomeVersion),
 					"@author Javier Godoy / Flowing Code"
 				).collect(Collectors.joining("\n"))));
 
@@ -325,9 +336,11 @@ public class IconsetEnumGenerator {
 		icon.setJavadocComment(new JavadocComment(String.format("Server side component for {@code %s}", decl.getName())));
 		icon.addSingleMemberAnnotation("JsModule", new StringLiteralExpr(url));
 
-		icon.addAndGetAnnotation("NpmPackage")
-			.addPair("value", new StringLiteralExpr(npmPackage))
-			.addPair("version", new StringLiteralExpr(npmVersion));
+		if (npmPackage!=null) {
+			icon.addAndGetAnnotation("NpmPackage")
+				.addPair("value", new StringLiteralExpr(npmPackage))
+				.addPair("version", new StringLiteralExpr(npmVersion));
+		}
 		icon.addSingleMemberAnnotation("SuppressWarnings", new StringLiteralExpr("serial"));
 		decl.addMember(icon);
 

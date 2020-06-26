@@ -10,15 +10,24 @@
     
     <properties>
         <vaadin.version>14.0.10</vaadin.version>
-
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <jetty.version>9.4.15.v20190215</jetty.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
-		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
-        <jetty.version>9.4.15.v20190215</jetty.version>
+        <!-- 
+        <fontawesome.version>Pro 5.13.1</fontawesome.version>
+        <project.build.generatedResources>${project.basedir}/src/main/resources/META-INF/resources/frontend</project.build.generatedResources>
+        <codegen.sprites>${project.basedir}/src/main/sprites</codegen.sprites>
+        <codegen.skipDownload>true</codegen.skipDownload>
+        <codegen.embedded>true</codegen.embedded>
+         -->
         <fontawesome.version>5.13.1</fontawesome.version>
+		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
+        <codegen.sprites>${project.build.directory}/sprites</codegen.sprites>
+        <codegen.skipDownload>false</codegen.skipDownload>
+        <codegen.embedded>false</codegen.embedded>
         <npm.package>@flowingcode/font-awesome-iron-iconset</npm.package>
         <npm.version>2.1.1</npm.version>
     </properties>
@@ -362,9 +371,25 @@
 									<argument>compile</argument>
 									<argument>exec:java@download</argument>
 									<argument>exec:java@generate</argument>
+									
+									<!-- The tag of FortAwesome/Font-Awesome that will be checked out -->
 									<argument>-Dcodegen.tag=${fontawesome.version}</argument>
+									
+									<!-- Configure to true for skipping the download phase-->
+									<argument>-Dcodegen.skipDownload=${codegen.skipDownload}</argument>
+									
+									<!-- Location of the SVG sprites -->
+									<argument>-Dcodegen.sprites=${codegen.sprites}</argument>
+									
+									<!-- Location of the generated Java sources -->
 									<argument>-Dcodegen.sources=${project.build.generatedSources}</argument>
+									
+									<!-- Location of the generated JS modules -->
 									<argument>-Dcodegen.resources=${project.build.generatedResources}</argument>
+									
+									<!-- if embedded=false value and version are used for the @NpmPackage annotation  
+									     if embedded=true no @NpmPackage annotation will be added -->
+									<argument>-Dcodegen.embedded=${codegen.embedded}</argument>
 									<argument>-Dcodegen.npmPackage=${npm.package}</argument>
 									<argument>-Dcodegen.npmVersion=${npm.version}</argument>
 								  </arguments>
