@@ -6,7 +6,7 @@ Integration of FontAwesome and iron-icon for Vaadin 10+
 
 ## Download release
 
-[Available in Vaadin Directory](https://vaadin.com/directory/component/app-layout-addon)
+[Available in Vaadin Directory](https://vaadin.com/directory/component/fontawesome-iron-iconset)
 
 [Available in npm.js](https://www.npmjs.com/package/@flowingcode/font-awesome-iron-iconset) (since 2.1.0)
 
