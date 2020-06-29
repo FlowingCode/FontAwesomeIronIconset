@@ -23,7 +23,6 @@ package com.flowingcode.vaadin.addons.fontawesome;
 import java.util.stream.Stream;
 
 import com.vaadin.flow.component.AttachEvent;
-import com.vaadin.flow.component.dependency.HtmlImport;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H4;
 import com.vaadin.flow.component.html.Span;
