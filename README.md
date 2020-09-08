@@ -115,3 +115,6 @@ The JAR created in this way will include a copy of the Font Awesome Pro icons, t
 
 If you want to import the JS iconset from a Polymer Template when using the integration with Font Awesome Pro, the js module is  
 `@vaadin/flow-frontend/font-awesome-iron-iconset/fab.js` instead of `@flowingcode/font-awesome-iron-iconset/fab.js` (you'll need to execute the `mvn vaadin:prepare-frontend` on your project in order to extract the module from the JAR file).
+
+[Duotone styling](https://blog.fontawesome.com/introducing-duotone) is based on CSS variables (`--fa-primary-color`, `--fa-primary-opacity`, `--fa-secondary-color`, and `--fa-secondary-opacity`) that are applied to the `<duotone-icon>`. When importing the iconset from a Polymer Template, you'll also need `@vaadin/flow-frontend/font-awesome-duotone/duotone.js` in addition to `@vaadin/flow-frontend/font-awesome-iron-iconset/fad.js`.
+
