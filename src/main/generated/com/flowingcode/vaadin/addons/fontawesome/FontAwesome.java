@@ -29,7 +29,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import java.util.Locale;
 
 /**
- * FontAwesome 5.13.1 icons.
+ * FontAwesome 5.14.0 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -694,7 +694,7 @@ public final class FontAwesome {
          * Server side component for {@code Regular}
          */
         @JsModule("./font-awesome-iron-iconset/far.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.1")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.2")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
@@ -4755,7 +4755,7 @@ public final class FontAwesome {
          * Server side component for {@code Solid}
          */
         @JsModule("./font-awesome-iron-iconset/fas.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.1")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.2")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
@@ -6612,7 +6612,7 @@ public final class FontAwesome {
          * Server side component for {@code Brands}
          */
         @JsModule("./font-awesome-iron-iconset/fab.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.1")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "2.1.2")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
