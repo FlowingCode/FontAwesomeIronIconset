@@ -340,6 +340,9 @@
 											<includes>
 												<include>**/*.js</include>
 											</includes>
+											<excludes>
+												<exclude>**/duotone.js</exclude>
+											</excludes>
 									</fileset>
 						      	   </filesets>
 						    	</configuration>
