@@ -336,6 +336,11 @@ public class IconsetEnumGenerator {
 		icon.setJavadocComment(new JavadocComment(String.format("Server side component for {@code %s}", decl.getName())));
 		icon.addSingleMemberAnnotation("JsModule", new StringLiteralExpr(url));
 
+		if (iconset.equals("fad")) {
+			icon.addSingleMemberAnnotation("JsModule", new StringLiteralExpr("./font-awesome-duotone/duotone.js"));
+			icon.addSingleMemberAnnotation("com.vaadin.flow.component.Tag", new StringLiteralExpr("duotone-icon"));
+		}
+
 		if (npmPackage!=null) {
 			icon.addAndGetAnnotation("NpmPackage")
 				.addPair("value", new StringLiteralExpr(npmPackage))
