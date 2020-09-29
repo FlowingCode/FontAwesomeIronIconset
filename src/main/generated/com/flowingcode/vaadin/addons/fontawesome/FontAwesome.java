@@ -29,7 +29,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import java.util.Locale;
 
 /**
- * FontAwesome 5.14.0 icons.
+ * FontAwesome 5.15.1 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -4563,6 +4563,14 @@ public final class FontAwesome {
          */
         VENUS_MARS,
         /**
+         * The solid vest icon.See <a href='https://fontawesome.com/icons/vest?style=solid'>example</a>
+         */
+        VEST,
+        /**
+         * The solid vest-patches icon.See <a href='https://fontawesome.com/icons/vest-patches?style=solid'>example</a>
+         */
+        VEST_PATCHES,
+        /**
          * The solid vial icon.See <a href='https://fontawesome.com/icons/vial?style=solid'>example</a>
          */
         VIAL,
@@ -4795,10 +4803,6 @@ public final class FontAwesome {
          * The brands adn icon.See <a href='https://fontawesome.com/icons/adn?style=brands'>example</a>
          */
         ADN,
-        /**
-         * The brands adobe icon.See <a href='https://fontawesome.com/icons/adobe?style=brands'>example</a>
-         */
-        ADOBE,
         /**
          * The brands adversal icon.See <a href='https://fontawesome.com/icons/adversal?style=brands'>example</a>
          */
@@ -5039,6 +5043,10 @@ public final class FontAwesome {
          * The brands chromecast icon.See <a href='https://fontawesome.com/icons/chromecast?style=brands'>example</a>
          */
         CHROMECAST,
+        /**
+         * The brands cloudflare icon.See <a href='https://fontawesome.com/icons/cloudflare?style=brands'>example</a>
+         */
+        CLOUDFLARE,
         /**
          * The brands cloudscale icon.See <a href='https://fontawesome.com/icons/cloudscale?style=brands'>example</a>
          */
@@ -5544,6 +5552,10 @@ public final class FontAwesome {
          */
         GRUNT,
         /**
+         * The brands guilded icon.See <a href='https://fontawesome.com/icons/guilded?style=brands'>example</a>
+         */
+        GUILDED,
+        /**
          * The brands gulp icon.See <a href='https://fontawesome.com/icons/gulp?style=brands'>example</a>
          */
         GULP,
@@ -5567,6 +5579,10 @@ public final class FontAwesome {
          * The brands hire-a-helper icon.See <a href='https://fontawesome.com/icons/hire-a-helper?style=brands'>example</a>
          */
         HIRE_A_HELPER,
+        /**
+         * The brands hive icon.See <a href='https://fontawesome.com/icons/hive?style=brands'>example</a>
+         */
+        HIVE,
         /**
          * The brands hooli icon.See <a href='https://fontawesome.com/icons/hooli?style=brands'>example</a>
          */
@@ -5600,6 +5616,10 @@ public final class FontAwesome {
          */
         IMDB,
         /**
+         * The brands innosoft icon.See <a href='https://fontawesome.com/icons/innosoft?style=brands'>example</a>
+         */
+        INNOSOFT,
+        /**
          * The brands instagram icon.See <a href='https://fontawesome.com/icons/instagram?style=brands'>example</a>
          */
         INSTAGRAM,
@@ -5607,6 +5627,10 @@ public final class FontAwesome {
          * The brands instagram-square icon.See <a href='https://fontawesome.com/icons/instagram-square?style=brands'>example</a>
          */
         INSTAGRAM_SQUARE,
+        /**
+         * The brands instalod icon.See <a href='https://fontawesome.com/icons/instalod?style=brands'>example</a>
+         */
+        INSTALOD,
         /**
          * The brands intercom icon.See <a href='https://fontawesome.com/icons/intercom?style=brands'>example</a>
          */
@@ -5860,6 +5884,10 @@ public final class FontAwesome {
          */
         NUTRITIONIX,
         /**
+         * The brands octopus-deploy icon.See <a href='https://fontawesome.com/icons/octopus-deploy?style=brands'>example</a>
+         */
+        OCTOPUS_DEPLOY,
+        /**
          * The brands odnoklassniki icon.See <a href='https://fontawesome.com/icons/odnoklassniki?style=brands'>example</a>
          */
         ODNOKLASSNIKI,
@@ -5919,6 +5947,10 @@ public final class FontAwesome {
          * The brands penny-arcade icon.See <a href='https://fontawesome.com/icons/penny-arcade?style=brands'>example</a>
          */
         PENNY_ARCADE,
+        /**
+         * The brands perbyte icon.See <a href='https://fontawesome.com/icons/perbyte?style=brands'>example</a>
+         */
+        PERBYTE,
         /**
          * The brands periscope icon.See <a href='https://fontawesome.com/icons/periscope?style=brands'>example</a>
          */
@@ -6364,6 +6396,10 @@ public final class FontAwesome {
          */
         UMBRACO,
         /**
+         * The brands uncharted icon.See <a href='https://fontawesome.com/icons/uncharted?style=brands'>example</a>
+         */
+        UNCHARTED,
+        /**
          * The brands uniregistry icon.See <a href='https://fontawesome.com/icons/uniregistry?style=brands'>example</a>
          */
         UNIREGISTRY,
@@ -6444,6 +6480,10 @@ public final class FontAwesome {
          */
         VUEJS,
         /**
+         * The brands watchman-monitoring icon.See <a href='https://fontawesome.com/icons/watchman-monitoring?style=brands'>example</a>
+         */
+        WATCHMAN_MONITORING,
+        /**
          * The brands waze icon.See <a href='https://fontawesome.com/icons/waze?style=brands'>example</a>
          */
         WAZE,
@@ -6487,6 +6527,10 @@ public final class FontAwesome {
          * The brands wizards-of-the-coast icon.See <a href='https://fontawesome.com/icons/wizards-of-the-coast?style=brands'>example</a>
          */
         WIZARDS_OF_THE_COAST,
+        /**
+         * The brands wodu icon.See <a href='https://fontawesome.com/icons/wodu?style=brands'>example</a>
+         */
+        WODU,
         /**
          * The brands wolf-pack-battalion icon.See <a href='https://fontawesome.com/icons/wolf-pack-battalion?style=brands'>example</a>
          */
