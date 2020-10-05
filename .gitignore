@@ -8,3 +8,4 @@ target
 /webpack.generated.js
 /package.json
 /node
+/src/main/sprites
