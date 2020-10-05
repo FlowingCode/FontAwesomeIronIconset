@@ -29,7 +29,7 @@
         <codegen.skipDownload>false</codegen.skipDownload>
         <codegen.embedded>false</codegen.embedded>
         <npm.package>@flowingcode/font-awesome-iron-iconset</npm.package>
-        <npm.version>2.1.2</npm.version>
+        <npm.version>2.2.0</npm.version>
     </properties>
     
 	<scm>
