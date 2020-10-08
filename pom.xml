@@ -9,7 +9,7 @@
     <description>Iron iconset based on FontAwesome</description>
     
     <properties>
-        <vaadin.version>14.0.10</vaadin.version>
+        <vaadin.version>14.4.0</vaadin.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <jetty.version>9.4.15.v20190215</jetty.version>
