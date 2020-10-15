@@ -1,5 +1,6 @@
 package com.flowingcode.vaadin.addons.fontawesome;
 
+import com.flowingcode.vaadin.addons.DemoLayout;
 import com.vaadin.flow.component.checkbox.Checkbox;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.StyleSheet;
@@ -18,7 +19,7 @@ import com.vaadin.flow.router.Route;
 @Uses(FontAwesome.Brands.Icon.class)
 @StyleSheet("./styles/shared-styles.css")
 @CssImport(value = "./styles/vaadin-button.css", themeFor = "vaadin-button")
-@Route("fontawesome")
+@Route(value = "fontawesome", layout = DemoLayout.class)
 public class FontawesomeDemoView extends VerticalLayout {
 
 	private static final String GALLERY_DEMO = "Icons Gallery";
