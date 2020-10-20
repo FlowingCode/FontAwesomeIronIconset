@@ -20,6 +20,7 @@ import java.util.stream.Stream;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 
+@SuppressWarnings("serial")
 public class IconsGalleryView extends Div {
 
 	// this demo uses reflection, for a simple example that does not use reflection
