@@ -20,3 +20,102 @@
 vaadin-checkbox.smallcheckbox {
 	font-size: small;
 }
+
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+iron-icon {
+	margin: 4px;
+}
+
+vaadin-dialog-overlay {
+    max-width: 80%;
+    left: -32px;
+}
+
+.main-icon-view {
+	margin: 8px;
+}
+
+.main-icon-view .flex {
+	flex-wrap: wrap;
+}
+
+.main-icon-view vaadin-button  {
+	margin: 4px;
+	margin-bottom: 8px;
+    background: white;
+  		color: black;
+  		cursor: pointer;
+  		min-width: 240px;
+  		flex-grow: 0;
+}
+
+.main-icon-view vaadin-button iron-icon {
+    position: absolute;
+    top: 2px;
+    left: 2px;		
+}
+
+.main-icon-view vaadin-button span {
+    position: absolute;
+  		top: 8px;
+  		left: 34px;
+  	}
+
+.main-icon-view .no-results {
+	margin-left: 16px;
+}
+
+.single-icon-view iron-icon {
+	margin: 16px;
+}
+
+.single-icon-view iron-icon:nth-of-type(1) {
+	width:  16px;
+	height: 16px;
+	margin-bottom: 4px;
+}
+
+.single-icon-view iron-icon:nth-of-type(2) {
+	width:  24px;
+	height: 24px;
+	margin-bottom: 3px;
+}
+
+.single-icon-view iron-icon:nth-of-type(3) {
+	width:  48px;
+	height: 48px;
+	margin-bottom: 0px;
+}
+
+.single-icon-view vaadin-vertical-layout {
+	flex-grow: 1;
+}
+
+.single-icon-view .main-layout {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.details-dialog {
+	overflow: hidden;	
+}
+
+.details-dialog .close-button {
+  	color: black;
+    background: white;
+ 	cursor: pointer;
+ 	margin-left: auto;
+}
+  	
+.details-dialog .close-button:hover::before { 
+	background: white;
+}
+  	
+.details-dialog .close-button:hover::before {
+	opacity: 0 !important;
+}

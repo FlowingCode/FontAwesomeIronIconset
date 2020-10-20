@@ -19,7 +19,6 @@ import com.vaadin.flow.router.Route;
 @Uses(FontAwesome.Solid.Icon.class)
 @Uses(FontAwesome.Brands.Icon.class)
 @StyleSheet("context://frontend/styles/demo-styles.css")
-@StyleSheet("context://frontend/styles/shared-styles.css")
 @CssImport(value = "./styles/vaadin-button.css", themeFor = "vaadin-button")
 @Route(value = "fontawesome", layout = DemoLayout.class)
 public class FontawesomeDemoView extends VerticalLayout {
