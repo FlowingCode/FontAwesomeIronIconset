@@ -29,7 +29,6 @@ import com.vaadin.flow.router.Route;
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings("serial")
-@Route("simple")
 public class SimpleDemoView extends VerticalLayout {
 
 	public SimpleDemoView() {
