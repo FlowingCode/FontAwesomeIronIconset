@@ -29,9 +29,9 @@ import com.vaadin.flow.router.Route;
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings("serial")
-public class SimpleDemoView extends VerticalLayout {
+public class SimpleDemo extends VerticalLayout {
 
-	public SimpleDemoView() {
+	public SimpleDemo() {
 		
 		//add a button with an iron icon
 		add(new Button("Save", FontAwesome.Regular.SAVE.create(), ev->{
