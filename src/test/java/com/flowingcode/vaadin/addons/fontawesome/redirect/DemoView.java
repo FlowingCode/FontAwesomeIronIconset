@@ -18,8 +18,9 @@
  * #L%
  */
 
-package com.flowingcode.vaadin.addons.fontawesome;
+package com.flowingcode.vaadin.addons.fontawesome.redirect;
 
+import com.flowingcode.vaadin.addons.fontawesome.FontawesomeDemoView;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.BeforeEnterEvent;
 import com.vaadin.flow.router.BeforeEnterObserver;
