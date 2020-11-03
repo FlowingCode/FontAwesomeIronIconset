@@ -21,7 +21,7 @@
 package com.flowingcode.vaadin.addons.fontawesome;
 
 import java.util.stream.Stream;
-
+import com.flowingcode.vaadin.addons.DemoLayout;
 import com.vaadin.flow.component.AttachEvent;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H4;
@@ -38,7 +38,7 @@ import com.vaadin.flow.router.WildcardParameter;
  * @author Javier Godoy / Flowing Code
  */
 
-@Route("view")
+@Route(value = "fontawesome/view", layout = DemoLayout.class)
 @SuppressWarnings("serial")
 public class DemoViewSingle extends Div implements HasUrlParameter<String> {
 		
