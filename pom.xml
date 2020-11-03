@@ -442,7 +442,7 @@
 										<exclude>META-INF/resources/frontend/styles/shared-styles.css</exclude>
 										<exclude>**/test/*</exclude>
 										<exclude>**/integration/*</exclude>
-										<exclude>**/DemoView.class</exclude>
+										<exclude>**/redirect/*</exclude>
 										<exclude>**/DemoLayout.class</exclude>
 									</excludes>
 								</configuration>
