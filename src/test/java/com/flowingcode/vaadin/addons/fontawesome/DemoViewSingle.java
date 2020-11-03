@@ -38,7 +38,7 @@ import com.vaadin.flow.router.WildcardParameter;
  * @author Javier Godoy / Flowing Code
  */
 
-@Route(value = "fontawesome/view", layout = DemoLayout.class)
+@Route(value = "font-awesome-iron-iconset/view", layout = DemoLayout.class)
 @SuppressWarnings("serial")
 public class DemoViewSingle extends Div implements HasUrlParameter<String> {
 		
