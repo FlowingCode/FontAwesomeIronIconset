@@ -33,7 +33,7 @@ import com.vaadin.flow.router.Route;
 @Uses(FontAwesome.Brands.Icon.class)
 @StyleSheet("context://frontend/styles/font-awesome/demo-styles.css")
 @CssImport(value = "./styles/vaadin-button.css", themeFor = "vaadin-button")
-@Route(value = "fontawesome", layout = DemoLayout.class)
+@Route(value = "font-awesome-iron-iconset", layout = DemoLayout.class)
 public class FontawesomeDemoView extends VerticalLayout {
 
 	private static final String GALLERY_DEMO = "Icons Gallery";
