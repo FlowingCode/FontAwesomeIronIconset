@@ -20,6 +20,7 @@
 package com.flowingcode.vaadin.addons.fontawesome;
 
 import com.flowingcode.vaadin.addons.DemoLayout;
+import com.flowingcode.vaadin.addons.GithubLink;
 import com.flowingcode.vaadin.addons.demo.impl.TabbedDemoImpl;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.StyleSheet;
@@ -34,6 +35,7 @@ import com.vaadin.flow.router.Route;
 @StyleSheet("context://frontend/styles/font-awesome/demo-styles.css")
 @CssImport(value = "./styles/vaadin-button.css", themeFor = "vaadin-button")
 @Route(value = "font-awesome-iron-iconset", layout = DemoLayout.class)
+@GithubLink("https://github.com/FlowingCode/FontAwesomeIronIconset")
 public class FontawesomeDemoView extends VerticalLayout {
 
 	private static final String GALLERY_DEMO = "Icons Gallery";
