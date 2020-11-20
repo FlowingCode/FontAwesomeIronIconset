@@ -21,7 +21,7 @@ package com.flowingcode.vaadin.addons.fontawesome;
 
 import com.flowingcode.vaadin.addons.DemoLayout;
 import com.flowingcode.vaadin.addons.GithubLink;
-import com.flowingcode.vaadin.addons.demo.impl.TabbedDemoImpl;
+import com.flowingcode.vaadin.addons.demo.TabbedDemo;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.dependency.Uses;
@@ -36,7 +36,7 @@ import com.vaadin.flow.router.Route;
 @CssImport(value = "./styles/vaadin-button.css", themeFor = "vaadin-button")
 @Route(value = "font-awesome-iron-iconset", layout = DemoLayout.class)
 @GithubLink("https://github.com/FlowingCode/FontAwesomeIronIconset")
-public class FontawesomeDemoView extends VerticalLayout {
+public class FontawesomeDemoView extends TabbedDemo {
 
 	private static final String GALLERY_DEMO = "Icons Gallery";
 	private static final String SIMPLE_DEMO = "Simple Demo";
@@ -45,10 +45,9 @@ public class FontawesomeDemoView extends VerticalLayout {
 	private static final String TEMPLATERENDERER_SOURCE = "https://github.com/FlowingCode/FontAwesomeIronIconset/blob/master/src/test/java/com/flowingcode/vaadin/addons/fontawesome/TemplateRendererDemo.java";
 
 	public FontawesomeDemoView() {
-		TabbedDemoImpl<IconsGalleryView> faDemo = new TabbedDemoImpl<>(new IconsGalleryView(), GALLERY_DEMO, null);
-		faDemo.addDemo(new SimpleDemo(), SIMPLE_DEMO, SIMPLE_SOURCE);
-		faDemo.addDemo(new TemplateRendererDemo(), TEMPLATERENDERER_DEMO, TEMPLATERENDERER_SOURCE);
+		addDemo(new IconsGalleryView(), GALLERY_DEMO, null);
+		addDemo(new SimpleDemo(), SIMPLE_DEMO, SIMPLE_SOURCE);
+		addDemo(new TemplateRendererDemo(), TEMPLATERENDERER_DEMO, TEMPLATERENDERER_SOURCE);
 		setSizeFull();
-		add(faDemo);
 	}
 }
