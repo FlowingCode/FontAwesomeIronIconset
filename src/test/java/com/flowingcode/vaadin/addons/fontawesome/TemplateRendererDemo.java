@@ -42,7 +42,7 @@ public class TemplateRendererDemo extends VerticalLayout {
 		personList.add(new Person(104, "Aaron Atkinson", 18));
 		personList.add(new Person(105, "Jack Woodward", 28));
 		Grid<Person> grid = new Grid<>();
-        grid.setDataProvider(new ListDataProvider<>(personList));
+		grid.setDataProvider(new ListDataProvider<>(personList));
 
 		grid.addColumn(TemplateRenderer.<Person>of(
 				"<iron-icon icon='" + FontAwesome.Solid.CHECK_CIRCLE.getIconName() + "'></iron-icon>[[item.id]]")
