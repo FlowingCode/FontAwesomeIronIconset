@@ -79,7 +79,9 @@ public class IconsetEnumGenerator {
 
 	private static final String RESOURCE_PATH = "font-awesome-iron-iconset";
 
-	private static final String DEMO_URL = "https://fontawesome.com/icons/%2$s?style=%1$s";
+	private static final String DEMO_URL5 = "https://fontawesome.com/%3$sicons/%2$s?style=%1$s";
+	 
+	private static final String DEMO_URL6 = "https://fontawesome.com/%3$sicons/%2$s";
 
 	private static String fontAwesomeVersion;
 
@@ -104,6 +106,7 @@ public class IconsetEnumGenerator {
 		put("fab", "brands.svg");
 		put("fal", "light.svg");
 		put("fad", "duotone.svg");
+		put("thin", "thin.svg");
 	}};
 
 	public static void main(String[] args) throws IOException {
@@ -291,10 +294,18 @@ public class IconsetEnumGenerator {
 				hasUnderscorePrefix = true;
 			}
 
-			String seeExample = "See <a href='"+DEMO_URL+"'>example</a>";
-
+			String demoUrl;
+			if (fontAwesomeVersion.startsWith("5")) {
+				demoUrl = DEMO_URL5;
+			} else {
+				demoUrl = DEMO_URL6;
+			}
+			
+			String seeExample = "See <a href='"+demoUrl+"'>example</a>";
+			
+			String version = "v"+fontAwesomeVersion.replaceFirst("\\D+(\\d+\\.\\d+).*", "$1/");
 			EnumConstantDeclaration constant = decl.addEnumConstant(name);
-			constant.setJavadocComment(new JavadocComment(String.format("The %1$s %2$s icon."+seeExample, enumName.toLowerCase(Locale.ENGLISH), icon)));
+			constant.setJavadocComment(new JavadocComment(String.format("The %1$s %2$s icon."+seeExample, enumName.toLowerCase(Locale.ENGLISH), icon, version)));
 		}
 
 		String url = "./"+RESOURCE_PATH+"/"+iconset+".js";
