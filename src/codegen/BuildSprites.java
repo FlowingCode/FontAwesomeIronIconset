@@ -64,14 +64,15 @@ public class BuildSprites {
 	
 
 	public static void main(String[] args) throws IOException {
-
-		if (System.getProperty("codegen.icons")==null) {
+		
+		iconsDirectory = new File(getRequiredProperty("codegen.icons")); //the location of the icons
+		spritesDirectory = new File(getRequiredProperty("codegen.sprites")); //the location of the sprites
+		
+		if (!iconsDirectory.exists()) {
 		  System.out.println("Skipping build-sprites phase");
 		  return;
 		}
 		
-		iconsDirectory = new File(getRequiredProperty("codegen.icons")); //the location of the icons
-		spritesDirectory = new File(getRequiredProperty("codegen.sprites")); //the location of the sprites
 		createDirectory(spritesDirectory);
 
 		execute();
