@@ -20,6 +20,7 @@
         <fontawesome.version>Pro 5.15.4</fontawesome.version>
         <project.build.generatedResources>${project.basedir}/src/main/resources/META-INF/resources/frontend</project.build.generatedResources>
         <codegen.sprites>${project.basedir}/src/main/sprites</codegen.sprites>
+        <codegen.icons>${project.basedir}/src/main/icons</codegen.icons>
         <codegen.skipDownload>true</codegen.skipDownload>
         <codegen.embedded>true</codegen.embedded>
          -->
@@ -406,6 +407,7 @@
 									<argument>clean</argument>
 									<argument>compile</argument>
 									<argument>exec:java@download</argument>
+									<argument>exec:java@build-sprites</argument>
 									<argument>exec:java@generate</argument>
 									
 									<!-- The tag of FortAwesome/Font-Awesome that will be checked out -->
@@ -413,6 +415,9 @@
 									
 									<!-- Configure to true for skipping the download phase-->
 									<argument>-Dcodegen.skipDownload=${codegen.skipDownload}</argument>
+									
+									<!-- Configure for building the sprites from individual icon files-->
+									<argument>-Dcodegen.icons=${codegen.icons}</argument>
 									
 									<!-- Location of the SVG sprites -->
 									<argument>-Dcodegen.sprites=${codegen.sprites}</argument>
