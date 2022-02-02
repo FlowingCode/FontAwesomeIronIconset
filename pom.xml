@@ -170,6 +170,7 @@
 				  <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
 				  <excludes>
 					<exclude>**/main/javascript/font-awesome-iron-iconset/*</exclude>
+					<exclude>**/main/icons/*</exclude>
 				  </excludes>
 				  <extraExtensions>
 					<xslt>xml</xslt>
