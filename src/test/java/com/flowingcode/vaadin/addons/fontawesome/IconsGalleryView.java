@@ -90,7 +90,7 @@ public class IconsGalleryView extends Div {
 
 	private void showDetails(Object icon) {
 		DemoViewSingle view = new DemoViewSingle();
-		Button closeButton = new Button(FontAwesome.Regular.WINDOW_CLOSE.create());
+		Button closeButton = new Button(FontAwesome.Regular.SQUARE_X.create());
 		closeButton.addClassName("close-button");
 		HorizontalLayout top = new HorizontalLayout(closeButton);
 

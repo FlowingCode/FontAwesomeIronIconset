@@ -34,7 +34,7 @@ public class SimpleDemo extends VerticalLayout {
 	public SimpleDemo() {
 		
 		//add a button with an iron icon
-		add(new Button("Save", FontAwesome.Regular.SAVE.create(), ev->{
+		add(new Button("Save", FontAwesome.Regular.FLOPPY_DISK.create(), ev->{
 			Notification.show("Saved!");
 		}));
 				

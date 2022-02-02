@@ -45,7 +45,7 @@ public class TemplateRendererDemo extends VerticalLayout {
 		grid.setDataProvider(new ListDataProvider<>(personList));
 
 		grid.addColumn(TemplateRenderer.<Person>of(
-				"<iron-icon icon='" + FontAwesome.Solid.CHECK_CIRCLE.getIconName() + "'></iron-icon>[[item.id]]")
+				"<iron-icon icon='" + FontAwesome.Solid.CIRCLE_CHECK.getIconName() + "'></iron-icon>[[item.id]]")
 				.withProperty("id", Person::getId)).setHeader("ID");
 		grid.addColumn(TemplateRenderer.<Person>of(
 				"<iron-icon icon='" + FontAwesome.Regular.KEYBOARD.getIconName() + "'></iron-icon>[[item.name]]")
