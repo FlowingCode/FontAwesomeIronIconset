@@ -106,6 +106,16 @@
 							</configuration>
 						</execution>
 						<execution>
+							<id>build-sprites</id>
+							<phase>prepare-package</phase>
+							<goals>
+								<goal>java</goal>
+							</goals>
+							<configuration>
+								<mainClass>BuildSprites</mainClass>
+							</configuration>
+						</execution>
+						<execution>
 							<id>generate</id>
 							<phase>prepare-package</phase>
 							<goals>
