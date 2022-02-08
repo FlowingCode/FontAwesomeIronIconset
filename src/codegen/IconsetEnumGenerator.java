@@ -303,7 +303,7 @@ public class IconsetEnumGenerator {
 			
 			String seeExample = "See <a href='"+demoUrl+"'>example</a>";
 			
-			String version = "v"+fontAwesomeVersion.replaceFirst("\\D+(\\d+\\.\\d+).*", "$1/");
+			String version = "v"+fontAwesomeVersion.replaceFirst("^\\D*(\\d+\\.\\d+).*", "$1/");
 			EnumConstantDeclaration constant = decl.addEnumConstant(name);
 			constant.setJavadocComment(new JavadocComment(String.format("The %1$s %2$s icon."+seeExample, enumName.toLowerCase(Locale.ENGLISH), icon, version)));
 		}
