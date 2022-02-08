@@ -29,7 +29,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import java.util.Locale;
 
 /**
- * FontAwesome 5.15.3 icons.
+ * FontAwesome 5.15.4 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -6351,10 +6351,6 @@ public final class FontAwesome {
          * The brands trello icon.See <a href='https://fontawesome.com/icons/trello?style=brands'>example</a>
          */
         TRELLO,
-        /**
-         * The brands tripadvisor icon.See <a href='https://fontawesome.com/icons/tripadvisor?style=brands'>example</a>
-         */
-        TRIPADVISOR,
         /**
          * The brands tumblr icon.See <a href='https://fontawesome.com/icons/tumblr?style=brands'>example</a>
          */
