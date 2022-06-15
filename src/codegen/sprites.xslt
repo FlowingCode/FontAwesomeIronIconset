@@ -30,7 +30,7 @@
   	<xsl:comment>
   		<xsl:value-of select="$license"/>
   	</xsl:comment>
-  	<xsl:element name="iron-iconset-svg">
+  	<xsl:element name="vaadin-iconset">
   		<xsl:attribute name="name">
   			<xsl:value-of select="$family"/>
   		</xsl:attribute>

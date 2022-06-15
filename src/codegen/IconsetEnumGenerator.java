@@ -237,7 +237,6 @@ public class IconsetEnumGenerator {
 	private static CompilationUnit createCompilationUnit() throws FileNotFoundException {
 		CompilationUnit cu = new CompilationUnit();
 		cu.setPackageDeclaration(PACKAGE_NAME);
-		cu.addImport("com.vaadin.flow.component.icon.IronIcon");
 		cu.addImport("com.vaadin.flow.component.dependency.JsModule");
 		if (npmPackage!=null) {
 			cu.addImport("com.vaadin.flow.component.dependency.NpmPackage");
@@ -279,7 +278,7 @@ public class IconsetEnumGenerator {
 			Stream.of(
 				String.format("Enumeration of all icons in the FontAwesome %s iconset", enumName.toLowerCase(Locale.ENGLISH)),
 				"<p>",
-				"These instances can be used to create {@link IronIcon} components either by using",
+				"These instances can be used to create {@link Icon} components either by using",
 				"their {@link #create()} method or by passing them to Icon's constructor.",
 				"",
 				"@author Javier Godoy / Flowing Code"
@@ -324,16 +323,16 @@ public class IconsetEnumGenerator {
 		getIconPart.getBody().get().addStatement(new ReturnStmt("this.name().toLowerCase(Locale.ENGLISH).replace('_', '-')"+removeUnderscorePrefix));
 
 		MethodDeclaration create = decl.addMethod("create", PUBLIC);
-		create.setJavadocComment(new JavadocComment("Create a new {@link IronIcon} instance with the icon determined by the name.\n@return a new instance of {@link IronIcon} component"));
+		create.setJavadocComment(new JavadocComment("Create a new {@link Icon} instance with the icon determined by the name.\n@return a new instance of {@link Icon} component"));
 		create.setType("Icon");
 		create.getBody().get().addStatement(new ReturnStmt("new Icon(this.getIconPart())"));
 
 		create = decl.addMethod("create", PUBLIC);
-		create.setJavadocComment(new JavadocComment("Create a new {@link IronIcon} instance with the icon determined by the name and a listener for click events.\n"
+		create.setJavadocComment(new JavadocComment("Create a new {@link Icon} instance with the icon determined by the name and a listener for click events.\n"
 				+ "@param listener the event listener for click events\n"
-				+ "@return a new instance of {@link IronIcon} component"));
+				+ "@return a new instance of {@link Icon} component"));
 		create.setType("Icon");
-		create.addParameter("ComponentEventListener<ClickEvent<IronIcon>>", "listener");
+		create.addParameter("ComponentEventListener<ClickEvent<com.vaadin.flow.component.icon.Icon>>", "listener");
 		create.getBody().get().addStatement(parseStatement("Icon icon = create();"));
 		create.getBody().get().addStatement(parseStatement("icon.addClickListener(listener);"));
 		create.getBody().get().addStatement(new ReturnStmt("icon"));
@@ -342,8 +341,8 @@ public class IconsetEnumGenerator {
 		ClassOrInterfaceDeclaration icon = new ClassOrInterfaceDeclaration();
 		icon.setName("Icon");
 		icon.addModifier(PUBLIC, STATIC, FINAL);
-		icon.addExtendedType("IronIcon");
-		icon.addImplementedType("ClickNotifier<IronIcon>");
+		icon.addExtendedType("com.vaadin.flow.component.icon.Icon");
+		icon.addImplementedType("ClickNotifier<com.vaadin.flow.component.icon.Icon>");
 		icon.setJavadocComment(new JavadocComment(String.format("Server side component for {@code %s}", decl.getName())));
 		icon.addSingleMemberAnnotation("JsModule", new StringLiteralExpr(url));
 

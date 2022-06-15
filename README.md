@@ -14,7 +14,8 @@ Integration of FontAwesome and iron-icon for Vaadin 10+
 
 - **Version 1.0.4** (based on FontAwesome 5.11.2) is compatible with Vaadin 10-13 and Vaadin 14 in bower mode 
 - **Version 2.2.2** (based on FontAwesome 5.15.4) is compatible with Vaadin 14+ in npm mode.
-- **Version 3.0.0** (based on the latest version of FontAwesome 6) is compatible with Vaadin 14+ in npm mode.
+- **Version 3.0.x** (based on the latest version of FontAwesome 6) is compatible with Vaadin 14+ in npm mode.
+- **Version 4.0.x** (based on the latest version of FontAwesome 6) is compatible with Vaadin 23.
 
 For details on which version of FontAwesome is used by each release of this addon, see the [Release Notes](https://github.com/FlowingCode/FontAwesomeIronIconset/releases)
 

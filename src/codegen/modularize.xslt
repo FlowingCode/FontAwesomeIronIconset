@@ -26,18 +26,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/*">
 	<xsl:text disable-output-escaping="yes"
 >
-import '@polymer/iron-icon/iron-icon.js';
-import '@polymer/iron-iconset-svg/iron-iconset-svg.js';
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+import '@vaadin/icon/vaadin-iconset.js';
+import '@vaadin/icon/vaadin-icon.js';
 
-const template = html`
+const $_documentContainer = document.createElement('template');
+
+$_documentContainer.innerHTML = `
 </xsl:text>
     <xsl:copy-of select="."/>
     
     <xsl:text disable-output-escaping="yes"
 >`;
 
-document.head.appendChild(template.content);
+document.head.appendChild($_documentContainer.content);
 </xsl:text>
 </xsl:template>
 

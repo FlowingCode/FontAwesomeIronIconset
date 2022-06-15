@@ -20,7 +20,6 @@
 
 package com.flowingcode.vaadin.addons.fontawesome;
 
-import com.vaadin.flow.component.icon.IronIcon;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.ClickEvent;
@@ -38,7 +37,7 @@ public final class FontAwesome {
     /**
      * Enumeration of all icons in the FontAwesome regular iconset
      * <p>
-     * These instances can be used to create {@link IronIcon} components either by using
+     * These instances can be used to create {@link Icon} components either by using
      * their {@link #create()} method or by passing them to Icon's constructor.
      *
      * @author Javier Godoy / Flowing Code
@@ -708,19 +707,19 @@ public final class FontAwesome {
         }
 
         /**
-         * Create a new {@link IronIcon} instance with the icon determined by the name.
-         * @return a new instance of {@link IronIcon} component
+         * Create a new {@link Icon} instance with the icon determined by the name.
+         * @return a new instance of {@link Icon} component
          */
         public Icon create() {
             return new Icon(this.getIconPart());
         }
 
         /**
-         * Create a new {@link IronIcon} instance with the icon determined by the name and a listener for click events.
+         * Create a new {@link Icon} instance with the icon determined by the name and a listener for click events.
          * @param listener the event listener for click events
-         * @return a new instance of {@link IronIcon} component
+         * @return a new instance of {@link Icon} component
          */
-        public Icon create(ComponentEventListener<ClickEvent<IronIcon>> listener) {
+        public Icon create(ComponentEventListener<ClickEvent<com.vaadin.flow.component.icon.Icon>> listener) {
             Icon icon = create();
             icon.addClickListener(listener);
             return icon;
@@ -730,9 +729,9 @@ public final class FontAwesome {
          * Server side component for {@code Regular}
          */
         @JsModule("./font-awesome-iron-iconset/far.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "3.0.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "4.0.0")
         @SuppressWarnings("serial")
-        public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
+        public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
              Icon(String icon) {
                 super(ICONSET, icon);
@@ -743,7 +742,7 @@ public final class FontAwesome {
     /**
      * Enumeration of all icons in the FontAwesome solid iconset
      * <p>
-     * These instances can be used to create {@link IronIcon} components either by using
+     * These instances can be used to create {@link Icon} components either by using
      * their {@link #create()} method or by passing them to Icon's constructor.
      *
      * @author Javier Godoy / Flowing Code
@@ -5281,19 +5280,19 @@ public final class FontAwesome {
         }
 
         /**
-         * Create a new {@link IronIcon} instance with the icon determined by the name.
-         * @return a new instance of {@link IronIcon} component
+         * Create a new {@link Icon} instance with the icon determined by the name.
+         * @return a new instance of {@link Icon} component
          */
         public Icon create() {
             return new Icon(this.getIconPart());
         }
 
         /**
-         * Create a new {@link IronIcon} instance with the icon determined by the name and a listener for click events.
+         * Create a new {@link Icon} instance with the icon determined by the name and a listener for click events.
          * @param listener the event listener for click events
-         * @return a new instance of {@link IronIcon} component
+         * @return a new instance of {@link Icon} component
          */
-        public Icon create(ComponentEventListener<ClickEvent<IronIcon>> listener) {
+        public Icon create(ComponentEventListener<ClickEvent<com.vaadin.flow.component.icon.Icon>> listener) {
             Icon icon = create();
             icon.addClickListener(listener);
             return icon;
@@ -5303,9 +5302,9 @@ public final class FontAwesome {
          * Server side component for {@code Solid}
          */
         @JsModule("./font-awesome-iron-iconset/fas.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "3.0.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "4.0.0")
         @SuppressWarnings("serial")
-        public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
+        public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
              Icon(String icon) {
                 super(ICONSET, icon);
@@ -5316,7 +5315,7 @@ public final class FontAwesome {
     /**
      * Enumeration of all icons in the FontAwesome brands iconset
      * <p>
-     * These instances can be used to create {@link IronIcon} components either by using
+     * These instances can be used to create {@link Icon} components either by using
      * their {@link #create()} method or by passing them to Icon's constructor.
      *
      * @author Javier Godoy / Flowing Code
@@ -7178,19 +7177,19 @@ public final class FontAwesome {
         }
 
         /**
-         * Create a new {@link IronIcon} instance with the icon determined by the name.
-         * @return a new instance of {@link IronIcon} component
+         * Create a new {@link Icon} instance with the icon determined by the name.
+         * @return a new instance of {@link Icon} component
          */
         public Icon create() {
             return new Icon(this.getIconPart());
         }
 
         /**
-         * Create a new {@link IronIcon} instance with the icon determined by the name and a listener for click events.
+         * Create a new {@link Icon} instance with the icon determined by the name and a listener for click events.
          * @param listener the event listener for click events
-         * @return a new instance of {@link IronIcon} component
+         * @return a new instance of {@link Icon} component
          */
-        public Icon create(ComponentEventListener<ClickEvent<IronIcon>> listener) {
+        public Icon create(ComponentEventListener<ClickEvent<com.vaadin.flow.component.icon.Icon>> listener) {
             Icon icon = create();
             icon.addClickListener(listener);
             return icon;
@@ -7200,9 +7199,9 @@ public final class FontAwesome {
          * Server side component for {@code Brands}
          */
         @JsModule("./font-awesome-iron-iconset/fab.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "3.0.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "4.0.0")
         @SuppressWarnings("serial")
-        public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
+        public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
              Icon(String icon) {
                 super(ICONSET, icon);
