@@ -21,12 +21,13 @@ Copyright 2022 Fonticons, Inc.
   limitations under the License.
  */
 
-import '@polymer/iron-icon/iron-icon.js';
-import '@polymer/iron-iconset-svg/iron-iconset-svg.js';
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+import '@vaadin/icon/vaadin-iconset.js';
+import '@vaadin/icon/vaadin-icon.js';
 
-const template = html`
-<iron-iconset-svg name="far">
+const $_documentContainer = document.createElement('template');
+
+$_documentContainer.innerHTML = `
+<vaadin-iconset name="far">
    <svg xmlns:svg="http://www.w3.org/2000/svg">
       <defs>
          <g id="address-book">
@@ -997,6 +998,6 @@ const template = html`
          </g>
       </defs>
    </svg>
-</iron-iconset-svg>`;
+</vaadin-iconset>`;
 
-document.head.appendChild(template.content);
+document.head.appendChild($_documentContainer.content);

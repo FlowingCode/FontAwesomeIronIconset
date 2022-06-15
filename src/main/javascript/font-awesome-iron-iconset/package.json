@@ -1,6 +1,6 @@
 {
   "name": "@flowingcode/font-awesome-iron-iconset",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Iron iconset based on FontAwesome",
   "main": "index.js",
   "repository": {
@@ -20,8 +20,6 @@
   },
   "homepage": "https://github.com/FlowingCode/FontAwesomeIronIconset#readme",
   "dependencies": {
-    "@polymer/iron-icon": "3.0.1",
-    "@polymer/iron-iconset-svg": "3.0.1",
-    "@polymer/polymer": "^3.0.0"
+    "@vaadin/icon": "23.1.0"
   }
 }

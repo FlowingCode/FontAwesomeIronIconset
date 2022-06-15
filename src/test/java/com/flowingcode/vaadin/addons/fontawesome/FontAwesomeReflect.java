@@ -28,30 +28,31 @@ import java.util.List;
 import com.flowingcode.vaadin.addons.fontawesome.FontAwesome.Brands;
 import com.flowingcode.vaadin.addons.fontawesome.FontAwesome.Regular;
 import com.flowingcode.vaadin.addons.fontawesome.FontAwesome.Solid;
+import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.IronIcon;
 
 /**
- * Reflection utilities for {@link IronIconEnum}.
+ * Reflection utilities for FontAwesome demo.
  * @author Javier Godoy / Flowing Code
  */
 public abstract class FontAwesomeReflect {
 	
 	private FontAwesomeReflect() {}
 		
-	/**Return a list of all the {@code IronIconEnum} types defined in the addon.*/
+	/**Return a list of all the {@code FontAwesome} icon types defined in the addon.*/
 	public static List<Class<?>> getIconTypes() {
 		return Arrays.asList(Brands.class, Regular.class, Solid.class);
 	}
 	
-	/**Return the iconset name of the given {@code IronIconEnum} type.*/
+	/**Return the iconset name of the given {@code FontAwesome} icon type.*/
 	public static String getIconset(Class<?> type) {
 		return getStaticField("ICONSET", type); 
 	}
 	
-	/**Return the iconset name of the given {@code IronIconEnum} type.*/
-	public static IronIcon create(Object _icon) {
+	/**Return the iconset name of the given {@link Icon}.*/
+	public static Icon create(Object _icon) {
 		try {
-			return (IronIcon) _icon.getClass().getMethod("create").invoke(_icon);
+			return (Icon) _icon.getClass().getMethod("create").invoke(_icon);
 		} catch (RuntimeException e) {
 			throw e;
 		} catch (Exception e) {
