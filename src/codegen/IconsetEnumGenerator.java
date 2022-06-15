@@ -241,6 +241,7 @@ public class IconsetEnumGenerator {
 		if (npmPackage!=null) {
 			cu.addImport("com.vaadin.flow.component.dependency.NpmPackage");
 		}
+		cu.addImport("com.vaadin.flow.component.icon.IconFactory");
 		cu.addImport("com.vaadin.flow.component.ClickEvent");
 		cu.addImport("com.vaadin.flow.component.ClickNotifier");
 		cu.addImport("com.vaadin.flow.component.ComponentEventListener");
@@ -272,7 +273,7 @@ public class IconsetEnumGenerator {
 	 	EnumDeclaration decl = new EnumDeclaration();
 	 	decl.setName(enumName);
 	 	decl.addModifier(PUBLIC);
-		//decl.addImplementedType("IronIconEnum");
+		decl.addImplementedType("IconFactory");
 
 		decl.setJavadocComment(new JavadocComment(
 			Stream.of(

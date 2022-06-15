@@ -22,6 +22,7 @@ package com.flowingcode.vaadin.addons.fontawesome;
 
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
+import com.vaadin.flow.component.icon.IconFactory;
 import com.vaadin.flow.component.ClickEvent;
 import com.vaadin.flow.component.ClickNotifier;
 import com.vaadin.flow.component.ComponentEventListener;
@@ -42,7 +43,7 @@ public final class FontAwesome {
      *
      * @author Javier Godoy / Flowing Code
      */
-    public enum Regular {
+    public enum Regular implements IconFactory {
 
         /**
          * The regular address-book icon.See <a href='https://fontawesome.com/v6.0/icons/address-book'>example</a>
@@ -747,7 +748,7 @@ public final class FontAwesome {
      *
      * @author Javier Godoy / Flowing Code
      */
-    public enum Solid {
+    public enum Solid implements IconFactory {
 
         /**
          * The solid 0 icon.See <a href='https://fontawesome.com/v6.0/icons/0'>example</a>
@@ -5320,7 +5321,7 @@ public final class FontAwesome {
      *
      * @author Javier Godoy / Flowing Code
      */
-    public enum Brands {
+    public enum Brands implements IconFactory {
 
         /**
          * The brands 42-group icon.See <a href='https://fontawesome.com/v6.0/icons/42-group'>example</a>
