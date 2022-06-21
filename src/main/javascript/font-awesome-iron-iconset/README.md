@@ -1,6 +1,6 @@
 # Polymer Iconset based on FontAwesome
 
-Integration of FontAwesome and Polymer iron-icon
+Integration of FontAwesome and Vaadin icon
 
 ## Versions
 

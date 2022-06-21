@@ -2,7 +2,7 @@
 
 # Iron iconset based on FontAwesome
 
-Integration of FontAwesome and iron-icon for Vaadin 10+
+Integration of FontAwesome and vaadin-icon/iron-icon for Vaadin 10+
 
 ## Download release
 
