@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/FlowingCode/FontAwesomeIronIconset#readme",
   "dependencies": {
-    "@vaadin/icon": "23.1.0"
+    "@vaadin/icon": "^23.0.0"
   }
 }
