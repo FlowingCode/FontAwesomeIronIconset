@@ -50,7 +50,7 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 ## License & Author
 
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
-IronFontAwesome Addon is written by Flowing Code S.A.
+FontAwesomeIronIconset Addon is written by Flowing Code S.A.
 
 Font Awesome Free 5.13.0 by @fontawesome is distributed under CC BY 4.0 license. For license terms see THIRD-PARTY.txt
 
