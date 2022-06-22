@@ -59,34 +59,34 @@ Font Awesome Free 5.13.0 by @fontawesome is distributed under CC BY 4.0 license.
 
 ## Using the icons
 
-- Use the `create` method from the enum type, for instantiating a new `IronIcon` component based on that icon. There is an enum type for each font family (solid, regular and brands)
+- Use the `create` method from the enum type, for instantiating a new `Icon` component based on that icon. There is an enum type for each font family (solid, regular and brands)
 
 ```
 add(new Button("SAVE", FontAwesome.Solid.SAVE.create()));
 ```
 
-- You can also use the enumerated value for obtaining the qualified icon name (e.g. `fas:plane-departure`), that can be set in the `icon` attribute of the `iron-icon` element. This can be helpful if you are writing a template renderer, such as:
+- You can also use the enumerated value for obtaining the qualified icon name (e.g. `fas:plane-departure`), that can be set in the `icon` attribute of the `vaadin-icon` element. This can be helpful if you are writing a template renderer, such as:
 
 ```
-	grid.addColumn(TemplateRenderer.<Flight>of(
-	   "<iron-icon icon='"+FontAwesome.Solid.PLANE_DEPARTURE+"'></iron-icon>[[item.takeoff_time]]"
+	grid.addColumn(LitRenderer.<Flight>of(
+	   "<vaadin-icon icon='"+FontAwesome.Solid.PLANE_DEPARTURE+"'></vaadin-icon>${item.takeoff_time}"
 	).withProperty("takeoff_time", Flight::getTakeOffTime));
 ```
 
 In this latter case, you'll need to import the corresponding iconset:
 ```
-@Uses(FontAwesome.Regular.Icon.class)
+@Uses(FontAwesome.Solid.Icon.class)
 ```
 
-- Use in a Polymer template:
+- Use in a Lit or Polymer template:
 
 ```
-import '@polymer/iron-icon/iron-icon.js';
+import '@vaadin/vaadin-icon/vaadin-icon.js';
 import '@flowingcode/font-awesome-iron-iconset/fab.js';
 ```
 
 ```
-<iron-icon icon="fab:font-awesome" style="width: 48px; height: 48px"></iron-icon>
+<vaadin-icon icon="fab:font-awesome" style="width: 48px; height: 48px"></vaadin-icon>
 ```
 
 ## Integration with Font Awesome Pro
