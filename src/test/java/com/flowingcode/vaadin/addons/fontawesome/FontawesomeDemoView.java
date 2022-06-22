@@ -39,14 +39,14 @@ public class FontawesomeDemoView extends TabbedDemo {
 
 	private static final String GALLERY_DEMO = "Icons Gallery";
 	private static final String SIMPLE_DEMO = "Simple Demo";
-	private static final String TEMPLATERENDERER_DEMO = "Template Renderer";
+	private static final String LITRENDERER_DEMO = "Lit Renderer";
 	private static final String SIMPLE_SOURCE = "https://github.com/FlowingCode/FontAwesomeIronIconset/blob/master/src/test/java/com/flowingcode/vaadin/addons/fontawesome/SimpleDemo.java";
-	private static final String TEMPLATERENDERER_SOURCE = "https://github.com/FlowingCode/FontAwesomeIronIconset/blob/master/src/test/java/com/flowingcode/vaadin/addons/fontawesome/TemplateRendererDemo.java";
+	private static final String LITRENDERER_SOURCE = "https://github.com/FlowingCode/FontAwesomeIronIconset/blob/master/src/test/java/com/flowingcode/vaadin/addons/fontawesome/LitRendererDemo.java";
 
 	public FontawesomeDemoView() {
 		addDemo(new IconsGalleryView(), GALLERY_DEMO, null);
 		addDemo(new SimpleDemo(), SIMPLE_DEMO, SIMPLE_SOURCE);
-		addDemo(new TemplateRendererDemo(), TEMPLATERENDERER_DEMO, TEMPLATERENDERER_SOURCE);
+		addDemo(new LitRendererDemo(), LITRENDERER_DEMO, LITRENDERER_SOURCE);
 		setSizeFull();
 	}
 }

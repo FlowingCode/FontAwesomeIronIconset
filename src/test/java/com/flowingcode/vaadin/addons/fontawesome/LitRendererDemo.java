@@ -29,9 +29,9 @@ import java.util.List;
 @Uses(FontAwesome.Solid.Icon.class)
 @Uses(FontAwesome.Regular.Icon.class)
 @Uses(FontAwesome.Brands.Icon.class)
-public class TemplateRendererDemo extends VerticalLayout {
+public class LitRendererDemo extends VerticalLayout {
 
-	public TemplateRendererDemo() {
+	public LitRendererDemo() {
 		Grid<Person> grid = new Grid<>();
 		grid.setItems(List.of(
 	        new Person(100, "Lucas Kane", 68),
@@ -42,13 +42,13 @@ public class TemplateRendererDemo extends VerticalLayout {
 	        new Person(105, "Jack Woodward", 28)));
 
 		grid.addColumn(LitRenderer.<Person>of(
-				"<vaadin-icon icon='" + FontAwesome.Solid.CIRCLE_CHECK.getIconName() + "'></vaadin-icon>[[item.id]]")
+				"<vaadin-icon icon='" + FontAwesome.Solid.CIRCLE_CHECK.getIconName() + "'></vaadin-icon>${item.id}")
 				.withProperty("id", Person::getId)).setHeader("ID");
 		grid.addColumn(LitRenderer.<Person>of(
-				"<vaadin-icon icon='" + FontAwesome.Regular.KEYBOARD.getIconName() + "'></vaadin-icon>[[item.name]]")
+				"<vaadin-icon icon='" + FontAwesome.Regular.KEYBOARD.getIconName() + "'></vaadin-icon>${item.name}")
 				.withProperty("name", Person::getName)).setHeader("Name");
 		grid.addColumn(LitRenderer.<Person>of(
-				"<vaadin-icon icon='" + FontAwesome.Brands.VAADIN.getIconName() + "'></vaadin-icon>[[item.age]]")
+				"<vaadin-icon icon='" + FontAwesome.Brands.VAADIN.getIconName() + "'></vaadin-icon>${item.age}")
 				.withProperty("age", Person::getAge)).setHeader("Age");
 
 		add(grid);
