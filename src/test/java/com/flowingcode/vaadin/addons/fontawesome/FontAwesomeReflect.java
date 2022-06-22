@@ -29,7 +29,6 @@ import com.flowingcode.vaadin.addons.fontawesome.FontAwesome.Brands;
 import com.flowingcode.vaadin.addons.fontawesome.FontAwesome.Regular;
 import com.flowingcode.vaadin.addons.fontawesome.FontAwesome.Solid;
 import com.vaadin.flow.component.icon.Icon;
-import com.vaadin.flow.component.icon.IronIcon;
 
 /**
  * Reflection utilities for FontAwesome demo.

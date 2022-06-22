@@ -22,10 +22,7 @@ package com.flowingcode.vaadin.addons.fontawesome;
 import com.vaadin.flow.component.dependency.Uses;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.data.provider.ListDataProvider;
 import com.vaadin.flow.data.renderer.LitRenderer;
-import com.vaadin.flow.data.renderer.TemplateRenderer;
-import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("serial")
