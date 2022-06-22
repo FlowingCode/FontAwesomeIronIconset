@@ -2,7 +2,7 @@
 
 # Iron iconset based on FontAwesome
 
-Integration of FontAwesome and vaadin-icon/iron-icon for Vaadin 10+
+Integration of FontAwesome and vaadin-icon for Vaadin 10+
 
 ## Download release
 
@@ -12,10 +12,10 @@ Integration of FontAwesome and vaadin-icon/iron-icon for Vaadin 10+
 
 ## Versions
 
-- **Version 1.0.4** (based on FontAwesome 5.11.2) is compatible with Vaadin 10-13 and Vaadin 14 in bower mode 
+- **Version 1.0.4** (based on FontAwesome 5.11.2) is compatible with Vaadin 10-13 and Vaadin 14 in bower mode. 
 - **Version 2.2.2** (based on FontAwesome 5.15.4) is compatible with Vaadin 14+ in npm mode.
-- **Version 3.0.x** (based on the latest version of FontAwesome 6) is compatible with Vaadin 14+ in npm mode.
-- **Version 4.0.x** (based on the latest version of FontAwesome 6) is compatible with Vaadin 23.
+- **Version 3.0.x** (based on the latest version of FontAwesome 6, using polymer `iron-icon`) is compatible with Vaadin 14+ in npm mode.
+- **Version 4.0.x** (based on the latest version of FontAwesome 6, using `vaadin-icon`) is compatible with Vaadin 23.
 
 For details on which version of FontAwesome is used by each release of this addon, see the [Release Notes](https://github.com/FlowingCode/FontAwesomeIronIconset/releases)
 
@@ -97,7 +97,7 @@ However, if you have a Font Awesome Pro license, you can recompile this addon in
 This process will:
 - Update the enumerations so that they define constants for the additional Pro Icons
 - Create new enumerations for the Ligth and Duotone icon families.
-- Embed the Pro Icons as Polymer iron-iconset.
+- Embed the Pro Icons as `vaadin-iconset`.
 
 The JAR created in this way will include a copy of the Font Awesome Pro icons, thus it will be subject to the Font Awesome Pro restrictions. You'll need to install it locally or make it available from your internal artifact repository. 
  
