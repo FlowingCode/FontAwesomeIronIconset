@@ -20,13 +20,19 @@
 
 package com.flowingcode.vaadin.addons.fontawesome;
 
+import com.flowingcode.vaadin.addons.demo.DemoSource;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.router.Route;
 
 /**
  * @author Javier Godoy / Flowing Code
  */
+@DemoSource
+@PageTitle("Simple Demo")
+@Route(value = "font-awesome-iron-iconset/simple", layout = FontawesomeDemoView.class)
 @SuppressWarnings("serial")
 public class SimpleDemo extends VerticalLayout {
 
