@@ -19,13 +19,19 @@
  */
 package com.flowingcode.vaadin.addons.fontawesome;
 
+import com.flowingcode.vaadin.addons.demo.DemoSource;
 import com.vaadin.flow.component.dependency.Uses;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.data.renderer.LitRenderer;
+import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.router.Route;
 import java.util.List;
 
+@DemoSource
 @SuppressWarnings("serial")
+@PageTitle("Lit Renderer")
+@Route(value = "font-awesome-iron-iconset/renderer", layout = FontawesomeDemoView.class)
 @Uses(FontAwesome.Solid.Icon.class)
 @Uses(FontAwesome.Regular.Icon.class)
 @Uses(FontAwesome.Brands.Icon.class)

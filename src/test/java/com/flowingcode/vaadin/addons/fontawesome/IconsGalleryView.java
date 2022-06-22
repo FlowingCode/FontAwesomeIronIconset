@@ -19,6 +19,8 @@
  */
 package com.flowingcode.vaadin.addons.fontawesome;
 
+import com.flowingcode.vaadin.addons.DemoLayout;
+import com.flowingcode.vaadin.addons.demo.DemoSource;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
@@ -30,6 +32,8 @@ import com.vaadin.flow.component.orderedlayout.FlexLayout;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.value.ValueChangeMode;
+import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.router.Route;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -39,7 +43,9 @@ import java.util.stream.Stream;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 
+@PageTitle("Icons Gallery")
 @SuppressWarnings("serial")
+@Route(value = "font-awesome-iron-iconset/icons", layout = FontawesomeDemoView.class)
 public class IconsGalleryView extends Div {
 
 	// this demo uses reflection, for a simple example that does not use reflection
