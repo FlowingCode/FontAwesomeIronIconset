@@ -19,10 +19,10 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
-import '@polymer/iron-icon/iron-icon.js';
+import {Icon} from '@vaadin/icon/vaadin-icon.js';
 import {html} from '@polymer/polymer/polymer-element.js';
 
-class DuotoneIcon extends customElements.get('iron-icon') {
+class DuotoneIcon extends Icon {
 	static get is() { return 'duotone-icon'; }
 	
 	static get template() {
