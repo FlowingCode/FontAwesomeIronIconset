@@ -4,12 +4,6 @@
 
 Integration of FontAwesome and vaadin-icon for Vaadin 10+
 
-## Download release
-
-[Available in Vaadin Directory](https://vaadin.com/directory/component/fontawesome-iron-iconset)
-
-[Available in npm.js](https://www.npmjs.com/package/@flowingcode/font-awesome-iron-iconset) (since 2.1.0)
-
 ## Versions
 
 - **Version 1.0.4** (based on FontAwesome 5.11.2) is compatible with Vaadin 10-13 and Vaadin 14 in bower mode. 
@@ -25,6 +19,34 @@ If you want to use Font Awesome Pro icons with this addon, see [here](#integrati
 
 [Online demo here](http://addonsv14.flowingcode.com/font-awesome-iron-iconset)
 
+## Download release
+
+[Available in Vaadin Directory](https://vaadin.com/directory/component/fontawesome-iron-iconset)
+
+[Available in npm.js](https://www.npmjs.com/package/@flowingcode/font-awesome-iron-iconset) (since 2.1.0)
+
+### Maven install
+
+Add the following dependencies in your pom.xml file:
+
+```xml
+<dependency>
+   <groupId>com.flowingcode.addons</groupId>
+   <artifactId>font-awesome-iron-iconset</artifactId>
+   <version>X.Y.Z</version>
+</dependency>
+```
+<!-- the above dependency should be updated with latest released version information -->
+
+```xml
+<repository>
+   <id>vaadin-addons</id>
+   <url>https://maven.vaadin.com/vaadin-addons</url>
+</repository>
+```
+
+For SNAPSHOT versions see [here](https://maven.flowingcode.com/snapshots/).
+
 ## Building and running demo
 
 - git clone repository
@@ -38,14 +60,18 @@ The issues for this add-on are tracked on its github.com page. All bug reports a
 
 ## Contributions
 
-Contributions are welcome, but there are no guarantees that they are accepted as such. Process for contributing is the following:
+Contributions are welcome, but there are no guarantees that they are accepted as such. 
 
-- Fork this project
+As first step, please refer to our [Development Conventions](https://github.com/FlowingCode/DevelopmentConventions) page to find information about Conventional Commits & Code Style requeriments.
+
+Then, follow these steps for creating a contibution:
+
+- Fork this project.
 - Create an issue to this project about the contribution (bug or feature) if there is no such issue about it already. Try to keep the scope minimal.
 - Develop and test the fix or functionality carefully. Only include minimum amount of code needed to fix the issue.
-- Refer to the fixed issue in commit
-- Send a pull request for the original project
-- Comment on the original issue that you have implemented a fix for it
+- For commit message, use [Conventional Commits](https://github.com/FlowingCode/DevelopmentConventions/blob/main/conventional-commits.md) to describe your change.
+- Send a pull request for the original project.
+- Comment on the original issue that you have implemented a fix for it.
 
 ## License & Author
 
@@ -89,6 +115,15 @@ import '@flowingcode/font-awesome-iron-iconset/fab.js';
 <vaadin-icon icon="fab:font-awesome" style="width: 48px; height: 48px"></vaadin-icon>
 ```
 
+## Special configuration when using Spring
+
+By default, Vaadin Flow only includes ```com/vaadin/flow/component``` to be always scanned for UI components and views. For this reason, the addon might need to be whitelisted in order to display correctly. 
+
+To do so, just add ```com.flowingcode``` to the ```vaadin.whitelisted-packages``` property in ```src/main/resources/application.properties```, like:
+
+```vaadin.whitelisted-packages = com.vaadin,org.vaadin,dev.hilla,com.flowingcode```
+ 
+More information on Spring whitelisted configuration [here](https://vaadin.com/docs/latest/integrations/spring/configuration/#configure-the-scanning-of-packages).
 ## Integration with Font Awesome Pro
 
 Because of Font Awesome Pro [license terms](https://fontawesome.com/license#what-creators-may-do), the Pro icons cannot published as part of an open source addon. 
