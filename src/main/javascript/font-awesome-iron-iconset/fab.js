@@ -24,6 +24,18 @@ Copyright 2022 Fonticons, Inc.
 import '@vaadin/icon/vaadin-iconset.js';
 import '@vaadin/icon/vaadin-icon.js';
 
+import { css, registerStyles } from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
+
+registerStyles(
+  'vaadin-button',
+  css`
+    [part] ::slotted(vaadin-icon[icon^='fab:']), [part] ::slotted(iron-icon[icon^='fab:']) 
+    {
+      padding: 0.25em;
+      box-sizing: border-box !important;
+    }`,
+  );
+
 const $_documentContainer = document.createElement('template');
 
 $_documentContainer.innerHTML = `

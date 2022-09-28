@@ -17,11 +17,13 @@
   limitations under the License.
   #L%
   -->
-<xsl:stylesheet version="1.0" 
+<xsl:stylesheet version="3.0" expand-text="no" 
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" omit-xml-declaration="yes"/>
 <xsl:strip-space elements="*"/>
+
+<xsl:param name = "family"/>
 
 <xsl:template match="/*">
 	<xsl:text disable-output-escaping="yes"
@@ -29,6 +31,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 import '@vaadin/icon/vaadin-iconset.js';
 import '@vaadin/icon/vaadin-icon.js';
 
+import { css, registerStyles } from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
+</xsl:text>
+
+<xsl:call-template name="registerStyles"/>
+
+<xsl:text>
 const $_documentContainer = document.createElement('template');
 
 $_documentContainer.innerHTML = `
@@ -52,6 +60,22 @@ document.head.appendChild($_documentContainer.content);
 	<xsl:text>&#xa;/*@license</xsl:text>
 	<xsl:value-of select="replace(.,'\s*((#(%L|L%))|%%)','')"/>
 	<xsl:text>*/&#xa;</xsl:text>
+</xsl:template>
+
+<xsl:template name="registerStyles">
+<xsl:text>
+registerStyles(
+  'vaadin-button',
+  css`</xsl:text
+><xsl:text expand-text="yes">
+    [part] ::slotted(vaadin-icon[icon^='{$family}:']), [part] ::slotted(iron-icon[icon^='{$family}:'])</xsl:text
+><xsl:text> 
+    {
+      padding: 0.25em;
+      box-sizing: border-box !important;
+    }`,
+  );
+</xsl:text>
 </xsl:template>
 
 </xsl:stylesheet>

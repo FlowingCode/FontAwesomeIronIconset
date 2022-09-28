@@ -176,7 +176,7 @@ public class IconsetEnumGenerator {
 		System.out.println(String.format("Generate %s icons (%s)", enumName, family));
 		File iconset = convertIconset(family, sprites);
 		List<String> icons = readIconNames(iconset);
-		modularize(iconset);
+		modularize(iconset, family);
 		cu.getType(0).addMember(createEnumDeclaration(enumName, family, icons));
 	}
 
@@ -217,7 +217,7 @@ public class IconsetEnumGenerator {
 		}
 	}
 
-	private static void modularize(File file) throws IOException {
+	private static void modularize(File file, String family) throws IOException {
 		File dst = new File(file.getParent(), file.getName()+".2");
 		try (
 			InputStream in = new FileInputStream(file);
@@ -225,6 +225,7 @@ public class IconsetEnumGenerator {
 			OutputStream out = new FileOutputStream(dst)
 		) {
 			Transformer t = new TransformerFactoryImpl().newTransformer(new StreamSource(xslt));
+			t.setParameter("family", family);
 			Result outputTarget = new StreamResult(out);
 			t.transform(new StreamSource(in), outputTarget);
 		} catch (TransformerException e) {
