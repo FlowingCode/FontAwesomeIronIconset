@@ -28,8 +28,8 @@
     <groupId>com.flowingcode.addons</groupId>
     <artifactId>iron-icons-codegen</artifactId>
     <version>2.0.0-SNAPSHOT</version>
-    <name>Iron Icons Generator</name>
-    <description>Source generator of iron-icons for Vaadin 10</description>
+    <name>FontAwesome Iron Iconset Generator</name>
+    <description>Source generator of FontAwesome Iconset for Vaadin 10+</description>
 	
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
