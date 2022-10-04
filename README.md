@@ -4,17 +4,12 @@
 
 Integration of FontAwesome and iron-icon for Vaadin 10+
 
-## Download release
-
-[Available in Vaadin Directory](https://vaadin.com/directory/component/fontawesome-iron-iconset)
-
-[Available in npm.js](https://www.npmjs.com/package/@flowingcode/font-awesome-iron-iconset) (since 2.1.0)
-
 ## Versions
 
-- **Version 1.0.4** (based on FontAwesome 5.11.2) is compatible with Vaadin 10-13 and Vaadin 14 in bower mode 
+- **Version 1.0.4** (based on FontAwesome 5.11.2) is compatible with Vaadin 10-13 and Vaadin 14 in bower mode. 
 - **Version 2.2.2** (based on FontAwesome 5.15.4) is compatible with Vaadin 14+ in npm mode.
-- **Version 3.0.0** (based on the latest version of FontAwesome 6) is compatible with Vaadin 14+ in npm mode.
+- **Version 3.0.x** (based on the latest version of FontAwesome 6, using polymer `iron-icon`) is compatible with Vaadin 14+ in npm mode.
+- **Version 4.1.x** (based on the latest version of FontAwesome 6, using `vaadin-icon`) is compatible with Vaadin 23.
 
 For details on which version of FontAwesome is used by each release of this addon, see the [Release Notes](https://github.com/FlowingCode/FontAwesomeIronIconset/releases)
 
@@ -23,6 +18,34 @@ If you want to use Font Awesome Pro icons with this addon, see [here](#integrati
 ## Online demo
 
 [Online demo here](http://addonsv14.flowingcode.com/font-awesome-iron-iconset)
+
+## Download release
+
+[Available in Vaadin Directory](https://vaadin.com/directory/component/fontawesome-iron-iconset)
+
+[Available in npm.js](https://www.npmjs.com/package/@flowingcode/font-awesome-iron-iconset) (since 2.1.0)
+
+### Maven install
+
+Add the following dependencies in your pom.xml file:
+
+```xml
+<dependency>
+   <groupId>com.flowingcode.addons</groupId>
+   <artifactId>font-awesome-iron-iconset</artifactId>
+   <version>X.Y.Z</version>
+</dependency>
+```
+<!-- the above dependency should be updated with latest released version information -->
+
+```xml
+<repository>
+   <id>vaadin-addons</id>
+   <url>https://maven.vaadin.com/vaadin-addons</url>
+</repository>
+```
+
+For SNAPSHOT versions see [here](https://maven.flowingcode.com/snapshots/).
 
 ## Building and running demo
 
@@ -37,19 +60,23 @@ The issues for this add-on are tracked on its github.com page. All bug reports a
 
 ## Contributions
 
-Contributions are welcome, but there are no guarantees that they are accepted as such. Process for contributing is the following:
+Contributions are welcome, but there are no guarantees that they are accepted as such. 
 
-- Fork this project
+As first step, please refer to our [Development Conventions](https://github.com/FlowingCode/DevelopmentConventions) page to find information about Conventional Commits & Code Style requeriments.
+
+Then, follow these steps for creating a contibution:
+
+- Fork this project.
 - Create an issue to this project about the contribution (bug or feature) if there is no such issue about it already. Try to keep the scope minimal.
 - Develop and test the fix or functionality carefully. Only include minimum amount of code needed to fix the issue.
-- Refer to the fixed issue in commit
-- Send a pull request for the original project
-- Comment on the original issue that you have implemented a fix for it
+- For commit message, use [Conventional Commits](https://github.com/FlowingCode/DevelopmentConventions/blob/main/conventional-commits.md) to describe your change.
+- Send a pull request for the original project.
+- Comment on the original issue that you have implemented a fix for it.
 
 ## License & Author
 
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
-IronFontAwesome Addon is written by Flowing Code S.A.
+FontAwesomeIronIconset Addon is written by Flowing Code S.A.
 
 Font Awesome Free 5.13.0 by @fontawesome is distributed under CC BY 4.0 license. For license terms see THIRD-PARTY.txt
 
@@ -74,7 +101,7 @@ add(new Button("SAVE", FontAwesome.Solid.SAVE.create()));
 
 In this latter case, you'll need to import the corresponding iconset:
 ```
-@Uses(FontAwesome.Regular.Icon.class)
+@Uses(FontAwesome.Solid.Icon.class)
 ```
 
 - Use in a Polymer template:
@@ -87,6 +114,16 @@ import '@flowingcode/font-awesome-iron-iconset/fab.js';
 ```
 <iron-icon icon="fab:font-awesome" style="width: 48px; height: 48px"></iron-icon>
 ```
+
+## Special configuration when using Spring
+
+By default, Vaadin Flow only includes ```com/vaadin/flow/component``` to be always scanned for UI components and views. For this reason, the addon might need to be whitelisted in order to display correctly. 
+
+To do so, just add ```com.flowingcode``` to the ```vaadin.whitelisted-packages``` property in ```src/main/resources/application.properties```, like:
+
+```vaadin.whitelisted-packages = com.vaadin,org.vaadin,dev.hilla,com.flowingcode```
+ 
+More information on Spring whitelisted configuration [here](https://vaadin.com/docs/latest/integrations/spring/configuration/#configure-the-scanning-of-packages).
 
 ## Integration with Font Awesome Pro
 
@@ -118,7 +155,7 @@ If you want to import the JS iconset from a Polymer Template when using the inte
 
 [Duotone styling](https://blog.fontawesome.com/introducing-duotone) is based on CSS variables (`--fa-primary-color`, `--fa-primary-opacity`, `--fa-secondary-color`, and `--fa-secondary-opacity`) that are applied to the `<duotone-icon>`. When importing the iconset from a Polymer Template, you'll also need `@vaadin/flow-frontend/font-awesome-duotone/duotone.js` in addition to `@vaadin/flow-frontend/font-awesome-iron-iconset/fad.js`.
 
-When compiling icons for FontAwesome Pro 6 you need to need to use at least JDK 15. This is because a [limitation](https://bugs.openjdk.java.net/browse/JDK-8241798) in the maximum number of constants allowed in an enum compiled by javac with earlier JDKs.
+When compiling icons for FontAwesome Pro 6 you need to need to use at least JDK 15. This is because of a [limitation](https://bugs.openjdk.java.net/browse/JDK-8241798) in the maximum number of constants allowed in an enum compiled by javac with earlier JDKs.
  This only affects the generated bytecode: the compatibility level remains 1.8 so that the library is still compatible with Java 8.
  
  
