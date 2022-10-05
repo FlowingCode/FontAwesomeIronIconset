@@ -3,7 +3,7 @@
     xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
-    <id>paper-slider</id>
+    <id>FontAwesomeIronIconset</id>
 
     <formats>
         <format>zip</format>
@@ -14,7 +14,7 @@
 
     <fileSets>
         <fileSet>
-            <directory>..</directory>
+            <directory>.</directory>
             <includes>
                 <include>LICENSE</include>
                 <include>README.md</include>
@@ -28,7 +28,7 @@
                 <include>*.pdf</include>
             </includes>
             <excludes>
-				<exclude>*-tests.jar</exclude>
+				<exclude>*-demo.jar</exclude>
 			</excludes>
         </fileSet>
     </fileSets>
