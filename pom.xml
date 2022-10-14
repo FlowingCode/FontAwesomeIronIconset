@@ -378,6 +378,9 @@
 											<excludes>
 												<exclude>**/duotone.js</exclude>
 											</excludes>
+											<excludes>
+												<exclude>**/fc-iconset.js</exclude>
+											</excludes>
 									</fileset>
 						      	   </filesets>
 						    	</configuration>
