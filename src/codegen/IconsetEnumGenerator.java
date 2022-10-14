@@ -34,7 +34,9 @@ import java.io.SequenceInputStream;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
@@ -102,12 +104,12 @@ public class IconsetEnumGenerator {
 
 	@SuppressWarnings("serial")
 	private static final Map<String,String> mappings = new LinkedHashMap<String,String>() {{
-		put("far", "regular.svg");
-		put("fas", "solid.svg");
-		put("fab", "brands.svg");
-		put("fal", "light.svg");
-		put("fad", "duotone.svg");
-		put("thin", "thin.svg");
+		put("far", "regular");
+		put("fas", "solid");
+		put("fab", "brands");
+		put("fal", "light");
+		put("fad", "duotone");
+		put("thin", "thin");
 	}};
 
 	public static void main(String[] args) throws IOException {
@@ -160,7 +162,7 @@ public class IconsetEnumGenerator {
 		boolean found = false;
 		CompilationUnit cu = createCompilationUnit();
 		for (Map.Entry<String,String> e:mappings.entrySet())  {
-			File file = new File(sprites, e.getValue());
+			File file = new File(sprites, e.getValue() +".svg");
 			if (file.exists()) {
 				String family = e.getKey();
 				process(cu, family, file);
@@ -183,10 +185,14 @@ public class IconsetEnumGenerator {
 	}
 	
 	private static void process(CompilationUnit cu, String family, File sprites) throws IOException {
-		String enumName = StringUtils.capitalize(FilenameUtils.getBaseName(sprites.getName()));		
+		String familyName = FilenameUtils.getBaseName(sprites.getName());
+		String enumName = StringUtils.capitalize(familyName);
 		System.out.println(String.format("Generate %s icons (%s)", enumName, family));
 		File iconset = convertIconset(family, sprites);
-		List<String> icons = readIconNames(iconset);
+		List<String> icons = new ArrayList<>();
+		icons.addAll(readIconNames(iconset));
+		icons.addAll(readAliasesNames(familyName));
+		Collections.sort(icons);
 		modularize(iconset, family);
 		cu.getType(0).addMember(createEnumDeclaration(enumName, family, icons));
 	}
@@ -220,6 +226,22 @@ public class IconsetEnumGenerator {
 		) {
 			StringWriter out = new StringWriter();
 			Transformer t = new TransformerFactoryImpl().newTransformer(new StreamSource(xslt));
+			Result outputTarget = new StreamResult(out);
+			t.transform(new StreamSource(in), outputTarget);
+			return Arrays.asList(out.toString().split(";"));
+		} catch (TransformerException e) {
+			throw new IOException(e);
+		}
+	}
+	
+	private static List<String> readAliasesNames(String familyName) throws IOException {
+		try (
+			InputStream in = new FileInputStream(new File(sprites, "aliases.xml"));
+			InputStream xslt = new FileInputStream("icons-aliases.xslt")
+		) {
+			StringWriter out = new StringWriter();
+			Transformer t = new TransformerFactoryImpl().newTransformer(new StreamSource(xslt));
+			t.setParameter("family", familyName);
 			Result outputTarget = new StreamResult(out);
 			t.transform(new StreamSource(in), outputTarget);
 			return Arrays.asList(out.toString().split(";"));
@@ -316,6 +338,8 @@ public class IconsetEnumGenerator {
 
 		boolean hasUnderscorePrefix = false;
 		for (String icon : icons) {
+			if (icon.isEmpty()) continue;
+			
 			String name = icon.toUpperCase(Locale.ENGLISH).replace("-", "_");
 			if (!Character.isJavaIdentifierStart(name.charAt(0)) || name.equals("ICONSET")) {
 				name = "_"+name;
