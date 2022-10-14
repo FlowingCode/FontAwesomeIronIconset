@@ -21,6 +21,7 @@
 
 import static com.github.javaparser.ast.Modifier.Keyword.*;
 import static com.github.javaparser.JavaParser.*;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -29,7 +30,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.io.SequenceInputStream;
 import java.io.StringWriter;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
@@ -38,6 +41,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Optional;
+import java.util.Vector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -46,7 +50,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
-
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 
@@ -67,7 +71,6 @@ import com.github.javaparser.ast.expr.NameExpr;
 import com.github.javaparser.ast.expr.SingleMemberAnnotationExpr;
 import com.github.javaparser.ast.expr.StringLiteralExpr;
 import com.github.javaparser.ast.stmt.ReturnStmt;
-
 import net.sf.saxon.TransformerFactoryImpl;
 
 /**
@@ -152,6 +155,8 @@ public class IconsetEnumGenerator {
 	}
 
 	private static void execute()  throws IOException {
+		processAliases();
+		
 		boolean found = false;
 		CompilationUnit cu = createCompilationUnit();
 		for (Map.Entry<String,String> e:mappings.entrySet())  {
@@ -169,6 +174,14 @@ public class IconsetEnumGenerator {
 		save(cu);
 	}
 
+	private static void processAliases() throws IOException {
+		File file = new File(sprites, "icons.json");
+		if (file.exists()) {
+			System.out.println(String.format("Process aliases"));
+			aliases(file);
+		}
+	}
+	
 	private static void process(CompilationUnit cu, String family, File sprites) throws IOException {
 		String enumName = StringUtils.capitalize(FilenameUtils.getBaseName(sprites.getName()));		
 		System.out.println(String.format("Generate %s icons (%s)", enumName, family));
@@ -233,6 +246,22 @@ public class IconsetEnumGenerator {
 		dst.renameTo(file);
 	}
 
+	private static void aliases(File file) throws IOException {
+		File dst = new File(file.getParent(), "aliases.xml");
+		String data = "<root><![CDATA["+FileUtils.readFileToString(file, StandardCharsets.ISO_8859_1)+"]]></root>";
+		try (
+			InputStream in = new ByteArrayInputStream(data.getBytes(StandardCharsets.ISO_8859_1));
+			InputStream xslt = new FileInputStream("aliases.xslt");
+			OutputStream out = new FileOutputStream(dst)
+		) {
+			Transformer t = new TransformerFactoryImpl().newTransformer(new StreamSource(xslt));
+			Result outputTarget = new StreamResult(out);
+			t.transform(new StreamSource(in), outputTarget);
+		} catch (TransformerException e) {
+			throw new IOException(e);
+		}
+	}
+	
 	private static CompilationUnit createCompilationUnit() throws FileNotFoundException {
 		CompilationUnit cu = new CompilationUnit();
 		cu.setPackageDeclaration(PACKAGE_NAME);

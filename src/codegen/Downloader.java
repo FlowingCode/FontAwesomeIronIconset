@@ -96,10 +96,15 @@ public class Downloader {
 		download(repo, "regular.svg");
 		download(repo, "solid.svg");
 		download(repo, "brands.svg");
+		
+		download(repo, "metadata/icons.json", "icons.json");
 	}
 
 	private static void download(GHRepository repo, String filename) throws IOException {
-		String path = "sprites/"+filename;
+		download(repo, "sprites/"+filename, filename);
+	}
+	
+	private static void download(GHRepository repo, String path, String filename) throws IOException {
 		File file = new File(spritesDirectory, filename);
 		try (
 			InputStream in = repo.getFileContent(path, tagName).read();
