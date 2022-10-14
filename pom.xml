@@ -17,14 +17,14 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
         <!-- 
-        <fontawesome.version>Pro 6.0.0</fontawesome.version>
+        <fontawesome.version>Pro 6.1.2</fontawesome.version>
         <project.build.generatedResources>${project.basedir}/src/main/resources/META-INF/resources/frontend</project.build.generatedResources>
         <codegen.sprites>${project.basedir}/src/main/sprites</codegen.sprites>
         <codegen.icons>${project.basedir}/src/main/icons</codegen.icons>
         <codegen.skipDownload>true</codegen.skipDownload>
         <codegen.embedded>true</codegen.embedded>
          -->
-        <fontawesome.version>6.0.0</fontawesome.version>
+        <fontawesome.version>6.1.2</fontawesome.version>
 		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
         <codegen.sprites>${project.build.directory}/sprites</codegen.sprites>
         <codegen.skipDownload>false</codegen.skipDownload>
