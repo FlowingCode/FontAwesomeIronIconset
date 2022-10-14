@@ -29,7 +29,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import java.util.Locale;
 
 /**
- * FontAwesome 6.0.0 icons.
+ * FontAwesome 6.1.2 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -54,6 +54,30 @@ public final class FontAwesome {
          */
         ADDRESS_CARD,
         /**
+         * The regular angry icon.See <a href='https://fontawesome.com/v6/icons/angry?s=regular'>example</a>
+         */
+        ANGRY,
+        /**
+         * The regular arrow-alt-circle-down icon.See <a href='https://fontawesome.com/v6/icons/arrow-alt-circle-down?s=regular'>example</a>
+         */
+        ARROW_ALT_CIRCLE_DOWN,
+        /**
+         * The regular arrow-alt-circle-left icon.See <a href='https://fontawesome.com/v6/icons/arrow-alt-circle-left?s=regular'>example</a>
+         */
+        ARROW_ALT_CIRCLE_LEFT,
+        /**
+         * The regular arrow-alt-circle-right icon.See <a href='https://fontawesome.com/v6/icons/arrow-alt-circle-right?s=regular'>example</a>
+         */
+        ARROW_ALT_CIRCLE_RIGHT,
+        /**
+         * The regular arrow-alt-circle-up icon.See <a href='https://fontawesome.com/v6/icons/arrow-alt-circle-up?s=regular'>example</a>
+         */
+        ARROW_ALT_CIRCLE_UP,
+        /**
+         * The regular bar-chart icon.See <a href='https://fontawesome.com/v6/icons/bar-chart?s=regular'>example</a>
+         */
+        BAR_CHART,
+        /**
          * The regular bell icon.See <a href='https://fontawesome.com/v6/icons/bell?s=regular'>example</a>
          */
         BELL,
@@ -74,6 +98,10 @@ public final class FontAwesome {
          */
         CALENDAR,
         /**
+         * The regular calendar-alt icon.See <a href='https://fontawesome.com/v6/icons/calendar-alt?s=regular'>example</a>
+         */
+        CALENDAR_ALT,
+        /**
          * The regular calendar-check icon.See <a href='https://fontawesome.com/v6/icons/calendar-check?s=regular'>example</a>
          */
         CALENDAR_CHECK,
@@ -90,13 +118,41 @@ public final class FontAwesome {
          */
         CALENDAR_PLUS,
         /**
+         * The regular calendar-times icon.See <a href='https://fontawesome.com/v6/icons/calendar-times?s=regular'>example</a>
+         */
+        CALENDAR_TIMES,
+        /**
          * The regular calendar-xmark icon.See <a href='https://fontawesome.com/v6/icons/calendar-xmark?s=regular'>example</a>
          */
         CALENDAR_XMARK,
         /**
+         * The regular caret-square-down icon.See <a href='https://fontawesome.com/v6/icons/caret-square-down?s=regular'>example</a>
+         */
+        CARET_SQUARE_DOWN,
+        /**
+         * The regular caret-square-left icon.See <a href='https://fontawesome.com/v6/icons/caret-square-left?s=regular'>example</a>
+         */
+        CARET_SQUARE_LEFT,
+        /**
+         * The regular caret-square-right icon.See <a href='https://fontawesome.com/v6/icons/caret-square-right?s=regular'>example</a>
+         */
+        CARET_SQUARE_RIGHT,
+        /**
+         * The regular caret-square-up icon.See <a href='https://fontawesome.com/v6/icons/caret-square-up?s=regular'>example</a>
+         */
+        CARET_SQUARE_UP,
+        /**
          * The regular chart-bar icon.See <a href='https://fontawesome.com/v6/icons/chart-bar?s=regular'>example</a>
          */
         CHART_BAR,
+        /**
+         * The regular check-circle icon.See <a href='https://fontawesome.com/v6/icons/check-circle?s=regular'>example</a>
+         */
+        CHECK_CIRCLE,
+        /**
+         * The regular check-square icon.See <a href='https://fontawesome.com/v6/icons/check-square?s=regular'>example</a>
+         */
+        CHECK_SQUARE,
         /**
          * The regular chess-bishop icon.See <a href='https://fontawesome.com/v6/icons/chess-bishop?s=regular'>example</a>
          */
@@ -182,6 +238,10 @@ public final class FontAwesome {
          */
         CLOCK,
         /**
+         * The regular clock-four icon.See <a href='https://fontawesome.com/v6/icons/clock-four?s=regular'>example</a>
+         */
+        CLOCK_FOUR,
+        /**
          * The regular clone icon.See <a href='https://fontawesome.com/v6/icons/clone?s=regular'>example</a>
          */
         CLONE,
@@ -194,9 +254,17 @@ public final class FontAwesome {
          */
         COMMENT,
         /**
+         * The regular comment-alt icon.See <a href='https://fontawesome.com/v6/icons/comment-alt?s=regular'>example</a>
+         */
+        COMMENT_ALT,
+        /**
          * The regular comment-dots icon.See <a href='https://fontawesome.com/v6/icons/comment-dots?s=regular'>example</a>
          */
         COMMENT_DOTS,
+        /**
+         * The regular commenting icon.See <a href='https://fontawesome.com/v6/icons/commenting?s=regular'>example</a>
+         */
+        COMMENTING,
         /**
          * The regular comments icon.See <a href='https://fontawesome.com/v6/icons/comments?s=regular'>example</a>
          */
@@ -205,6 +273,14 @@ public final class FontAwesome {
          * The regular compass icon.See <a href='https://fontawesome.com/v6/icons/compass?s=regular'>example</a>
          */
         COMPASS,
+        /**
+         * The regular contact-book icon.See <a href='https://fontawesome.com/v6/icons/contact-book?s=regular'>example</a>
+         */
+        CONTACT_BOOK,
+        /**
+         * The regular contact-card icon.See <a href='https://fontawesome.com/v6/icons/contact-card?s=regular'>example</a>
+         */
+        CONTACT_CARD,
         /**
          * The regular copy icon.See <a href='https://fontawesome.com/v6/icons/copy?s=regular'>example</a>
          */
@@ -217,6 +293,26 @@ public final class FontAwesome {
          * The regular credit-card icon.See <a href='https://fontawesome.com/v6/icons/credit-card?s=regular'>example</a>
          */
         CREDIT_CARD,
+        /**
+         * The regular credit-card-alt icon.See <a href='https://fontawesome.com/v6/icons/credit-card-alt?s=regular'>example</a>
+         */
+        CREDIT_CARD_ALT,
+        /**
+         * The regular dizzy icon.See <a href='https://fontawesome.com/v6/icons/dizzy?s=regular'>example</a>
+         */
+        DIZZY,
+        /**
+         * The regular dot-circle icon.See <a href='https://fontawesome.com/v6/icons/dot-circle?s=regular'>example</a>
+         */
+        DOT_CIRCLE,
+        /**
+         * The regular drivers-license icon.See <a href='https://fontawesome.com/v6/icons/drivers-license?s=regular'>example</a>
+         */
+        DRIVERS_LICENSE,
+        /**
+         * The regular edit icon.See <a href='https://fontawesome.com/v6/icons/edit?s=regular'>example</a>
+         */
+        EDIT,
         /**
          * The regular envelope icon.See <a href='https://fontawesome.com/v6/icons/envelope?s=regular'>example</a>
          */
@@ -382,9 +478,21 @@ public final class FontAwesome {
          */
         FILE,
         /**
+         * The regular file-alt icon.See <a href='https://fontawesome.com/v6/icons/file-alt?s=regular'>example</a>
+         */
+        FILE_ALT,
+        /**
+         * The regular file-archive icon.See <a href='https://fontawesome.com/v6/icons/file-archive?s=regular'>example</a>
+         */
+        FILE_ARCHIVE,
+        /**
          * The regular file-audio icon.See <a href='https://fontawesome.com/v6/icons/file-audio?s=regular'>example</a>
          */
         FILE_AUDIO,
+        /**
+         * The regular file-clipboard icon.See <a href='https://fontawesome.com/v6/icons/file-clipboard?s=regular'>example</a>
+         */
+        FILE_CLIPBOARD,
         /**
          * The regular file-code icon.See <a href='https://fontawesome.com/v6/icons/file-code?s=regular'>example</a>
          */
@@ -410,6 +518,10 @@ public final class FontAwesome {
          */
         FILE_POWERPOINT,
         /**
+         * The regular file-text icon.See <a href='https://fontawesome.com/v6/icons/file-text?s=regular'>example</a>
+         */
+        FILE_TEXT,
+        /**
          * The regular file-video icon.See <a href='https://fontawesome.com/v6/icons/file-video?s=regular'>example</a>
          */
         FILE_VIDEO,
@@ -430,9 +542,21 @@ public final class FontAwesome {
          */
         FLOPPY_DISK,
         /**
+         * The regular flushed icon.See <a href='https://fontawesome.com/v6/icons/flushed?s=regular'>example</a>
+         */
+        FLUSHED,
+        /**
          * The regular folder icon.See <a href='https://fontawesome.com/v6/icons/folder?s=regular'>example</a>
          */
         FOLDER,
+        /**
+         * The regular folder-blank icon.See <a href='https://fontawesome.com/v6/icons/folder-blank?s=regular'>example</a>
+         */
+        FOLDER_BLANK,
+        /**
+         * The regular folder-closed icon.See <a href='https://fontawesome.com/v6/icons/folder-closed?s=regular'>example</a>
+         */
+        FOLDER_CLOSED,
         /**
          * The regular folder-open icon.See <a href='https://fontawesome.com/v6/icons/folder-open?s=regular'>example</a>
          */
@@ -442,13 +566,89 @@ public final class FontAwesome {
          */
         FONT_AWESOME,
         /**
+         * The regular font-awesome-flag icon.See <a href='https://fontawesome.com/v6/icons/font-awesome-flag?s=regular'>example</a>
+         */
+        FONT_AWESOME_FLAG,
+        /**
+         * The regular font-awesome-logo-full icon.See <a href='https://fontawesome.com/v6/icons/font-awesome-logo-full?s=regular'>example</a>
+         */
+        FONT_AWESOME_LOGO_FULL,
+        /**
+         * The regular frown icon.See <a href='https://fontawesome.com/v6/icons/frown?s=regular'>example</a>
+         */
+        FROWN,
+        /**
+         * The regular frown-open icon.See <a href='https://fontawesome.com/v6/icons/frown-open?s=regular'>example</a>
+         */
+        FROWN_OPEN,
+        /**
          * The regular futbol icon.See <a href='https://fontawesome.com/v6/icons/futbol?s=regular'>example</a>
          */
         FUTBOL,
         /**
+         * The regular futbol-ball icon.See <a href='https://fontawesome.com/v6/icons/futbol-ball?s=regular'>example</a>
+         */
+        FUTBOL_BALL,
+        /**
          * The regular gem icon.See <a href='https://fontawesome.com/v6/icons/gem?s=regular'>example</a>
          */
         GEM,
+        /**
+         * The regular grimace icon.See <a href='https://fontawesome.com/v6/icons/grimace?s=regular'>example</a>
+         */
+        GRIMACE,
+        /**
+         * The regular grin icon.See <a href='https://fontawesome.com/v6/icons/grin?s=regular'>example</a>
+         */
+        GRIN,
+        /**
+         * The regular grin-alt icon.See <a href='https://fontawesome.com/v6/icons/grin-alt?s=regular'>example</a>
+         */
+        GRIN_ALT,
+        /**
+         * The regular grin-beam icon.See <a href='https://fontawesome.com/v6/icons/grin-beam?s=regular'>example</a>
+         */
+        GRIN_BEAM,
+        /**
+         * The regular grin-beam-sweat icon.See <a href='https://fontawesome.com/v6/icons/grin-beam-sweat?s=regular'>example</a>
+         */
+        GRIN_BEAM_SWEAT,
+        /**
+         * The regular grin-hearts icon.See <a href='https://fontawesome.com/v6/icons/grin-hearts?s=regular'>example</a>
+         */
+        GRIN_HEARTS,
+        /**
+         * The regular grin-squint icon.See <a href='https://fontawesome.com/v6/icons/grin-squint?s=regular'>example</a>
+         */
+        GRIN_SQUINT,
+        /**
+         * The regular grin-squint-tears icon.See <a href='https://fontawesome.com/v6/icons/grin-squint-tears?s=regular'>example</a>
+         */
+        GRIN_SQUINT_TEARS,
+        /**
+         * The regular grin-stars icon.See <a href='https://fontawesome.com/v6/icons/grin-stars?s=regular'>example</a>
+         */
+        GRIN_STARS,
+        /**
+         * The regular grin-tears icon.See <a href='https://fontawesome.com/v6/icons/grin-tears?s=regular'>example</a>
+         */
+        GRIN_TEARS,
+        /**
+         * The regular grin-tongue icon.See <a href='https://fontawesome.com/v6/icons/grin-tongue?s=regular'>example</a>
+         */
+        GRIN_TONGUE,
+        /**
+         * The regular grin-tongue-squint icon.See <a href='https://fontawesome.com/v6/icons/grin-tongue-squint?s=regular'>example</a>
+         */
+        GRIN_TONGUE_SQUINT,
+        /**
+         * The regular grin-tongue-wink icon.See <a href='https://fontawesome.com/v6/icons/grin-tongue-wink?s=regular'>example</a>
+         */
+        GRIN_TONGUE_WINK,
+        /**
+         * The regular grin-wink icon.See <a href='https://fontawesome.com/v6/icons/grin-wink?s=regular'>example</a>
+         */
+        GRIN_WINK,
         /**
          * The regular hand icon.See <a href='https://fontawesome.com/v6/icons/hand?s=regular'>example</a>
          */
@@ -461,6 +661,10 @@ public final class FontAwesome {
          * The regular hand-lizard icon.See <a href='https://fontawesome.com/v6/icons/hand-lizard?s=regular'>example</a>
          */
         HAND_LIZARD,
+        /**
+         * The regular hand-paper icon.See <a href='https://fontawesome.com/v6/icons/hand-paper?s=regular'>example</a>
+         */
+        HAND_PAPER,
         /**
          * The regular hand-peace icon.See <a href='https://fontawesome.com/v6/icons/hand-peace?s=regular'>example</a>
          */
@@ -486,6 +690,10 @@ public final class FontAwesome {
          */
         HAND_POINTER,
         /**
+         * The regular hand-rock icon.See <a href='https://fontawesome.com/v6/icons/hand-rock?s=regular'>example</a>
+         */
+        HAND_ROCK,
+        /**
          * The regular hand-scissors icon.See <a href='https://fontawesome.com/v6/icons/hand-scissors?s=regular'>example</a>
          */
         HAND_SCISSORS,
@@ -502,6 +710,10 @@ public final class FontAwesome {
          */
         HARD_DRIVE,
         /**
+         * The regular hdd icon.See <a href='https://fontawesome.com/v6/icons/hdd?s=regular'>example</a>
+         */
+        HDD,
+        /**
          * The regular heart icon.See <a href='https://fontawesome.com/v6/icons/heart?s=regular'>example</a>
          */
         HEART,
@@ -510,9 +722,29 @@ public final class FontAwesome {
          */
         HOSPITAL,
         /**
+         * The regular hospital-alt icon.See <a href='https://fontawesome.com/v6/icons/hospital-alt?s=regular'>example</a>
+         */
+        HOSPITAL_ALT,
+        /**
+         * The regular hospital-wide icon.See <a href='https://fontawesome.com/v6/icons/hospital-wide?s=regular'>example</a>
+         */
+        HOSPITAL_WIDE,
+        /**
          * The regular hourglass icon.See <a href='https://fontawesome.com/v6/icons/hourglass?s=regular'>example</a>
          */
         HOURGLASS,
+        /**
+         * The regular hourglass-2 icon.See <a href='https://fontawesome.com/v6/icons/hourglass-2?s=regular'>example</a>
+         */
+        HOURGLASS_2,
+        /**
+         * The regular hourglass-empty icon.See <a href='https://fontawesome.com/v6/icons/hourglass-empty?s=regular'>example</a>
+         */
+        HOURGLASS_EMPTY,
+        /**
+         * The regular hourglass-half icon.See <a href='https://fontawesome.com/v6/icons/hourglass-half?s=regular'>example</a>
+         */
+        HOURGLASS_HALF,
         /**
          * The regular id-badge icon.See <a href='https://fontawesome.com/v6/icons/id-badge?s=regular'>example</a>
          */
@@ -534,6 +766,34 @@ public final class FontAwesome {
          */
         KEYBOARD,
         /**
+         * The regular kiss icon.See <a href='https://fontawesome.com/v6/icons/kiss?s=regular'>example</a>
+         */
+        KISS,
+        /**
+         * The regular kiss-beam icon.See <a href='https://fontawesome.com/v6/icons/kiss-beam?s=regular'>example</a>
+         */
+        KISS_BEAM,
+        /**
+         * The regular kiss-wink-heart icon.See <a href='https://fontawesome.com/v6/icons/kiss-wink-heart?s=regular'>example</a>
+         */
+        KISS_WINK_HEART,
+        /**
+         * The regular laugh icon.See <a href='https://fontawesome.com/v6/icons/laugh?s=regular'>example</a>
+         */
+        LAUGH,
+        /**
+         * The regular laugh-beam icon.See <a href='https://fontawesome.com/v6/icons/laugh-beam?s=regular'>example</a>
+         */
+        LAUGH_BEAM,
+        /**
+         * The regular laugh-squint icon.See <a href='https://fontawesome.com/v6/icons/laugh-squint?s=regular'>example</a>
+         */
+        LAUGH_SQUINT,
+        /**
+         * The regular laugh-wink icon.See <a href='https://fontawesome.com/v6/icons/laugh-wink?s=regular'>example</a>
+         */
+        LAUGH_WINK,
+        /**
          * The regular lemon icon.See <a href='https://fontawesome.com/v6/icons/lemon?s=regular'>example</a>
          */
         LEMON,
@@ -546,17 +806,41 @@ public final class FontAwesome {
          */
         LIGHTBULB,
         /**
+         * The regular list-alt icon.See <a href='https://fontawesome.com/v6/icons/list-alt?s=regular'>example</a>
+         */
+        LIST_ALT,
+        /**
          * The regular map icon.See <a href='https://fontawesome.com/v6/icons/map?s=regular'>example</a>
          */
         MAP,
+        /**
+         * The regular meh icon.See <a href='https://fontawesome.com/v6/icons/meh?s=regular'>example</a>
+         */
+        MEH,
+        /**
+         * The regular meh-blank icon.See <a href='https://fontawesome.com/v6/icons/meh-blank?s=regular'>example</a>
+         */
+        MEH_BLANK,
+        /**
+         * The regular meh-rolling-eyes icon.See <a href='https://fontawesome.com/v6/icons/meh-rolling-eyes?s=regular'>example</a>
+         */
+        MEH_ROLLING_EYES,
         /**
          * The regular message icon.See <a href='https://fontawesome.com/v6/icons/message?s=regular'>example</a>
          */
         MESSAGE,
         /**
+         * The regular minus-square icon.See <a href='https://fontawesome.com/v6/icons/minus-square?s=regular'>example</a>
+         */
+        MINUS_SQUARE,
+        /**
          * The regular money-bill-1 icon.See <a href='https://fontawesome.com/v6/icons/money-bill-1?s=regular'>example</a>
          */
         MONEY_BILL_1,
+        /**
+         * The regular money-bill-alt icon.See <a href='https://fontawesome.com/v6/icons/money-bill-alt?s=regular'>example</a>
+         */
+        MONEY_BILL_ALT,
         /**
          * The regular moon icon.See <a href='https://fontawesome.com/v6/icons/moon?s=regular'>example</a>
          */
@@ -565,6 +849,10 @@ public final class FontAwesome {
          * The regular newspaper icon.See <a href='https://fontawesome.com/v6/icons/newspaper?s=regular'>example</a>
          */
         NEWSPAPER,
+        /**
+         * The regular notdef icon.See <a href='https://fontawesome.com/v6/icons/notdef?s=regular'>example</a>
+         */
+        NOTDEF,
         /**
          * The regular note-sticky icon.See <a href='https://fontawesome.com/v6/icons/note-sticky?s=regular'>example</a>
          */
@@ -586,13 +874,33 @@ public final class FontAwesome {
          */
         PASTE,
         /**
+         * The regular pause-circle icon.See <a href='https://fontawesome.com/v6/icons/pause-circle?s=regular'>example</a>
+         */
+        PAUSE_CIRCLE,
+        /**
          * The regular pen-to-square icon.See <a href='https://fontawesome.com/v6/icons/pen-to-square?s=regular'>example</a>
          */
         PEN_TO_SQUARE,
         /**
+         * The regular play-circle icon.See <a href='https://fontawesome.com/v6/icons/play-circle?s=regular'>example</a>
+         */
+        PLAY_CIRCLE,
+        /**
+         * The regular plus-square icon.See <a href='https://fontawesome.com/v6/icons/plus-square?s=regular'>example</a>
+         */
+        PLUS_SQUARE,
+        /**
+         * The regular question-circle icon.See <a href='https://fontawesome.com/v6/icons/question-circle?s=regular'>example</a>
+         */
+        QUESTION_CIRCLE,
+        /**
          * The regular rectangle-list icon.See <a href='https://fontawesome.com/v6/icons/rectangle-list?s=regular'>example</a>
          */
         RECTANGLE_LIST,
+        /**
+         * The regular rectangle-times icon.See <a href='https://fontawesome.com/v6/icons/rectangle-times?s=regular'>example</a>
+         */
+        RECTANGLE_TIMES,
         /**
          * The regular rectangle-xmark icon.See <a href='https://fontawesome.com/v6/icons/rectangle-xmark?s=regular'>example</a>
          */
@@ -602,13 +910,45 @@ public final class FontAwesome {
          */
         REGISTERED,
         /**
+         * The regular sad-cry icon.See <a href='https://fontawesome.com/v6/icons/sad-cry?s=regular'>example</a>
+         */
+        SAD_CRY,
+        /**
+         * The regular sad-tear icon.See <a href='https://fontawesome.com/v6/icons/sad-tear?s=regular'>example</a>
+         */
+        SAD_TEAR,
+        /**
+         * The regular save icon.See <a href='https://fontawesome.com/v6/icons/save?s=regular'>example</a>
+         */
+        SAVE,
+        /**
          * The regular share-from-square icon.See <a href='https://fontawesome.com/v6/icons/share-from-square?s=regular'>example</a>
          */
         SHARE_FROM_SQUARE,
         /**
+         * The regular share-square icon.See <a href='https://fontawesome.com/v6/icons/share-square?s=regular'>example</a>
+         */
+        SHARE_SQUARE,
+        /**
+         * The regular smile icon.See <a href='https://fontawesome.com/v6/icons/smile?s=regular'>example</a>
+         */
+        SMILE,
+        /**
+         * The regular smile-beam icon.See <a href='https://fontawesome.com/v6/icons/smile-beam?s=regular'>example</a>
+         */
+        SMILE_BEAM,
+        /**
+         * The regular smile-wink icon.See <a href='https://fontawesome.com/v6/icons/smile-wink?s=regular'>example</a>
+         */
+        SMILE_WINK,
+        /**
          * The regular snowflake icon.See <a href='https://fontawesome.com/v6/icons/snowflake?s=regular'>example</a>
          */
         SNOWFLAKE,
+        /**
+         * The regular soccer-ball icon.See <a href='https://fontawesome.com/v6/icons/soccer-ball?s=regular'>example</a>
+         */
+        SOCCER_BALL,
         /**
          * The regular square icon.See <a href='https://fontawesome.com/v6/icons/square?s=regular'>example</a>
          */
@@ -654,13 +994,29 @@ public final class FontAwesome {
          */
         STAR_HALF,
         /**
+         * The regular star-half-alt icon.See <a href='https://fontawesome.com/v6/icons/star-half-alt?s=regular'>example</a>
+         */
+        STAR_HALF_ALT,
+        /**
          * The regular star-half-stroke icon.See <a href='https://fontawesome.com/v6/icons/star-half-stroke?s=regular'>example</a>
          */
         STAR_HALF_STROKE,
         /**
+         * The regular sticky-note icon.See <a href='https://fontawesome.com/v6/icons/sticky-note?s=regular'>example</a>
+         */
+        STICKY_NOTE,
+        /**
+         * The regular stop-circle icon.See <a href='https://fontawesome.com/v6/icons/stop-circle?s=regular'>example</a>
+         */
+        STOP_CIRCLE,
+        /**
          * The regular sun icon.See <a href='https://fontawesome.com/v6/icons/sun?s=regular'>example</a>
          */
         SUN,
+        /**
+         * The regular surprise icon.See <a href='https://fontawesome.com/v6/icons/surprise?s=regular'>example</a>
+         */
+        SURPRISE,
         /**
          * The regular thumbs-down icon.See <a href='https://fontawesome.com/v6/icons/thumbs-down?s=regular'>example</a>
          */
@@ -670,6 +1026,22 @@ public final class FontAwesome {
          */
         THUMBS_UP,
         /**
+         * The regular times-circle icon.See <a href='https://fontawesome.com/v6/icons/times-circle?s=regular'>example</a>
+         */
+        TIMES_CIRCLE,
+        /**
+         * The regular times-rectangle icon.See <a href='https://fontawesome.com/v6/icons/times-rectangle?s=regular'>example</a>
+         */
+        TIMES_RECTANGLE,
+        /**
+         * The regular tired icon.See <a href='https://fontawesome.com/v6/icons/tired?s=regular'>example</a>
+         */
+        TIRED,
+        /**
+         * The regular trash-alt icon.See <a href='https://fontawesome.com/v6/icons/trash-alt?s=regular'>example</a>
+         */
+        TRASH_ALT,
+        /**
          * The regular trash-can icon.See <a href='https://fontawesome.com/v6/icons/trash-can?s=regular'>example</a>
          */
         TRASH_CAN,
@@ -677,6 +1049,18 @@ public final class FontAwesome {
          * The regular user icon.See <a href='https://fontawesome.com/v6/icons/user?s=regular'>example</a>
          */
         USER,
+        /**
+         * The regular user-circle icon.See <a href='https://fontawesome.com/v6/icons/user-circle?s=regular'>example</a>
+         */
+        USER_CIRCLE,
+        /**
+         * The regular vcard icon.See <a href='https://fontawesome.com/v6/icons/vcard?s=regular'>example</a>
+         */
+        VCARD,
+        /**
+         * The regular window-close icon.See <a href='https://fontawesome.com/v6/icons/window-close?s=regular'>example</a>
+         */
+        WINDOW_CLOSE,
         /**
          * The regular window-maximize icon.See <a href='https://fontawesome.com/v6/icons/window-maximize?s=regular'>example</a>
          */
@@ -688,7 +1072,11 @@ public final class FontAwesome {
         /**
          * The regular window-restore icon.See <a href='https://fontawesome.com/v6/icons/window-restore?s=regular'>example</a>
          */
-        WINDOW_RESTORE;
+        WINDOW_RESTORE,
+        /**
+         * The regular xmark-circle icon.See <a href='https://fontawesome.com/v6/icons/xmark-circle?s=regular'>example</a>
+         */
+        XMARK_CIRCLE;
 
         /**
          * The Iconset name, i.e. {@code "far"}."
@@ -730,7 +1118,7 @@ public final class FontAwesome {
          * Server side component for {@code Regular}
          */
         @JsModule("./font-awesome-iron-iconset/far.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "4.1.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "4.2.0")
         @SuppressWarnings("serial")
         public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
@@ -795,6 +1183,14 @@ public final class FontAwesome {
          */
         A,
         /**
+         * The solid ad icon.See <a href='https://fontawesome.com/v6/icons/ad?s=solid'>example</a>
+         */
+        AD,
+        /**
+         * The solid add icon.See <a href='https://fontawesome.com/v6/icons/add?s=solid'>example</a>
+         */
+        ADD,
+        /**
          * The solid address-book icon.See <a href='https://fontawesome.com/v6/icons/address-book?s=solid'>example</a>
          */
         ADDRESS_BOOK,
@@ -802,6 +1198,14 @@ public final class FontAwesome {
          * The solid address-card icon.See <a href='https://fontawesome.com/v6/icons/address-card?s=solid'>example</a>
          */
         ADDRESS_CARD,
+        /**
+         * The solid adjust icon.See <a href='https://fontawesome.com/v6/icons/adjust?s=solid'>example</a>
+         */
+        ADJUST,
+        /**
+         * The solid air-freshener icon.See <a href='https://fontawesome.com/v6/icons/air-freshener?s=solid'>example</a>
+         */
+        AIR_FRESHENER,
         /**
          * The solid align-center icon.See <a href='https://fontawesome.com/v6/icons/align-center?s=solid'>example</a>
          */
@@ -819,9 +1223,53 @@ public final class FontAwesome {
          */
         ALIGN_RIGHT,
         /**
+         * The solid allergies icon.See <a href='https://fontawesome.com/v6/icons/allergies?s=solid'>example</a>
+         */
+        ALLERGIES,
+        /**
+         * The solid ambulance icon.See <a href='https://fontawesome.com/v6/icons/ambulance?s=solid'>example</a>
+         */
+        AMBULANCE,
+        /**
+         * The solid american-sign-language-interpreting icon.See <a href='https://fontawesome.com/v6/icons/american-sign-language-interpreting?s=solid'>example</a>
+         */
+        AMERICAN_SIGN_LANGUAGE_INTERPRETING,
+        /**
          * The solid anchor icon.See <a href='https://fontawesome.com/v6/icons/anchor?s=solid'>example</a>
          */
         ANCHOR,
+        /**
+         * The solid anchor-circle-check icon.See <a href='https://fontawesome.com/v6/icons/anchor-circle-check?s=solid'>example</a>
+         */
+        ANCHOR_CIRCLE_CHECK,
+        /**
+         * The solid anchor-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/anchor-circle-exclamation?s=solid'>example</a>
+         */
+        ANCHOR_CIRCLE_EXCLAMATION,
+        /**
+         * The solid anchor-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/anchor-circle-xmark?s=solid'>example</a>
+         */
+        ANCHOR_CIRCLE_XMARK,
+        /**
+         * The solid anchor-lock icon.See <a href='https://fontawesome.com/v6/icons/anchor-lock?s=solid'>example</a>
+         */
+        ANCHOR_LOCK,
+        /**
+         * The solid angle-double-down icon.See <a href='https://fontawesome.com/v6/icons/angle-double-down?s=solid'>example</a>
+         */
+        ANGLE_DOUBLE_DOWN,
+        /**
+         * The solid angle-double-left icon.See <a href='https://fontawesome.com/v6/icons/angle-double-left?s=solid'>example</a>
+         */
+        ANGLE_DOUBLE_LEFT,
+        /**
+         * The solid angle-double-right icon.See <a href='https://fontawesome.com/v6/icons/angle-double-right?s=solid'>example</a>
+         */
+        ANGLE_DOUBLE_RIGHT,
+        /**
+         * The solid angle-double-up icon.See <a href='https://fontawesome.com/v6/icons/angle-double-up?s=solid'>example</a>
+         */
+        ANGLE_DOUBLE_UP,
         /**
          * The solid angle-down icon.See <a href='https://fontawesome.com/v6/icons/angle-down?s=solid'>example</a>
          */
@@ -855,17 +1303,65 @@ public final class FontAwesome {
          */
         ANGLES_UP,
         /**
+         * The solid angry icon.See <a href='https://fontawesome.com/v6/icons/angry?s=solid'>example</a>
+         */
+        ANGRY,
+        /**
          * The solid ankh icon.See <a href='https://fontawesome.com/v6/icons/ankh?s=solid'>example</a>
          */
         ANKH,
+        /**
+         * The solid apple-alt icon.See <a href='https://fontawesome.com/v6/icons/apple-alt?s=solid'>example</a>
+         */
+        APPLE_ALT,
         /**
          * The solid apple-whole icon.See <a href='https://fontawesome.com/v6/icons/apple-whole?s=solid'>example</a>
          */
         APPLE_WHOLE,
         /**
+         * The solid archive icon.See <a href='https://fontawesome.com/v6/icons/archive?s=solid'>example</a>
+         */
+        ARCHIVE,
+        /**
          * The solid archway icon.See <a href='https://fontawesome.com/v6/icons/archway?s=solid'>example</a>
          */
         ARCHWAY,
+        /**
+         * The solid area-chart icon.See <a href='https://fontawesome.com/v6/icons/area-chart?s=solid'>example</a>
+         */
+        AREA_CHART,
+        /**
+         * The solid arrow-alt-circle-down icon.See <a href='https://fontawesome.com/v6/icons/arrow-alt-circle-down?s=solid'>example</a>
+         */
+        ARROW_ALT_CIRCLE_DOWN,
+        /**
+         * The solid arrow-alt-circle-left icon.See <a href='https://fontawesome.com/v6/icons/arrow-alt-circle-left?s=solid'>example</a>
+         */
+        ARROW_ALT_CIRCLE_LEFT,
+        /**
+         * The solid arrow-alt-circle-right icon.See <a href='https://fontawesome.com/v6/icons/arrow-alt-circle-right?s=solid'>example</a>
+         */
+        ARROW_ALT_CIRCLE_RIGHT,
+        /**
+         * The solid arrow-alt-circle-up icon.See <a href='https://fontawesome.com/v6/icons/arrow-alt-circle-up?s=solid'>example</a>
+         */
+        ARROW_ALT_CIRCLE_UP,
+        /**
+         * The solid arrow-circle-down icon.See <a href='https://fontawesome.com/v6/icons/arrow-circle-down?s=solid'>example</a>
+         */
+        ARROW_CIRCLE_DOWN,
+        /**
+         * The solid arrow-circle-left icon.See <a href='https://fontawesome.com/v6/icons/arrow-circle-left?s=solid'>example</a>
+         */
+        ARROW_CIRCLE_LEFT,
+        /**
+         * The solid arrow-circle-right icon.See <a href='https://fontawesome.com/v6/icons/arrow-circle-right?s=solid'>example</a>
+         */
+        ARROW_CIRCLE_RIGHT,
+        /**
+         * The solid arrow-circle-up icon.See <a href='https://fontawesome.com/v6/icons/arrow-circle-up?s=solid'>example</a>
+         */
+        ARROW_CIRCLE_UP,
         /**
          * The solid arrow-down icon.See <a href='https://fontawesome.com/v6/icons/arrow-down?s=solid'>example</a>
          */
@@ -891,6 +1387,14 @@ public final class FontAwesome {
          */
         ARROW_DOWN_SHORT_WIDE,
         /**
+         * The solid arrow-down-up-across-line icon.See <a href='https://fontawesome.com/v6/icons/arrow-down-up-across-line?s=solid'>example</a>
+         */
+        ARROW_DOWN_UP_ACROSS_LINE,
+        /**
+         * The solid arrow-down-up-lock icon.See <a href='https://fontawesome.com/v6/icons/arrow-down-up-lock?s=solid'>example</a>
+         */
+        ARROW_DOWN_UP_LOCK,
+        /**
          * The solid arrow-down-wide-short icon.See <a href='https://fontawesome.com/v6/icons/arrow-down-wide-short?s=solid'>example</a>
          */
         ARROW_DOWN_WIDE_SHORT,
@@ -906,6 +1410,10 @@ public final class FontAwesome {
          * The solid arrow-left-long icon.See <a href='https://fontawesome.com/v6/icons/arrow-left-long?s=solid'>example</a>
          */
         ARROW_LEFT_LONG,
+        /**
+         * The solid arrow-left-rotate icon.See <a href='https://fontawesome.com/v6/icons/arrow-left-rotate?s=solid'>example</a>
+         */
+        ARROW_LEFT_ROTATE,
         /**
          * The solid arrow-pointer icon.See <a href='https://fontawesome.com/v6/icons/arrow-pointer?s=solid'>example</a>
          */
@@ -923,13 +1431,41 @@ public final class FontAwesome {
          */
         ARROW_RIGHT_FROM_BRACKET,
         /**
+         * The solid arrow-right-from-file icon.See <a href='https://fontawesome.com/v6/icons/arrow-right-from-file?s=solid'>example</a>
+         */
+        ARROW_RIGHT_FROM_FILE,
+        /**
          * The solid arrow-right-long icon.See <a href='https://fontawesome.com/v6/icons/arrow-right-long?s=solid'>example</a>
          */
         ARROW_RIGHT_LONG,
         /**
+         * The solid arrow-right-rotate icon.See <a href='https://fontawesome.com/v6/icons/arrow-right-rotate?s=solid'>example</a>
+         */
+        ARROW_RIGHT_ROTATE,
+        /**
          * The solid arrow-right-to-bracket icon.See <a href='https://fontawesome.com/v6/icons/arrow-right-to-bracket?s=solid'>example</a>
          */
         ARROW_RIGHT_TO_BRACKET,
+        /**
+         * The solid arrow-right-to-city icon.See <a href='https://fontawesome.com/v6/icons/arrow-right-to-city?s=solid'>example</a>
+         */
+        ARROW_RIGHT_TO_CITY,
+        /**
+         * The solid arrow-right-to-file icon.See <a href='https://fontawesome.com/v6/icons/arrow-right-to-file?s=solid'>example</a>
+         */
+        ARROW_RIGHT_TO_FILE,
+        /**
+         * The solid arrow-rotate-back icon.See <a href='https://fontawesome.com/v6/icons/arrow-rotate-back?s=solid'>example</a>
+         */
+        ARROW_ROTATE_BACK,
+        /**
+         * The solid arrow-rotate-backward icon.See <a href='https://fontawesome.com/v6/icons/arrow-rotate-backward?s=solid'>example</a>
+         */
+        ARROW_ROTATE_BACKWARD,
+        /**
+         * The solid arrow-rotate-forward icon.See <a href='https://fontawesome.com/v6/icons/arrow-rotate-forward?s=solid'>example</a>
+         */
+        ARROW_ROTATE_FORWARD,
         /**
          * The solid arrow-rotate-left icon.See <a href='https://fontawesome.com/v6/icons/arrow-rotate-left?s=solid'>example</a>
          */
@@ -950,6 +1486,10 @@ public final class FontAwesome {
          * The solid arrow-turn-down icon.See <a href='https://fontawesome.com/v6/icons/arrow-turn-down?s=solid'>example</a>
          */
         ARROW_TURN_DOWN,
+        /**
+         * The solid arrow-turn-right icon.See <a href='https://fontawesome.com/v6/icons/arrow-turn-right?s=solid'>example</a>
+         */
+        ARROW_TURN_RIGHT,
         /**
          * The solid arrow-turn-up icon.See <a href='https://fontawesome.com/v6/icons/arrow-turn-up?s=solid'>example</a>
          */
@@ -975,9 +1515,21 @@ public final class FontAwesome {
          */
         ARROW_UP_FROM_BRACKET,
         /**
+         * The solid arrow-up-from-ground-water icon.See <a href='https://fontawesome.com/v6/icons/arrow-up-from-ground-water?s=solid'>example</a>
+         */
+        ARROW_UP_FROM_GROUND_WATER,
+        /**
+         * The solid arrow-up-from-water-pump icon.See <a href='https://fontawesome.com/v6/icons/arrow-up-from-water-pump?s=solid'>example</a>
+         */
+        ARROW_UP_FROM_WATER_PUMP,
+        /**
          * The solid arrow-up-long icon.See <a href='https://fontawesome.com/v6/icons/arrow-up-long?s=solid'>example</a>
          */
         ARROW_UP_LONG,
+        /**
+         * The solid arrow-up-right-dots icon.See <a href='https://fontawesome.com/v6/icons/arrow-up-right-dots?s=solid'>example</a>
+         */
+        ARROW_UP_RIGHT_DOTS,
         /**
          * The solid arrow-up-right-from-square icon.See <a href='https://fontawesome.com/v6/icons/arrow-up-right-from-square?s=solid'>example</a>
          */
@@ -995,13 +1547,73 @@ public final class FontAwesome {
          */
         ARROW_UP_Z_A,
         /**
+         * The solid arrows icon.See <a href='https://fontawesome.com/v6/icons/arrows?s=solid'>example</a>
+         */
+        ARROWS,
+        /**
+         * The solid arrows-alt icon.See <a href='https://fontawesome.com/v6/icons/arrows-alt?s=solid'>example</a>
+         */
+        ARROWS_ALT,
+        /**
+         * The solid arrows-alt-h icon.See <a href='https://fontawesome.com/v6/icons/arrows-alt-h?s=solid'>example</a>
+         */
+        ARROWS_ALT_H,
+        /**
+         * The solid arrows-alt-v icon.See <a href='https://fontawesome.com/v6/icons/arrows-alt-v?s=solid'>example</a>
+         */
+        ARROWS_ALT_V,
+        /**
+         * The solid arrows-down-to-line icon.See <a href='https://fontawesome.com/v6/icons/arrows-down-to-line?s=solid'>example</a>
+         */
+        ARROWS_DOWN_TO_LINE,
+        /**
+         * The solid arrows-down-to-people icon.See <a href='https://fontawesome.com/v6/icons/arrows-down-to-people?s=solid'>example</a>
+         */
+        ARROWS_DOWN_TO_PEOPLE,
+        /**
+         * The solid arrows-h icon.See <a href='https://fontawesome.com/v6/icons/arrows-h?s=solid'>example</a>
+         */
+        ARROWS_H,
+        /**
          * The solid arrows-left-right icon.See <a href='https://fontawesome.com/v6/icons/arrows-left-right?s=solid'>example</a>
          */
         ARROWS_LEFT_RIGHT,
         /**
+         * The solid arrows-left-right-to-line icon.See <a href='https://fontawesome.com/v6/icons/arrows-left-right-to-line?s=solid'>example</a>
+         */
+        ARROWS_LEFT_RIGHT_TO_LINE,
+        /**
          * The solid arrows-rotate icon.See <a href='https://fontawesome.com/v6/icons/arrows-rotate?s=solid'>example</a>
          */
         ARROWS_ROTATE,
+        /**
+         * The solid arrows-spin icon.See <a href='https://fontawesome.com/v6/icons/arrows-spin?s=solid'>example</a>
+         */
+        ARROWS_SPIN,
+        /**
+         * The solid arrows-split-up-and-left icon.See <a href='https://fontawesome.com/v6/icons/arrows-split-up-and-left?s=solid'>example</a>
+         */
+        ARROWS_SPLIT_UP_AND_LEFT,
+        /**
+         * The solid arrows-to-circle icon.See <a href='https://fontawesome.com/v6/icons/arrows-to-circle?s=solid'>example</a>
+         */
+        ARROWS_TO_CIRCLE,
+        /**
+         * The solid arrows-to-dot icon.See <a href='https://fontawesome.com/v6/icons/arrows-to-dot?s=solid'>example</a>
+         */
+        ARROWS_TO_DOT,
+        /**
+         * The solid arrows-to-eye icon.See <a href='https://fontawesome.com/v6/icons/arrows-to-eye?s=solid'>example</a>
+         */
+        ARROWS_TO_EYE,
+        /**
+         * The solid arrows-turn-right icon.See <a href='https://fontawesome.com/v6/icons/arrows-turn-right?s=solid'>example</a>
+         */
+        ARROWS_TURN_RIGHT,
+        /**
+         * The solid arrows-turn-to-dots icon.See <a href='https://fontawesome.com/v6/icons/arrows-turn-to-dots?s=solid'>example</a>
+         */
+        ARROWS_TURN_TO_DOTS,
         /**
          * The solid arrows-up-down icon.See <a href='https://fontawesome.com/v6/icons/arrows-up-down?s=solid'>example</a>
          */
@@ -1011,6 +1623,22 @@ public final class FontAwesome {
          */
         ARROWS_UP_DOWN_LEFT_RIGHT,
         /**
+         * The solid arrows-up-to-line icon.See <a href='https://fontawesome.com/v6/icons/arrows-up-to-line?s=solid'>example</a>
+         */
+        ARROWS_UP_TO_LINE,
+        /**
+         * The solid arrows-v icon.See <a href='https://fontawesome.com/v6/icons/arrows-v?s=solid'>example</a>
+         */
+        ARROWS_V,
+        /**
+         * The solid asl-interpreting icon.See <a href='https://fontawesome.com/v6/icons/asl-interpreting?s=solid'>example</a>
+         */
+        ASL_INTERPRETING,
+        /**
+         * The solid assistive-listening-systems icon.See <a href='https://fontawesome.com/v6/icons/assistive-listening-systems?s=solid'>example</a>
+         */
+        ASSISTIVE_LISTENING_SYSTEMS,
+        /**
          * The solid asterisk icon.See <a href='https://fontawesome.com/v6/icons/asterisk?s=solid'>example</a>
          */
         ASTERISK,
@@ -1018,6 +1646,10 @@ public final class FontAwesome {
          * The solid at icon.See <a href='https://fontawesome.com/v6/icons/at?s=solid'>example</a>
          */
         AT,
+        /**
+         * The solid atlas icon.See <a href='https://fontawesome.com/v6/icons/atlas?s=solid'>example</a>
+         */
+        ATLAS,
         /**
          * The solid atom icon.See <a href='https://fontawesome.com/v6/icons/atom?s=solid'>example</a>
          */
@@ -1030,6 +1662,10 @@ public final class FontAwesome {
          * The solid austral-sign icon.See <a href='https://fontawesome.com/v6/icons/austral-sign?s=solid'>example</a>
          */
         AUSTRAL_SIGN,
+        /**
+         * The solid automobile icon.See <a href='https://fontawesome.com/v6/icons/automobile?s=solid'>example</a>
+         */
+        AUTOMOBILE,
         /**
          * The solid award icon.See <a href='https://fontawesome.com/v6/icons/award?s=solid'>example</a>
          */
@@ -1046,6 +1682,10 @@ public final class FontAwesome {
          * The solid baby-carriage icon.See <a href='https://fontawesome.com/v6/icons/baby-carriage?s=solid'>example</a>
          */
         BABY_CARRIAGE,
+        /**
+         * The solid backspace icon.See <a href='https://fontawesome.com/v6/icons/backspace?s=solid'>example</a>
+         */
+        BACKSPACE,
         /**
          * The solid backward icon.See <a href='https://fontawesome.com/v6/icons/backward?s=solid'>example</a>
          */
@@ -1083,6 +1723,18 @@ public final class FontAwesome {
          */
         BAHT_SIGN,
         /**
+         * The solid balance-scale icon.See <a href='https://fontawesome.com/v6/icons/balance-scale?s=solid'>example</a>
+         */
+        BALANCE_SCALE,
+        /**
+         * The solid balance-scale-left icon.See <a href='https://fontawesome.com/v6/icons/balance-scale-left?s=solid'>example</a>
+         */
+        BALANCE_SCALE_LEFT,
+        /**
+         * The solid balance-scale-right icon.See <a href='https://fontawesome.com/v6/icons/balance-scale-right?s=solid'>example</a>
+         */
+        BALANCE_SCALE_RIGHT,
+        /**
          * The solid ban icon.See <a href='https://fontawesome.com/v6/icons/ban?s=solid'>example</a>
          */
         BAN,
@@ -1091,9 +1743,21 @@ public final class FontAwesome {
          */
         BAN_SMOKING,
         /**
+         * The solid band-aid icon.See <a href='https://fontawesome.com/v6/icons/band-aid?s=solid'>example</a>
+         */
+        BAND_AID,
+        /**
          * The solid bandage icon.See <a href='https://fontawesome.com/v6/icons/bandage?s=solid'>example</a>
          */
         BANDAGE,
+        /**
+         * The solid bank icon.See <a href='https://fontawesome.com/v6/icons/bank?s=solid'>example</a>
+         */
+        BANK,
+        /**
+         * The solid bar-chart icon.See <a href='https://fontawesome.com/v6/icons/bar-chart?s=solid'>example</a>
+         */
+        BAR_CHART,
         /**
          * The solid barcode icon.See <a href='https://fontawesome.com/v6/icons/barcode?s=solid'>example</a>
          */
@@ -1115,6 +1779,10 @@ public final class FontAwesome {
          */
         BASEBALL,
         /**
+         * The solid baseball-ball icon.See <a href='https://fontawesome.com/v6/icons/baseball-ball?s=solid'>example</a>
+         */
+        BASEBALL_BALL,
+        /**
          * The solid baseball-bat-ball icon.See <a href='https://fontawesome.com/v6/icons/baseball-bat-ball?s=solid'>example</a>
          */
         BASEBALL_BAT_BALL,
@@ -1127,9 +1795,45 @@ public final class FontAwesome {
          */
         BASKETBALL,
         /**
+         * The solid basketball-ball icon.See <a href='https://fontawesome.com/v6/icons/basketball-ball?s=solid'>example</a>
+         */
+        BASKETBALL_BALL,
+        /**
          * The solid bath icon.See <a href='https://fontawesome.com/v6/icons/bath?s=solid'>example</a>
          */
         BATH,
+        /**
+         * The solid bathtub icon.See <a href='https://fontawesome.com/v6/icons/bathtub?s=solid'>example</a>
+         */
+        BATHTUB,
+        /**
+         * The solid battery icon.See <a href='https://fontawesome.com/v6/icons/battery?s=solid'>example</a>
+         */
+        BATTERY,
+        /**
+         * The solid battery-0 icon.See <a href='https://fontawesome.com/v6/icons/battery-0?s=solid'>example</a>
+         */
+        BATTERY_0,
+        /**
+         * The solid battery-2 icon.See <a href='https://fontawesome.com/v6/icons/battery-2?s=solid'>example</a>
+         */
+        BATTERY_2,
+        /**
+         * The solid battery-3 icon.See <a href='https://fontawesome.com/v6/icons/battery-3?s=solid'>example</a>
+         */
+        BATTERY_3,
+        /**
+         * The solid battery-4 icon.See <a href='https://fontawesome.com/v6/icons/battery-4?s=solid'>example</a>
+         */
+        BATTERY_4,
+        /**
+         * The solid battery-5 icon.See <a href='https://fontawesome.com/v6/icons/battery-5?s=solid'>example</a>
+         */
+        BATTERY_5,
+        /**
+         * The solid battery-car icon.See <a href='https://fontawesome.com/v6/icons/battery-car?s=solid'>example</a>
+         */
+        BATTERY_CAR,
         /**
          * The solid battery-empty icon.See <a href='https://fontawesome.com/v6/icons/battery-empty?s=solid'>example</a>
          */
@@ -1159,6 +1863,10 @@ public final class FontAwesome {
          */
         BED_PULSE,
         /**
+         * The solid beer icon.See <a href='https://fontawesome.com/v6/icons/beer?s=solid'>example</a>
+         */
+        BEER,
+        /**
          * The solid beer-mug-empty icon.See <a href='https://fontawesome.com/v6/icons/beer-mug-empty?s=solid'>example</a>
          */
         BEER_MUG_EMPTY,
@@ -1179,9 +1887,17 @@ public final class FontAwesome {
          */
         BEZIER_CURVE,
         /**
+         * The solid bible icon.See <a href='https://fontawesome.com/v6/icons/bible?s=solid'>example</a>
+         */
+        BIBLE,
+        /**
          * The solid bicycle icon.See <a href='https://fontawesome.com/v6/icons/bicycle?s=solid'>example</a>
          */
         BICYCLE,
+        /**
+         * The solid biking icon.See <a href='https://fontawesome.com/v6/icons/biking?s=solid'>example</a>
+         */
+        BIKING,
         /**
          * The solid binoculars icon.See <a href='https://fontawesome.com/v6/icons/binoculars?s=solid'>example</a>
          */
@@ -1191,9 +1907,17 @@ public final class FontAwesome {
          */
         BIOHAZARD,
         /**
+         * The solid birthday-cake icon.See <a href='https://fontawesome.com/v6/icons/birthday-cake?s=solid'>example</a>
+         */
+        BIRTHDAY_CAKE,
+        /**
          * The solid bitcoin-sign icon.See <a href='https://fontawesome.com/v6/icons/bitcoin-sign?s=solid'>example</a>
          */
         BITCOIN_SIGN,
+        /**
+         * The solid blackboard icon.See <a href='https://fontawesome.com/v6/icons/blackboard?s=solid'>example</a>
+         */
+        BLACKBOARD,
         /**
          * The solid blender icon.See <a href='https://fontawesome.com/v6/icons/blender?s=solid'>example</a>
          */
@@ -1202,6 +1926,10 @@ public final class FontAwesome {
          * The solid blender-phone icon.See <a href='https://fontawesome.com/v6/icons/blender-phone?s=solid'>example</a>
          */
         BLENDER_PHONE,
+        /**
+         * The solid blind icon.See <a href='https://fontawesome.com/v6/icons/blind?s=solid'>example</a>
+         */
+        BLIND,
         /**
          * The solid blog icon.See <a href='https://fontawesome.com/v6/icons/blog?s=solid'>example</a>
          */
@@ -1243,6 +1971,14 @@ public final class FontAwesome {
          */
         BOOK_BIBLE,
         /**
+         * The solid book-bookmark icon.See <a href='https://fontawesome.com/v6/icons/book-bookmark?s=solid'>example</a>
+         */
+        BOOK_BOOKMARK,
+        /**
+         * The solid book-dead icon.See <a href='https://fontawesome.com/v6/icons/book-dead?s=solid'>example</a>
+         */
+        BOOK_DEAD,
+        /**
          * The solid book-journal-whills icon.See <a href='https://fontawesome.com/v6/icons/book-journal-whills?s=solid'>example</a>
          */
         BOOK_JOURNAL_WHILLS,
@@ -1263,9 +1999,17 @@ public final class FontAwesome {
          */
         BOOK_QURAN,
         /**
+         * The solid book-reader icon.See <a href='https://fontawesome.com/v6/icons/book-reader?s=solid'>example</a>
+         */
+        BOOK_READER,
+        /**
          * The solid book-skull icon.See <a href='https://fontawesome.com/v6/icons/book-skull?s=solid'>example</a>
          */
         BOOK_SKULL,
+        /**
+         * The solid book-tanakh icon.See <a href='https://fontawesome.com/v6/icons/book-tanakh?s=solid'>example</a>
+         */
+        BOOK_TANAKH,
         /**
          * The solid bookmark icon.See <a href='https://fontawesome.com/v6/icons/bookmark?s=solid'>example</a>
          */
@@ -1279,9 +2023,33 @@ public final class FontAwesome {
          */
         BORDER_NONE,
         /**
+         * The solid border-style icon.See <a href='https://fontawesome.com/v6/icons/border-style?s=solid'>example</a>
+         */
+        BORDER_STYLE,
+        /**
          * The solid border-top-left icon.See <a href='https://fontawesome.com/v6/icons/border-top-left?s=solid'>example</a>
          */
         BORDER_TOP_LEFT,
+        /**
+         * The solid bore-hole icon.See <a href='https://fontawesome.com/v6/icons/bore-hole?s=solid'>example</a>
+         */
+        BORE_HOLE,
+        /**
+         * The solid bottle-droplet icon.See <a href='https://fontawesome.com/v6/icons/bottle-droplet?s=solid'>example</a>
+         */
+        BOTTLE_DROPLET,
+        /**
+         * The solid bottle-water icon.See <a href='https://fontawesome.com/v6/icons/bottle-water?s=solid'>example</a>
+         */
+        BOTTLE_WATER,
+        /**
+         * The solid bowl-food icon.See <a href='https://fontawesome.com/v6/icons/bowl-food?s=solid'>example</a>
+         */
+        BOWL_FOOD,
+        /**
+         * The solid bowl-rice icon.See <a href='https://fontawesome.com/v6/icons/bowl-rice?s=solid'>example</a>
+         */
+        BOWL_RICE,
         /**
          * The solid bowling-ball icon.See <a href='https://fontawesome.com/v6/icons/bowling-ball?s=solid'>example</a>
          */
@@ -1303,6 +2071,18 @@ public final class FontAwesome {
          */
         BOX_TISSUE,
         /**
+         * The solid boxes icon.See <a href='https://fontawesome.com/v6/icons/boxes?s=solid'>example</a>
+         */
+        BOXES,
+        /**
+         * The solid boxes-alt icon.See <a href='https://fontawesome.com/v6/icons/boxes-alt?s=solid'>example</a>
+         */
+        BOXES_ALT,
+        /**
+         * The solid boxes-packing icon.See <a href='https://fontawesome.com/v6/icons/boxes-packing?s=solid'>example</a>
+         */
+        BOXES_PACKING,
+        /**
          * The solid boxes-stacked icon.See <a href='https://fontawesome.com/v6/icons/boxes-stacked?s=solid'>example</a>
          */
         BOXES_STACKED,
@@ -1323,13 +2103,45 @@ public final class FontAwesome {
          */
         BREAD_SLICE,
         /**
+         * The solid bridge icon.See <a href='https://fontawesome.com/v6/icons/bridge?s=solid'>example</a>
+         */
+        BRIDGE,
+        /**
+         * The solid bridge-circle-check icon.See <a href='https://fontawesome.com/v6/icons/bridge-circle-check?s=solid'>example</a>
+         */
+        BRIDGE_CIRCLE_CHECK,
+        /**
+         * The solid bridge-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/bridge-circle-exclamation?s=solid'>example</a>
+         */
+        BRIDGE_CIRCLE_EXCLAMATION,
+        /**
+         * The solid bridge-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/bridge-circle-xmark?s=solid'>example</a>
+         */
+        BRIDGE_CIRCLE_XMARK,
+        /**
+         * The solid bridge-lock icon.See <a href='https://fontawesome.com/v6/icons/bridge-lock?s=solid'>example</a>
+         */
+        BRIDGE_LOCK,
+        /**
+         * The solid bridge-water icon.See <a href='https://fontawesome.com/v6/icons/bridge-water?s=solid'>example</a>
+         */
+        BRIDGE_WATER,
+        /**
          * The solid briefcase icon.See <a href='https://fontawesome.com/v6/icons/briefcase?s=solid'>example</a>
          */
         BRIEFCASE,
         /**
+         * The solid briefcase-clock icon.See <a href='https://fontawesome.com/v6/icons/briefcase-clock?s=solid'>example</a>
+         */
+        BRIEFCASE_CLOCK,
+        /**
          * The solid briefcase-medical icon.See <a href='https://fontawesome.com/v6/icons/briefcase-medical?s=solid'>example</a>
          */
         BRIEFCASE_MEDICAL,
+        /**
+         * The solid broadcast-tower icon.See <a href='https://fontawesome.com/v6/icons/broadcast-tower?s=solid'>example</a>
+         */
+        BROADCAST_TOWER,
         /**
          * The solid broom icon.See <a href='https://fontawesome.com/v6/icons/broom?s=solid'>example</a>
          */
@@ -1343,6 +2155,10 @@ public final class FontAwesome {
          */
         BRUSH,
         /**
+         * The solid bucket icon.See <a href='https://fontawesome.com/v6/icons/bucket?s=solid'>example</a>
+         */
+        BUCKET,
+        /**
          * The solid bug icon.See <a href='https://fontawesome.com/v6/icons/bug?s=solid'>example</a>
          */
         BUG,
@@ -1351,13 +2167,61 @@ public final class FontAwesome {
          */
         BUG_SLASH,
         /**
+         * The solid bugs icon.See <a href='https://fontawesome.com/v6/icons/bugs?s=solid'>example</a>
+         */
+        BUGS,
+        /**
          * The solid building icon.See <a href='https://fontawesome.com/v6/icons/building?s=solid'>example</a>
          */
         BUILDING,
         /**
+         * The solid building-circle-arrow-right icon.See <a href='https://fontawesome.com/v6/icons/building-circle-arrow-right?s=solid'>example</a>
+         */
+        BUILDING_CIRCLE_ARROW_RIGHT,
+        /**
+         * The solid building-circle-check icon.See <a href='https://fontawesome.com/v6/icons/building-circle-check?s=solid'>example</a>
+         */
+        BUILDING_CIRCLE_CHECK,
+        /**
+         * The solid building-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/building-circle-exclamation?s=solid'>example</a>
+         */
+        BUILDING_CIRCLE_EXCLAMATION,
+        /**
+         * The solid building-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/building-circle-xmark?s=solid'>example</a>
+         */
+        BUILDING_CIRCLE_XMARK,
+        /**
          * The solid building-columns icon.See <a href='https://fontawesome.com/v6/icons/building-columns?s=solid'>example</a>
          */
         BUILDING_COLUMNS,
+        /**
+         * The solid building-flag icon.See <a href='https://fontawesome.com/v6/icons/building-flag?s=solid'>example</a>
+         */
+        BUILDING_FLAG,
+        /**
+         * The solid building-lock icon.See <a href='https://fontawesome.com/v6/icons/building-lock?s=solid'>example</a>
+         */
+        BUILDING_LOCK,
+        /**
+         * The solid building-ngo icon.See <a href='https://fontawesome.com/v6/icons/building-ngo?s=solid'>example</a>
+         */
+        BUILDING_NGO,
+        /**
+         * The solid building-shield icon.See <a href='https://fontawesome.com/v6/icons/building-shield?s=solid'>example</a>
+         */
+        BUILDING_SHIELD,
+        /**
+         * The solid building-un icon.See <a href='https://fontawesome.com/v6/icons/building-un?s=solid'>example</a>
+         */
+        BUILDING_UN,
+        /**
+         * The solid building-user icon.See <a href='https://fontawesome.com/v6/icons/building-user?s=solid'>example</a>
+         */
+        BUILDING_USER,
+        /**
+         * The solid building-wheat icon.See <a href='https://fontawesome.com/v6/icons/building-wheat?s=solid'>example</a>
+         */
+        BUILDING_WHEAT,
         /**
          * The solid bullhorn icon.See <a href='https://fontawesome.com/v6/icons/bullhorn?s=solid'>example</a>
          */
@@ -1371,9 +2235,21 @@ public final class FontAwesome {
          */
         BURGER,
         /**
+         * The solid burn icon.See <a href='https://fontawesome.com/v6/icons/burn?s=solid'>example</a>
+         */
+        BURN,
+        /**
+         * The solid burst icon.See <a href='https://fontawesome.com/v6/icons/burst?s=solid'>example</a>
+         */
+        BURST,
+        /**
          * The solid bus icon.See <a href='https://fontawesome.com/v6/icons/bus?s=solid'>example</a>
          */
         BUS,
+        /**
+         * The solid bus-alt icon.See <a href='https://fontawesome.com/v6/icons/bus-alt?s=solid'>example</a>
+         */
+        BUS_ALT,
         /**
          * The solid bus-simple icon.See <a href='https://fontawesome.com/v6/icons/bus-simple?s=solid'>example</a>
          */
@@ -1387,6 +2263,18 @@ public final class FontAwesome {
          */
         C,
         /**
+         * The solid cab icon.See <a href='https://fontawesome.com/v6/icons/cab?s=solid'>example</a>
+         */
+        CAB,
+        /**
+         * The solid cable-car icon.See <a href='https://fontawesome.com/v6/icons/cable-car?s=solid'>example</a>
+         */
+        CABLE_CAR,
+        /**
+         * The solid cake icon.See <a href='https://fontawesome.com/v6/icons/cake?s=solid'>example</a>
+         */
+        CAKE,
+        /**
          * The solid cake-candles icon.See <a href='https://fontawesome.com/v6/icons/cake-candles?s=solid'>example</a>
          */
         CAKE_CANDLES,
@@ -1398,6 +2286,10 @@ public final class FontAwesome {
          * The solid calendar icon.See <a href='https://fontawesome.com/v6/icons/calendar?s=solid'>example</a>
          */
         CALENDAR,
+        /**
+         * The solid calendar-alt icon.See <a href='https://fontawesome.com/v6/icons/calendar-alt?s=solid'>example</a>
+         */
+        CALENDAR_ALT,
         /**
          * The solid calendar-check icon.See <a href='https://fontawesome.com/v6/icons/calendar-check?s=solid'>example</a>
          */
@@ -1419,6 +2311,10 @@ public final class FontAwesome {
          */
         CALENDAR_PLUS,
         /**
+         * The solid calendar-times icon.See <a href='https://fontawesome.com/v6/icons/calendar-times?s=solid'>example</a>
+         */
+        CALENDAR_TIMES,
+        /**
          * The solid calendar-week icon.See <a href='https://fontawesome.com/v6/icons/calendar-week?s=solid'>example</a>
          */
         CALENDAR_WEEK,
@@ -1431,6 +2327,10 @@ public final class FontAwesome {
          */
         CAMERA,
         /**
+         * The solid camera-alt icon.See <a href='https://fontawesome.com/v6/icons/camera-alt?s=solid'>example</a>
+         */
+        CAMERA_ALT,
+        /**
          * The solid camera-retro icon.See <a href='https://fontawesome.com/v6/icons/camera-retro?s=solid'>example</a>
          */
         CAMERA_RETRO,
@@ -1442,6 +2342,10 @@ public final class FontAwesome {
          * The solid campground icon.See <a href='https://fontawesome.com/v6/icons/campground?s=solid'>example</a>
          */
         CAMPGROUND,
+        /**
+         * The solid cancel icon.See <a href='https://fontawesome.com/v6/icons/cancel?s=solid'>example</a>
+         */
+        CANCEL,
         /**
          * The solid candy-cane icon.See <a href='https://fontawesome.com/v6/icons/candy-cane?s=solid'>example</a>
          */
@@ -1459,13 +2363,25 @@ public final class FontAwesome {
          */
         CAR,
         /**
+         * The solid car-alt icon.See <a href='https://fontawesome.com/v6/icons/car-alt?s=solid'>example</a>
+         */
+        CAR_ALT,
+        /**
          * The solid car-battery icon.See <a href='https://fontawesome.com/v6/icons/car-battery?s=solid'>example</a>
          */
         CAR_BATTERY,
         /**
+         * The solid car-burst icon.See <a href='https://fontawesome.com/v6/icons/car-burst?s=solid'>example</a>
+         */
+        CAR_BURST,
+        /**
          * The solid car-crash icon.See <a href='https://fontawesome.com/v6/icons/car-crash?s=solid'>example</a>
          */
         CAR_CRASH,
+        /**
+         * The solid car-on icon.See <a href='https://fontawesome.com/v6/icons/car-on?s=solid'>example</a>
+         */
+        CAR_ON,
         /**
          * The solid car-rear icon.See <a href='https://fontawesome.com/v6/icons/car-rear?s=solid'>example</a>
          */
@@ -1474,6 +2390,10 @@ public final class FontAwesome {
          * The solid car-side icon.See <a href='https://fontawesome.com/v6/icons/car-side?s=solid'>example</a>
          */
         CAR_SIDE,
+        /**
+         * The solid car-tunnel icon.See <a href='https://fontawesome.com/v6/icons/car-tunnel?s=solid'>example</a>
+         */
+        CAR_TUNNEL,
         /**
          * The solid caravan icon.See <a href='https://fontawesome.com/v6/icons/caravan?s=solid'>example</a>
          */
@@ -1491,9 +2411,29 @@ public final class FontAwesome {
          */
         CARET_RIGHT,
         /**
+         * The solid caret-square-down icon.See <a href='https://fontawesome.com/v6/icons/caret-square-down?s=solid'>example</a>
+         */
+        CARET_SQUARE_DOWN,
+        /**
+         * The solid caret-square-left icon.See <a href='https://fontawesome.com/v6/icons/caret-square-left?s=solid'>example</a>
+         */
+        CARET_SQUARE_LEFT,
+        /**
+         * The solid caret-square-right icon.See <a href='https://fontawesome.com/v6/icons/caret-square-right?s=solid'>example</a>
+         */
+        CARET_SQUARE_RIGHT,
+        /**
+         * The solid caret-square-up icon.See <a href='https://fontawesome.com/v6/icons/caret-square-up?s=solid'>example</a>
+         */
+        CARET_SQUARE_UP,
+        /**
          * The solid caret-up icon.See <a href='https://fontawesome.com/v6/icons/caret-up?s=solid'>example</a>
          */
         CARET_UP,
+        /**
+         * The solid carriage-baby icon.See <a href='https://fontawesome.com/v6/icons/carriage-baby?s=solid'>example</a>
+         */
+        CARRIAGE_BABY,
         /**
          * The solid carrot icon.See <a href='https://fontawesome.com/v6/icons/carrot?s=solid'>example</a>
          */
@@ -1539,6 +2479,18 @@ public final class FontAwesome {
          */
         CERTIFICATE,
         /**
+         * The solid chain icon.See <a href='https://fontawesome.com/v6/icons/chain?s=solid'>example</a>
+         */
+        CHAIN,
+        /**
+         * The solid chain-broken icon.See <a href='https://fontawesome.com/v6/icons/chain-broken?s=solid'>example</a>
+         */
+        CHAIN_BROKEN,
+        /**
+         * The solid chain-slash icon.See <a href='https://fontawesome.com/v6/icons/chain-slash?s=solid'>example</a>
+         */
+        CHAIN_SLASH,
+        /**
          * The solid chair icon.See <a href='https://fontawesome.com/v6/icons/chair?s=solid'>example</a>
          */
         CHAIR,
@@ -1546,6 +2498,10 @@ public final class FontAwesome {
          * The solid chalkboard icon.See <a href='https://fontawesome.com/v6/icons/chalkboard?s=solid'>example</a>
          */
         CHALKBOARD,
+        /**
+         * The solid chalkboard-teacher icon.See <a href='https://fontawesome.com/v6/icons/chalkboard-teacher?s=solid'>example</a>
+         */
+        CHALKBOARD_TEACHER,
         /**
          * The solid chalkboard-user icon.See <a href='https://fontawesome.com/v6/icons/chalkboard-user?s=solid'>example</a>
          */
@@ -1583,13 +2539,25 @@ public final class FontAwesome {
          */
         CHART_PIE,
         /**
+         * The solid chart-simple icon.See <a href='https://fontawesome.com/v6/icons/chart-simple?s=solid'>example</a>
+         */
+        CHART_SIMPLE,
+        /**
          * The solid check icon.See <a href='https://fontawesome.com/v6/icons/check?s=solid'>example</a>
          */
         CHECK,
         /**
+         * The solid check-circle icon.See <a href='https://fontawesome.com/v6/icons/check-circle?s=solid'>example</a>
+         */
+        CHECK_CIRCLE,
+        /**
          * The solid check-double icon.See <a href='https://fontawesome.com/v6/icons/check-double?s=solid'>example</a>
          */
         CHECK_DOUBLE,
+        /**
+         * The solid check-square icon.See <a href='https://fontawesome.com/v6/icons/check-square?s=solid'>example</a>
+         */
+        CHECK_SQUARE,
         /**
          * The solid check-to-slot icon.See <a href='https://fontawesome.com/v6/icons/check-to-slot?s=solid'>example</a>
          */
@@ -1631,6 +2599,22 @@ public final class FontAwesome {
          */
         CHESS_ROOK,
         /**
+         * The solid chevron-circle-down icon.See <a href='https://fontawesome.com/v6/icons/chevron-circle-down?s=solid'>example</a>
+         */
+        CHEVRON_CIRCLE_DOWN,
+        /**
+         * The solid chevron-circle-left icon.See <a href='https://fontawesome.com/v6/icons/chevron-circle-left?s=solid'>example</a>
+         */
+        CHEVRON_CIRCLE_LEFT,
+        /**
+         * The solid chevron-circle-right icon.See <a href='https://fontawesome.com/v6/icons/chevron-circle-right?s=solid'>example</a>
+         */
+        CHEVRON_CIRCLE_RIGHT,
+        /**
+         * The solid chevron-circle-up icon.See <a href='https://fontawesome.com/v6/icons/chevron-circle-up?s=solid'>example</a>
+         */
+        CHEVRON_CIRCLE_UP,
+        /**
          * The solid chevron-down icon.See <a href='https://fontawesome.com/v6/icons/chevron-down?s=solid'>example</a>
          */
         CHEVRON_DOWN,
@@ -1650,6 +2634,22 @@ public final class FontAwesome {
          * The solid child icon.See <a href='https://fontawesome.com/v6/icons/child?s=solid'>example</a>
          */
         CHILD,
+        /**
+         * The solid child-dress icon.See <a href='https://fontawesome.com/v6/icons/child-dress?s=solid'>example</a>
+         */
+        CHILD_DRESS,
+        /**
+         * The solid child-reaching icon.See <a href='https://fontawesome.com/v6/icons/child-reaching?s=solid'>example</a>
+         */
+        CHILD_REACHING,
+        /**
+         * The solid child-rifle icon.See <a href='https://fontawesome.com/v6/icons/child-rifle?s=solid'>example</a>
+         */
+        CHILD_RIFLE,
+        /**
+         * The solid children icon.See <a href='https://fontawesome.com/v6/icons/children?s=solid'>example</a>
+         */
+        CHILDREN,
         /**
          * The solid church icon.See <a href='https://fontawesome.com/v6/icons/church?s=solid'>example</a>
          */
@@ -1731,6 +2731,10 @@ public final class FontAwesome {
          */
         CIRCLE_MINUS,
         /**
+         * The solid circle-nodes icon.See <a href='https://fontawesome.com/v6/icons/circle-nodes?s=solid'>example</a>
+         */
+        CIRCLE_NODES,
+        /**
          * The solid circle-notch icon.See <a href='https://fontawesome.com/v6/icons/circle-notch?s=solid'>example</a>
          */
         CIRCLE_NOTCH,
@@ -1783,6 +2787,10 @@ public final class FontAwesome {
          */
         CLAPPERBOARD,
         /**
+         * The solid clinic-medical icon.See <a href='https://fontawesome.com/v6/icons/clinic-medical?s=solid'>example</a>
+         */
+        CLINIC_MEDICAL,
+        /**
          * The solid clipboard icon.See <a href='https://fontawesome.com/v6/icons/clipboard?s=solid'>example</a>
          */
         CLIPBOARD,
@@ -1795,9 +2803,21 @@ public final class FontAwesome {
          */
         CLIPBOARD_LIST,
         /**
+         * The solid clipboard-question icon.See <a href='https://fontawesome.com/v6/icons/clipboard-question?s=solid'>example</a>
+         */
+        CLIPBOARD_QUESTION,
+        /**
+         * The solid clipboard-user icon.See <a href='https://fontawesome.com/v6/icons/clipboard-user?s=solid'>example</a>
+         */
+        CLIPBOARD_USER,
+        /**
          * The solid clock icon.See <a href='https://fontawesome.com/v6/icons/clock?s=solid'>example</a>
          */
         CLOCK,
+        /**
+         * The solid clock-four icon.See <a href='https://fontawesome.com/v6/icons/clock-four?s=solid'>example</a>
+         */
+        CLOCK_FOUR,
         /**
          * The solid clock-rotate-left icon.See <a href='https://fontawesome.com/v6/icons/clock-rotate-left?s=solid'>example</a>
          */
@@ -1806,6 +2826,10 @@ public final class FontAwesome {
          * The solid clone icon.See <a href='https://fontawesome.com/v6/icons/clone?s=solid'>example</a>
          */
         CLONE,
+        /**
+         * The solid close icon.See <a href='https://fontawesome.com/v6/icons/close?s=solid'>example</a>
+         */
+        CLOSE,
         /**
          * The solid closed-captioning icon.See <a href='https://fontawesome.com/v6/icons/closed-captioning?s=solid'>example</a>
          */
@@ -1822,6 +2846,18 @@ public final class FontAwesome {
          * The solid cloud-arrow-up icon.See <a href='https://fontawesome.com/v6/icons/cloud-arrow-up?s=solid'>example</a>
          */
         CLOUD_ARROW_UP,
+        /**
+         * The solid cloud-bolt icon.See <a href='https://fontawesome.com/v6/icons/cloud-bolt?s=solid'>example</a>
+         */
+        CLOUD_BOLT,
+        /**
+         * The solid cloud-download icon.See <a href='https://fontawesome.com/v6/icons/cloud-download?s=solid'>example</a>
+         */
+        CLOUD_DOWNLOAD,
+        /**
+         * The solid cloud-download-alt icon.See <a href='https://fontawesome.com/v6/icons/cloud-download-alt?s=solid'>example</a>
+         */
+        CLOUD_DOWNLOAD_ALT,
         /**
          * The solid cloud-meatball icon.See <a href='https://fontawesome.com/v6/icons/cloud-meatball?s=solid'>example</a>
          */
@@ -1843,6 +2879,10 @@ public final class FontAwesome {
          */
         CLOUD_SHOWERS_HEAVY,
         /**
+         * The solid cloud-showers-water icon.See <a href='https://fontawesome.com/v6/icons/cloud-showers-water?s=solid'>example</a>
+         */
+        CLOUD_SHOWERS_WATER,
+        /**
          * The solid cloud-sun icon.See <a href='https://fontawesome.com/v6/icons/cloud-sun?s=solid'>example</a>
          */
         CLOUD_SUN,
@@ -1851,9 +2891,25 @@ public final class FontAwesome {
          */
         CLOUD_SUN_RAIN,
         /**
+         * The solid cloud-upload icon.See <a href='https://fontawesome.com/v6/icons/cloud-upload?s=solid'>example</a>
+         */
+        CLOUD_UPLOAD,
+        /**
+         * The solid cloud-upload-alt icon.See <a href='https://fontawesome.com/v6/icons/cloud-upload-alt?s=solid'>example</a>
+         */
+        CLOUD_UPLOAD_ALT,
+        /**
          * The solid clover icon.See <a href='https://fontawesome.com/v6/icons/clover?s=solid'>example</a>
          */
         CLOVER,
+        /**
+         * The solid cny icon.See <a href='https://fontawesome.com/v6/icons/cny?s=solid'>example</a>
+         */
+        CNY,
+        /**
+         * The solid cocktail icon.See <a href='https://fontawesome.com/v6/icons/cocktail?s=solid'>example</a>
+         */
+        COCKTAIL,
         /**
          * The solid code icon.See <a href='https://fontawesome.com/v6/icons/code?s=solid'>example</a>
          */
@@ -1883,6 +2939,18 @@ public final class FontAwesome {
          */
         CODE_PULL_REQUEST,
         /**
+         * The solid coffee icon.See <a href='https://fontawesome.com/v6/icons/coffee?s=solid'>example</a>
+         */
+        COFFEE,
+        /**
+         * The solid cog icon.See <a href='https://fontawesome.com/v6/icons/cog?s=solid'>example</a>
+         */
+        COG,
+        /**
+         * The solid cogs icon.See <a href='https://fontawesome.com/v6/icons/cogs?s=solid'>example</a>
+         */
+        COGS,
+        /**
          * The solid coins icon.See <a href='https://fontawesome.com/v6/icons/coins?s=solid'>example</a>
          */
         COINS,
@@ -1891,9 +2959,17 @@ public final class FontAwesome {
          */
         COLON_SIGN,
         /**
+         * The solid columns icon.See <a href='https://fontawesome.com/v6/icons/columns?s=solid'>example</a>
+         */
+        COLUMNS,
+        /**
          * The solid comment icon.See <a href='https://fontawesome.com/v6/icons/comment?s=solid'>example</a>
          */
         COMMENT,
+        /**
+         * The solid comment-alt icon.See <a href='https://fontawesome.com/v6/icons/comment-alt?s=solid'>example</a>
+         */
+        COMMENT_ALT,
         /**
          * The solid comment-dollar icon.See <a href='https://fontawesome.com/v6/icons/comment-dollar?s=solid'>example</a>
          */
@@ -1914,6 +2990,10 @@ public final class FontAwesome {
          * The solid comment-sms icon.See <a href='https://fontawesome.com/v6/icons/comment-sms?s=solid'>example</a>
          */
         COMMENT_SMS,
+        /**
+         * The solid commenting icon.See <a href='https://fontawesome.com/v6/icons/commenting?s=solid'>example</a>
+         */
+        COMMENTING,
         /**
          * The solid comments icon.See <a href='https://fontawesome.com/v6/icons/comments?s=solid'>example</a>
          */
@@ -1939,9 +3019,33 @@ public final class FontAwesome {
          */
         COMPRESS,
         /**
+         * The solid compress-alt icon.See <a href='https://fontawesome.com/v6/icons/compress-alt?s=solid'>example</a>
+         */
+        COMPRESS_ALT,
+        /**
+         * The solid compress-arrows-alt icon.See <a href='https://fontawesome.com/v6/icons/compress-arrows-alt?s=solid'>example</a>
+         */
+        COMPRESS_ARROWS_ALT,
+        /**
+         * The solid computer icon.See <a href='https://fontawesome.com/v6/icons/computer?s=solid'>example</a>
+         */
+        COMPUTER,
+        /**
          * The solid computer-mouse icon.See <a href='https://fontawesome.com/v6/icons/computer-mouse?s=solid'>example</a>
          */
         COMPUTER_MOUSE,
+        /**
+         * The solid concierge-bell icon.See <a href='https://fontawesome.com/v6/icons/concierge-bell?s=solid'>example</a>
+         */
+        CONCIERGE_BELL,
+        /**
+         * The solid contact-book icon.See <a href='https://fontawesome.com/v6/icons/contact-book?s=solid'>example</a>
+         */
+        CONTACT_BOOK,
+        /**
+         * The solid contact-card icon.See <a href='https://fontawesome.com/v6/icons/contact-card?s=solid'>example</a>
+         */
+        CONTACT_CARD,
         /**
          * The solid cookie icon.See <a href='https://fontawesome.com/v6/icons/cookie?s=solid'>example</a>
          */
@@ -1963,13 +3067,25 @@ public final class FontAwesome {
          */
         COUCH,
         /**
+         * The solid cow icon.See <a href='https://fontawesome.com/v6/icons/cow?s=solid'>example</a>
+         */
+        COW,
+        /**
          * The solid credit-card icon.See <a href='https://fontawesome.com/v6/icons/credit-card?s=solid'>example</a>
          */
         CREDIT_CARD,
         /**
+         * The solid credit-card-alt icon.See <a href='https://fontawesome.com/v6/icons/credit-card-alt?s=solid'>example</a>
+         */
+        CREDIT_CARD_ALT,
+        /**
          * The solid crop icon.See <a href='https://fontawesome.com/v6/icons/crop?s=solid'>example</a>
          */
         CROP,
+        /**
+         * The solid crop-alt icon.See <a href='https://fontawesome.com/v6/icons/crop-alt?s=solid'>example</a>
+         */
+        CROP_ALT,
         /**
          * The solid crop-simple icon.See <a href='https://fontawesome.com/v6/icons/crop-simple?s=solid'>example</a>
          */
@@ -2007,13 +3123,41 @@ public final class FontAwesome {
          */
         CUBES,
         /**
+         * The solid cubes-stacked icon.See <a href='https://fontawesome.com/v6/icons/cubes-stacked?s=solid'>example</a>
+         */
+        CUBES_STACKED,
+        /**
+         * The solid cut icon.See <a href='https://fontawesome.com/v6/icons/cut?s=solid'>example</a>
+         */
+        CUT,
+        /**
+         * The solid cutlery icon.See <a href='https://fontawesome.com/v6/icons/cutlery?s=solid'>example</a>
+         */
+        CUTLERY,
+        /**
          * The solid d icon.See <a href='https://fontawesome.com/v6/icons/d?s=solid'>example</a>
          */
         D,
         /**
+         * The solid dashboard icon.See <a href='https://fontawesome.com/v6/icons/dashboard?s=solid'>example</a>
+         */
+        DASHBOARD,
+        /**
          * The solid database icon.See <a href='https://fontawesome.com/v6/icons/database?s=solid'>example</a>
          */
         DATABASE,
+        /**
+         * The solid deaf icon.See <a href='https://fontawesome.com/v6/icons/deaf?s=solid'>example</a>
+         */
+        DEAF,
+        /**
+         * The solid deafness icon.See <a href='https://fontawesome.com/v6/icons/deafness?s=solid'>example</a>
+         */
+        DEAFNESS,
+        /**
+         * The solid dedent icon.See <a href='https://fontawesome.com/v6/icons/dedent?s=solid'>example</a>
+         */
+        DEDENT,
         /**
          * The solid delete-left icon.See <a href='https://fontawesome.com/v6/icons/delete-left?s=solid'>example</a>
          */
@@ -2027,9 +3171,17 @@ public final class FontAwesome {
          */
         DESKTOP,
         /**
+         * The solid desktop-alt icon.See <a href='https://fontawesome.com/v6/icons/desktop-alt?s=solid'>example</a>
+         */
+        DESKTOP_ALT,
+        /**
          * The solid dharmachakra icon.See <a href='https://fontawesome.com/v6/icons/dharmachakra?s=solid'>example</a>
          */
         DHARMACHAKRA,
+        /**
+         * The solid diagnoses icon.See <a href='https://fontawesome.com/v6/icons/diagnoses?s=solid'>example</a>
+         */
+        DIAGNOSES,
         /**
          * The solid diagram-next icon.See <a href='https://fontawesome.com/v6/icons/diagram-next?s=solid'>example</a>
          */
@@ -2091,13 +3243,33 @@ public final class FontAwesome {
          */
         DICE_TWO,
         /**
+         * The solid digging icon.See <a href='https://fontawesome.com/v6/icons/digging?s=solid'>example</a>
+         */
+        DIGGING,
+        /**
+         * The solid digital-tachograph icon.See <a href='https://fontawesome.com/v6/icons/digital-tachograph?s=solid'>example</a>
+         */
+        DIGITAL_TACHOGRAPH,
+        /**
+         * The solid directions icon.See <a href='https://fontawesome.com/v6/icons/directions?s=solid'>example</a>
+         */
+        DIRECTIONS,
+        /**
          * The solid disease icon.See <a href='https://fontawesome.com/v6/icons/disease?s=solid'>example</a>
          */
         DISEASE,
         /**
+         * The solid display icon.See <a href='https://fontawesome.com/v6/icons/display?s=solid'>example</a>
+         */
+        DISPLAY,
+        /**
          * The solid divide icon.See <a href='https://fontawesome.com/v6/icons/divide?s=solid'>example</a>
          */
         DIVIDE,
+        /**
+         * The solid dizzy icon.See <a href='https://fontawesome.com/v6/icons/dizzy?s=solid'>example</a>
+         */
+        DIZZY,
         /**
          * The solid dna icon.See <a href='https://fontawesome.com/v6/icons/dna?s=solid'>example</a>
          */
@@ -2107,6 +3279,10 @@ public final class FontAwesome {
          */
         DOG,
         /**
+         * The solid dollar icon.See <a href='https://fontawesome.com/v6/icons/dollar?s=solid'>example</a>
+         */
+        DOLLAR,
+        /**
          * The solid dollar-sign icon.See <a href='https://fontawesome.com/v6/icons/dollar-sign?s=solid'>example</a>
          */
         DOLLAR_SIGN,
@@ -2114,6 +3290,18 @@ public final class FontAwesome {
          * The solid dolly icon.See <a href='https://fontawesome.com/v6/icons/dolly?s=solid'>example</a>
          */
         DOLLY,
+        /**
+         * The solid dolly-box icon.See <a href='https://fontawesome.com/v6/icons/dolly-box?s=solid'>example</a>
+         */
+        DOLLY_BOX,
+        /**
+         * The solid dolly-flatbed icon.See <a href='https://fontawesome.com/v6/icons/dolly-flatbed?s=solid'>example</a>
+         */
+        DOLLY_FLATBED,
+        /**
+         * The solid donate icon.See <a href='https://fontawesome.com/v6/icons/donate?s=solid'>example</a>
+         */
+        DONATE,
         /**
          * The solid dong-sign icon.See <a href='https://fontawesome.com/v6/icons/dong-sign?s=solid'>example</a>
          */
@@ -2126,6 +3314,10 @@ public final class FontAwesome {
          * The solid door-open icon.See <a href='https://fontawesome.com/v6/icons/door-open?s=solid'>example</a>
          */
         DOOR_OPEN,
+        /**
+         * The solid dot-circle icon.See <a href='https://fontawesome.com/v6/icons/dot-circle?s=solid'>example</a>
+         */
+        DOT_CIRCLE,
         /**
          * The solid dove icon.See <a href='https://fontawesome.com/v6/icons/dove?s=solid'>example</a>
          */
@@ -2143,6 +3335,10 @@ public final class FontAwesome {
          */
         DOWNLOAD,
         /**
+         * The solid drafting-compass icon.See <a href='https://fontawesome.com/v6/icons/drafting-compass?s=solid'>example</a>
+         */
+        DRAFTING_COMPASS,
+        /**
          * The solid dragon icon.See <a href='https://fontawesome.com/v6/icons/dragon?s=solid'>example</a>
          */
         DRAGON,
@@ -2150,6 +3346,10 @@ public final class FontAwesome {
          * The solid draw-polygon icon.See <a href='https://fontawesome.com/v6/icons/draw-polygon?s=solid'>example</a>
          */
         DRAW_POLYGON,
+        /**
+         * The solid drivers-license icon.See <a href='https://fontawesome.com/v6/icons/drivers-license?s=solid'>example</a>
+         */
+        DRIVERS_LICENSE,
         /**
          * The solid droplet icon.See <a href='https://fontawesome.com/v6/icons/droplet?s=solid'>example</a>
          */
@@ -2199,9 +3399,17 @@ public final class FontAwesome {
          */
         EAR_LISTEN,
         /**
+         * The solid earth icon.See <a href='https://fontawesome.com/v6/icons/earth?s=solid'>example</a>
+         */
+        EARTH,
+        /**
          * The solid earth-africa icon.See <a href='https://fontawesome.com/v6/icons/earth-africa?s=solid'>example</a>
          */
         EARTH_AFRICA,
+        /**
+         * The solid earth-america icon.See <a href='https://fontawesome.com/v6/icons/earth-america?s=solid'>example</a>
+         */
+        EARTH_AMERICA,
         /**
          * The solid earth-americas icon.See <a href='https://fontawesome.com/v6/icons/earth-americas?s=solid'>example</a>
          */
@@ -2219,6 +3427,10 @@ public final class FontAwesome {
          */
         EARTH_OCEANIA,
         /**
+         * The solid edit icon.See <a href='https://fontawesome.com/v6/icons/edit?s=solid'>example</a>
+         */
+        EDIT,
+        /**
          * The solid egg icon.See <a href='https://fontawesome.com/v6/icons/egg?s=solid'>example</a>
          */
         EGG,
@@ -2235,6 +3447,14 @@ public final class FontAwesome {
          */
         ELLIPSIS,
         /**
+         * The solid ellipsis-h icon.See <a href='https://fontawesome.com/v6/icons/ellipsis-h?s=solid'>example</a>
+         */
+        ELLIPSIS_H,
+        /**
+         * The solid ellipsis-v icon.See <a href='https://fontawesome.com/v6/icons/ellipsis-v?s=solid'>example</a>
+         */
+        ELLIPSIS_V,
+        /**
          * The solid ellipsis-vertical icon.See <a href='https://fontawesome.com/v6/icons/ellipsis-vertical?s=solid'>example</a>
          */
         ELLIPSIS_VERTICAL,
@@ -2243,6 +3463,10 @@ public final class FontAwesome {
          */
         ENVELOPE,
         /**
+         * The solid envelope-circle-check icon.See <a href='https://fontawesome.com/v6/icons/envelope-circle-check?s=solid'>example</a>
+         */
+        ENVELOPE_CIRCLE_CHECK,
+        /**
          * The solid envelope-open icon.See <a href='https://fontawesome.com/v6/icons/envelope-open?s=solid'>example</a>
          */
         ENVELOPE_OPEN,
@@ -2250,6 +3474,10 @@ public final class FontAwesome {
          * The solid envelope-open-text icon.See <a href='https://fontawesome.com/v6/icons/envelope-open-text?s=solid'>example</a>
          */
         ENVELOPE_OPEN_TEXT,
+        /**
+         * The solid envelope-square icon.See <a href='https://fontawesome.com/v6/icons/envelope-square?s=solid'>example</a>
+         */
+        ENVELOPE_SQUARE,
         /**
          * The solid envelopes-bulk icon.See <a href='https://fontawesome.com/v6/icons/envelopes-bulk?s=solid'>example</a>
          */
@@ -2267,17 +3495,69 @@ public final class FontAwesome {
          */
         ETHERNET,
         /**
+         * The solid eur icon.See <a href='https://fontawesome.com/v6/icons/eur?s=solid'>example</a>
+         */
+        EUR,
+        /**
+         * The solid euro icon.See <a href='https://fontawesome.com/v6/icons/euro?s=solid'>example</a>
+         */
+        EURO,
+        /**
          * The solid euro-sign icon.See <a href='https://fontawesome.com/v6/icons/euro-sign?s=solid'>example</a>
          */
         EURO_SIGN,
+        /**
+         * The solid exchange icon.See <a href='https://fontawesome.com/v6/icons/exchange?s=solid'>example</a>
+         */
+        EXCHANGE,
+        /**
+         * The solid exchange-alt icon.See <a href='https://fontawesome.com/v6/icons/exchange-alt?s=solid'>example</a>
+         */
+        EXCHANGE_ALT,
         /**
          * The solid exclamation icon.See <a href='https://fontawesome.com/v6/icons/exclamation?s=solid'>example</a>
          */
         EXCLAMATION,
         /**
+         * The solid exclamation-circle icon.See <a href='https://fontawesome.com/v6/icons/exclamation-circle?s=solid'>example</a>
+         */
+        EXCLAMATION_CIRCLE,
+        /**
+         * The solid exclamation-triangle icon.See <a href='https://fontawesome.com/v6/icons/exclamation-triangle?s=solid'>example</a>
+         */
+        EXCLAMATION_TRIANGLE,
+        /**
          * The solid expand icon.See <a href='https://fontawesome.com/v6/icons/expand?s=solid'>example</a>
          */
         EXPAND,
+        /**
+         * The solid expand-alt icon.See <a href='https://fontawesome.com/v6/icons/expand-alt?s=solid'>example</a>
+         */
+        EXPAND_ALT,
+        /**
+         * The solid expand-arrows-alt icon.See <a href='https://fontawesome.com/v6/icons/expand-arrows-alt?s=solid'>example</a>
+         */
+        EXPAND_ARROWS_ALT,
+        /**
+         * The solid explosion icon.See <a href='https://fontawesome.com/v6/icons/explosion?s=solid'>example</a>
+         */
+        EXPLOSION,
+        /**
+         * The solid external-link icon.See <a href='https://fontawesome.com/v6/icons/external-link?s=solid'>example</a>
+         */
+        EXTERNAL_LINK,
+        /**
+         * The solid external-link-alt icon.See <a href='https://fontawesome.com/v6/icons/external-link-alt?s=solid'>example</a>
+         */
+        EXTERNAL_LINK_ALT,
+        /**
+         * The solid external-link-square icon.See <a href='https://fontawesome.com/v6/icons/external-link-square?s=solid'>example</a>
+         */
+        EXTERNAL_LINK_SQUARE,
+        /**
+         * The solid external-link-square-alt icon.See <a href='https://fontawesome.com/v6/icons/external-link-square-alt?s=solid'>example</a>
+         */
+        EXTERNAL_LINK_SQUARE_ALT,
         /**
          * The solid eye icon.See <a href='https://fontawesome.com/v6/icons/eye?s=solid'>example</a>
          */
@@ -2287,6 +3567,10 @@ public final class FontAwesome {
          */
         EYE_DROPPER,
         /**
+         * The solid eye-dropper-empty icon.See <a href='https://fontawesome.com/v6/icons/eye-dropper-empty?s=solid'>example</a>
+         */
+        EYE_DROPPER_EMPTY,
+        /**
          * The solid eye-low-vision icon.See <a href='https://fontawesome.com/v6/icons/eye-low-vision?s=solid'>example</a>
          */
         EYE_LOW_VISION,
@@ -2294,6 +3578,10 @@ public final class FontAwesome {
          * The solid eye-slash icon.See <a href='https://fontawesome.com/v6/icons/eye-slash?s=solid'>example</a>
          */
         EYE_SLASH,
+        /**
+         * The solid eyedropper icon.See <a href='https://fontawesome.com/v6/icons/eyedropper?s=solid'>example</a>
+         */
+        EYEDROPPER,
         /**
          * The solid f icon.See <a href='https://fontawesome.com/v6/icons/f?s=solid'>example</a>
          */
@@ -2447,9 +3735,21 @@ public final class FontAwesome {
          */
         FAN,
         /**
+         * The solid fast-backward icon.See <a href='https://fontawesome.com/v6/icons/fast-backward?s=solid'>example</a>
+         */
+        FAST_BACKWARD,
+        /**
+         * The solid fast-forward icon.See <a href='https://fontawesome.com/v6/icons/fast-forward?s=solid'>example</a>
+         */
+        FAST_FORWARD,
+        /**
          * The solid faucet icon.See <a href='https://fontawesome.com/v6/icons/faucet?s=solid'>example</a>
          */
         FAUCET,
+        /**
+         * The solid faucet-drip icon.See <a href='https://fontawesome.com/v6/icons/faucet-drip?s=solid'>example</a>
+         */
+        FAUCET_DRIP,
         /**
          * The solid fax icon.See <a href='https://fontawesome.com/v6/icons/fax?s=solid'>example</a>
          */
@@ -2459,13 +3759,41 @@ public final class FontAwesome {
          */
         FEATHER,
         /**
+         * The solid feather-alt icon.See <a href='https://fontawesome.com/v6/icons/feather-alt?s=solid'>example</a>
+         */
+        FEATHER_ALT,
+        /**
          * The solid feather-pointed icon.See <a href='https://fontawesome.com/v6/icons/feather-pointed?s=solid'>example</a>
          */
         FEATHER_POINTED,
         /**
+         * The solid feed icon.See <a href='https://fontawesome.com/v6/icons/feed?s=solid'>example</a>
+         */
+        FEED,
+        /**
+         * The solid female icon.See <a href='https://fontawesome.com/v6/icons/female?s=solid'>example</a>
+         */
+        FEMALE,
+        /**
+         * The solid ferry icon.See <a href='https://fontawesome.com/v6/icons/ferry?s=solid'>example</a>
+         */
+        FERRY,
+        /**
+         * The solid fighter-jet icon.See <a href='https://fontawesome.com/v6/icons/fighter-jet?s=solid'>example</a>
+         */
+        FIGHTER_JET,
+        /**
          * The solid file icon.See <a href='https://fontawesome.com/v6/icons/file?s=solid'>example</a>
          */
         FILE,
+        /**
+         * The solid file-alt icon.See <a href='https://fontawesome.com/v6/icons/file-alt?s=solid'>example</a>
+         */
+        FILE_ALT,
+        /**
+         * The solid file-archive icon.See <a href='https://fontawesome.com/v6/icons/file-archive?s=solid'>example</a>
+         */
+        FILE_ARCHIVE,
         /**
          * The solid file-arrow-down icon.See <a href='https://fontawesome.com/v6/icons/file-arrow-down?s=solid'>example</a>
          */
@@ -2479,6 +3807,34 @@ public final class FontAwesome {
          */
         FILE_AUDIO,
         /**
+         * The solid file-circle-check icon.See <a href='https://fontawesome.com/v6/icons/file-circle-check?s=solid'>example</a>
+         */
+        FILE_CIRCLE_CHECK,
+        /**
+         * The solid file-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/file-circle-exclamation?s=solid'>example</a>
+         */
+        FILE_CIRCLE_EXCLAMATION,
+        /**
+         * The solid file-circle-minus icon.See <a href='https://fontawesome.com/v6/icons/file-circle-minus?s=solid'>example</a>
+         */
+        FILE_CIRCLE_MINUS,
+        /**
+         * The solid file-circle-plus icon.See <a href='https://fontawesome.com/v6/icons/file-circle-plus?s=solid'>example</a>
+         */
+        FILE_CIRCLE_PLUS,
+        /**
+         * The solid file-circle-question icon.See <a href='https://fontawesome.com/v6/icons/file-circle-question?s=solid'>example</a>
+         */
+        FILE_CIRCLE_QUESTION,
+        /**
+         * The solid file-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/file-circle-xmark?s=solid'>example</a>
+         */
+        FILE_CIRCLE_XMARK,
+        /**
+         * The solid file-clipboard icon.See <a href='https://fontawesome.com/v6/icons/file-clipboard?s=solid'>example</a>
+         */
+        FILE_CLIPBOARD,
+        /**
          * The solid file-code icon.See <a href='https://fontawesome.com/v6/icons/file-code?s=solid'>example</a>
          */
         FILE_CODE,
@@ -2490,6 +3846,14 @@ public final class FontAwesome {
          * The solid file-csv icon.See <a href='https://fontawesome.com/v6/icons/file-csv?s=solid'>example</a>
          */
         FILE_CSV,
+        /**
+         * The solid file-download icon.See <a href='https://fontawesome.com/v6/icons/file-download?s=solid'>example</a>
+         */
+        FILE_DOWNLOAD,
+        /**
+         * The solid file-edit icon.See <a href='https://fontawesome.com/v6/icons/file-edit?s=solid'>example</a>
+         */
+        FILE_EDIT,
         /**
          * The solid file-excel icon.See <a href='https://fontawesome.com/v6/icons/file-excel?s=solid'>example</a>
          */
@@ -2523,9 +3887,17 @@ public final class FontAwesome {
          */
         FILE_MEDICAL,
         /**
+         * The solid file-medical-alt icon.See <a href='https://fontawesome.com/v6/icons/file-medical-alt?s=solid'>example</a>
+         */
+        FILE_MEDICAL_ALT,
+        /**
          * The solid file-pdf icon.See <a href='https://fontawesome.com/v6/icons/file-pdf?s=solid'>example</a>
          */
         FILE_PDF,
+        /**
+         * The solid file-pen icon.See <a href='https://fontawesome.com/v6/icons/file-pen?s=solid'>example</a>
+         */
+        FILE_PEN,
         /**
          * The solid file-powerpoint icon.See <a href='https://fontawesome.com/v6/icons/file-powerpoint?s=solid'>example</a>
          */
@@ -2535,9 +3907,21 @@ public final class FontAwesome {
          */
         FILE_PRESCRIPTION,
         /**
+         * The solid file-shield icon.See <a href='https://fontawesome.com/v6/icons/file-shield?s=solid'>example</a>
+         */
+        FILE_SHIELD,
+        /**
          * The solid file-signature icon.See <a href='https://fontawesome.com/v6/icons/file-signature?s=solid'>example</a>
          */
         FILE_SIGNATURE,
+        /**
+         * The solid file-text icon.See <a href='https://fontawesome.com/v6/icons/file-text?s=solid'>example</a>
+         */
+        FILE_TEXT,
+        /**
+         * The solid file-upload icon.See <a href='https://fontawesome.com/v6/icons/file-upload?s=solid'>example</a>
+         */
+        FILE_UPLOAD,
         /**
          * The solid file-video icon.See <a href='https://fontawesome.com/v6/icons/file-video?s=solid'>example</a>
          */
@@ -2587,6 +3971,14 @@ public final class FontAwesome {
          */
         FIRE,
         /**
+         * The solid fire-alt icon.See <a href='https://fontawesome.com/v6/icons/fire-alt?s=solid'>example</a>
+         */
+        FIRE_ALT,
+        /**
+         * The solid fire-burner icon.See <a href='https://fontawesome.com/v6/icons/fire-burner?s=solid'>example</a>
+         */
+        FIRE_BURNER,
+        /**
          * The solid fire-extinguisher icon.See <a href='https://fontawesome.com/v6/icons/fire-extinguisher?s=solid'>example</a>
          */
         FIRE_EXTINGUISHER,
@@ -2599,9 +3991,21 @@ public final class FontAwesome {
          */
         FIRE_FLAME_SIMPLE,
         /**
+         * The solid first-aid icon.See <a href='https://fontawesome.com/v6/icons/first-aid?s=solid'>example</a>
+         */
+        FIRST_AID,
+        /**
          * The solid fish icon.See <a href='https://fontawesome.com/v6/icons/fish?s=solid'>example</a>
          */
         FISH,
+        /**
+         * The solid fish-fins icon.See <a href='https://fontawesome.com/v6/icons/fish-fins?s=solid'>example</a>
+         */
+        FISH_FINS,
+        /**
+         * The solid fist-raised icon.See <a href='https://fontawesome.com/v6/icons/fist-raised?s=solid'>example</a>
+         */
+        FIST_RAISED,
         /**
          * The solid flag icon.See <a href='https://fontawesome.com/v6/icons/flag?s=solid'>example</a>
          */
@@ -2619,6 +4023,10 @@ public final class FontAwesome {
          */
         FLASK,
         /**
+         * The solid flask-vial icon.See <a href='https://fontawesome.com/v6/icons/flask-vial?s=solid'>example</a>
+         */
+        FLASK_VIAL,
+        /**
          * The solid floppy-disk icon.See <a href='https://fontawesome.com/v6/icons/floppy-disk?s=solid'>example</a>
          */
         FLOPPY_DISK,
@@ -2627,9 +4035,21 @@ public final class FontAwesome {
          */
         FLORIN_SIGN,
         /**
+         * The solid flushed icon.See <a href='https://fontawesome.com/v6/icons/flushed?s=solid'>example</a>
+         */
+        FLUSHED,
+        /**
          * The solid folder icon.See <a href='https://fontawesome.com/v6/icons/folder?s=solid'>example</a>
          */
         FOLDER,
+        /**
+         * The solid folder-blank icon.See <a href='https://fontawesome.com/v6/icons/folder-blank?s=solid'>example</a>
+         */
+        FOLDER_BLANK,
+        /**
+         * The solid folder-closed icon.See <a href='https://fontawesome.com/v6/icons/folder-closed?s=solid'>example</a>
+         */
+        FOLDER_CLOSED,
         /**
          * The solid folder-minus icon.See <a href='https://fontawesome.com/v6/icons/folder-minus?s=solid'>example</a>
          */
@@ -2655,9 +4075,21 @@ public final class FontAwesome {
          */
         FONT_AWESOME,
         /**
+         * The solid font-awesome-flag icon.See <a href='https://fontawesome.com/v6/icons/font-awesome-flag?s=solid'>example</a>
+         */
+        FONT_AWESOME_FLAG,
+        /**
+         * The solid font-awesome-logo-full icon.See <a href='https://fontawesome.com/v6/icons/font-awesome-logo-full?s=solid'>example</a>
+         */
+        FONT_AWESOME_LOGO_FULL,
+        /**
          * The solid football icon.See <a href='https://fontawesome.com/v6/icons/football?s=solid'>example</a>
          */
         FOOTBALL,
+        /**
+         * The solid football-ball icon.See <a href='https://fontawesome.com/v6/icons/football-ball?s=solid'>example</a>
+         */
+        FOOTBALL_BALL,
         /**
          * The solid forward icon.See <a href='https://fontawesome.com/v6/icons/forward?s=solid'>example</a>
          */
@@ -2679,9 +4111,25 @@ public final class FontAwesome {
          */
         FROG,
         /**
+         * The solid frown icon.See <a href='https://fontawesome.com/v6/icons/frown?s=solid'>example</a>
+         */
+        FROWN,
+        /**
+         * The solid frown-open icon.See <a href='https://fontawesome.com/v6/icons/frown-open?s=solid'>example</a>
+         */
+        FROWN_OPEN,
+        /**
+         * The solid funnel-dollar icon.See <a href='https://fontawesome.com/v6/icons/funnel-dollar?s=solid'>example</a>
+         */
+        FUNNEL_DOLLAR,
+        /**
          * The solid futbol icon.See <a href='https://fontawesome.com/v6/icons/futbol?s=solid'>example</a>
          */
         FUTBOL,
+        /**
+         * The solid futbol-ball icon.See <a href='https://fontawesome.com/v6/icons/futbol-ball?s=solid'>example</a>
+         */
+        FUTBOL_BALL,
         /**
          * The solid g icon.See <a href='https://fontawesome.com/v6/icons/g?s=solid'>example</a>
          */
@@ -2703,6 +4151,10 @@ public final class FontAwesome {
          */
         GAUGE_HIGH,
         /**
+         * The solid gauge-med icon.See <a href='https://fontawesome.com/v6/icons/gauge-med?s=solid'>example</a>
+         */
+        GAUGE_MED,
+        /**
          * The solid gauge-simple icon.See <a href='https://fontawesome.com/v6/icons/gauge-simple?s=solid'>example</a>
          */
         GAUGE_SIMPLE,
@@ -2711,9 +4163,17 @@ public final class FontAwesome {
          */
         GAUGE_SIMPLE_HIGH,
         /**
+         * The solid gauge-simple-med icon.See <a href='https://fontawesome.com/v6/icons/gauge-simple-med?s=solid'>example</a>
+         */
+        GAUGE_SIMPLE_MED,
+        /**
          * The solid gavel icon.See <a href='https://fontawesome.com/v6/icons/gavel?s=solid'>example</a>
          */
         GAVEL,
+        /**
+         * The solid gbp icon.See <a href='https://fontawesome.com/v6/icons/gbp?s=solid'>example</a>
+         */
+        GBP,
         /**
          * The solid gear icon.See <a href='https://fontawesome.com/v6/icons/gear?s=solid'>example</a>
          */
@@ -2743,6 +4203,30 @@ public final class FontAwesome {
          */
         GIFTS,
         /**
+         * The solid glass-cheers icon.See <a href='https://fontawesome.com/v6/icons/glass-cheers?s=solid'>example</a>
+         */
+        GLASS_CHEERS,
+        /**
+         * The solid glass-martini icon.See <a href='https://fontawesome.com/v6/icons/glass-martini?s=solid'>example</a>
+         */
+        GLASS_MARTINI,
+        /**
+         * The solid glass-martini-alt icon.See <a href='https://fontawesome.com/v6/icons/glass-martini-alt?s=solid'>example</a>
+         */
+        GLASS_MARTINI_ALT,
+        /**
+         * The solid glass-water icon.See <a href='https://fontawesome.com/v6/icons/glass-water?s=solid'>example</a>
+         */
+        GLASS_WATER,
+        /**
+         * The solid glass-water-droplet icon.See <a href='https://fontawesome.com/v6/icons/glass-water-droplet?s=solid'>example</a>
+         */
+        GLASS_WATER_DROPLET,
+        /**
+         * The solid glass-whiskey icon.See <a href='https://fontawesome.com/v6/icons/glass-whiskey?s=solid'>example</a>
+         */
+        GLASS_WHISKEY,
+        /**
          * The solid glasses icon.See <a href='https://fontawesome.com/v6/icons/glasses?s=solid'>example</a>
          */
         GLASSES,
@@ -2750,6 +4234,30 @@ public final class FontAwesome {
          * The solid globe icon.See <a href='https://fontawesome.com/v6/icons/globe?s=solid'>example</a>
          */
         GLOBE,
+        /**
+         * The solid globe-africa icon.See <a href='https://fontawesome.com/v6/icons/globe-africa?s=solid'>example</a>
+         */
+        GLOBE_AFRICA,
+        /**
+         * The solid globe-americas icon.See <a href='https://fontawesome.com/v6/icons/globe-americas?s=solid'>example</a>
+         */
+        GLOBE_AMERICAS,
+        /**
+         * The solid globe-asia icon.See <a href='https://fontawesome.com/v6/icons/globe-asia?s=solid'>example</a>
+         */
+        GLOBE_ASIA,
+        /**
+         * The solid globe-europe icon.See <a href='https://fontawesome.com/v6/icons/globe-europe?s=solid'>example</a>
+         */
+        GLOBE_EUROPE,
+        /**
+         * The solid globe-oceania icon.See <a href='https://fontawesome.com/v6/icons/globe-oceania?s=solid'>example</a>
+         */
+        GLOBE_OCEANIA,
+        /**
+         * The solid golf-ball icon.See <a href='https://fontawesome.com/v6/icons/golf-ball?s=solid'>example</a>
+         */
+        GOLF_BALL,
         /**
          * The solid golf-ball-tee icon.See <a href='https://fontawesome.com/v6/icons/golf-ball-tee?s=solid'>example</a>
          */
@@ -2771,9 +4279,69 @@ public final class FontAwesome {
          */
         GREATER_THAN_EQUAL,
         /**
+         * The solid grimace icon.See <a href='https://fontawesome.com/v6/icons/grimace?s=solid'>example</a>
+         */
+        GRIMACE,
+        /**
+         * The solid grin icon.See <a href='https://fontawesome.com/v6/icons/grin?s=solid'>example</a>
+         */
+        GRIN,
+        /**
+         * The solid grin-alt icon.See <a href='https://fontawesome.com/v6/icons/grin-alt?s=solid'>example</a>
+         */
+        GRIN_ALT,
+        /**
+         * The solid grin-beam icon.See <a href='https://fontawesome.com/v6/icons/grin-beam?s=solid'>example</a>
+         */
+        GRIN_BEAM,
+        /**
+         * The solid grin-beam-sweat icon.See <a href='https://fontawesome.com/v6/icons/grin-beam-sweat?s=solid'>example</a>
+         */
+        GRIN_BEAM_SWEAT,
+        /**
+         * The solid grin-hearts icon.See <a href='https://fontawesome.com/v6/icons/grin-hearts?s=solid'>example</a>
+         */
+        GRIN_HEARTS,
+        /**
+         * The solid grin-squint icon.See <a href='https://fontawesome.com/v6/icons/grin-squint?s=solid'>example</a>
+         */
+        GRIN_SQUINT,
+        /**
+         * The solid grin-squint-tears icon.See <a href='https://fontawesome.com/v6/icons/grin-squint-tears?s=solid'>example</a>
+         */
+        GRIN_SQUINT_TEARS,
+        /**
+         * The solid grin-stars icon.See <a href='https://fontawesome.com/v6/icons/grin-stars?s=solid'>example</a>
+         */
+        GRIN_STARS,
+        /**
+         * The solid grin-tears icon.See <a href='https://fontawesome.com/v6/icons/grin-tears?s=solid'>example</a>
+         */
+        GRIN_TEARS,
+        /**
+         * The solid grin-tongue icon.See <a href='https://fontawesome.com/v6/icons/grin-tongue?s=solid'>example</a>
+         */
+        GRIN_TONGUE,
+        /**
+         * The solid grin-tongue-squint icon.See <a href='https://fontawesome.com/v6/icons/grin-tongue-squint?s=solid'>example</a>
+         */
+        GRIN_TONGUE_SQUINT,
+        /**
+         * The solid grin-tongue-wink icon.See <a href='https://fontawesome.com/v6/icons/grin-tongue-wink?s=solid'>example</a>
+         */
+        GRIN_TONGUE_WINK,
+        /**
+         * The solid grin-wink icon.See <a href='https://fontawesome.com/v6/icons/grin-wink?s=solid'>example</a>
+         */
+        GRIN_WINK,
+        /**
          * The solid grip icon.See <a href='https://fontawesome.com/v6/icons/grip?s=solid'>example</a>
          */
         GRIP,
+        /**
+         * The solid grip-horizontal icon.See <a href='https://fontawesome.com/v6/icons/grip-horizontal?s=solid'>example</a>
+         */
+        GRIP_HORIZONTAL,
         /**
          * The solid grip-lines icon.See <a href='https://fontawesome.com/v6/icons/grip-lines?s=solid'>example</a>
          */
@@ -2786,6 +4354,10 @@ public final class FontAwesome {
          * The solid grip-vertical icon.See <a href='https://fontawesome.com/v6/icons/grip-vertical?s=solid'>example</a>
          */
         GRIP_VERTICAL,
+        /**
+         * The solid group-arrows-rotate icon.See <a href='https://fontawesome.com/v6/icons/group-arrows-rotate?s=solid'>example</a>
+         */
+        GROUP_ARROWS_ROTATE,
         /**
          * The solid guarani-sign icon.See <a href='https://fontawesome.com/v6/icons/guarani-sign?s=solid'>example</a>
          */
@@ -2802,6 +4374,14 @@ public final class FontAwesome {
          * The solid h icon.See <a href='https://fontawesome.com/v6/icons/h?s=solid'>example</a>
          */
         H,
+        /**
+         * The solid h-square icon.See <a href='https://fontawesome.com/v6/icons/h-square?s=solid'>example</a>
+         */
+        H_SQUARE,
+        /**
+         * The solid hamburger icon.See <a href='https://fontawesome.com/v6/icons/hamburger?s=solid'>example</a>
+         */
+        HAMBURGER,
         /**
          * The solid hammer icon.See <a href='https://fontawesome.com/v6/icons/hammer?s=solid'>example</a>
          */
@@ -2839,6 +4419,10 @@ public final class FontAwesome {
          */
         HAND_HOLDING_DROPLET,
         /**
+         * The solid hand-holding-hand icon.See <a href='https://fontawesome.com/v6/icons/hand-holding-hand?s=solid'>example</a>
+         */
+        HAND_HOLDING_HAND,
+        /**
          * The solid hand-holding-heart icon.See <a href='https://fontawesome.com/v6/icons/hand-holding-heart?s=solid'>example</a>
          */
         HAND_HOLDING_HEART,
@@ -2847,6 +4431,14 @@ public final class FontAwesome {
          */
         HAND_HOLDING_MEDICAL,
         /**
+         * The solid hand-holding-usd icon.See <a href='https://fontawesome.com/v6/icons/hand-holding-usd?s=solid'>example</a>
+         */
+        HAND_HOLDING_USD,
+        /**
+         * The solid hand-holding-water icon.See <a href='https://fontawesome.com/v6/icons/hand-holding-water?s=solid'>example</a>
+         */
+        HAND_HOLDING_WATER,
+        /**
          * The solid hand-lizard icon.See <a href='https://fontawesome.com/v6/icons/hand-lizard?s=solid'>example</a>
          */
         HAND_LIZARD,
@@ -2854,6 +4446,10 @@ public final class FontAwesome {
          * The solid hand-middle-finger icon.See <a href='https://fontawesome.com/v6/icons/hand-middle-finger?s=solid'>example</a>
          */
         HAND_MIDDLE_FINGER,
+        /**
+         * The solid hand-paper icon.See <a href='https://fontawesome.com/v6/icons/hand-paper?s=solid'>example</a>
+         */
+        HAND_PAPER,
         /**
          * The solid hand-peace icon.See <a href='https://fontawesome.com/v6/icons/hand-peace?s=solid'>example</a>
          */
@@ -2879,6 +4475,10 @@ public final class FontAwesome {
          */
         HAND_POINTER,
         /**
+         * The solid hand-rock icon.See <a href='https://fontawesome.com/v6/icons/hand-rock?s=solid'>example</a>
+         */
+        HAND_ROCK,
+        /**
          * The solid hand-scissors icon.See <a href='https://fontawesome.com/v6/icons/hand-scissors?s=solid'>example</a>
          */
         HAND_SCISSORS,
@@ -2891,13 +4491,25 @@ public final class FontAwesome {
          */
         HAND_SPOCK,
         /**
+         * The solid handcuffs icon.See <a href='https://fontawesome.com/v6/icons/handcuffs?s=solid'>example</a>
+         */
+        HANDCUFFS,
+        /**
          * The solid hands icon.See <a href='https://fontawesome.com/v6/icons/hands?s=solid'>example</a>
          */
         HANDS,
         /**
+         * The solid hands-american-sign-language-interpreting icon.See <a href='https://fontawesome.com/v6/icons/hands-american-sign-language-interpreting?s=solid'>example</a>
+         */
+        HANDS_AMERICAN_SIGN_LANGUAGE_INTERPRETING,
+        /**
          * The solid hands-asl-interpreting icon.See <a href='https://fontawesome.com/v6/icons/hands-asl-interpreting?s=solid'>example</a>
          */
         HANDS_ASL_INTERPRETING,
+        /**
+         * The solid hands-bound icon.See <a href='https://fontawesome.com/v6/icons/hands-bound?s=solid'>example</a>
+         */
+        HANDS_BOUND,
         /**
          * The solid hands-bubbles icon.See <a href='https://fontawesome.com/v6/icons/hands-bubbles?s=solid'>example</a>
          */
@@ -2907,21 +4519,49 @@ public final class FontAwesome {
          */
         HANDS_CLAPPING,
         /**
+         * The solid hands-helping icon.See <a href='https://fontawesome.com/v6/icons/hands-helping?s=solid'>example</a>
+         */
+        HANDS_HELPING,
+        /**
          * The solid hands-holding icon.See <a href='https://fontawesome.com/v6/icons/hands-holding?s=solid'>example</a>
          */
         HANDS_HOLDING,
+        /**
+         * The solid hands-holding-child icon.See <a href='https://fontawesome.com/v6/icons/hands-holding-child?s=solid'>example</a>
+         */
+        HANDS_HOLDING_CHILD,
+        /**
+         * The solid hands-holding-circle icon.See <a href='https://fontawesome.com/v6/icons/hands-holding-circle?s=solid'>example</a>
+         */
+        HANDS_HOLDING_CIRCLE,
         /**
          * The solid hands-praying icon.See <a href='https://fontawesome.com/v6/icons/hands-praying?s=solid'>example</a>
          */
         HANDS_PRAYING,
         /**
+         * The solid hands-wash icon.See <a href='https://fontawesome.com/v6/icons/hands-wash?s=solid'>example</a>
+         */
+        HANDS_WASH,
+        /**
          * The solid handshake icon.See <a href='https://fontawesome.com/v6/icons/handshake?s=solid'>example</a>
          */
         HANDSHAKE,
         /**
+         * The solid handshake-alt icon.See <a href='https://fontawesome.com/v6/icons/handshake-alt?s=solid'>example</a>
+         */
+        HANDSHAKE_ALT,
+        /**
+         * The solid handshake-alt-slash icon.See <a href='https://fontawesome.com/v6/icons/handshake-alt-slash?s=solid'>example</a>
+         */
+        HANDSHAKE_ALT_SLASH,
+        /**
          * The solid handshake-angle icon.See <a href='https://fontawesome.com/v6/icons/handshake-angle?s=solid'>example</a>
          */
         HANDSHAKE_ANGLE,
+        /**
+         * The solid handshake-simple icon.See <a href='https://fontawesome.com/v6/icons/handshake-simple?s=solid'>example</a>
+         */
+        HANDSHAKE_SIMPLE,
         /**
          * The solid handshake-simple-slash icon.See <a href='https://fontawesome.com/v6/icons/handshake-simple-slash?s=solid'>example</a>
          */
@@ -2939,6 +4579,14 @@ public final class FontAwesome {
          */
         HARD_DRIVE,
         /**
+         * The solid hard-hat icon.See <a href='https://fontawesome.com/v6/icons/hard-hat?s=solid'>example</a>
+         */
+        HARD_HAT,
+        /**
+         * The solid hard-of-hearing icon.See <a href='https://fontawesome.com/v6/icons/hard-of-hearing?s=solid'>example</a>
+         */
+        HARD_OF_HEARING,
+        /**
          * The solid hashtag icon.See <a href='https://fontawesome.com/v6/icons/hashtag?s=solid'>example</a>
          */
         HASHTAG,
@@ -2951,9 +4599,21 @@ public final class FontAwesome {
          */
         HAT_COWBOY_SIDE,
         /**
+         * The solid hat-hard icon.See <a href='https://fontawesome.com/v6/icons/hat-hard?s=solid'>example</a>
+         */
+        HAT_HARD,
+        /**
          * The solid hat-wizard icon.See <a href='https://fontawesome.com/v6/icons/hat-wizard?s=solid'>example</a>
          */
         HAT_WIZARD,
+        /**
+         * The solid haykal icon.See <a href='https://fontawesome.com/v6/icons/haykal?s=solid'>example</a>
+         */
+        HAYKAL,
+        /**
+         * The solid hdd icon.See <a href='https://fontawesome.com/v6/icons/hdd?s=solid'>example</a>
+         */
+        HDD,
         /**
          * The solid head-side-cough icon.See <a href='https://fontawesome.com/v6/icons/head-side-cough?s=solid'>example</a>
          */
@@ -2971,6 +4631,10 @@ public final class FontAwesome {
          */
         HEAD_SIDE_VIRUS,
         /**
+         * The solid header icon.See <a href='https://fontawesome.com/v6/icons/header?s=solid'>example</a>
+         */
+        HEADER,
+        /**
          * The solid heading icon.See <a href='https://fontawesome.com/v6/icons/heading?s=solid'>example</a>
          */
         HEADING,
@@ -2978,6 +4642,10 @@ public final class FontAwesome {
          * The solid headphones icon.See <a href='https://fontawesome.com/v6/icons/headphones?s=solid'>example</a>
          */
         HEADPHONES,
+        /**
+         * The solid headphones-alt icon.See <a href='https://fontawesome.com/v6/icons/headphones-alt?s=solid'>example</a>
+         */
+        HEADPHONES_ALT,
         /**
          * The solid headphones-simple icon.See <a href='https://fontawesome.com/v6/icons/headphones-simple?s=solid'>example</a>
          */
@@ -2991,29 +4659,89 @@ public final class FontAwesome {
          */
         HEART,
         /**
+         * The solid heart-broken icon.See <a href='https://fontawesome.com/v6/icons/heart-broken?s=solid'>example</a>
+         */
+        HEART_BROKEN,
+        /**
+         * The solid heart-circle-bolt icon.See <a href='https://fontawesome.com/v6/icons/heart-circle-bolt?s=solid'>example</a>
+         */
+        HEART_CIRCLE_BOLT,
+        /**
+         * The solid heart-circle-check icon.See <a href='https://fontawesome.com/v6/icons/heart-circle-check?s=solid'>example</a>
+         */
+        HEART_CIRCLE_CHECK,
+        /**
+         * The solid heart-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/heart-circle-exclamation?s=solid'>example</a>
+         */
+        HEART_CIRCLE_EXCLAMATION,
+        /**
+         * The solid heart-circle-minus icon.See <a href='https://fontawesome.com/v6/icons/heart-circle-minus?s=solid'>example</a>
+         */
+        HEART_CIRCLE_MINUS,
+        /**
+         * The solid heart-circle-plus icon.See <a href='https://fontawesome.com/v6/icons/heart-circle-plus?s=solid'>example</a>
+         */
+        HEART_CIRCLE_PLUS,
+        /**
+         * The solid heart-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/heart-circle-xmark?s=solid'>example</a>
+         */
+        HEART_CIRCLE_XMARK,
+        /**
          * The solid heart-crack icon.See <a href='https://fontawesome.com/v6/icons/heart-crack?s=solid'>example</a>
          */
         HEART_CRACK,
+        /**
+         * The solid heart-music-camera-bolt icon.See <a href='https://fontawesome.com/v6/icons/heart-music-camera-bolt?s=solid'>example</a>
+         */
+        HEART_MUSIC_CAMERA_BOLT,
         /**
          * The solid heart-pulse icon.See <a href='https://fontawesome.com/v6/icons/heart-pulse?s=solid'>example</a>
          */
         HEART_PULSE,
         /**
+         * The solid heartbeat icon.See <a href='https://fontawesome.com/v6/icons/heartbeat?s=solid'>example</a>
+         */
+        HEARTBEAT,
+        /**
          * The solid helicopter icon.See <a href='https://fontawesome.com/v6/icons/helicopter?s=solid'>example</a>
          */
         HELICOPTER,
+        /**
+         * The solid helicopter-symbol icon.See <a href='https://fontawesome.com/v6/icons/helicopter-symbol?s=solid'>example</a>
+         */
+        HELICOPTER_SYMBOL,
         /**
          * The solid helmet-safety icon.See <a href='https://fontawesome.com/v6/icons/helmet-safety?s=solid'>example</a>
          */
         HELMET_SAFETY,
         /**
+         * The solid helmet-un icon.See <a href='https://fontawesome.com/v6/icons/helmet-un?s=solid'>example</a>
+         */
+        HELMET_UN,
+        /**
          * The solid highlighter icon.See <a href='https://fontawesome.com/v6/icons/highlighter?s=solid'>example</a>
          */
         HIGHLIGHTER,
         /**
+         * The solid hiking icon.See <a href='https://fontawesome.com/v6/icons/hiking?s=solid'>example</a>
+         */
+        HIKING,
+        /**
+         * The solid hill-avalanche icon.See <a href='https://fontawesome.com/v6/icons/hill-avalanche?s=solid'>example</a>
+         */
+        HILL_AVALANCHE,
+        /**
+         * The solid hill-rockslide icon.See <a href='https://fontawesome.com/v6/icons/hill-rockslide?s=solid'>example</a>
+         */
+        HILL_ROCKSLIDE,
+        /**
          * The solid hippo icon.See <a href='https://fontawesome.com/v6/icons/hippo?s=solid'>example</a>
          */
         HIPPO,
+        /**
+         * The solid history icon.See <a href='https://fontawesome.com/v6/icons/history?s=solid'>example</a>
+         */
+        HISTORY,
         /**
          * The solid hockey-puck icon.See <a href='https://fontawesome.com/v6/icons/hockey-puck?s=solid'>example</a>
          */
@@ -3022,6 +4750,26 @@ public final class FontAwesome {
          * The solid holly-berry icon.See <a href='https://fontawesome.com/v6/icons/holly-berry?s=solid'>example</a>
          */
         HOLLY_BERRY,
+        /**
+         * The solid home icon.See <a href='https://fontawesome.com/v6/icons/home?s=solid'>example</a>
+         */
+        HOME,
+        /**
+         * The solid home-alt icon.See <a href='https://fontawesome.com/v6/icons/home-alt?s=solid'>example</a>
+         */
+        HOME_ALT,
+        /**
+         * The solid home-lg icon.See <a href='https://fontawesome.com/v6/icons/home-lg?s=solid'>example</a>
+         */
+        HOME_LG,
+        /**
+         * The solid home-lg-alt icon.See <a href='https://fontawesome.com/v6/icons/home-lg-alt?s=solid'>example</a>
+         */
+        HOME_LG_ALT,
+        /**
+         * The solid home-user icon.See <a href='https://fontawesome.com/v6/icons/home-user?s=solid'>example</a>
+         */
+        HOME_USER,
         /**
          * The solid horse icon.See <a href='https://fontawesome.com/v6/icons/horse?s=solid'>example</a>
          */
@@ -3035,9 +4783,25 @@ public final class FontAwesome {
          */
         HOSPITAL,
         /**
+         * The solid hospital-alt icon.See <a href='https://fontawesome.com/v6/icons/hospital-alt?s=solid'>example</a>
+         */
+        HOSPITAL_ALT,
+        /**
+         * The solid hospital-symbol icon.See <a href='https://fontawesome.com/v6/icons/hospital-symbol?s=solid'>example</a>
+         */
+        HOSPITAL_SYMBOL,
+        /**
          * The solid hospital-user icon.See <a href='https://fontawesome.com/v6/icons/hospital-user?s=solid'>example</a>
          */
         HOSPITAL_USER,
+        /**
+         * The solid hospital-wide icon.See <a href='https://fontawesome.com/v6/icons/hospital-wide?s=solid'>example</a>
+         */
+        HOSPITAL_WIDE,
+        /**
+         * The solid hot-tub icon.See <a href='https://fontawesome.com/v6/icons/hot-tub?s=solid'>example</a>
+         */
+        HOT_TUB,
         /**
          * The solid hot-tub-person icon.See <a href='https://fontawesome.com/v6/icons/hot-tub-person?s=solid'>example</a>
          */
@@ -3055,6 +4819,18 @@ public final class FontAwesome {
          */
         HOURGLASS,
         /**
+         * The solid hourglass-1 icon.See <a href='https://fontawesome.com/v6/icons/hourglass-1?s=solid'>example</a>
+         */
+        HOURGLASS_1,
+        /**
+         * The solid hourglass-2 icon.See <a href='https://fontawesome.com/v6/icons/hourglass-2?s=solid'>example</a>
+         */
+        HOURGLASS_2,
+        /**
+         * The solid hourglass-3 icon.See <a href='https://fontawesome.com/v6/icons/hourglass-3?s=solid'>example</a>
+         */
+        HOURGLASS_3,
+        /**
          * The solid hourglass-empty icon.See <a href='https://fontawesome.com/v6/icons/hourglass-empty?s=solid'>example</a>
          */
         HOURGLASS_EMPTY,
@@ -3062,6 +4838,10 @@ public final class FontAwesome {
          * The solid hourglass-end icon.See <a href='https://fontawesome.com/v6/icons/hourglass-end?s=solid'>example</a>
          */
         HOURGLASS_END,
+        /**
+         * The solid hourglass-half icon.See <a href='https://fontawesome.com/v6/icons/hourglass-half?s=solid'>example</a>
+         */
+        HOURGLASS_HALF,
         /**
          * The solid hourglass-start icon.See <a href='https://fontawesome.com/v6/icons/hourglass-start?s=solid'>example</a>
          */
@@ -3091,25 +4871,93 @@ public final class FontAwesome {
          */
         HOUSE_CHIMNEY_WINDOW,
         /**
+         * The solid house-circle-check icon.See <a href='https://fontawesome.com/v6/icons/house-circle-check?s=solid'>example</a>
+         */
+        HOUSE_CIRCLE_CHECK,
+        /**
+         * The solid house-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/house-circle-exclamation?s=solid'>example</a>
+         */
+        HOUSE_CIRCLE_EXCLAMATION,
+        /**
+         * The solid house-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/house-circle-xmark?s=solid'>example</a>
+         */
+        HOUSE_CIRCLE_XMARK,
+        /**
          * The solid house-crack icon.See <a href='https://fontawesome.com/v6/icons/house-crack?s=solid'>example</a>
          */
         HOUSE_CRACK,
+        /**
+         * The solid house-damage icon.See <a href='https://fontawesome.com/v6/icons/house-damage?s=solid'>example</a>
+         */
+        HOUSE_DAMAGE,
+        /**
+         * The solid house-fire icon.See <a href='https://fontawesome.com/v6/icons/house-fire?s=solid'>example</a>
+         */
+        HOUSE_FIRE,
+        /**
+         * The solid house-flag icon.See <a href='https://fontawesome.com/v6/icons/house-flag?s=solid'>example</a>
+         */
+        HOUSE_FLAG,
+        /**
+         * The solid house-flood-water icon.See <a href='https://fontawesome.com/v6/icons/house-flood-water?s=solid'>example</a>
+         */
+        HOUSE_FLOOD_WATER,
+        /**
+         * The solid house-flood-water-circle-arrow-right icon.See <a href='https://fontawesome.com/v6/icons/house-flood-water-circle-arrow-right?s=solid'>example</a>
+         */
+        HOUSE_FLOOD_WATER_CIRCLE_ARROW_RIGHT,
         /**
          * The solid house-laptop icon.See <a href='https://fontawesome.com/v6/icons/house-laptop?s=solid'>example</a>
          */
         HOUSE_LAPTOP,
         /**
+         * The solid house-lock icon.See <a href='https://fontawesome.com/v6/icons/house-lock?s=solid'>example</a>
+         */
+        HOUSE_LOCK,
+        /**
          * The solid house-medical icon.See <a href='https://fontawesome.com/v6/icons/house-medical?s=solid'>example</a>
          */
         HOUSE_MEDICAL,
+        /**
+         * The solid house-medical-circle-check icon.See <a href='https://fontawesome.com/v6/icons/house-medical-circle-check?s=solid'>example</a>
+         */
+        HOUSE_MEDICAL_CIRCLE_CHECK,
+        /**
+         * The solid house-medical-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/house-medical-circle-exclamation?s=solid'>example</a>
+         */
+        HOUSE_MEDICAL_CIRCLE_EXCLAMATION,
+        /**
+         * The solid house-medical-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/house-medical-circle-xmark?s=solid'>example</a>
+         */
+        HOUSE_MEDICAL_CIRCLE_XMARK,
+        /**
+         * The solid house-medical-flag icon.See <a href='https://fontawesome.com/v6/icons/house-medical-flag?s=solid'>example</a>
+         */
+        HOUSE_MEDICAL_FLAG,
+        /**
+         * The solid house-signal icon.See <a href='https://fontawesome.com/v6/icons/house-signal?s=solid'>example</a>
+         */
+        HOUSE_SIGNAL,
+        /**
+         * The solid house-tsunami icon.See <a href='https://fontawesome.com/v6/icons/house-tsunami?s=solid'>example</a>
+         */
+        HOUSE_TSUNAMI,
         /**
          * The solid house-user icon.See <a href='https://fontawesome.com/v6/icons/house-user?s=solid'>example</a>
          */
         HOUSE_USER,
         /**
+         * The solid hryvnia icon.See <a href='https://fontawesome.com/v6/icons/hryvnia?s=solid'>example</a>
+         */
+        HRYVNIA,
+        /**
          * The solid hryvnia-sign icon.See <a href='https://fontawesome.com/v6/icons/hryvnia-sign?s=solid'>example</a>
          */
         HRYVNIA_SIGN,
+        /**
+         * The solid hurricane icon.See <a href='https://fontawesome.com/v6/icons/hurricane?s=solid'>example</a>
+         */
+        HURRICANE,
         /**
          * The solid i icon.See <a href='https://fontawesome.com/v6/icons/i?s=solid'>example</a>
          */
@@ -3139,6 +4987,10 @@ public final class FontAwesome {
          */
         ID_CARD,
         /**
+         * The solid id-card-alt icon.See <a href='https://fontawesome.com/v6/icons/id-card-alt?s=solid'>example</a>
+         */
+        ID_CARD_ALT,
+        /**
          * The solid id-card-clip icon.See <a href='https://fontawesome.com/v6/icons/id-card-clip?s=solid'>example</a>
          */
         ID_CARD_CLIP,
@@ -3146,6 +4998,10 @@ public final class FontAwesome {
          * The solid igloo icon.See <a href='https://fontawesome.com/v6/icons/igloo?s=solid'>example</a>
          */
         IGLOO,
+        /**
+         * The solid ils icon.See <a href='https://fontawesome.com/v6/icons/ils?s=solid'>example</a>
+         */
+        ILS,
         /**
          * The solid image icon.See <a href='https://fontawesome.com/v6/icons/image?s=solid'>example</a>
          */
@@ -3167,6 +5023,10 @@ public final class FontAwesome {
          */
         INDENT,
         /**
+         * The solid indian-rupee icon.See <a href='https://fontawesome.com/v6/icons/indian-rupee?s=solid'>example</a>
+         */
+        INDIAN_RUPEE,
+        /**
          * The solid indian-rupee-sign icon.See <a href='https://fontawesome.com/v6/icons/indian-rupee-sign?s=solid'>example</a>
          */
         INDIAN_RUPEE_SIGN,
@@ -3183,6 +5043,18 @@ public final class FontAwesome {
          */
         INFO,
         /**
+         * The solid info-circle icon.See <a href='https://fontawesome.com/v6/icons/info-circle?s=solid'>example</a>
+         */
+        INFO_CIRCLE,
+        /**
+         * The solid inr icon.See <a href='https://fontawesome.com/v6/icons/inr?s=solid'>example</a>
+         */
+        INR,
+        /**
+         * The solid institution icon.See <a href='https://fontawesome.com/v6/icons/institution?s=solid'>example</a>
+         */
+        INSTITUTION,
+        /**
          * The solid italic icon.See <a href='https://fontawesome.com/v6/icons/italic?s=solid'>example</a>
          */
         ITALIC,
@@ -3190,6 +5062,14 @@ public final class FontAwesome {
          * The solid j icon.See <a href='https://fontawesome.com/v6/icons/j?s=solid'>example</a>
          */
         J,
+        /**
+         * The solid jar icon.See <a href='https://fontawesome.com/v6/icons/jar?s=solid'>example</a>
+         */
+        JAR,
+        /**
+         * The solid jar-wheat icon.See <a href='https://fontawesome.com/v6/icons/jar-wheat?s=solid'>example</a>
+         */
+        JAR_WHEAT,
         /**
          * The solid jedi icon.See <a href='https://fontawesome.com/v6/icons/jedi?s=solid'>example</a>
          */
@@ -3199,9 +5079,25 @@ public final class FontAwesome {
          */
         JET_FIGHTER,
         /**
+         * The solid jet-fighter-up icon.See <a href='https://fontawesome.com/v6/icons/jet-fighter-up?s=solid'>example</a>
+         */
+        JET_FIGHTER_UP,
+        /**
          * The solid joint icon.See <a href='https://fontawesome.com/v6/icons/joint?s=solid'>example</a>
          */
         JOINT,
+        /**
+         * The solid journal-whills icon.See <a href='https://fontawesome.com/v6/icons/journal-whills?s=solid'>example</a>
+         */
+        JOURNAL_WHILLS,
+        /**
+         * The solid jpy icon.See <a href='https://fontawesome.com/v6/icons/jpy?s=solid'>example</a>
+         */
+        JPY,
+        /**
+         * The solid jug-detergent icon.See <a href='https://fontawesome.com/v6/icons/jug-detergent?s=solid'>example</a>
+         */
+        JUG_DETERGENT,
         /**
          * The solid k icon.See <a href='https://fontawesome.com/v6/icons/k?s=solid'>example</a>
          */
@@ -3227,21 +5123,61 @@ public final class FontAwesome {
          */
         KIP_SIGN,
         /**
+         * The solid kiss icon.See <a href='https://fontawesome.com/v6/icons/kiss?s=solid'>example</a>
+         */
+        KISS,
+        /**
+         * The solid kiss-beam icon.See <a href='https://fontawesome.com/v6/icons/kiss-beam?s=solid'>example</a>
+         */
+        KISS_BEAM,
+        /**
+         * The solid kiss-wink-heart icon.See <a href='https://fontawesome.com/v6/icons/kiss-wink-heart?s=solid'>example</a>
+         */
+        KISS_WINK_HEART,
+        /**
          * The solid kit-medical icon.See <a href='https://fontawesome.com/v6/icons/kit-medical?s=solid'>example</a>
          */
         KIT_MEDICAL,
+        /**
+         * The solid kitchen-set icon.See <a href='https://fontawesome.com/v6/icons/kitchen-set?s=solid'>example</a>
+         */
+        KITCHEN_SET,
         /**
          * The solid kiwi-bird icon.See <a href='https://fontawesome.com/v6/icons/kiwi-bird?s=solid'>example</a>
          */
         KIWI_BIRD,
         /**
+         * The solid krw icon.See <a href='https://fontawesome.com/v6/icons/krw?s=solid'>example</a>
+         */
+        KRW,
+        /**
          * The solid l icon.See <a href='https://fontawesome.com/v6/icons/l?s=solid'>example</a>
          */
         L,
         /**
+         * The solid ladder-water icon.See <a href='https://fontawesome.com/v6/icons/ladder-water?s=solid'>example</a>
+         */
+        LADDER_WATER,
+        /**
+         * The solid land-mine-on icon.See <a href='https://fontawesome.com/v6/icons/land-mine-on?s=solid'>example</a>
+         */
+        LAND_MINE_ON,
+        /**
          * The solid landmark icon.See <a href='https://fontawesome.com/v6/icons/landmark?s=solid'>example</a>
          */
         LANDMARK,
+        /**
+         * The solid landmark-alt icon.See <a href='https://fontawesome.com/v6/icons/landmark-alt?s=solid'>example</a>
+         */
+        LANDMARK_ALT,
+        /**
+         * The solid landmark-dome icon.See <a href='https://fontawesome.com/v6/icons/landmark-dome?s=solid'>example</a>
+         */
+        LANDMARK_DOME,
+        /**
+         * The solid landmark-flag icon.See <a href='https://fontawesome.com/v6/icons/landmark-flag?s=solid'>example</a>
+         */
+        LANDMARK_FLAG,
         /**
          * The solid language icon.See <a href='https://fontawesome.com/v6/icons/language?s=solid'>example</a>
          */
@@ -3255,6 +5191,14 @@ public final class FontAwesome {
          */
         LAPTOP_CODE,
         /**
+         * The solid laptop-file icon.See <a href='https://fontawesome.com/v6/icons/laptop-file?s=solid'>example</a>
+         */
+        LAPTOP_FILE,
+        /**
+         * The solid laptop-house icon.See <a href='https://fontawesome.com/v6/icons/laptop-house?s=solid'>example</a>
+         */
+        LAPTOP_HOUSE,
+        /**
          * The solid laptop-medical icon.See <a href='https://fontawesome.com/v6/icons/laptop-medical?s=solid'>example</a>
          */
         LAPTOP_MEDICAL,
@@ -3262,6 +5206,22 @@ public final class FontAwesome {
          * The solid lari-sign icon.See <a href='https://fontawesome.com/v6/icons/lari-sign?s=solid'>example</a>
          */
         LARI_SIGN,
+        /**
+         * The solid laugh icon.See <a href='https://fontawesome.com/v6/icons/laugh?s=solid'>example</a>
+         */
+        LAUGH,
+        /**
+         * The solid laugh-beam icon.See <a href='https://fontawesome.com/v6/icons/laugh-beam?s=solid'>example</a>
+         */
+        LAUGH_BEAM,
+        /**
+         * The solid laugh-squint icon.See <a href='https://fontawesome.com/v6/icons/laugh-squint?s=solid'>example</a>
+         */
+        LAUGH_SQUINT,
+        /**
+         * The solid laugh-wink icon.See <a href='https://fontawesome.com/v6/icons/laugh-wink?s=solid'>example</a>
+         */
+        LAUGH_WINK,
         /**
          * The solid layer-group icon.See <a href='https://fontawesome.com/v6/icons/layer-group?s=solid'>example</a>
          */
@@ -3279,6 +5239,10 @@ public final class FontAwesome {
          */
         LEFT_RIGHT,
         /**
+         * The solid legal icon.See <a href='https://fontawesome.com/v6/icons/legal?s=solid'>example</a>
+         */
+        LEGAL,
+        /**
          * The solid lemon icon.See <a href='https://fontawesome.com/v6/icons/lemon?s=solid'>example</a>
          */
         LEMON,
@@ -3291,6 +5255,22 @@ public final class FontAwesome {
          */
         LESS_THAN_EQUAL,
         /**
+         * The solid level-down icon.See <a href='https://fontawesome.com/v6/icons/level-down?s=solid'>example</a>
+         */
+        LEVEL_DOWN,
+        /**
+         * The solid level-down-alt icon.See <a href='https://fontawesome.com/v6/icons/level-down-alt?s=solid'>example</a>
+         */
+        LEVEL_DOWN_ALT,
+        /**
+         * The solid level-up icon.See <a href='https://fontawesome.com/v6/icons/level-up?s=solid'>example</a>
+         */
+        LEVEL_UP,
+        /**
+         * The solid level-up-alt icon.See <a href='https://fontawesome.com/v6/icons/level-up-alt?s=solid'>example</a>
+         */
+        LEVEL_UP_ALT,
+        /**
          * The solid life-ring icon.See <a href='https://fontawesome.com/v6/icons/life-ring?s=solid'>example</a>
          */
         LIFE_RING,
@@ -3298,6 +5278,14 @@ public final class FontAwesome {
          * The solid lightbulb icon.See <a href='https://fontawesome.com/v6/icons/lightbulb?s=solid'>example</a>
          */
         LIGHTBULB,
+        /**
+         * The solid line-chart icon.See <a href='https://fontawesome.com/v6/icons/line-chart?s=solid'>example</a>
+         */
+        LINE_CHART,
+        /**
+         * The solid lines-leaning icon.See <a href='https://fontawesome.com/v6/icons/lines-leaning?s=solid'>example</a>
+         */
+        LINES_LEANING,
         /**
          * The solid link icon.See <a href='https://fontawesome.com/v6/icons/link?s=solid'>example</a>
          */
@@ -3315,13 +5303,33 @@ public final class FontAwesome {
          */
         LIST,
         /**
+         * The solid list-1-2 icon.See <a href='https://fontawesome.com/v6/icons/list-1-2?s=solid'>example</a>
+         */
+        LIST_1_2,
+        /**
+         * The solid list-alt icon.See <a href='https://fontawesome.com/v6/icons/list-alt?s=solid'>example</a>
+         */
+        LIST_ALT,
+        /**
          * The solid list-check icon.See <a href='https://fontawesome.com/v6/icons/list-check?s=solid'>example</a>
          */
         LIST_CHECK,
         /**
+         * The solid list-dots icon.See <a href='https://fontawesome.com/v6/icons/list-dots?s=solid'>example</a>
+         */
+        LIST_DOTS,
+        /**
+         * The solid list-numeric icon.See <a href='https://fontawesome.com/v6/icons/list-numeric?s=solid'>example</a>
+         */
+        LIST_NUMERIC,
+        /**
          * The solid list-ol icon.See <a href='https://fontawesome.com/v6/icons/list-ol?s=solid'>example</a>
          */
         LIST_OL,
+        /**
+         * The solid list-squares icon.See <a href='https://fontawesome.com/v6/icons/list-squares?s=solid'>example</a>
+         */
+        LIST_SQUARES,
         /**
          * The solid list-ul icon.See <a href='https://fontawesome.com/v6/icons/list-ul?s=solid'>example</a>
          */
@@ -3330,6 +5338,10 @@ public final class FontAwesome {
          * The solid litecoin-sign icon.See <a href='https://fontawesome.com/v6/icons/litecoin-sign?s=solid'>example</a>
          */
         LITECOIN_SIGN,
+        /**
+         * The solid location icon.See <a href='https://fontawesome.com/v6/icons/location?s=solid'>example</a>
+         */
+        LOCATION,
         /**
          * The solid location-arrow icon.See <a href='https://fontawesome.com/v6/icons/location-arrow?s=solid'>example</a>
          */
@@ -3347,6 +5359,10 @@ public final class FontAwesome {
          */
         LOCATION_PIN,
         /**
+         * The solid location-pin-lock icon.See <a href='https://fontawesome.com/v6/icons/location-pin-lock?s=solid'>example</a>
+         */
+        LOCATION_PIN_LOCK,
+        /**
          * The solid lock icon.See <a href='https://fontawesome.com/v6/icons/lock?s=solid'>example</a>
          */
         LOCK,
@@ -3354,6 +5370,50 @@ public final class FontAwesome {
          * The solid lock-open icon.See <a href='https://fontawesome.com/v6/icons/lock-open?s=solid'>example</a>
          */
         LOCK_OPEN,
+        /**
+         * The solid locust icon.See <a href='https://fontawesome.com/v6/icons/locust?s=solid'>example</a>
+         */
+        LOCUST,
+        /**
+         * The solid long-arrow-alt-down icon.See <a href='https://fontawesome.com/v6/icons/long-arrow-alt-down?s=solid'>example</a>
+         */
+        LONG_ARROW_ALT_DOWN,
+        /**
+         * The solid long-arrow-alt-left icon.See <a href='https://fontawesome.com/v6/icons/long-arrow-alt-left?s=solid'>example</a>
+         */
+        LONG_ARROW_ALT_LEFT,
+        /**
+         * The solid long-arrow-alt-right icon.See <a href='https://fontawesome.com/v6/icons/long-arrow-alt-right?s=solid'>example</a>
+         */
+        LONG_ARROW_ALT_RIGHT,
+        /**
+         * The solid long-arrow-alt-up icon.See <a href='https://fontawesome.com/v6/icons/long-arrow-alt-up?s=solid'>example</a>
+         */
+        LONG_ARROW_ALT_UP,
+        /**
+         * The solid long-arrow-down icon.See <a href='https://fontawesome.com/v6/icons/long-arrow-down?s=solid'>example</a>
+         */
+        LONG_ARROW_DOWN,
+        /**
+         * The solid long-arrow-left icon.See <a href='https://fontawesome.com/v6/icons/long-arrow-left?s=solid'>example</a>
+         */
+        LONG_ARROW_LEFT,
+        /**
+         * The solid long-arrow-right icon.See <a href='https://fontawesome.com/v6/icons/long-arrow-right?s=solid'>example</a>
+         */
+        LONG_ARROW_RIGHT,
+        /**
+         * The solid long-arrow-up icon.See <a href='https://fontawesome.com/v6/icons/long-arrow-up?s=solid'>example</a>
+         */
+        LONG_ARROW_UP,
+        /**
+         * The solid low-vision icon.See <a href='https://fontawesome.com/v6/icons/low-vision?s=solid'>example</a>
+         */
+        LOW_VISION,
+        /**
+         * The solid luggage-cart icon.See <a href='https://fontawesome.com/v6/icons/luggage-cart?s=solid'>example</a>
+         */
+        LUGGAGE_CART,
         /**
          * The solid lungs icon.See <a href='https://fontawesome.com/v6/icons/lungs?s=solid'>example</a>
          */
@@ -3367,6 +5427,14 @@ public final class FontAwesome {
          */
         M,
         /**
+         * The solid magic icon.See <a href='https://fontawesome.com/v6/icons/magic?s=solid'>example</a>
+         */
+        MAGIC,
+        /**
+         * The solid magic-wand-sparkles icon.See <a href='https://fontawesome.com/v6/icons/magic-wand-sparkles?s=solid'>example</a>
+         */
+        MAGIC_WAND_SPARKLES,
+        /**
          * The solid magnet icon.See <a href='https://fontawesome.com/v6/icons/magnet?s=solid'>example</a>
          */
         MAGNET,
@@ -3374,6 +5442,14 @@ public final class FontAwesome {
          * The solid magnifying-glass icon.See <a href='https://fontawesome.com/v6/icons/magnifying-glass?s=solid'>example</a>
          */
         MAGNIFYING_GLASS,
+        /**
+         * The solid magnifying-glass-arrow-right icon.See <a href='https://fontawesome.com/v6/icons/magnifying-glass-arrow-right?s=solid'>example</a>
+         */
+        MAGNIFYING_GLASS_ARROW_RIGHT,
+        /**
+         * The solid magnifying-glass-chart icon.See <a href='https://fontawesome.com/v6/icons/magnifying-glass-chart?s=solid'>example</a>
+         */
+        MAGNIFYING_GLASS_CHART,
         /**
          * The solid magnifying-glass-dollar icon.See <a href='https://fontawesome.com/v6/icons/magnifying-glass-dollar?s=solid'>example</a>
          */
@@ -3391,6 +5467,26 @@ public final class FontAwesome {
          */
         MAGNIFYING_GLASS_PLUS,
         /**
+         * The solid mail-bulk icon.See <a href='https://fontawesome.com/v6/icons/mail-bulk?s=solid'>example</a>
+         */
+        MAIL_BULK,
+        /**
+         * The solid mail-forward icon.See <a href='https://fontawesome.com/v6/icons/mail-forward?s=solid'>example</a>
+         */
+        MAIL_FORWARD,
+        /**
+         * The solid mail-reply icon.See <a href='https://fontawesome.com/v6/icons/mail-reply?s=solid'>example</a>
+         */
+        MAIL_REPLY,
+        /**
+         * The solid mail-reply-all icon.See <a href='https://fontawesome.com/v6/icons/mail-reply-all?s=solid'>example</a>
+         */
+        MAIL_REPLY_ALL,
+        /**
+         * The solid male icon.See <a href='https://fontawesome.com/v6/icons/male?s=solid'>example</a>
+         */
+        MALE,
+        /**
          * The solid manat-sign icon.See <a href='https://fontawesome.com/v6/icons/manat-sign?s=solid'>example</a>
          */
         MANAT_SIGN,
@@ -3407,9 +5503,29 @@ public final class FontAwesome {
          */
         MAP_LOCATION_DOT,
         /**
+         * The solid map-marked icon.See <a href='https://fontawesome.com/v6/icons/map-marked?s=solid'>example</a>
+         */
+        MAP_MARKED,
+        /**
+         * The solid map-marked-alt icon.See <a href='https://fontawesome.com/v6/icons/map-marked-alt?s=solid'>example</a>
+         */
+        MAP_MARKED_ALT,
+        /**
+         * The solid map-marker icon.See <a href='https://fontawesome.com/v6/icons/map-marker?s=solid'>example</a>
+         */
+        MAP_MARKER,
+        /**
+         * The solid map-marker-alt icon.See <a href='https://fontawesome.com/v6/icons/map-marker-alt?s=solid'>example</a>
+         */
+        MAP_MARKER_ALT,
+        /**
          * The solid map-pin icon.See <a href='https://fontawesome.com/v6/icons/map-pin?s=solid'>example</a>
          */
         MAP_PIN,
+        /**
+         * The solid map-signs icon.See <a href='https://fontawesome.com/v6/icons/map-signs?s=solid'>example</a>
+         */
+        MAP_SIGNS,
         /**
          * The solid marker icon.See <a href='https://fontawesome.com/v6/icons/marker?s=solid'>example</a>
          */
@@ -3423,6 +5539,10 @@ public final class FontAwesome {
          */
         MARS_AND_VENUS,
         /**
+         * The solid mars-and-venus-burst icon.See <a href='https://fontawesome.com/v6/icons/mars-and-venus-burst?s=solid'>example</a>
+         */
+        MARS_AND_VENUS_BURST,
+        /**
          * The solid mars-double icon.See <a href='https://fontawesome.com/v6/icons/mars-double?s=solid'>example</a>
          */
         MARS_DOUBLE,
@@ -3431,6 +5551,10 @@ public final class FontAwesome {
          */
         MARS_STROKE,
         /**
+         * The solid mars-stroke-h icon.See <a href='https://fontawesome.com/v6/icons/mars-stroke-h?s=solid'>example</a>
+         */
+        MARS_STROKE_H,
+        /**
          * The solid mars-stroke-right icon.See <a href='https://fontawesome.com/v6/icons/mars-stroke-right?s=solid'>example</a>
          */
         MARS_STROKE_RIGHT,
@@ -3438,6 +5562,10 @@ public final class FontAwesome {
          * The solid mars-stroke-up icon.See <a href='https://fontawesome.com/v6/icons/mars-stroke-up?s=solid'>example</a>
          */
         MARS_STROKE_UP,
+        /**
+         * The solid mars-stroke-v icon.See <a href='https://fontawesome.com/v6/icons/mars-stroke-v?s=solid'>example</a>
+         */
+        MARS_STROKE_V,
         /**
          * The solid martini-glass icon.See <a href='https://fontawesome.com/v6/icons/martini-glass?s=solid'>example</a>
          */
@@ -3459,9 +5587,17 @@ public final class FontAwesome {
          */
         MASK_FACE,
         /**
+         * The solid mask-ventilator icon.See <a href='https://fontawesome.com/v6/icons/mask-ventilator?s=solid'>example</a>
+         */
+        MASK_VENTILATOR,
+        /**
          * The solid masks-theater icon.See <a href='https://fontawesome.com/v6/icons/masks-theater?s=solid'>example</a>
          */
         MASKS_THEATER,
+        /**
+         * The solid mattress-pillow icon.See <a href='https://fontawesome.com/v6/icons/mattress-pillow?s=solid'>example</a>
+         */
+        MATTRESS_PILLOW,
         /**
          * The solid maximize icon.See <a href='https://fontawesome.com/v6/icons/maximize?s=solid'>example</a>
          */
@@ -3470,6 +5606,22 @@ public final class FontAwesome {
          * The solid medal icon.See <a href='https://fontawesome.com/v6/icons/medal?s=solid'>example</a>
          */
         MEDAL,
+        /**
+         * The solid medkit icon.See <a href='https://fontawesome.com/v6/icons/medkit?s=solid'>example</a>
+         */
+        MEDKIT,
+        /**
+         * The solid meh icon.See <a href='https://fontawesome.com/v6/icons/meh?s=solid'>example</a>
+         */
+        MEH,
+        /**
+         * The solid meh-blank icon.See <a href='https://fontawesome.com/v6/icons/meh-blank?s=solid'>example</a>
+         */
+        MEH_BLANK,
+        /**
+         * The solid meh-rolling-eyes icon.See <a href='https://fontawesome.com/v6/icons/meh-rolling-eyes?s=solid'>example</a>
+         */
+        MEH_ROLLING_EYES,
         /**
          * The solid memory icon.See <a href='https://fontawesome.com/v6/icons/memory?s=solid'>example</a>
          */
@@ -3499,6 +5651,14 @@ public final class FontAwesome {
          */
         MICROPHONE,
         /**
+         * The solid microphone-alt icon.See <a href='https://fontawesome.com/v6/icons/microphone-alt?s=solid'>example</a>
+         */
+        MICROPHONE_ALT,
+        /**
+         * The solid microphone-alt-slash icon.See <a href='https://fontawesome.com/v6/icons/microphone-alt-slash?s=solid'>example</a>
+         */
+        MICROPHONE_ALT_SLASH,
+        /**
          * The solid microphone-lines icon.See <a href='https://fontawesome.com/v6/icons/microphone-lines?s=solid'>example</a>
          */
         MICROPHONE_LINES,
@@ -3527,6 +5687,14 @@ public final class FontAwesome {
          */
         MINUS,
         /**
+         * The solid minus-circle icon.See <a href='https://fontawesome.com/v6/icons/minus-circle?s=solid'>example</a>
+         */
+        MINUS_CIRCLE,
+        /**
+         * The solid minus-square icon.See <a href='https://fontawesome.com/v6/icons/minus-square?s=solid'>example</a>
+         */
+        MINUS_SQUARE,
+        /**
          * The solid mitten icon.See <a href='https://fontawesome.com/v6/icons/mitten?s=solid'>example</a>
          */
         MITTEN,
@@ -3535,9 +5703,33 @@ public final class FontAwesome {
          */
         MOBILE,
         /**
+         * The solid mobile-alt icon.See <a href='https://fontawesome.com/v6/icons/mobile-alt?s=solid'>example</a>
+         */
+        MOBILE_ALT,
+        /**
+         * The solid mobile-android icon.See <a href='https://fontawesome.com/v6/icons/mobile-android?s=solid'>example</a>
+         */
+        MOBILE_ANDROID,
+        /**
+         * The solid mobile-android-alt icon.See <a href='https://fontawesome.com/v6/icons/mobile-android-alt?s=solid'>example</a>
+         */
+        MOBILE_ANDROID_ALT,
+        /**
          * The solid mobile-button icon.See <a href='https://fontawesome.com/v6/icons/mobile-button?s=solid'>example</a>
          */
         MOBILE_BUTTON,
+        /**
+         * The solid mobile-phone icon.See <a href='https://fontawesome.com/v6/icons/mobile-phone?s=solid'>example</a>
+         */
+        MOBILE_PHONE,
+        /**
+         * The solid mobile-retro icon.See <a href='https://fontawesome.com/v6/icons/mobile-retro?s=solid'>example</a>
+         */
+        MOBILE_RETRO,
+        /**
+         * The solid mobile-screen icon.See <a href='https://fontawesome.com/v6/icons/mobile-screen?s=solid'>example</a>
+         */
+        MOBILE_SCREEN,
         /**
          * The solid mobile-screen-button icon.See <a href='https://fontawesome.com/v6/icons/mobile-screen-button?s=solid'>example</a>
          */
@@ -3555,13 +5747,41 @@ public final class FontAwesome {
          */
         MONEY_BILL_1_WAVE,
         /**
+         * The solid money-bill-alt icon.See <a href='https://fontawesome.com/v6/icons/money-bill-alt?s=solid'>example</a>
+         */
+        MONEY_BILL_ALT,
+        /**
+         * The solid money-bill-transfer icon.See <a href='https://fontawesome.com/v6/icons/money-bill-transfer?s=solid'>example</a>
+         */
+        MONEY_BILL_TRANSFER,
+        /**
+         * The solid money-bill-trend-up icon.See <a href='https://fontawesome.com/v6/icons/money-bill-trend-up?s=solid'>example</a>
+         */
+        MONEY_BILL_TREND_UP,
+        /**
          * The solid money-bill-wave icon.See <a href='https://fontawesome.com/v6/icons/money-bill-wave?s=solid'>example</a>
          */
         MONEY_BILL_WAVE,
         /**
+         * The solid money-bill-wave-alt icon.See <a href='https://fontawesome.com/v6/icons/money-bill-wave-alt?s=solid'>example</a>
+         */
+        MONEY_BILL_WAVE_ALT,
+        /**
+         * The solid money-bill-wheat icon.See <a href='https://fontawesome.com/v6/icons/money-bill-wheat?s=solid'>example</a>
+         */
+        MONEY_BILL_WHEAT,
+        /**
+         * The solid money-bills icon.See <a href='https://fontawesome.com/v6/icons/money-bills?s=solid'>example</a>
+         */
+        MONEY_BILLS,
+        /**
          * The solid money-check icon.See <a href='https://fontawesome.com/v6/icons/money-check?s=solid'>example</a>
          */
         MONEY_CHECK,
+        /**
+         * The solid money-check-alt icon.See <a href='https://fontawesome.com/v6/icons/money-check-alt?s=solid'>example</a>
+         */
+        MONEY_CHECK_ALT,
         /**
          * The solid money-check-dollar icon.See <a href='https://fontawesome.com/v6/icons/money-check-dollar?s=solid'>example</a>
          */
@@ -3575,6 +5795,10 @@ public final class FontAwesome {
          */
         MOON,
         /**
+         * The solid mortar-board icon.See <a href='https://fontawesome.com/v6/icons/mortar-board?s=solid'>example</a>
+         */
+        MORTAR_BOARD,
+        /**
          * The solid mortar-pestle icon.See <a href='https://fontawesome.com/v6/icons/mortar-pestle?s=solid'>example</a>
          */
         MORTAR_PESTLE,
@@ -3583,13 +5807,41 @@ public final class FontAwesome {
          */
         MOSQUE,
         /**
+         * The solid mosquito icon.See <a href='https://fontawesome.com/v6/icons/mosquito?s=solid'>example</a>
+         */
+        MOSQUITO,
+        /**
+         * The solid mosquito-net icon.See <a href='https://fontawesome.com/v6/icons/mosquito-net?s=solid'>example</a>
+         */
+        MOSQUITO_NET,
+        /**
          * The solid motorcycle icon.See <a href='https://fontawesome.com/v6/icons/motorcycle?s=solid'>example</a>
          */
         MOTORCYCLE,
         /**
+         * The solid mound icon.See <a href='https://fontawesome.com/v6/icons/mound?s=solid'>example</a>
+         */
+        MOUND,
+        /**
          * The solid mountain icon.See <a href='https://fontawesome.com/v6/icons/mountain?s=solid'>example</a>
          */
         MOUNTAIN,
+        /**
+         * The solid mountain-city icon.See <a href='https://fontawesome.com/v6/icons/mountain-city?s=solid'>example</a>
+         */
+        MOUNTAIN_CITY,
+        /**
+         * The solid mountain-sun icon.See <a href='https://fontawesome.com/v6/icons/mountain-sun?s=solid'>example</a>
+         */
+        MOUNTAIN_SUN,
+        /**
+         * The solid mouse icon.See <a href='https://fontawesome.com/v6/icons/mouse?s=solid'>example</a>
+         */
+        MOUSE,
+        /**
+         * The solid mouse-pointer icon.See <a href='https://fontawesome.com/v6/icons/mouse-pointer?s=solid'>example</a>
+         */
+        MOUSE_POINTER,
         /**
          * The solid mug-hot icon.See <a href='https://fontawesome.com/v6/icons/mug-hot?s=solid'>example</a>
          */
@@ -3598,6 +5850,14 @@ public final class FontAwesome {
          * The solid mug-saucer icon.See <a href='https://fontawesome.com/v6/icons/mug-saucer?s=solid'>example</a>
          */
         MUG_SAUCER,
+        /**
+         * The solid multiply icon.See <a href='https://fontawesome.com/v6/icons/multiply?s=solid'>example</a>
+         */
+        MULTIPLY,
+        /**
+         * The solid museum icon.See <a href='https://fontawesome.com/v6/icons/museum?s=solid'>example</a>
+         */
+        MUSEUM,
         /**
          * The solid music icon.See <a href='https://fontawesome.com/v6/icons/music?s=solid'>example</a>
          */
@@ -3610,6 +5870,10 @@ public final class FontAwesome {
          * The solid naira-sign icon.See <a href='https://fontawesome.com/v6/icons/naira-sign?s=solid'>example</a>
          */
         NAIRA_SIGN,
+        /**
+         * The solid navicon icon.See <a href='https://fontawesome.com/v6/icons/navicon?s=solid'>example</a>
+         */
+        NAVICON,
         /**
          * The solid network-wired icon.See <a href='https://fontawesome.com/v6/icons/network-wired?s=solid'>example</a>
          */
@@ -3626,6 +5890,10 @@ public final class FontAwesome {
          * The solid not-equal icon.See <a href='https://fontawesome.com/v6/icons/not-equal?s=solid'>example</a>
          */
         NOT_EQUAL,
+        /**
+         * The solid notdef icon.See <a href='https://fontawesome.com/v6/icons/notdef?s=solid'>example</a>
+         */
+        NOTDEF,
         /**
          * The solid note-sticky icon.See <a href='https://fontawesome.com/v6/icons/note-sticky?s=solid'>example</a>
          */
@@ -3651,6 +5919,10 @@ public final class FontAwesome {
          */
         OIL_CAN,
         /**
+         * The solid oil-well icon.See <a href='https://fontawesome.com/v6/icons/oil-well?s=solid'>example</a>
+         */
+        OIL_WELL,
+        /**
          * The solid om icon.See <a href='https://fontawesome.com/v6/icons/om?s=solid'>example</a>
          */
         OM,
@@ -3670,6 +5942,10 @@ public final class FontAwesome {
          * The solid pager icon.See <a href='https://fontawesome.com/v6/icons/pager?s=solid'>example</a>
          */
         PAGER,
+        /**
+         * The solid paint-brush icon.See <a href='https://fontawesome.com/v6/icons/paint-brush?s=solid'>example</a>
+         */
+        PAINT_BRUSH,
         /**
          * The solid paint-roller icon.See <a href='https://fontawesome.com/v6/icons/paint-roller?s=solid'>example</a>
          */
@@ -3707,9 +5983,17 @@ public final class FontAwesome {
          */
         PARAGRAPH,
         /**
+         * The solid parking icon.See <a href='https://fontawesome.com/v6/icons/parking?s=solid'>example</a>
+         */
+        PARKING,
+        /**
          * The solid passport icon.See <a href='https://fontawesome.com/v6/icons/passport?s=solid'>example</a>
          */
         PASSPORT,
+        /**
+         * The solid pastafarianism icon.See <a href='https://fontawesome.com/v6/icons/pastafarianism?s=solid'>example</a>
+         */
+        PASTAFARIANISM,
         /**
          * The solid paste icon.See <a href='https://fontawesome.com/v6/icons/paste?s=solid'>example</a>
          */
@@ -3718,6 +6002,10 @@ public final class FontAwesome {
          * The solid pause icon.See <a href='https://fontawesome.com/v6/icons/pause?s=solid'>example</a>
          */
         PAUSE,
+        /**
+         * The solid pause-circle icon.See <a href='https://fontawesome.com/v6/icons/pause-circle?s=solid'>example</a>
+         */
+        PAUSE_CIRCLE,
         /**
          * The solid paw icon.See <a href='https://fontawesome.com/v6/icons/paw?s=solid'>example</a>
          */
@@ -3730,6 +6018,10 @@ public final class FontAwesome {
          * The solid pen icon.See <a href='https://fontawesome.com/v6/icons/pen?s=solid'>example</a>
          */
         PEN,
+        /**
+         * The solid pen-alt icon.See <a href='https://fontawesome.com/v6/icons/pen-alt?s=solid'>example</a>
+         */
+        PEN_ALT,
         /**
          * The solid pen-clip icon.See <a href='https://fontawesome.com/v6/icons/pen-clip?s=solid'>example</a>
          */
@@ -3747,6 +6039,10 @@ public final class FontAwesome {
          */
         PEN_RULER,
         /**
+         * The solid pen-square icon.See <a href='https://fontawesome.com/v6/icons/pen-square?s=solid'>example</a>
+         */
+        PEN_SQUARE,
+        /**
          * The solid pen-to-square icon.See <a href='https://fontawesome.com/v6/icons/pen-to-square?s=solid'>example</a>
          */
         PEN_TO_SQUARE,
@@ -3755,13 +6051,53 @@ public final class FontAwesome {
          */
         PENCIL,
         /**
+         * The solid pencil-alt icon.See <a href='https://fontawesome.com/v6/icons/pencil-alt?s=solid'>example</a>
+         */
+        PENCIL_ALT,
+        /**
+         * The solid pencil-ruler icon.See <a href='https://fontawesome.com/v6/icons/pencil-ruler?s=solid'>example</a>
+         */
+        PENCIL_RULER,
+        /**
+         * The solid pencil-square icon.See <a href='https://fontawesome.com/v6/icons/pencil-square?s=solid'>example</a>
+         */
+        PENCIL_SQUARE,
+        /**
+         * The solid people-arrows icon.See <a href='https://fontawesome.com/v6/icons/people-arrows?s=solid'>example</a>
+         */
+        PEOPLE_ARROWS,
+        /**
          * The solid people-arrows-left-right icon.See <a href='https://fontawesome.com/v6/icons/people-arrows-left-right?s=solid'>example</a>
          */
         PEOPLE_ARROWS_LEFT_RIGHT,
         /**
+         * The solid people-carry icon.See <a href='https://fontawesome.com/v6/icons/people-carry?s=solid'>example</a>
+         */
+        PEOPLE_CARRY,
+        /**
          * The solid people-carry-box icon.See <a href='https://fontawesome.com/v6/icons/people-carry-box?s=solid'>example</a>
          */
         PEOPLE_CARRY_BOX,
+        /**
+         * The solid people-group icon.See <a href='https://fontawesome.com/v6/icons/people-group?s=solid'>example</a>
+         */
+        PEOPLE_GROUP,
+        /**
+         * The solid people-line icon.See <a href='https://fontawesome.com/v6/icons/people-line?s=solid'>example</a>
+         */
+        PEOPLE_LINE,
+        /**
+         * The solid people-pulling icon.See <a href='https://fontawesome.com/v6/icons/people-pulling?s=solid'>example</a>
+         */
+        PEOPLE_PULLING,
+        /**
+         * The solid people-robbery icon.See <a href='https://fontawesome.com/v6/icons/people-robbery?s=solid'>example</a>
+         */
+        PEOPLE_ROBBERY,
+        /**
+         * The solid people-roof icon.See <a href='https://fontawesome.com/v6/icons/people-roof?s=solid'>example</a>
+         */
+        PEOPLE_ROOF,
         /**
          * The solid pepper-hot icon.See <a href='https://fontawesome.com/v6/icons/pepper-hot?s=solid'>example</a>
          */
@@ -3771,9 +6107,21 @@ public final class FontAwesome {
          */
         PERCENT,
         /**
+         * The solid percentage icon.See <a href='https://fontawesome.com/v6/icons/percentage?s=solid'>example</a>
+         */
+        PERCENTAGE,
+        /**
          * The solid person icon.See <a href='https://fontawesome.com/v6/icons/person?s=solid'>example</a>
          */
         PERSON,
+        /**
+         * The solid person-arrow-down-to-line icon.See <a href='https://fontawesome.com/v6/icons/person-arrow-down-to-line?s=solid'>example</a>
+         */
+        PERSON_ARROW_DOWN_TO_LINE,
+        /**
+         * The solid person-arrow-up-from-line icon.See <a href='https://fontawesome.com/v6/icons/person-arrow-up-from-line?s=solid'>example</a>
+         */
+        PERSON_ARROW_UP_FROM_LINE,
         /**
          * The solid person-biking icon.See <a href='https://fontawesome.com/v6/icons/person-biking?s=solid'>example</a>
          */
@@ -3783,6 +6131,50 @@ public final class FontAwesome {
          */
         PERSON_BOOTH,
         /**
+         * The solid person-breastfeeding icon.See <a href='https://fontawesome.com/v6/icons/person-breastfeeding?s=solid'>example</a>
+         */
+        PERSON_BREASTFEEDING,
+        /**
+         * The solid person-burst icon.See <a href='https://fontawesome.com/v6/icons/person-burst?s=solid'>example</a>
+         */
+        PERSON_BURST,
+        /**
+         * The solid person-cane icon.See <a href='https://fontawesome.com/v6/icons/person-cane?s=solid'>example</a>
+         */
+        PERSON_CANE,
+        /**
+         * The solid person-chalkboard icon.See <a href='https://fontawesome.com/v6/icons/person-chalkboard?s=solid'>example</a>
+         */
+        PERSON_CHALKBOARD,
+        /**
+         * The solid person-circle-check icon.See <a href='https://fontawesome.com/v6/icons/person-circle-check?s=solid'>example</a>
+         */
+        PERSON_CIRCLE_CHECK,
+        /**
+         * The solid person-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/person-circle-exclamation?s=solid'>example</a>
+         */
+        PERSON_CIRCLE_EXCLAMATION,
+        /**
+         * The solid person-circle-minus icon.See <a href='https://fontawesome.com/v6/icons/person-circle-minus?s=solid'>example</a>
+         */
+        PERSON_CIRCLE_MINUS,
+        /**
+         * The solid person-circle-plus icon.See <a href='https://fontawesome.com/v6/icons/person-circle-plus?s=solid'>example</a>
+         */
+        PERSON_CIRCLE_PLUS,
+        /**
+         * The solid person-circle-question icon.See <a href='https://fontawesome.com/v6/icons/person-circle-question?s=solid'>example</a>
+         */
+        PERSON_CIRCLE_QUESTION,
+        /**
+         * The solid person-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/person-circle-xmark?s=solid'>example</a>
+         */
+        PERSON_CIRCLE_XMARK,
+        /**
+         * The solid person-digging icon.See <a href='https://fontawesome.com/v6/icons/person-digging?s=solid'>example</a>
+         */
+        PERSON_DIGGING,
+        /**
          * The solid person-dots-from-line icon.See <a href='https://fontawesome.com/v6/icons/person-dots-from-line?s=solid'>example</a>
          */
         PERSON_DOTS_FROM_LINE,
@@ -3791,17 +6183,69 @@ public final class FontAwesome {
          */
         PERSON_DRESS,
         /**
+         * The solid person-dress-burst icon.See <a href='https://fontawesome.com/v6/icons/person-dress-burst?s=solid'>example</a>
+         */
+        PERSON_DRESS_BURST,
+        /**
+         * The solid person-drowning icon.See <a href='https://fontawesome.com/v6/icons/person-drowning?s=solid'>example</a>
+         */
+        PERSON_DROWNING,
+        /**
+         * The solid person-falling icon.See <a href='https://fontawesome.com/v6/icons/person-falling?s=solid'>example</a>
+         */
+        PERSON_FALLING,
+        /**
+         * The solid person-falling-burst icon.See <a href='https://fontawesome.com/v6/icons/person-falling-burst?s=solid'>example</a>
+         */
+        PERSON_FALLING_BURST,
+        /**
+         * The solid person-half-dress icon.See <a href='https://fontawesome.com/v6/icons/person-half-dress?s=solid'>example</a>
+         */
+        PERSON_HALF_DRESS,
+        /**
+         * The solid person-harassing icon.See <a href='https://fontawesome.com/v6/icons/person-harassing?s=solid'>example</a>
+         */
+        PERSON_HARASSING,
+        /**
          * The solid person-hiking icon.See <a href='https://fontawesome.com/v6/icons/person-hiking?s=solid'>example</a>
          */
         PERSON_HIKING,
+        /**
+         * The solid person-military-pointing icon.See <a href='https://fontawesome.com/v6/icons/person-military-pointing?s=solid'>example</a>
+         */
+        PERSON_MILITARY_POINTING,
+        /**
+         * The solid person-military-rifle icon.See <a href='https://fontawesome.com/v6/icons/person-military-rifle?s=solid'>example</a>
+         */
+        PERSON_MILITARY_RIFLE,
+        /**
+         * The solid person-military-to-person icon.See <a href='https://fontawesome.com/v6/icons/person-military-to-person?s=solid'>example</a>
+         */
+        PERSON_MILITARY_TO_PERSON,
         /**
          * The solid person-praying icon.See <a href='https://fontawesome.com/v6/icons/person-praying?s=solid'>example</a>
          */
         PERSON_PRAYING,
         /**
+         * The solid person-pregnant icon.See <a href='https://fontawesome.com/v6/icons/person-pregnant?s=solid'>example</a>
+         */
+        PERSON_PREGNANT,
+        /**
+         * The solid person-rays icon.See <a href='https://fontawesome.com/v6/icons/person-rays?s=solid'>example</a>
+         */
+        PERSON_RAYS,
+        /**
+         * The solid person-rifle icon.See <a href='https://fontawesome.com/v6/icons/person-rifle?s=solid'>example</a>
+         */
+        PERSON_RIFLE,
+        /**
          * The solid person-running icon.See <a href='https://fontawesome.com/v6/icons/person-running?s=solid'>example</a>
          */
         PERSON_RUNNING,
+        /**
+         * The solid person-shelter icon.See <a href='https://fontawesome.com/v6/icons/person-shelter?s=solid'>example</a>
+         */
+        PERSON_SHELTER,
         /**
          * The solid person-skating icon.See <a href='https://fontawesome.com/v6/icons/person-skating?s=solid'>example</a>
          */
@@ -3823,9 +6267,29 @@ public final class FontAwesome {
          */
         PERSON_SWIMMING,
         /**
+         * The solid person-through-window icon.See <a href='https://fontawesome.com/v6/icons/person-through-window?s=solid'>example</a>
+         */
+        PERSON_THROUGH_WINDOW,
+        /**
          * The solid person-walking icon.See <a href='https://fontawesome.com/v6/icons/person-walking?s=solid'>example</a>
          */
         PERSON_WALKING,
+        /**
+         * The solid person-walking-arrow-loop-left icon.See <a href='https://fontawesome.com/v6/icons/person-walking-arrow-loop-left?s=solid'>example</a>
+         */
+        PERSON_WALKING_ARROW_LOOP_LEFT,
+        /**
+         * The solid person-walking-arrow-right icon.See <a href='https://fontawesome.com/v6/icons/person-walking-arrow-right?s=solid'>example</a>
+         */
+        PERSON_WALKING_ARROW_RIGHT,
+        /**
+         * The solid person-walking-dashed-line-arrow-right icon.See <a href='https://fontawesome.com/v6/icons/person-walking-dashed-line-arrow-right?s=solid'>example</a>
+         */
+        PERSON_WALKING_DASHED_LINE_ARROW_RIGHT,
+        /**
+         * The solid person-walking-luggage icon.See <a href='https://fontawesome.com/v6/icons/person-walking-luggage?s=solid'>example</a>
+         */
+        PERSON_WALKING_LUGGAGE,
         /**
          * The solid person-walking-with-cane icon.See <a href='https://fontawesome.com/v6/icons/person-walking-with-cane?s=solid'>example</a>
          */
@@ -3843,6 +6307,10 @@ public final class FontAwesome {
          */
         PHONE,
         /**
+         * The solid phone-alt icon.See <a href='https://fontawesome.com/v6/icons/phone-alt?s=solid'>example</a>
+         */
+        PHONE_ALT,
+        /**
          * The solid phone-flip icon.See <a href='https://fontawesome.com/v6/icons/phone-flip?s=solid'>example</a>
          */
         PHONE_FLIP,
@@ -3850,6 +6318,14 @@ public final class FontAwesome {
          * The solid phone-slash icon.See <a href='https://fontawesome.com/v6/icons/phone-slash?s=solid'>example</a>
          */
         PHONE_SLASH,
+        /**
+         * The solid phone-square icon.See <a href='https://fontawesome.com/v6/icons/phone-square?s=solid'>example</a>
+         */
+        PHONE_SQUARE,
+        /**
+         * The solid phone-square-alt icon.See <a href='https://fontawesome.com/v6/icons/phone-square-alt?s=solid'>example</a>
+         */
+        PHONE_SQUARE_ALT,
         /**
          * The solid phone-volume icon.See <a href='https://fontawesome.com/v6/icons/phone-volume?s=solid'>example</a>
          */
@@ -3859,6 +6335,14 @@ public final class FontAwesome {
          */
         PHOTO_FILM,
         /**
+         * The solid photo-video icon.See <a href='https://fontawesome.com/v6/icons/photo-video?s=solid'>example</a>
+         */
+        PHOTO_VIDEO,
+        /**
+         * The solid pie-chart icon.See <a href='https://fontawesome.com/v6/icons/pie-chart?s=solid'>example</a>
+         */
+        PIE_CHART,
+        /**
          * The solid piggy-bank icon.See <a href='https://fontawesome.com/v6/icons/piggy-bank?s=solid'>example</a>
          */
         PIGGY_BANK,
@@ -3866,6 +6350,10 @@ public final class FontAwesome {
          * The solid pills icon.See <a href='https://fontawesome.com/v6/icons/pills?s=solid'>example</a>
          */
         PILLS,
+        /**
+         * The solid ping-pong-paddle-ball icon.See <a href='https://fontawesome.com/v6/icons/ping-pong-paddle-ball?s=solid'>example</a>
+         */
+        PING_PONG_PADDLE_BALL,
         /**
          * The solid pizza-slice icon.See <a href='https://fontawesome.com/v6/icons/pizza-slice?s=solid'>example</a>
          */
@@ -3883,37 +6371,113 @@ public final class FontAwesome {
          */
         PLANE_ARRIVAL,
         /**
+         * The solid plane-circle-check icon.See <a href='https://fontawesome.com/v6/icons/plane-circle-check?s=solid'>example</a>
+         */
+        PLANE_CIRCLE_CHECK,
+        /**
+         * The solid plane-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/plane-circle-exclamation?s=solid'>example</a>
+         */
+        PLANE_CIRCLE_EXCLAMATION,
+        /**
+         * The solid plane-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/plane-circle-xmark?s=solid'>example</a>
+         */
+        PLANE_CIRCLE_XMARK,
+        /**
          * The solid plane-departure icon.See <a href='https://fontawesome.com/v6/icons/plane-departure?s=solid'>example</a>
          */
         PLANE_DEPARTURE,
+        /**
+         * The solid plane-lock icon.See <a href='https://fontawesome.com/v6/icons/plane-lock?s=solid'>example</a>
+         */
+        PLANE_LOCK,
         /**
          * The solid plane-slash icon.See <a href='https://fontawesome.com/v6/icons/plane-slash?s=solid'>example</a>
          */
         PLANE_SLASH,
         /**
+         * The solid plane-up icon.See <a href='https://fontawesome.com/v6/icons/plane-up?s=solid'>example</a>
+         */
+        PLANE_UP,
+        /**
+         * The solid plant-wilt icon.See <a href='https://fontawesome.com/v6/icons/plant-wilt?s=solid'>example</a>
+         */
+        PLANT_WILT,
+        /**
+         * The solid plate-wheat icon.See <a href='https://fontawesome.com/v6/icons/plate-wheat?s=solid'>example</a>
+         */
+        PLATE_WHEAT,
+        /**
          * The solid play icon.See <a href='https://fontawesome.com/v6/icons/play?s=solid'>example</a>
          */
         PLAY,
+        /**
+         * The solid play-circle icon.See <a href='https://fontawesome.com/v6/icons/play-circle?s=solid'>example</a>
+         */
+        PLAY_CIRCLE,
         /**
          * The solid plug icon.See <a href='https://fontawesome.com/v6/icons/plug?s=solid'>example</a>
          */
         PLUG,
         /**
+         * The solid plug-circle-bolt icon.See <a href='https://fontawesome.com/v6/icons/plug-circle-bolt?s=solid'>example</a>
+         */
+        PLUG_CIRCLE_BOLT,
+        /**
+         * The solid plug-circle-check icon.See <a href='https://fontawesome.com/v6/icons/plug-circle-check?s=solid'>example</a>
+         */
+        PLUG_CIRCLE_CHECK,
+        /**
+         * The solid plug-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/plug-circle-exclamation?s=solid'>example</a>
+         */
+        PLUG_CIRCLE_EXCLAMATION,
+        /**
+         * The solid plug-circle-minus icon.See <a href='https://fontawesome.com/v6/icons/plug-circle-minus?s=solid'>example</a>
+         */
+        PLUG_CIRCLE_MINUS,
+        /**
+         * The solid plug-circle-plus icon.See <a href='https://fontawesome.com/v6/icons/plug-circle-plus?s=solid'>example</a>
+         */
+        PLUG_CIRCLE_PLUS,
+        /**
+         * The solid plug-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/plug-circle-xmark?s=solid'>example</a>
+         */
+        PLUG_CIRCLE_XMARK,
+        /**
          * The solid plus icon.See <a href='https://fontawesome.com/v6/icons/plus?s=solid'>example</a>
          */
         PLUS,
+        /**
+         * The solid plus-circle icon.See <a href='https://fontawesome.com/v6/icons/plus-circle?s=solid'>example</a>
+         */
+        PLUS_CIRCLE,
         /**
          * The solid plus-minus icon.See <a href='https://fontawesome.com/v6/icons/plus-minus?s=solid'>example</a>
          */
         PLUS_MINUS,
         /**
+         * The solid plus-square icon.See <a href='https://fontawesome.com/v6/icons/plus-square?s=solid'>example</a>
+         */
+        PLUS_SQUARE,
+        /**
          * The solid podcast icon.See <a href='https://fontawesome.com/v6/icons/podcast?s=solid'>example</a>
          */
         PODCAST,
         /**
+         * The solid poll icon.See <a href='https://fontawesome.com/v6/icons/poll?s=solid'>example</a>
+         */
+        POLL,
+        /**
+         * The solid poll-h icon.See <a href='https://fontawesome.com/v6/icons/poll-h?s=solid'>example</a>
+         */
+        POLL_H,
+        /**
          * The solid poo icon.See <a href='https://fontawesome.com/v6/icons/poo?s=solid'>example</a>
          */
         POO,
+        /**
+         * The solid poo-bolt icon.See <a href='https://fontawesome.com/v6/icons/poo-bolt?s=solid'>example</a>
+         */
+        POO_BOLT,
         /**
          * The solid poo-storm icon.See <a href='https://fontawesome.com/v6/icons/poo-storm?s=solid'>example</a>
          */
@@ -3923,9 +6487,25 @@ public final class FontAwesome {
          */
         POOP,
         /**
+         * The solid portrait icon.See <a href='https://fontawesome.com/v6/icons/portrait?s=solid'>example</a>
+         */
+        PORTRAIT,
+        /**
+         * The solid pound-sign icon.See <a href='https://fontawesome.com/v6/icons/pound-sign?s=solid'>example</a>
+         */
+        POUND_SIGN,
+        /**
          * The solid power-off icon.See <a href='https://fontawesome.com/v6/icons/power-off?s=solid'>example</a>
          */
         POWER_OFF,
+        /**
+         * The solid pray icon.See <a href='https://fontawesome.com/v6/icons/pray?s=solid'>example</a>
+         */
+        PRAY,
+        /**
+         * The solid praying-hands icon.See <a href='https://fontawesome.com/v6/icons/praying-hands?s=solid'>example</a>
+         */
+        PRAYING_HANDS,
         /**
          * The solid prescription icon.See <a href='https://fontawesome.com/v6/icons/prescription?s=solid'>example</a>
          */
@@ -3935,6 +6515,10 @@ public final class FontAwesome {
          */
         PRESCRIPTION_BOTTLE,
         /**
+         * The solid prescription-bottle-alt icon.See <a href='https://fontawesome.com/v6/icons/prescription-bottle-alt?s=solid'>example</a>
+         */
+        PRESCRIPTION_BOTTLE_ALT,
+        /**
          * The solid prescription-bottle-medical icon.See <a href='https://fontawesome.com/v6/icons/prescription-bottle-medical?s=solid'>example</a>
          */
         PRESCRIPTION_BOTTLE_MEDICAL,
@@ -3942,6 +6526,14 @@ public final class FontAwesome {
          * The solid print icon.See <a href='https://fontawesome.com/v6/icons/print?s=solid'>example</a>
          */
         PRINT,
+        /**
+         * The solid procedures icon.See <a href='https://fontawesome.com/v6/icons/procedures?s=solid'>example</a>
+         */
+        PROCEDURES,
+        /**
+         * The solid project-diagram icon.See <a href='https://fontawesome.com/v6/icons/project-diagram?s=solid'>example</a>
+         */
+        PROJECT_DIAGRAM,
         /**
          * The solid pump-medical icon.See <a href='https://fontawesome.com/v6/icons/pump-medical?s=solid'>example</a>
          */
@@ -3967,13 +6559,37 @@ public final class FontAwesome {
          */
         QUESTION,
         /**
+         * The solid question-circle icon.See <a href='https://fontawesome.com/v6/icons/question-circle?s=solid'>example</a>
+         */
+        QUESTION_CIRCLE,
+        /**
+         * The solid quidditch icon.See <a href='https://fontawesome.com/v6/icons/quidditch?s=solid'>example</a>
+         */
+        QUIDDITCH,
+        /**
+         * The solid quidditch-broom-ball icon.See <a href='https://fontawesome.com/v6/icons/quidditch-broom-ball?s=solid'>example</a>
+         */
+        QUIDDITCH_BROOM_BALL,
+        /**
          * The solid quote-left icon.See <a href='https://fontawesome.com/v6/icons/quote-left?s=solid'>example</a>
          */
         QUOTE_LEFT,
         /**
+         * The solid quote-left-alt icon.See <a href='https://fontawesome.com/v6/icons/quote-left-alt?s=solid'>example</a>
+         */
+        QUOTE_LEFT_ALT,
+        /**
          * The solid quote-right icon.See <a href='https://fontawesome.com/v6/icons/quote-right?s=solid'>example</a>
          */
         QUOTE_RIGHT,
+        /**
+         * The solid quote-right-alt icon.See <a href='https://fontawesome.com/v6/icons/quote-right-alt?s=solid'>example</a>
+         */
+        QUOTE_RIGHT_ALT,
+        /**
+         * The solid quran icon.See <a href='https://fontawesome.com/v6/icons/quran?s=solid'>example</a>
+         */
+        QURAN,
         /**
          * The solid r icon.See <a href='https://fontawesome.com/v6/icons/r?s=solid'>example</a>
          */
@@ -3983,9 +6599,25 @@ public final class FontAwesome {
          */
         RADIATION,
         /**
+         * The solid radiation-alt icon.See <a href='https://fontawesome.com/v6/icons/radiation-alt?s=solid'>example</a>
+         */
+        RADIATION_ALT,
+        /**
+         * The solid radio icon.See <a href='https://fontawesome.com/v6/icons/radio?s=solid'>example</a>
+         */
+        RADIO,
+        /**
          * The solid rainbow icon.See <a href='https://fontawesome.com/v6/icons/rainbow?s=solid'>example</a>
          */
         RAINBOW,
+        /**
+         * The solid random icon.See <a href='https://fontawesome.com/v6/icons/random?s=solid'>example</a>
+         */
+        RANDOM,
+        /**
+         * The solid ranking-star icon.See <a href='https://fontawesome.com/v6/icons/ranking-star?s=solid'>example</a>
+         */
+        RANKING_STAR,
         /**
          * The solid receipt icon.See <a href='https://fontawesome.com/v6/icons/receipt?s=solid'>example</a>
          */
@@ -4003,6 +6635,10 @@ public final class FontAwesome {
          */
         RECTANGLE_LIST,
         /**
+         * The solid rectangle-times icon.See <a href='https://fontawesome.com/v6/icons/rectangle-times?s=solid'>example</a>
+         */
+        RECTANGLE_TIMES,
+        /**
          * The solid rectangle-xmark icon.See <a href='https://fontawesome.com/v6/icons/rectangle-xmark?s=solid'>example</a>
          */
         RECTANGLE_XMARK,
@@ -4011,9 +6647,33 @@ public final class FontAwesome {
          */
         RECYCLE,
         /**
+         * The solid redo icon.See <a href='https://fontawesome.com/v6/icons/redo?s=solid'>example</a>
+         */
+        REDO,
+        /**
+         * The solid redo-alt icon.See <a href='https://fontawesome.com/v6/icons/redo-alt?s=solid'>example</a>
+         */
+        REDO_ALT,
+        /**
+         * The solid refresh icon.See <a href='https://fontawesome.com/v6/icons/refresh?s=solid'>example</a>
+         */
+        REFRESH,
+        /**
          * The solid registered icon.See <a href='https://fontawesome.com/v6/icons/registered?s=solid'>example</a>
          */
         REGISTERED,
+        /**
+         * The solid remove icon.See <a href='https://fontawesome.com/v6/icons/remove?s=solid'>example</a>
+         */
+        REMOVE,
+        /**
+         * The solid remove-format icon.See <a href='https://fontawesome.com/v6/icons/remove-format?s=solid'>example</a>
+         */
+        REMOVE_FORMAT,
+        /**
+         * The solid reorder icon.See <a href='https://fontawesome.com/v6/icons/reorder?s=solid'>example</a>
+         */
+        REORDER,
         /**
          * The solid repeat icon.See <a href='https://fontawesome.com/v6/icons/repeat?s=solid'>example</a>
          */
@@ -4063,9 +6723,41 @@ public final class FontAwesome {
          */
         RING,
         /**
+         * The solid rmb icon.See <a href='https://fontawesome.com/v6/icons/rmb?s=solid'>example</a>
+         */
+        RMB,
+        /**
          * The solid road icon.See <a href='https://fontawesome.com/v6/icons/road?s=solid'>example</a>
          */
         ROAD,
+        /**
+         * The solid road-barrier icon.See <a href='https://fontawesome.com/v6/icons/road-barrier?s=solid'>example</a>
+         */
+        ROAD_BARRIER,
+        /**
+         * The solid road-bridge icon.See <a href='https://fontawesome.com/v6/icons/road-bridge?s=solid'>example</a>
+         */
+        ROAD_BRIDGE,
+        /**
+         * The solid road-circle-check icon.See <a href='https://fontawesome.com/v6/icons/road-circle-check?s=solid'>example</a>
+         */
+        ROAD_CIRCLE_CHECK,
+        /**
+         * The solid road-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/road-circle-exclamation?s=solid'>example</a>
+         */
+        ROAD_CIRCLE_EXCLAMATION,
+        /**
+         * The solid road-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/road-circle-xmark?s=solid'>example</a>
+         */
+        ROAD_CIRCLE_XMARK,
+        /**
+         * The solid road-lock icon.See <a href='https://fontawesome.com/v6/icons/road-lock?s=solid'>example</a>
+         */
+        ROAD_LOCK,
+        /**
+         * The solid road-spikes icon.See <a href='https://fontawesome.com/v6/icons/road-spikes?s=solid'>example</a>
+         */
+        ROAD_SPIKES,
         /**
          * The solid robot icon.See <a href='https://fontawesome.com/v6/icons/robot?s=solid'>example</a>
          */
@@ -4075,9 +6767,29 @@ public final class FontAwesome {
          */
         ROCKET,
         /**
+         * The solid rod-asclepius icon.See <a href='https://fontawesome.com/v6/icons/rod-asclepius?s=solid'>example</a>
+         */
+        ROD_ASCLEPIUS,
+        /**
+         * The solid rod-snake icon.See <a href='https://fontawesome.com/v6/icons/rod-snake?s=solid'>example</a>
+         */
+        ROD_SNAKE,
+        /**
          * The solid rotate icon.See <a href='https://fontawesome.com/v6/icons/rotate?s=solid'>example</a>
          */
         ROTATE,
+        /**
+         * The solid rotate-back icon.See <a href='https://fontawesome.com/v6/icons/rotate-back?s=solid'>example</a>
+         */
+        ROTATE_BACK,
+        /**
+         * The solid rotate-backward icon.See <a href='https://fontawesome.com/v6/icons/rotate-backward?s=solid'>example</a>
+         */
+        ROTATE_BACKWARD,
+        /**
+         * The solid rotate-forward icon.See <a href='https://fontawesome.com/v6/icons/rotate-forward?s=solid'>example</a>
+         */
+        ROTATE_FORWARD,
         /**
          * The solid rotate-left icon.See <a href='https://fontawesome.com/v6/icons/rotate-left?s=solid'>example</a>
          */
@@ -4087,6 +6799,10 @@ public final class FontAwesome {
          */
         ROTATE_RIGHT,
         /**
+         * The solid rouble icon.See <a href='https://fontawesome.com/v6/icons/rouble?s=solid'>example</a>
+         */
+        ROUBLE,
+        /**
          * The solid route icon.See <a href='https://fontawesome.com/v6/icons/route?s=solid'>example</a>
          */
         ROUTE,
@@ -4095,9 +6811,25 @@ public final class FontAwesome {
          */
         RSS,
         /**
+         * The solid rss-square icon.See <a href='https://fontawesome.com/v6/icons/rss-square?s=solid'>example</a>
+         */
+        RSS_SQUARE,
+        /**
+         * The solid rub icon.See <a href='https://fontawesome.com/v6/icons/rub?s=solid'>example</a>
+         */
+        RUB,
+        /**
+         * The solid ruble icon.See <a href='https://fontawesome.com/v6/icons/ruble?s=solid'>example</a>
+         */
+        RUBLE,
+        /**
          * The solid ruble-sign icon.See <a href='https://fontawesome.com/v6/icons/ruble-sign?s=solid'>example</a>
          */
         RUBLE_SIGN,
+        /**
+         * The solid rug icon.See <a href='https://fontawesome.com/v6/icons/rug?s=solid'>example</a>
+         */
+        RUG,
         /**
          * The solid ruler icon.See <a href='https://fontawesome.com/v6/icons/ruler?s=solid'>example</a>
          */
@@ -4115,6 +6847,14 @@ public final class FontAwesome {
          */
         RULER_VERTICAL,
         /**
+         * The solid running icon.See <a href='https://fontawesome.com/v6/icons/running?s=solid'>example</a>
+         */
+        RUNNING,
+        /**
+         * The solid rupee icon.See <a href='https://fontawesome.com/v6/icons/rupee?s=solid'>example</a>
+         */
+        RUPEE,
+        /**
          * The solid rupee-sign icon.See <a href='https://fontawesome.com/v6/icons/rupee-sign?s=solid'>example</a>
          */
         RUPEE_SIGN,
@@ -4127,6 +6867,22 @@ public final class FontAwesome {
          */
         S,
         /**
+         * The solid sack-dollar icon.See <a href='https://fontawesome.com/v6/icons/sack-dollar?s=solid'>example</a>
+         */
+        SACK_DOLLAR,
+        /**
+         * The solid sack-xmark icon.See <a href='https://fontawesome.com/v6/icons/sack-xmark?s=solid'>example</a>
+         */
+        SACK_XMARK,
+        /**
+         * The solid sad-cry icon.See <a href='https://fontawesome.com/v6/icons/sad-cry?s=solid'>example</a>
+         */
+        SAD_CRY,
+        /**
+         * The solid sad-tear icon.See <a href='https://fontawesome.com/v6/icons/sad-tear?s=solid'>example</a>
+         */
+        SAD_TEAR,
+        /**
          * The solid sailboat icon.See <a href='https://fontawesome.com/v6/icons/sailboat?s=solid'>example</a>
          */
         SAILBOAT,
@@ -4138,6 +6894,10 @@ public final class FontAwesome {
          * The solid satellite-dish icon.See <a href='https://fontawesome.com/v6/icons/satellite-dish?s=solid'>example</a>
          */
         SATELLITE_DISH,
+        /**
+         * The solid save icon.See <a href='https://fontawesome.com/v6/icons/save?s=solid'>example</a>
+         */
+        SAVE,
         /**
          * The solid scale-balanced icon.See <a href='https://fontawesome.com/v6/icons/scale-balanced?s=solid'>example</a>
          */
@@ -4154,6 +6914,26 @@ public final class FontAwesome {
          * The solid school icon.See <a href='https://fontawesome.com/v6/icons/school?s=solid'>example</a>
          */
         SCHOOL,
+        /**
+         * The solid school-circle-check icon.See <a href='https://fontawesome.com/v6/icons/school-circle-check?s=solid'>example</a>
+         */
+        SCHOOL_CIRCLE_CHECK,
+        /**
+         * The solid school-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/school-circle-exclamation?s=solid'>example</a>
+         */
+        SCHOOL_CIRCLE_EXCLAMATION,
+        /**
+         * The solid school-circle-xmark icon.See <a href='https://fontawesome.com/v6/icons/school-circle-xmark?s=solid'>example</a>
+         */
+        SCHOOL_CIRCLE_XMARK,
+        /**
+         * The solid school-flag icon.See <a href='https://fontawesome.com/v6/icons/school-flag?s=solid'>example</a>
+         */
+        SCHOOL_FLAG,
+        /**
+         * The solid school-lock icon.See <a href='https://fontawesome.com/v6/icons/school-lock?s=solid'>example</a>
+         */
+        SCHOOL_LOCK,
         /**
          * The solid scissors icon.See <a href='https://fontawesome.com/v6/icons/scissors?s=solid'>example</a>
          */
@@ -4179,6 +6959,26 @@ public final class FontAwesome {
          */
         SD_CARD,
         /**
+         * The solid search icon.See <a href='https://fontawesome.com/v6/icons/search?s=solid'>example</a>
+         */
+        SEARCH,
+        /**
+         * The solid search-dollar icon.See <a href='https://fontawesome.com/v6/icons/search-dollar?s=solid'>example</a>
+         */
+        SEARCH_DOLLAR,
+        /**
+         * The solid search-location icon.See <a href='https://fontawesome.com/v6/icons/search-location?s=solid'>example</a>
+         */
+        SEARCH_LOCATION,
+        /**
+         * The solid search-minus icon.See <a href='https://fontawesome.com/v6/icons/search-minus?s=solid'>example</a>
+         */
+        SEARCH_MINUS,
+        /**
+         * The solid search-plus icon.See <a href='https://fontawesome.com/v6/icons/search-plus?s=solid'>example</a>
+         */
+        SEARCH_PLUS,
+        /**
          * The solid section icon.See <a href='https://fontawesome.com/v6/icons/section?s=solid'>example</a>
          */
         SECTION,
@@ -4199,6 +6999,14 @@ public final class FontAwesome {
          */
         SHARE,
         /**
+         * The solid share-alt icon.See <a href='https://fontawesome.com/v6/icons/share-alt?s=solid'>example</a>
+         */
+        SHARE_ALT,
+        /**
+         * The solid share-alt-square icon.See <a href='https://fontawesome.com/v6/icons/share-alt-square?s=solid'>example</a>
+         */
+        SHARE_ALT_SQUARE,
+        /**
          * The solid share-from-square icon.See <a href='https://fontawesome.com/v6/icons/share-from-square?s=solid'>example</a>
          */
         SHARE_FROM_SQUARE,
@@ -4207,17 +7015,57 @@ public final class FontAwesome {
          */
         SHARE_NODES,
         /**
+         * The solid share-square icon.See <a href='https://fontawesome.com/v6/icons/share-square?s=solid'>example</a>
+         */
+        SHARE_SQUARE,
+        /**
+         * The solid sheet-plastic icon.See <a href='https://fontawesome.com/v6/icons/sheet-plastic?s=solid'>example</a>
+         */
+        SHEET_PLASTIC,
+        /**
+         * The solid shekel icon.See <a href='https://fontawesome.com/v6/icons/shekel?s=solid'>example</a>
+         */
+        SHEKEL,
+        /**
          * The solid shekel-sign icon.See <a href='https://fontawesome.com/v6/icons/shekel-sign?s=solid'>example</a>
          */
         SHEKEL_SIGN,
+        /**
+         * The solid sheqel icon.See <a href='https://fontawesome.com/v6/icons/sheqel?s=solid'>example</a>
+         */
+        SHEQEL,
+        /**
+         * The solid sheqel-sign icon.See <a href='https://fontawesome.com/v6/icons/sheqel-sign?s=solid'>example</a>
+         */
+        SHEQEL_SIGN,
         /**
          * The solid shield icon.See <a href='https://fontawesome.com/v6/icons/shield?s=solid'>example</a>
          */
         SHIELD,
         /**
+         * The solid shield-alt icon.See <a href='https://fontawesome.com/v6/icons/shield-alt?s=solid'>example</a>
+         */
+        SHIELD_ALT,
+        /**
          * The solid shield-blank icon.See <a href='https://fontawesome.com/v6/icons/shield-blank?s=solid'>example</a>
          */
         SHIELD_BLANK,
+        /**
+         * The solid shield-cat icon.See <a href='https://fontawesome.com/v6/icons/shield-cat?s=solid'>example</a>
+         */
+        SHIELD_CAT,
+        /**
+         * The solid shield-dog icon.See <a href='https://fontawesome.com/v6/icons/shield-dog?s=solid'>example</a>
+         */
+        SHIELD_DOG,
+        /**
+         * The solid shield-halved icon.See <a href='https://fontawesome.com/v6/icons/shield-halved?s=solid'>example</a>
+         */
+        SHIELD_HALVED,
+        /**
+         * The solid shield-heart icon.See <a href='https://fontawesome.com/v6/icons/shield-heart?s=solid'>example</a>
+         */
+        SHIELD_HEART,
         /**
          * The solid shield-virus icon.See <a href='https://fontawesome.com/v6/icons/shield-virus?s=solid'>example</a>
          */
@@ -4226,6 +7074,10 @@ public final class FontAwesome {
          * The solid ship icon.See <a href='https://fontawesome.com/v6/icons/ship?s=solid'>example</a>
          */
         SHIP,
+        /**
+         * The solid shipping-fast icon.See <a href='https://fontawesome.com/v6/icons/shipping-fast?s=solid'>example</a>
+         */
+        SHIPPING_FAST,
         /**
          * The solid shirt icon.See <a href='https://fontawesome.com/v6/icons/shirt?s=solid'>example</a>
          */
@@ -4239,9 +7091,25 @@ public final class FontAwesome {
          */
         SHOP,
         /**
+         * The solid shop-lock icon.See <a href='https://fontawesome.com/v6/icons/shop-lock?s=solid'>example</a>
+         */
+        SHOP_LOCK,
+        /**
          * The solid shop-slash icon.See <a href='https://fontawesome.com/v6/icons/shop-slash?s=solid'>example</a>
          */
         SHOP_SLASH,
+        /**
+         * The solid shopping-bag icon.See <a href='https://fontawesome.com/v6/icons/shopping-bag?s=solid'>example</a>
+         */
+        SHOPPING_BAG,
+        /**
+         * The solid shopping-basket icon.See <a href='https://fontawesome.com/v6/icons/shopping-basket?s=solid'>example</a>
+         */
+        SHOPPING_BASKET,
+        /**
+         * The solid shopping-cart icon.See <a href='https://fontawesome.com/v6/icons/shopping-cart?s=solid'>example</a>
+         */
+        SHOPPING_CART,
         /**
          * The solid shower icon.See <a href='https://fontawesome.com/v6/icons/shower?s=solid'>example</a>
          */
@@ -4259,17 +7127,57 @@ public final class FontAwesome {
          */
         SHUTTLE_SPACE,
         /**
+         * The solid shuttle-van icon.See <a href='https://fontawesome.com/v6/icons/shuttle-van?s=solid'>example</a>
+         */
+        SHUTTLE_VAN,
+        /**
+         * The solid sign icon.See <a href='https://fontawesome.com/v6/icons/sign?s=solid'>example</a>
+         */
+        SIGN,
+        /**
          * The solid sign-hanging icon.See <a href='https://fontawesome.com/v6/icons/sign-hanging?s=solid'>example</a>
          */
         SIGN_HANGING,
+        /**
+         * The solid sign-in icon.See <a href='https://fontawesome.com/v6/icons/sign-in?s=solid'>example</a>
+         */
+        SIGN_IN,
+        /**
+         * The solid sign-in-alt icon.See <a href='https://fontawesome.com/v6/icons/sign-in-alt?s=solid'>example</a>
+         */
+        SIGN_IN_ALT,
+        /**
+         * The solid sign-language icon.See <a href='https://fontawesome.com/v6/icons/sign-language?s=solid'>example</a>
+         */
+        SIGN_LANGUAGE,
+        /**
+         * The solid sign-out icon.See <a href='https://fontawesome.com/v6/icons/sign-out?s=solid'>example</a>
+         */
+        SIGN_OUT,
+        /**
+         * The solid sign-out-alt icon.See <a href='https://fontawesome.com/v6/icons/sign-out-alt?s=solid'>example</a>
+         */
+        SIGN_OUT_ALT,
         /**
          * The solid signal icon.See <a href='https://fontawesome.com/v6/icons/signal?s=solid'>example</a>
          */
         SIGNAL,
         /**
+         * The solid signal-5 icon.See <a href='https://fontawesome.com/v6/icons/signal-5?s=solid'>example</a>
+         */
+        SIGNAL_5,
+        /**
+         * The solid signal-perfect icon.See <a href='https://fontawesome.com/v6/icons/signal-perfect?s=solid'>example</a>
+         */
+        SIGNAL_PERFECT,
+        /**
          * The solid signature icon.See <a href='https://fontawesome.com/v6/icons/signature?s=solid'>example</a>
          */
         SIGNATURE,
+        /**
+         * The solid signing icon.See <a href='https://fontawesome.com/v6/icons/signing?s=solid'>example</a>
+         */
+        SIGNING,
         /**
          * The solid signs-post icon.See <a href='https://fontawesome.com/v6/icons/signs-post?s=solid'>example</a>
          */
@@ -4286,6 +7194,18 @@ public final class FontAwesome {
          * The solid sitemap icon.See <a href='https://fontawesome.com/v6/icons/sitemap?s=solid'>example</a>
          */
         SITEMAP,
+        /**
+         * The solid skating icon.See <a href='https://fontawesome.com/v6/icons/skating?s=solid'>example</a>
+         */
+        SKATING,
+        /**
+         * The solid skiing icon.See <a href='https://fontawesome.com/v6/icons/skiing?s=solid'>example</a>
+         */
+        SKIING,
+        /**
+         * The solid skiing-nordic icon.See <a href='https://fontawesome.com/v6/icons/skiing-nordic?s=solid'>example</a>
+         */
+        SKIING_NORDIC,
         /**
          * The solid skull icon.See <a href='https://fontawesome.com/v6/icons/skull?s=solid'>example</a>
          */
@@ -4307,6 +7227,22 @@ public final class FontAwesome {
          */
         SLIDERS,
         /**
+         * The solid sliders-h icon.See <a href='https://fontawesome.com/v6/icons/sliders-h?s=solid'>example</a>
+         */
+        SLIDERS_H,
+        /**
+         * The solid smile icon.See <a href='https://fontawesome.com/v6/icons/smile?s=solid'>example</a>
+         */
+        SMILE,
+        /**
+         * The solid smile-beam icon.See <a href='https://fontawesome.com/v6/icons/smile-beam?s=solid'>example</a>
+         */
+        SMILE_BEAM,
+        /**
+         * The solid smile-wink icon.See <a href='https://fontawesome.com/v6/icons/smile-wink?s=solid'>example</a>
+         */
+        SMILE_WINK,
+        /**
          * The solid smog icon.See <a href='https://fontawesome.com/v6/icons/smog?s=solid'>example</a>
          */
         SMOG,
@@ -4314,6 +7250,18 @@ public final class FontAwesome {
          * The solid smoking icon.See <a href='https://fontawesome.com/v6/icons/smoking?s=solid'>example</a>
          */
         SMOKING,
+        /**
+         * The solid smoking-ban icon.See <a href='https://fontawesome.com/v6/icons/smoking-ban?s=solid'>example</a>
+         */
+        SMOKING_BAN,
+        /**
+         * The solid sms icon.See <a href='https://fontawesome.com/v6/icons/sms?s=solid'>example</a>
+         */
+        SMS,
+        /**
+         * The solid snowboarding icon.See <a href='https://fontawesome.com/v6/icons/snowboarding?s=solid'>example</a>
+         */
+        SNOWBOARDING,
         /**
          * The solid snowflake icon.See <a href='https://fontawesome.com/v6/icons/snowflake?s=solid'>example</a>
          */
@@ -4331,6 +7279,10 @@ public final class FontAwesome {
          */
         SOAP,
         /**
+         * The solid soccer-ball icon.See <a href='https://fontawesome.com/v6/icons/soccer-ball?s=solid'>example</a>
+         */
+        SOCCER_BALL,
+        /**
          * The solid socks icon.See <a href='https://fontawesome.com/v6/icons/socks?s=solid'>example</a>
          */
         SOCKS,
@@ -4343,9 +7295,89 @@ public final class FontAwesome {
          */
         SORT,
         /**
+         * The solid sort-alpha-asc icon.See <a href='https://fontawesome.com/v6/icons/sort-alpha-asc?s=solid'>example</a>
+         */
+        SORT_ALPHA_ASC,
+        /**
+         * The solid sort-alpha-desc icon.See <a href='https://fontawesome.com/v6/icons/sort-alpha-desc?s=solid'>example</a>
+         */
+        SORT_ALPHA_DESC,
+        /**
+         * The solid sort-alpha-down icon.See <a href='https://fontawesome.com/v6/icons/sort-alpha-down?s=solid'>example</a>
+         */
+        SORT_ALPHA_DOWN,
+        /**
+         * The solid sort-alpha-down-alt icon.See <a href='https://fontawesome.com/v6/icons/sort-alpha-down-alt?s=solid'>example</a>
+         */
+        SORT_ALPHA_DOWN_ALT,
+        /**
+         * The solid sort-alpha-up icon.See <a href='https://fontawesome.com/v6/icons/sort-alpha-up?s=solid'>example</a>
+         */
+        SORT_ALPHA_UP,
+        /**
+         * The solid sort-alpha-up-alt icon.See <a href='https://fontawesome.com/v6/icons/sort-alpha-up-alt?s=solid'>example</a>
+         */
+        SORT_ALPHA_UP_ALT,
+        /**
+         * The solid sort-amount-asc icon.See <a href='https://fontawesome.com/v6/icons/sort-amount-asc?s=solid'>example</a>
+         */
+        SORT_AMOUNT_ASC,
+        /**
+         * The solid sort-amount-desc icon.See <a href='https://fontawesome.com/v6/icons/sort-amount-desc?s=solid'>example</a>
+         */
+        SORT_AMOUNT_DESC,
+        /**
+         * The solid sort-amount-down icon.See <a href='https://fontawesome.com/v6/icons/sort-amount-down?s=solid'>example</a>
+         */
+        SORT_AMOUNT_DOWN,
+        /**
+         * The solid sort-amount-down-alt icon.See <a href='https://fontawesome.com/v6/icons/sort-amount-down-alt?s=solid'>example</a>
+         */
+        SORT_AMOUNT_DOWN_ALT,
+        /**
+         * The solid sort-amount-up icon.See <a href='https://fontawesome.com/v6/icons/sort-amount-up?s=solid'>example</a>
+         */
+        SORT_AMOUNT_UP,
+        /**
+         * The solid sort-amount-up-alt icon.See <a href='https://fontawesome.com/v6/icons/sort-amount-up-alt?s=solid'>example</a>
+         */
+        SORT_AMOUNT_UP_ALT,
+        /**
+         * The solid sort-asc icon.See <a href='https://fontawesome.com/v6/icons/sort-asc?s=solid'>example</a>
+         */
+        SORT_ASC,
+        /**
+         * The solid sort-desc icon.See <a href='https://fontawesome.com/v6/icons/sort-desc?s=solid'>example</a>
+         */
+        SORT_DESC,
+        /**
          * The solid sort-down icon.See <a href='https://fontawesome.com/v6/icons/sort-down?s=solid'>example</a>
          */
         SORT_DOWN,
+        /**
+         * The solid sort-numeric-asc icon.See <a href='https://fontawesome.com/v6/icons/sort-numeric-asc?s=solid'>example</a>
+         */
+        SORT_NUMERIC_ASC,
+        /**
+         * The solid sort-numeric-desc icon.See <a href='https://fontawesome.com/v6/icons/sort-numeric-desc?s=solid'>example</a>
+         */
+        SORT_NUMERIC_DESC,
+        /**
+         * The solid sort-numeric-down icon.See <a href='https://fontawesome.com/v6/icons/sort-numeric-down?s=solid'>example</a>
+         */
+        SORT_NUMERIC_DOWN,
+        /**
+         * The solid sort-numeric-down-alt icon.See <a href='https://fontawesome.com/v6/icons/sort-numeric-down-alt?s=solid'>example</a>
+         */
+        SORT_NUMERIC_DOWN_ALT,
+        /**
+         * The solid sort-numeric-up icon.See <a href='https://fontawesome.com/v6/icons/sort-numeric-up?s=solid'>example</a>
+         */
+        SORT_NUMERIC_UP,
+        /**
+         * The solid sort-numeric-up-alt icon.See <a href='https://fontawesome.com/v6/icons/sort-numeric-up-alt?s=solid'>example</a>
+         */
+        SORT_NUMERIC_UP_ALT,
         /**
          * The solid sort-up icon.See <a href='https://fontawesome.com/v6/icons/sort-up?s=solid'>example</a>
          */
@@ -4354,6 +7386,10 @@ public final class FontAwesome {
          * The solid spa icon.See <a href='https://fontawesome.com/v6/icons/spa?s=solid'>example</a>
          */
         SPA,
+        /**
+         * The solid space-shuttle icon.See <a href='https://fontawesome.com/v6/icons/space-shuttle?s=solid'>example</a>
+         */
+        SPACE_SHUTTLE,
         /**
          * The solid spaghetti-monster-flying icon.See <a href='https://fontawesome.com/v6/icons/spaghetti-monster-flying?s=solid'>example</a>
          */
@@ -4386,6 +7422,10 @@ public final class FontAwesome {
          * The solid spray-can-sparkles icon.See <a href='https://fontawesome.com/v6/icons/spray-can-sparkles?s=solid'>example</a>
          */
         SPRAY_CAN_SPARKLES,
+        /**
+         * The solid sprout icon.See <a href='https://fontawesome.com/v6/icons/sprout?s=solid'>example</a>
+         */
+        SPROUT,
         /**
          * The solid square icon.See <a href='https://fontawesome.com/v6/icons/square?s=solid'>example</a>
          */
@@ -4431,6 +7471,10 @@ public final class FontAwesome {
          */
         SQUARE_MINUS,
         /**
+         * The solid square-nfi icon.See <a href='https://fontawesome.com/v6/icons/square-nfi?s=solid'>example</a>
+         */
+        SQUARE_NFI,
+        /**
          * The solid square-parking icon.See <a href='https://fontawesome.com/v6/icons/square-parking?s=solid'>example</a>
          */
         SQUARE_PARKING,
@@ -4438,6 +7482,10 @@ public final class FontAwesome {
          * The solid square-pen icon.See <a href='https://fontawesome.com/v6/icons/square-pen?s=solid'>example</a>
          */
         SQUARE_PEN,
+        /**
+         * The solid square-person-confined icon.See <a href='https://fontawesome.com/v6/icons/square-person-confined?s=solid'>example</a>
+         */
+        SQUARE_PERSON_CONFINED,
         /**
          * The solid square-phone icon.See <a href='https://fontawesome.com/v6/icons/square-phone?s=solid'>example</a>
          */
@@ -4459,6 +7507,10 @@ public final class FontAwesome {
          */
         SQUARE_POLL_VERTICAL,
         /**
+         * The solid square-root-alt icon.See <a href='https://fontawesome.com/v6/icons/square-root-alt?s=solid'>example</a>
+         */
+        SQUARE_ROOT_ALT,
+        /**
          * The solid square-root-variable icon.See <a href='https://fontawesome.com/v6/icons/square-root-variable?s=solid'>example</a>
          */
         SQUARE_ROOT_VARIABLE,
@@ -4475,9 +7527,21 @@ public final class FontAwesome {
          */
         SQUARE_UP_RIGHT,
         /**
+         * The solid square-virus icon.See <a href='https://fontawesome.com/v6/icons/square-virus?s=solid'>example</a>
+         */
+        SQUARE_VIRUS,
+        /**
          * The solid square-xmark icon.See <a href='https://fontawesome.com/v6/icons/square-xmark?s=solid'>example</a>
          */
         SQUARE_XMARK,
+        /**
+         * The solid staff-aesculapius icon.See <a href='https://fontawesome.com/v6/icons/staff-aesculapius?s=solid'>example</a>
+         */
+        STAFF_AESCULAPIUS,
+        /**
+         * The solid staff-snake icon.See <a href='https://fontawesome.com/v6/icons/staff-snake?s=solid'>example</a>
+         */
+        STAFF_SNAKE,
         /**
          * The solid stairs icon.See <a href='https://fontawesome.com/v6/icons/stairs?s=solid'>example</a>
          */
@@ -4486,6 +7550,10 @@ public final class FontAwesome {
          * The solid stamp icon.See <a href='https://fontawesome.com/v6/icons/stamp?s=solid'>example</a>
          */
         STAMP,
+        /**
+         * The solid stapler icon.See <a href='https://fontawesome.com/v6/icons/stapler?s=solid'>example</a>
+         */
+        STAPLER,
         /**
          * The solid star icon.See <a href='https://fontawesome.com/v6/icons/star?s=solid'>example</a>
          */
@@ -4499,6 +7567,10 @@ public final class FontAwesome {
          */
         STAR_HALF,
         /**
+         * The solid star-half-alt icon.See <a href='https://fontawesome.com/v6/icons/star-half-alt?s=solid'>example</a>
+         */
+        STAR_HALF_ALT,
+        /**
          * The solid star-half-stroke icon.See <a href='https://fontawesome.com/v6/icons/star-half-stroke?s=solid'>example</a>
          */
         STAR_HALF_STROKE,
@@ -4511,6 +7583,14 @@ public final class FontAwesome {
          */
         STAR_OF_LIFE,
         /**
+         * The solid step-backward icon.See <a href='https://fontawesome.com/v6/icons/step-backward?s=solid'>example</a>
+         */
+        STEP_BACKWARD,
+        /**
+         * The solid step-forward icon.See <a href='https://fontawesome.com/v6/icons/step-forward?s=solid'>example</a>
+         */
+        STEP_FORWARD,
+        /**
          * The solid sterling-sign icon.See <a href='https://fontawesome.com/v6/icons/sterling-sign?s=solid'>example</a>
          */
         STERLING_SIGN,
@@ -4519,9 +7599,17 @@ public final class FontAwesome {
          */
         STETHOSCOPE,
         /**
+         * The solid sticky-note icon.See <a href='https://fontawesome.com/v6/icons/sticky-note?s=solid'>example</a>
+         */
+        STICKY_NOTE,
+        /**
          * The solid stop icon.See <a href='https://fontawesome.com/v6/icons/stop?s=solid'>example</a>
          */
         STOP,
+        /**
+         * The solid stop-circle icon.See <a href='https://fontawesome.com/v6/icons/stop-circle?s=solid'>example</a>
+         */
+        STOP_CIRCLE,
         /**
          * The solid stopwatch icon.See <a href='https://fontawesome.com/v6/icons/stopwatch?s=solid'>example</a>
          */
@@ -4535,9 +7623,21 @@ public final class FontAwesome {
          */
         STORE,
         /**
+         * The solid store-alt icon.See <a href='https://fontawesome.com/v6/icons/store-alt?s=solid'>example</a>
+         */
+        STORE_ALT,
+        /**
+         * The solid store-alt-slash icon.See <a href='https://fontawesome.com/v6/icons/store-alt-slash?s=solid'>example</a>
+         */
+        STORE_ALT_SLASH,
+        /**
          * The solid store-slash icon.See <a href='https://fontawesome.com/v6/icons/store-slash?s=solid'>example</a>
          */
         STORE_SLASH,
+        /**
+         * The solid stream icon.See <a href='https://fontawesome.com/v6/icons/stream?s=solid'>example</a>
+         */
+        STREAM,
         /**
          * The solid street-view icon.See <a href='https://fontawesome.com/v6/icons/street-view?s=solid'>example</a>
          */
@@ -4555,6 +7655,14 @@ public final class FontAwesome {
          */
         SUBSCRIPT,
         /**
+         * The solid subtract icon.See <a href='https://fontawesome.com/v6/icons/subtract?s=solid'>example</a>
+         */
+        SUBTRACT,
+        /**
+         * The solid subway icon.See <a href='https://fontawesome.com/v6/icons/subway?s=solid'>example</a>
+         */
+        SUBWAY,
+        /**
          * The solid suitcase icon.See <a href='https://fontawesome.com/v6/icons/suitcase?s=solid'>example</a>
          */
         SUITCASE,
@@ -4571,17 +7679,41 @@ public final class FontAwesome {
          */
         SUN,
         /**
+         * The solid sun-plant-wilt icon.See <a href='https://fontawesome.com/v6/icons/sun-plant-wilt?s=solid'>example</a>
+         */
+        SUN_PLANT_WILT,
+        /**
          * The solid superscript icon.See <a href='https://fontawesome.com/v6/icons/superscript?s=solid'>example</a>
          */
         SUPERSCRIPT,
+        /**
+         * The solid surprise icon.See <a href='https://fontawesome.com/v6/icons/surprise?s=solid'>example</a>
+         */
+        SURPRISE,
         /**
          * The solid swatchbook icon.See <a href='https://fontawesome.com/v6/icons/swatchbook?s=solid'>example</a>
          */
         SWATCHBOOK,
         /**
+         * The solid swimmer icon.See <a href='https://fontawesome.com/v6/icons/swimmer?s=solid'>example</a>
+         */
+        SWIMMER,
+        /**
+         * The solid swimming-pool icon.See <a href='https://fontawesome.com/v6/icons/swimming-pool?s=solid'>example</a>
+         */
+        SWIMMING_POOL,
+        /**
          * The solid synagogue icon.See <a href='https://fontawesome.com/v6/icons/synagogue?s=solid'>example</a>
          */
         SYNAGOGUE,
+        /**
+         * The solid sync icon.See <a href='https://fontawesome.com/v6/icons/sync?s=solid'>example</a>
+         */
+        SYNC,
+        /**
+         * The solid sync-alt icon.See <a href='https://fontawesome.com/v6/icons/sync-alt?s=solid'>example</a>
+         */
+        SYNC_ALT,
         /**
          * The solid syringe icon.See <a href='https://fontawesome.com/v6/icons/syringe?s=solid'>example</a>
          */
@@ -4590,6 +7722,10 @@ public final class FontAwesome {
          * The solid t icon.See <a href='https://fontawesome.com/v6/icons/t?s=solid'>example</a>
          */
         T,
+        /**
+         * The solid t-shirt icon.See <a href='https://fontawesome.com/v6/icons/t-shirt?s=solid'>example</a>
+         */
+        T_SHIRT,
         /**
          * The solid table icon.See <a href='https://fontawesome.com/v6/icons/table?s=solid'>example</a>
          */
@@ -4611,6 +7747,10 @@ public final class FontAwesome {
          */
         TABLE_LIST,
         /**
+         * The solid table-tennis icon.See <a href='https://fontawesome.com/v6/icons/table-tennis?s=solid'>example</a>
+         */
+        TABLE_TENNIS,
+        /**
          * The solid table-tennis-paddle-ball icon.See <a href='https://fontawesome.com/v6/icons/table-tennis-paddle-ball?s=solid'>example</a>
          */
         TABLE_TENNIS_PADDLE_BALL,
@@ -4618,6 +7758,14 @@ public final class FontAwesome {
          * The solid tablet icon.See <a href='https://fontawesome.com/v6/icons/tablet?s=solid'>example</a>
          */
         TABLET,
+        /**
+         * The solid tablet-alt icon.See <a href='https://fontawesome.com/v6/icons/tablet-alt?s=solid'>example</a>
+         */
+        TABLET_ALT,
+        /**
+         * The solid tablet-android icon.See <a href='https://fontawesome.com/v6/icons/tablet-android?s=solid'>example</a>
+         */
+        TABLET_ANDROID,
         /**
          * The solid tablet-button icon.See <a href='https://fontawesome.com/v6/icons/tablet-button?s=solid'>example</a>
          */
@@ -4635,6 +7783,30 @@ public final class FontAwesome {
          */
         TACHOGRAPH_DIGITAL,
         /**
+         * The solid tachometer icon.See <a href='https://fontawesome.com/v6/icons/tachometer?s=solid'>example</a>
+         */
+        TACHOMETER,
+        /**
+         * The solid tachometer-alt icon.See <a href='https://fontawesome.com/v6/icons/tachometer-alt?s=solid'>example</a>
+         */
+        TACHOMETER_ALT,
+        /**
+         * The solid tachometer-alt-average icon.See <a href='https://fontawesome.com/v6/icons/tachometer-alt-average?s=solid'>example</a>
+         */
+        TACHOMETER_ALT_AVERAGE,
+        /**
+         * The solid tachometer-alt-fast icon.See <a href='https://fontawesome.com/v6/icons/tachometer-alt-fast?s=solid'>example</a>
+         */
+        TACHOMETER_ALT_FAST,
+        /**
+         * The solid tachometer-average icon.See <a href='https://fontawesome.com/v6/icons/tachometer-average?s=solid'>example</a>
+         */
+        TACHOMETER_AVERAGE,
+        /**
+         * The solid tachometer-fast icon.See <a href='https://fontawesome.com/v6/icons/tachometer-fast?s=solid'>example</a>
+         */
+        TACHOMETER_FAST,
+        /**
          * The solid tag icon.See <a href='https://fontawesome.com/v6/icons/tag?s=solid'>example</a>
          */
         TAG,
@@ -4643,9 +7815,29 @@ public final class FontAwesome {
          */
         TAGS,
         /**
+         * The solid tanakh icon.See <a href='https://fontawesome.com/v6/icons/tanakh?s=solid'>example</a>
+         */
+        TANAKH,
+        /**
          * The solid tape icon.See <a href='https://fontawesome.com/v6/icons/tape?s=solid'>example</a>
          */
         TAPE,
+        /**
+         * The solid tarp icon.See <a href='https://fontawesome.com/v6/icons/tarp?s=solid'>example</a>
+         */
+        TARP,
+        /**
+         * The solid tarp-droplet icon.See <a href='https://fontawesome.com/v6/icons/tarp-droplet?s=solid'>example</a>
+         */
+        TARP_DROPLET,
+        /**
+         * The solid tasks icon.See <a href='https://fontawesome.com/v6/icons/tasks?s=solid'>example</a>
+         */
+        TASKS,
+        /**
+         * The solid tasks-alt icon.See <a href='https://fontawesome.com/v6/icons/tasks-alt?s=solid'>example</a>
+         */
+        TASKS_ALT,
         /**
          * The solid taxi icon.See <a href='https://fontawesome.com/v6/icons/taxi?s=solid'>example</a>
          */
@@ -4658,6 +7850,46 @@ public final class FontAwesome {
          * The solid teeth-open icon.See <a href='https://fontawesome.com/v6/icons/teeth-open?s=solid'>example</a>
          */
         TEETH_OPEN,
+        /**
+         * The solid teletype icon.See <a href='https://fontawesome.com/v6/icons/teletype?s=solid'>example</a>
+         */
+        TELETYPE,
+        /**
+         * The solid television icon.See <a href='https://fontawesome.com/v6/icons/television?s=solid'>example</a>
+         */
+        TELEVISION,
+        /**
+         * The solid temperature-0 icon.See <a href='https://fontawesome.com/v6/icons/temperature-0?s=solid'>example</a>
+         */
+        TEMPERATURE_0,
+        /**
+         * The solid temperature-1 icon.See <a href='https://fontawesome.com/v6/icons/temperature-1?s=solid'>example</a>
+         */
+        TEMPERATURE_1,
+        /**
+         * The solid temperature-2 icon.See <a href='https://fontawesome.com/v6/icons/temperature-2?s=solid'>example</a>
+         */
+        TEMPERATURE_2,
+        /**
+         * The solid temperature-3 icon.See <a href='https://fontawesome.com/v6/icons/temperature-3?s=solid'>example</a>
+         */
+        TEMPERATURE_3,
+        /**
+         * The solid temperature-4 icon.See <a href='https://fontawesome.com/v6/icons/temperature-4?s=solid'>example</a>
+         */
+        TEMPERATURE_4,
+        /**
+         * The solid temperature-arrow-down icon.See <a href='https://fontawesome.com/v6/icons/temperature-arrow-down?s=solid'>example</a>
+         */
+        TEMPERATURE_ARROW_DOWN,
+        /**
+         * The solid temperature-arrow-up icon.See <a href='https://fontawesome.com/v6/icons/temperature-arrow-up?s=solid'>example</a>
+         */
+        TEMPERATURE_ARROW_UP,
+        /**
+         * The solid temperature-down icon.See <a href='https://fontawesome.com/v6/icons/temperature-down?s=solid'>example</a>
+         */
+        TEMPERATURE_DOWN,
         /**
          * The solid temperature-empty icon.See <a href='https://fontawesome.com/v6/icons/temperature-empty?s=solid'>example</a>
          */
@@ -4687,9 +7919,41 @@ public final class FontAwesome {
          */
         TEMPERATURE_THREE_QUARTERS,
         /**
+         * The solid temperature-up icon.See <a href='https://fontawesome.com/v6/icons/temperature-up?s=solid'>example</a>
+         */
+        TEMPERATURE_UP,
+        /**
+         * The solid tenge icon.See <a href='https://fontawesome.com/v6/icons/tenge?s=solid'>example</a>
+         */
+        TENGE,
+        /**
          * The solid tenge-sign icon.See <a href='https://fontawesome.com/v6/icons/tenge-sign?s=solid'>example</a>
          */
         TENGE_SIGN,
+        /**
+         * The solid tent icon.See <a href='https://fontawesome.com/v6/icons/tent?s=solid'>example</a>
+         */
+        TENT,
+        /**
+         * The solid tent-arrow-down-to-line icon.See <a href='https://fontawesome.com/v6/icons/tent-arrow-down-to-line?s=solid'>example</a>
+         */
+        TENT_ARROW_DOWN_TO_LINE,
+        /**
+         * The solid tent-arrow-left-right icon.See <a href='https://fontawesome.com/v6/icons/tent-arrow-left-right?s=solid'>example</a>
+         */
+        TENT_ARROW_LEFT_RIGHT,
+        /**
+         * The solid tent-arrow-turn-left icon.See <a href='https://fontawesome.com/v6/icons/tent-arrow-turn-left?s=solid'>example</a>
+         */
+        TENT_ARROW_TURN_LEFT,
+        /**
+         * The solid tent-arrows-down icon.See <a href='https://fontawesome.com/v6/icons/tent-arrows-down?s=solid'>example</a>
+         */
+        TENT_ARROWS_DOWN,
+        /**
+         * The solid tents icon.See <a href='https://fontawesome.com/v6/icons/tents?s=solid'>example</a>
+         */
+        TENTS,
         /**
          * The solid terminal icon.See <a href='https://fontawesome.com/v6/icons/terminal?s=solid'>example</a>
          */
@@ -4707,9 +7971,69 @@ public final class FontAwesome {
          */
         TEXT_WIDTH,
         /**
+         * The solid th icon.See <a href='https://fontawesome.com/v6/icons/th?s=solid'>example</a>
+         */
+        TH,
+        /**
+         * The solid th-large icon.See <a href='https://fontawesome.com/v6/icons/th-large?s=solid'>example</a>
+         */
+        TH_LARGE,
+        /**
+         * The solid th-list icon.See <a href='https://fontawesome.com/v6/icons/th-list?s=solid'>example</a>
+         */
+        TH_LIST,
+        /**
+         * The solid theater-masks icon.See <a href='https://fontawesome.com/v6/icons/theater-masks?s=solid'>example</a>
+         */
+        THEATER_MASKS,
+        /**
          * The solid thermometer icon.See <a href='https://fontawesome.com/v6/icons/thermometer?s=solid'>example</a>
          */
         THERMOMETER,
+        /**
+         * The solid thermometer-0 icon.See <a href='https://fontawesome.com/v6/icons/thermometer-0?s=solid'>example</a>
+         */
+        THERMOMETER_0,
+        /**
+         * The solid thermometer-1 icon.See <a href='https://fontawesome.com/v6/icons/thermometer-1?s=solid'>example</a>
+         */
+        THERMOMETER_1,
+        /**
+         * The solid thermometer-2 icon.See <a href='https://fontawesome.com/v6/icons/thermometer-2?s=solid'>example</a>
+         */
+        THERMOMETER_2,
+        /**
+         * The solid thermometer-3 icon.See <a href='https://fontawesome.com/v6/icons/thermometer-3?s=solid'>example</a>
+         */
+        THERMOMETER_3,
+        /**
+         * The solid thermometer-4 icon.See <a href='https://fontawesome.com/v6/icons/thermometer-4?s=solid'>example</a>
+         */
+        THERMOMETER_4,
+        /**
+         * The solid thermometer-empty icon.See <a href='https://fontawesome.com/v6/icons/thermometer-empty?s=solid'>example</a>
+         */
+        THERMOMETER_EMPTY,
+        /**
+         * The solid thermometer-full icon.See <a href='https://fontawesome.com/v6/icons/thermometer-full?s=solid'>example</a>
+         */
+        THERMOMETER_FULL,
+        /**
+         * The solid thermometer-half icon.See <a href='https://fontawesome.com/v6/icons/thermometer-half?s=solid'>example</a>
+         */
+        THERMOMETER_HALF,
+        /**
+         * The solid thermometer-quarter icon.See <a href='https://fontawesome.com/v6/icons/thermometer-quarter?s=solid'>example</a>
+         */
+        THERMOMETER_QUARTER,
+        /**
+         * The solid thermometer-three-quarters icon.See <a href='https://fontawesome.com/v6/icons/thermometer-three-quarters?s=solid'>example</a>
+         */
+        THERMOMETER_THREE_QUARTERS,
+        /**
+         * The solid thumb-tack icon.See <a href='https://fontawesome.com/v6/icons/thumb-tack?s=solid'>example</a>
+         */
+        THUMB_TACK,
         /**
          * The solid thumbs-down icon.See <a href='https://fontawesome.com/v6/icons/thumbs-down?s=solid'>example</a>
          */
@@ -4723,9 +8047,17 @@ public final class FontAwesome {
          */
         THUMBTACK,
         /**
+         * The solid thunderstorm icon.See <a href='https://fontawesome.com/v6/icons/thunderstorm?s=solid'>example</a>
+         */
+        THUNDERSTORM,
+        /**
          * The solid ticket icon.See <a href='https://fontawesome.com/v6/icons/ticket?s=solid'>example</a>
          */
         TICKET,
+        /**
+         * The solid ticket-alt icon.See <a href='https://fontawesome.com/v6/icons/ticket-alt?s=solid'>example</a>
+         */
+        TICKET_ALT,
         /**
          * The solid ticket-simple icon.See <a href='https://fontawesome.com/v6/icons/ticket-simple?s=solid'>example</a>
          */
@@ -4734,6 +8066,34 @@ public final class FontAwesome {
          * The solid timeline icon.See <a href='https://fontawesome.com/v6/icons/timeline?s=solid'>example</a>
          */
         TIMELINE,
+        /**
+         * The solid times icon.See <a href='https://fontawesome.com/v6/icons/times?s=solid'>example</a>
+         */
+        TIMES,
+        /**
+         * The solid times-circle icon.See <a href='https://fontawesome.com/v6/icons/times-circle?s=solid'>example</a>
+         */
+        TIMES_CIRCLE,
+        /**
+         * The solid times-rectangle icon.See <a href='https://fontawesome.com/v6/icons/times-rectangle?s=solid'>example</a>
+         */
+        TIMES_RECTANGLE,
+        /**
+         * The solid times-square icon.See <a href='https://fontawesome.com/v6/icons/times-square?s=solid'>example</a>
+         */
+        TIMES_SQUARE,
+        /**
+         * The solid tint icon.See <a href='https://fontawesome.com/v6/icons/tint?s=solid'>example</a>
+         */
+        TINT,
+        /**
+         * The solid tint-slash icon.See <a href='https://fontawesome.com/v6/icons/tint-slash?s=solid'>example</a>
+         */
+        TINT_SLASH,
+        /**
+         * The solid tired icon.See <a href='https://fontawesome.com/v6/icons/tired?s=solid'>example</a>
+         */
+        TIRED,
         /**
          * The solid toggle-off icon.See <a href='https://fontawesome.com/v6/icons/toggle-off?s=solid'>example</a>
          */
@@ -4755,21 +8115,49 @@ public final class FontAwesome {
          */
         TOILET_PAPER_SLASH,
         /**
+         * The solid toilet-portable icon.See <a href='https://fontawesome.com/v6/icons/toilet-portable?s=solid'>example</a>
+         */
+        TOILET_PORTABLE,
+        /**
+         * The solid toilets-portable icon.See <a href='https://fontawesome.com/v6/icons/toilets-portable?s=solid'>example</a>
+         */
+        TOILETS_PORTABLE,
+        /**
          * The solid toolbox icon.See <a href='https://fontawesome.com/v6/icons/toolbox?s=solid'>example</a>
          */
         TOOLBOX,
+        /**
+         * The solid tools icon.See <a href='https://fontawesome.com/v6/icons/tools?s=solid'>example</a>
+         */
+        TOOLS,
         /**
          * The solid tooth icon.See <a href='https://fontawesome.com/v6/icons/tooth?s=solid'>example</a>
          */
         TOOTH,
         /**
+         * The solid torah icon.See <a href='https://fontawesome.com/v6/icons/torah?s=solid'>example</a>
+         */
+        TORAH,
+        /**
          * The solid torii-gate icon.See <a href='https://fontawesome.com/v6/icons/torii-gate?s=solid'>example</a>
          */
         TORII_GATE,
         /**
+         * The solid tornado icon.See <a href='https://fontawesome.com/v6/icons/tornado?s=solid'>example</a>
+         */
+        TORNADO,
+        /**
          * The solid tower-broadcast icon.See <a href='https://fontawesome.com/v6/icons/tower-broadcast?s=solid'>example</a>
          */
         TOWER_BROADCAST,
+        /**
+         * The solid tower-cell icon.See <a href='https://fontawesome.com/v6/icons/tower-cell?s=solid'>example</a>
+         */
+        TOWER_CELL,
+        /**
+         * The solid tower-observation icon.See <a href='https://fontawesome.com/v6/icons/tower-observation?s=solid'>example</a>
+         */
+        TOWER_OBSERVATION,
         /**
          * The solid tractor icon.See <a href='https://fontawesome.com/v6/icons/tractor?s=solid'>example</a>
          */
@@ -4799,13 +8187,25 @@ public final class FontAwesome {
          */
         TRAIN_TRAM,
         /**
+         * The solid tram icon.See <a href='https://fontawesome.com/v6/icons/tram?s=solid'>example</a>
+         */
+        TRAM,
+        /**
          * The solid transgender icon.See <a href='https://fontawesome.com/v6/icons/transgender?s=solid'>example</a>
          */
         TRANSGENDER,
         /**
+         * The solid transgender-alt icon.See <a href='https://fontawesome.com/v6/icons/transgender-alt?s=solid'>example</a>
+         */
+        TRANSGENDER_ALT,
+        /**
          * The solid trash icon.See <a href='https://fontawesome.com/v6/icons/trash?s=solid'>example</a>
          */
         TRASH,
+        /**
+         * The solid trash-alt icon.See <a href='https://fontawesome.com/v6/icons/trash-alt?s=solid'>example</a>
+         */
+        TRASH_ALT,
         /**
          * The solid trash-arrow-up icon.See <a href='https://fontawesome.com/v6/icons/trash-arrow-up?s=solid'>example</a>
          */
@@ -4819,9 +8219,25 @@ public final class FontAwesome {
          */
         TRASH_CAN_ARROW_UP,
         /**
+         * The solid trash-restore icon.See <a href='https://fontawesome.com/v6/icons/trash-restore?s=solid'>example</a>
+         */
+        TRASH_RESTORE,
+        /**
+         * The solid trash-restore-alt icon.See <a href='https://fontawesome.com/v6/icons/trash-restore-alt?s=solid'>example</a>
+         */
+        TRASH_RESTORE_ALT,
+        /**
          * The solid tree icon.See <a href='https://fontawesome.com/v6/icons/tree?s=solid'>example</a>
          */
         TREE,
+        /**
+         * The solid tree-city icon.See <a href='https://fontawesome.com/v6/icons/tree-city?s=solid'>example</a>
+         */
+        TREE_CITY,
+        /**
+         * The solid triangle-circle-square icon.See <a href='https://fontawesome.com/v6/icons/triangle-circle-square?s=solid'>example</a>
+         */
+        TRIANGLE_CIRCLE_SQUARE,
         /**
          * The solid triangle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/triangle-exclamation?s=solid'>example</a>
          */
@@ -4831,13 +8247,45 @@ public final class FontAwesome {
          */
         TROPHY,
         /**
+         * The solid trowel icon.See <a href='https://fontawesome.com/v6/icons/trowel?s=solid'>example</a>
+         */
+        TROWEL,
+        /**
+         * The solid trowel-bricks icon.See <a href='https://fontawesome.com/v6/icons/trowel-bricks?s=solid'>example</a>
+         */
+        TROWEL_BRICKS,
+        /**
          * The solid truck icon.See <a href='https://fontawesome.com/v6/icons/truck?s=solid'>example</a>
          */
         TRUCK,
         /**
+         * The solid truck-arrow-right icon.See <a href='https://fontawesome.com/v6/icons/truck-arrow-right?s=solid'>example</a>
+         */
+        TRUCK_ARROW_RIGHT,
+        /**
+         * The solid truck-droplet icon.See <a href='https://fontawesome.com/v6/icons/truck-droplet?s=solid'>example</a>
+         */
+        TRUCK_DROPLET,
+        /**
          * The solid truck-fast icon.See <a href='https://fontawesome.com/v6/icons/truck-fast?s=solid'>example</a>
          */
         TRUCK_FAST,
+        /**
+         * The solid truck-field icon.See <a href='https://fontawesome.com/v6/icons/truck-field?s=solid'>example</a>
+         */
+        TRUCK_FIELD,
+        /**
+         * The solid truck-field-un icon.See <a href='https://fontawesome.com/v6/icons/truck-field-un?s=solid'>example</a>
+         */
+        TRUCK_FIELD_UN,
+        /**
+         * The solid truck-front icon.See <a href='https://fontawesome.com/v6/icons/truck-front?s=solid'>example</a>
+         */
+        TRUCK_FRONT,
+        /**
+         * The solid truck-loading icon.See <a href='https://fontawesome.com/v6/icons/truck-loading?s=solid'>example</a>
+         */
+        TRUCK_LOADING,
         /**
          * The solid truck-medical icon.See <a href='https://fontawesome.com/v6/icons/truck-medical?s=solid'>example</a>
          */
@@ -4855,13 +8303,29 @@ public final class FontAwesome {
          */
         TRUCK_PICKUP,
         /**
+         * The solid truck-plane icon.See <a href='https://fontawesome.com/v6/icons/truck-plane?s=solid'>example</a>
+         */
+        TRUCK_PLANE,
+        /**
          * The solid truck-ramp-box icon.See <a href='https://fontawesome.com/v6/icons/truck-ramp-box?s=solid'>example</a>
          */
         TRUCK_RAMP_BOX,
         /**
+         * The solid try icon.See <a href='https://fontawesome.com/v6/icons/try?s=solid'>example</a>
+         */
+        TRY,
+        /**
+         * The solid tshirt icon.See <a href='https://fontawesome.com/v6/icons/tshirt?s=solid'>example</a>
+         */
+        TSHIRT,
+        /**
          * The solid tty icon.See <a href='https://fontawesome.com/v6/icons/tty?s=solid'>example</a>
          */
         TTY,
+        /**
+         * The solid turkish-lira icon.See <a href='https://fontawesome.com/v6/icons/turkish-lira?s=solid'>example</a>
+         */
+        TURKISH_LIRA,
         /**
          * The solid turkish-lira-sign icon.See <a href='https://fontawesome.com/v6/icons/turkish-lira-sign?s=solid'>example</a>
          */
@@ -4879,6 +8343,10 @@ public final class FontAwesome {
          */
         TV,
         /**
+         * The solid tv-alt icon.See <a href='https://fontawesome.com/v6/icons/tv-alt?s=solid'>example</a>
+         */
+        TV_ALT,
+        /**
          * The solid u icon.See <a href='https://fontawesome.com/v6/icons/u?s=solid'>example</a>
          */
         U,
@@ -4895,17 +8363,41 @@ public final class FontAwesome {
          */
         UNDERLINE,
         /**
+         * The solid undo icon.See <a href='https://fontawesome.com/v6/icons/undo?s=solid'>example</a>
+         */
+        UNDO,
+        /**
+         * The solid undo-alt icon.See <a href='https://fontawesome.com/v6/icons/undo-alt?s=solid'>example</a>
+         */
+        UNDO_ALT,
+        /**
          * The solid universal-access icon.See <a href='https://fontawesome.com/v6/icons/universal-access?s=solid'>example</a>
          */
         UNIVERSAL_ACCESS,
+        /**
+         * The solid university icon.See <a href='https://fontawesome.com/v6/icons/university?s=solid'>example</a>
+         */
+        UNIVERSITY,
+        /**
+         * The solid unlink icon.See <a href='https://fontawesome.com/v6/icons/unlink?s=solid'>example</a>
+         */
+        UNLINK,
         /**
          * The solid unlock icon.See <a href='https://fontawesome.com/v6/icons/unlock?s=solid'>example</a>
          */
         UNLOCK,
         /**
+         * The solid unlock-alt icon.See <a href='https://fontawesome.com/v6/icons/unlock-alt?s=solid'>example</a>
+         */
+        UNLOCK_ALT,
+        /**
          * The solid unlock-keyhole icon.See <a href='https://fontawesome.com/v6/icons/unlock-keyhole?s=solid'>example</a>
          */
         UNLOCK_KEYHOLE,
+        /**
+         * The solid unsorted icon.See <a href='https://fontawesome.com/v6/icons/unsorted?s=solid'>example</a>
+         */
+        UNSORTED,
         /**
          * The solid up-down icon.See <a href='https://fontawesome.com/v6/icons/up-down?s=solid'>example</a>
          */
@@ -4931,9 +8423,21 @@ public final class FontAwesome {
          */
         UPLOAD,
         /**
+         * The solid usd icon.See <a href='https://fontawesome.com/v6/icons/usd?s=solid'>example</a>
+         */
+        USD,
+        /**
          * The solid user icon.See <a href='https://fontawesome.com/v6/icons/user?s=solid'>example</a>
          */
         USER,
+        /**
+         * The solid user-alt icon.See <a href='https://fontawesome.com/v6/icons/user-alt?s=solid'>example</a>
+         */
+        USER_ALT,
+        /**
+         * The solid user-alt-slash icon.See <a href='https://fontawesome.com/v6/icons/user-alt-slash?s=solid'>example</a>
+         */
+        USER_ALT_SLASH,
         /**
          * The solid user-astronaut icon.See <a href='https://fontawesome.com/v6/icons/user-astronaut?s=solid'>example</a>
          */
@@ -4943,13 +8447,29 @@ public final class FontAwesome {
          */
         USER_CHECK,
         /**
+         * The solid user-circle icon.See <a href='https://fontawesome.com/v6/icons/user-circle?s=solid'>example</a>
+         */
+        USER_CIRCLE,
+        /**
          * The solid user-clock icon.See <a href='https://fontawesome.com/v6/icons/user-clock?s=solid'>example</a>
          */
         USER_CLOCK,
         /**
+         * The solid user-cog icon.See <a href='https://fontawesome.com/v6/icons/user-cog?s=solid'>example</a>
+         */
+        USER_COG,
+        /**
          * The solid user-doctor icon.See <a href='https://fontawesome.com/v6/icons/user-doctor?s=solid'>example</a>
          */
         USER_DOCTOR,
+        /**
+         * The solid user-edit icon.See <a href='https://fontawesome.com/v6/icons/user-edit?s=solid'>example</a>
+         */
+        USER_EDIT,
+        /**
+         * The solid user-friends icon.See <a href='https://fontawesome.com/v6/icons/user-friends?s=solid'>example</a>
+         */
+        USER_FRIENDS,
         /**
          * The solid user-gear icon.See <a href='https://fontawesome.com/v6/icons/user-gear?s=solid'>example</a>
          */
@@ -4978,6 +8498,10 @@ public final class FontAwesome {
          * The solid user-lock icon.See <a href='https://fontawesome.com/v6/icons/user-lock?s=solid'>example</a>
          */
         USER_LOCK,
+        /**
+         * The solid user-md icon.See <a href='https://fontawesome.com/v6/icons/user-md?s=solid'>example</a>
+         */
+        USER_MD,
         /**
          * The solid user-minus icon.See <a href='https://fontawesome.com/v6/icons/user-minus?s=solid'>example</a>
          */
@@ -5019,6 +8543,10 @@ public final class FontAwesome {
          */
         USER_TIE,
         /**
+         * The solid user-times icon.See <a href='https://fontawesome.com/v6/icons/user-times?s=solid'>example</a>
+         */
+        USER_TIMES,
+        /**
          * The solid user-xmark icon.See <a href='https://fontawesome.com/v6/icons/user-xmark?s=solid'>example</a>
          */
         USER_XMARK,
@@ -5027,13 +8555,41 @@ public final class FontAwesome {
          */
         USERS,
         /**
+         * The solid users-between-lines icon.See <a href='https://fontawesome.com/v6/icons/users-between-lines?s=solid'>example</a>
+         */
+        USERS_BETWEEN_LINES,
+        /**
+         * The solid users-cog icon.See <a href='https://fontawesome.com/v6/icons/users-cog?s=solid'>example</a>
+         */
+        USERS_COG,
+        /**
          * The solid users-gear icon.See <a href='https://fontawesome.com/v6/icons/users-gear?s=solid'>example</a>
          */
         USERS_GEAR,
         /**
+         * The solid users-line icon.See <a href='https://fontawesome.com/v6/icons/users-line?s=solid'>example</a>
+         */
+        USERS_LINE,
+        /**
+         * The solid users-rays icon.See <a href='https://fontawesome.com/v6/icons/users-rays?s=solid'>example</a>
+         */
+        USERS_RAYS,
+        /**
+         * The solid users-rectangle icon.See <a href='https://fontawesome.com/v6/icons/users-rectangle?s=solid'>example</a>
+         */
+        USERS_RECTANGLE,
+        /**
          * The solid users-slash icon.See <a href='https://fontawesome.com/v6/icons/users-slash?s=solid'>example</a>
          */
         USERS_SLASH,
+        /**
+         * The solid users-viewfinder icon.See <a href='https://fontawesome.com/v6/icons/users-viewfinder?s=solid'>example</a>
+         */
+        USERS_VIEWFINDER,
+        /**
+         * The solid utensil-spoon icon.See <a href='https://fontawesome.com/v6/icons/utensil-spoon?s=solid'>example</a>
+         */
+        UTENSIL_SPOON,
         /**
          * The solid utensils icon.See <a href='https://fontawesome.com/v6/icons/utensils?s=solid'>example</a>
          */
@@ -5050,6 +8606,10 @@ public final class FontAwesome {
          * The solid vault icon.See <a href='https://fontawesome.com/v6/icons/vault?s=solid'>example</a>
          */
         VAULT,
+        /**
+         * The solid vcard icon.See <a href='https://fontawesome.com/v6/icons/vcard?s=solid'>example</a>
+         */
+        VCARD,
         /**
          * The solid vector-square icon.See <a href='https://fontawesome.com/v6/icons/vector-square?s=solid'>example</a>
          */
@@ -5079,6 +8639,14 @@ public final class FontAwesome {
          */
         VIAL,
         /**
+         * The solid vial-circle-check icon.See <a href='https://fontawesome.com/v6/icons/vial-circle-check?s=solid'>example</a>
+         */
+        VIAL_CIRCLE_CHECK,
+        /**
+         * The solid vial-virus icon.See <a href='https://fontawesome.com/v6/icons/vial-virus?s=solid'>example</a>
+         */
+        VIAL_VIRUS,
+        /**
          * The solid vials icon.See <a href='https://fontawesome.com/v6/icons/vials?s=solid'>example</a>
          */
         VIALS,
@@ -5086,6 +8654,10 @@ public final class FontAwesome {
          * The solid video icon.See <a href='https://fontawesome.com/v6/icons/video?s=solid'>example</a>
          */
         VIDEO,
+        /**
+         * The solid video-camera icon.See <a href='https://fontawesome.com/v6/icons/video-camera?s=solid'>example</a>
+         */
+        VIDEO_CAMERA,
         /**
          * The solid video-slash icon.See <a href='https://fontawesome.com/v6/icons/video-slash?s=solid'>example</a>
          */
@@ -5119,9 +8691,25 @@ public final class FontAwesome {
          */
         VOICEMAIL,
         /**
+         * The solid volcano icon.See <a href='https://fontawesome.com/v6/icons/volcano?s=solid'>example</a>
+         */
+        VOLCANO,
+        /**
          * The solid volleyball icon.See <a href='https://fontawesome.com/v6/icons/volleyball?s=solid'>example</a>
          */
         VOLLEYBALL,
+        /**
+         * The solid volleyball-ball icon.See <a href='https://fontawesome.com/v6/icons/volleyball-ball?s=solid'>example</a>
+         */
+        VOLLEYBALL_BALL,
+        /**
+         * The solid volume-control-phone icon.See <a href='https://fontawesome.com/v6/icons/volume-control-phone?s=solid'>example</a>
+         */
+        VOLUME_CONTROL_PHONE,
+        /**
+         * The solid volume-down icon.See <a href='https://fontawesome.com/v6/icons/volume-down?s=solid'>example</a>
+         */
+        VOLUME_DOWN,
         /**
          * The solid volume-high icon.See <a href='https://fontawesome.com/v6/icons/volume-high?s=solid'>example</a>
          */
@@ -5131,13 +8719,29 @@ public final class FontAwesome {
          */
         VOLUME_LOW,
         /**
+         * The solid volume-mute icon.See <a href='https://fontawesome.com/v6/icons/volume-mute?s=solid'>example</a>
+         */
+        VOLUME_MUTE,
+        /**
          * The solid volume-off icon.See <a href='https://fontawesome.com/v6/icons/volume-off?s=solid'>example</a>
          */
         VOLUME_OFF,
         /**
+         * The solid volume-times icon.See <a href='https://fontawesome.com/v6/icons/volume-times?s=solid'>example</a>
+         */
+        VOLUME_TIMES,
+        /**
+         * The solid volume-up icon.See <a href='https://fontawesome.com/v6/icons/volume-up?s=solid'>example</a>
+         */
+        VOLUME_UP,
+        /**
          * The solid volume-xmark icon.See <a href='https://fontawesome.com/v6/icons/volume-xmark?s=solid'>example</a>
          */
         VOLUME_XMARK,
+        /**
+         * The solid vote-yea icon.See <a href='https://fontawesome.com/v6/icons/vote-yea?s=solid'>example</a>
+         */
+        VOTE_YEA,
         /**
          * The solid vr-cardboard icon.See <a href='https://fontawesome.com/v6/icons/vr-cardboard?s=solid'>example</a>
          */
@@ -5146,6 +8750,14 @@ public final class FontAwesome {
          * The solid w icon.See <a href='https://fontawesome.com/v6/icons/w?s=solid'>example</a>
          */
         W,
+        /**
+         * The solid walkie-talkie icon.See <a href='https://fontawesome.com/v6/icons/walkie-talkie?s=solid'>example</a>
+         */
+        WALKIE_TALKIE,
+        /**
+         * The solid walking icon.See <a href='https://fontawesome.com/v6/icons/walking?s=solid'>example</a>
+         */
+        WALKING,
         /**
          * The solid wallet icon.See <a href='https://fontawesome.com/v6/icons/wallet?s=solid'>example</a>
          */
@@ -5167,6 +8779,10 @@ public final class FontAwesome {
          */
         WAREHOUSE,
         /**
+         * The solid warning icon.See <a href='https://fontawesome.com/v6/icons/warning?s=solid'>example</a>
+         */
+        WARNING,
+        /**
          * The solid water icon.See <a href='https://fontawesome.com/v6/icons/water?s=solid'>example</a>
          */
         WATER,
@@ -5179,6 +8795,10 @@ public final class FontAwesome {
          */
         WAVE_SQUARE,
         /**
+         * The solid weight icon.See <a href='https://fontawesome.com/v6/icons/weight?s=solid'>example</a>
+         */
+        WEIGHT,
+        /**
          * The solid weight-hanging icon.See <a href='https://fontawesome.com/v6/icons/weight-hanging?s=solid'>example</a>
          */
         WEIGHT_HANGING,
@@ -5187,9 +8807,29 @@ public final class FontAwesome {
          */
         WEIGHT_SCALE,
         /**
+         * The solid wheat-alt icon.See <a href='https://fontawesome.com/v6/icons/wheat-alt?s=solid'>example</a>
+         */
+        WHEAT_ALT,
+        /**
+         * The solid wheat-awn icon.See <a href='https://fontawesome.com/v6/icons/wheat-awn?s=solid'>example</a>
+         */
+        WHEAT_AWN,
+        /**
+         * The solid wheat-awn-circle-exclamation icon.See <a href='https://fontawesome.com/v6/icons/wheat-awn-circle-exclamation?s=solid'>example</a>
+         */
+        WHEAT_AWN_CIRCLE_EXCLAMATION,
+        /**
          * The solid wheelchair icon.See <a href='https://fontawesome.com/v6/icons/wheelchair?s=solid'>example</a>
          */
         WHEELCHAIR,
+        /**
+         * The solid wheelchair-alt icon.See <a href='https://fontawesome.com/v6/icons/wheelchair-alt?s=solid'>example</a>
+         */
+        WHEELCHAIR_ALT,
+        /**
+         * The solid wheelchair-move icon.See <a href='https://fontawesome.com/v6/icons/wheelchair-move?s=solid'>example</a>
+         */
+        WHEELCHAIR_MOVE,
         /**
          * The solid whiskey-glass icon.See <a href='https://fontawesome.com/v6/icons/whiskey-glass?s=solid'>example</a>
          */
@@ -5199,9 +8839,21 @@ public final class FontAwesome {
          */
         WIFI,
         /**
+         * The solid wifi-3 icon.See <a href='https://fontawesome.com/v6/icons/wifi-3?s=solid'>example</a>
+         */
+        WIFI_3,
+        /**
+         * The solid wifi-strong icon.See <a href='https://fontawesome.com/v6/icons/wifi-strong?s=solid'>example</a>
+         */
+        WIFI_STRONG,
+        /**
          * The solid wind icon.See <a href='https://fontawesome.com/v6/icons/wind?s=solid'>example</a>
          */
         WIND,
+        /**
+         * The solid window-close icon.See <a href='https://fontawesome.com/v6/icons/window-close?s=solid'>example</a>
+         */
+        WINDOW_CLOSE,
         /**
          * The solid window-maximize icon.See <a href='https://fontawesome.com/v6/icons/window-maximize?s=solid'>example</a>
          */
@@ -5223,13 +8875,25 @@ public final class FontAwesome {
          */
         WINE_GLASS,
         /**
+         * The solid wine-glass-alt icon.See <a href='https://fontawesome.com/v6/icons/wine-glass-alt?s=solid'>example</a>
+         */
+        WINE_GLASS_ALT,
+        /**
          * The solid wine-glass-empty icon.See <a href='https://fontawesome.com/v6/icons/wine-glass-empty?s=solid'>example</a>
          */
         WINE_GLASS_EMPTY,
         /**
+         * The solid won icon.See <a href='https://fontawesome.com/v6/icons/won?s=solid'>example</a>
+         */
+        WON,
+        /**
          * The solid won-sign icon.See <a href='https://fontawesome.com/v6/icons/won-sign?s=solid'>example</a>
          */
         WON_SIGN,
+        /**
+         * The solid worm icon.See <a href='https://fontawesome.com/v6/icons/worm?s=solid'>example</a>
+         */
+        WORM,
         /**
          * The solid wrench icon.See <a href='https://fontawesome.com/v6/icons/wrench?s=solid'>example</a>
          */
@@ -5247,9 +8911,25 @@ public final class FontAwesome {
          */
         XMARK,
         /**
+         * The solid xmark-circle icon.See <a href='https://fontawesome.com/v6/icons/xmark-circle?s=solid'>example</a>
+         */
+        XMARK_CIRCLE,
+        /**
+         * The solid xmark-square icon.See <a href='https://fontawesome.com/v6/icons/xmark-square?s=solid'>example</a>
+         */
+        XMARK_SQUARE,
+        /**
+         * The solid xmarks-lines icon.See <a href='https://fontawesome.com/v6/icons/xmarks-lines?s=solid'>example</a>
+         */
+        XMARKS_LINES,
+        /**
          * The solid y icon.See <a href='https://fontawesome.com/v6/icons/y?s=solid'>example</a>
          */
         Y,
+        /**
+         * The solid yen icon.See <a href='https://fontawesome.com/v6/icons/yen?s=solid'>example</a>
+         */
+        YEN,
         /**
          * The solid yen-sign icon.See <a href='https://fontawesome.com/v6/icons/yen-sign?s=solid'>example</a>
          */
@@ -5261,7 +8941,11 @@ public final class FontAwesome {
         /**
          * The solid z icon.See <a href='https://fontawesome.com/v6/icons/z?s=solid'>example</a>
          */
-        Z;
+        Z,
+        /**
+         * The solid zap icon.See <a href='https://fontawesome.com/v6/icons/zap?s=solid'>example</a>
+         */
+        ZAP;
 
         /**
          * The Iconset name, i.e. {@code "fas"}."
@@ -5303,7 +8987,7 @@ public final class FontAwesome {
          * Server side component for {@code Solid}
          */
         @JsModule("./font-awesome-iron-iconset/fas.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "4.1.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "4.2.0")
         @SuppressWarnings("serial")
         public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
@@ -5932,6 +9616,18 @@ public final class FontAwesome {
          */
         FONT_AWESOME,
         /**
+         * The brands font-awesome-alt icon.See <a href='https://fontawesome.com/v6/icons/font-awesome-alt?s=brands'>example</a>
+         */
+        FONT_AWESOME_ALT,
+        /**
+         * The brands font-awesome-flag icon.See <a href='https://fontawesome.com/v6/icons/font-awesome-flag?s=brands'>example</a>
+         */
+        FONT_AWESOME_FLAG,
+        /**
+         * The brands font-awesome-logo-full icon.See <a href='https://fontawesome.com/v6/icons/font-awesome-logo-full?s=brands'>example</a>
+         */
+        FONT_AWESOME_LOGO_FULL,
+        /**
          * The brands fonticons icon.See <a href='https://fontawesome.com/v6/icons/fonticons?s=brands'>example</a>
          */
         FONTICONS,
@@ -6019,6 +9715,10 @@ public final class FontAwesome {
          * The brands gitlab icon.See <a href='https://fontawesome.com/v6/icons/gitlab?s=brands'>example</a>
          */
         GITLAB,
+        /**
+         * The brands gitlab-square icon.See <a href='https://fontawesome.com/v6/icons/gitlab-square?s=brands'>example</a>
+         */
+        GITLAB_SQUARE,
         /**
          * The brands gitter icon.See <a href='https://fontawesome.com/v6/icons/gitter?s=brands'>example</a>
          */
@@ -6163,6 +9863,10 @@ public final class FontAwesome {
          * The brands imdb icon.See <a href='https://fontawesome.com/v6/icons/imdb?s=brands'>example</a>
          */
         IMDB,
+        /**
+         * The brands innosoft icon.See <a href='https://fontawesome.com/v6/icons/innosoft?s=brands'>example</a>
+         */
+        INNOSOFT,
         /**
          * The brands instagram icon.See <a href='https://fontawesome.com/v6/icons/instagram?s=brands'>example</a>
          */
@@ -6344,6 +10048,10 @@ public final class FontAwesome {
          */
         MEDIUM,
         /**
+         * The brands medium-m icon.See <a href='https://fontawesome.com/v6/icons/medium-m?s=brands'>example</a>
+         */
+        MEDIUM_M,
+        /**
          * The brands medrt icon.See <a href='https://fontawesome.com/v6/icons/medrt?s=brands'>example</a>
          */
         MEDRT,
@@ -6359,6 +10067,10 @@ public final class FontAwesome {
          * The brands mendeley icon.See <a href='https://fontawesome.com/v6/icons/mendeley?s=brands'>example</a>
          */
         MENDELEY,
+        /**
+         * The brands meta icon.See <a href='https://fontawesome.com/v6/icons/meta?s=brands'>example</a>
+         */
+        META,
         /**
          * The brands microblog icon.See <a href='https://fontawesome.com/v6/icons/microblog?s=brands'>example</a>
          */
@@ -6399,6 +10111,14 @@ public final class FontAwesome {
          * The brands neos icon.See <a href='https://fontawesome.com/v6/icons/neos?s=brands'>example</a>
          */
         NEOS,
+        /**
+         * The brands nfc-directional icon.See <a href='https://fontawesome.com/v6/icons/nfc-directional?s=brands'>example</a>
+         */
+        NFC_DIRECTIONAL,
+        /**
+         * The brands nfc-symbol icon.See <a href='https://fontawesome.com/v6/icons/nfc-symbol?s=brands'>example</a>
+         */
+        NFC_SYMBOL,
         /**
          * The brands nimblr icon.See <a href='https://fontawesome.com/v6/icons/nimblr?s=brands'>example</a>
          */
@@ -6624,6 +10344,10 @@ public final class FontAwesome {
          */
         REDHAT,
         /**
+         * The brands rendact icon.See <a href='https://fontawesome.com/v6/icons/rendact?s=brands'>example</a>
+         */
+        RENDACT,
+        /**
          * The brands renren icon.See <a href='https://fontawesome.com/v6/icons/renren?s=brands'>example</a>
          */
         RENREN,
@@ -6671,6 +10395,10 @@ public final class FontAwesome {
          * The brands schlix icon.See <a href='https://fontawesome.com/v6/icons/schlix?s=brands'>example</a>
          */
         SCHLIX,
+        /**
+         * The brands screenpal icon.See <a href='https://fontawesome.com/v6/icons/screenpal?s=brands'>example</a>
+         */
+        SCREENPAL,
         /**
          * The brands scribd icon.See <a href='https://fontawesome.com/v6/icons/scribd?s=brands'>example</a>
          */
@@ -6736,6 +10464,10 @@ public final class FontAwesome {
          */
         SLACK,
         /**
+         * The brands slack-hash icon.See <a href='https://fontawesome.com/v6/icons/slack-hash?s=brands'>example</a>
+         */
+        SLACK_HASH,
+        /**
          * The brands slideshare icon.See <a href='https://fontawesome.com/v6/icons/slideshare?s=brands'>example</a>
          */
         SLIDESHARE,
@@ -6743,6 +10475,10 @@ public final class FontAwesome {
          * The brands snapchat icon.See <a href='https://fontawesome.com/v6/icons/snapchat?s=brands'>example</a>
          */
         SNAPCHAT,
+        /**
+         * The brands snapchat-ghost icon.See <a href='https://fontawesome.com/v6/icons/snapchat-ghost?s=brands'>example</a>
+         */
+        SNAPCHAT_GHOST,
         /**
          * The brands snapchat-square icon.See <a href='https://fontawesome.com/v6/icons/snapchat-square?s=brands'>example</a>
          */
@@ -6756,6 +10492,10 @@ public final class FontAwesome {
          */
         SOURCETREE,
         /**
+         * The brands space-awesome icon.See <a href='https://fontawesome.com/v6/icons/space-awesome?s=brands'>example</a>
+         */
+        SPACE_AWESOME,
+        /**
          * The brands speakap icon.See <a href='https://fontawesome.com/v6/icons/speakap?s=brands'>example</a>
          */
         SPEAKAP,
@@ -6768,6 +10508,18 @@ public final class FontAwesome {
          */
         SPOTIFY,
         /**
+         * The brands square-behance icon.See <a href='https://fontawesome.com/v6/icons/square-behance?s=brands'>example</a>
+         */
+        SQUARE_BEHANCE,
+        /**
+         * The brands square-dribbble icon.See <a href='https://fontawesome.com/v6/icons/square-dribbble?s=brands'>example</a>
+         */
+        SQUARE_DRIBBBLE,
+        /**
+         * The brands square-facebook icon.See <a href='https://fontawesome.com/v6/icons/square-facebook?s=brands'>example</a>
+         */
+        SQUARE_FACEBOOK,
+        /**
          * The brands square-font-awesome icon.See <a href='https://fontawesome.com/v6/icons/square-font-awesome?s=brands'>example</a>
          */
         SQUARE_FONT_AWESOME,
@@ -6775,6 +10527,90 @@ public final class FontAwesome {
          * The brands square-font-awesome-stroke icon.See <a href='https://fontawesome.com/v6/icons/square-font-awesome-stroke?s=brands'>example</a>
          */
         SQUARE_FONT_AWESOME_STROKE,
+        /**
+         * The brands square-git icon.See <a href='https://fontawesome.com/v6/icons/square-git?s=brands'>example</a>
+         */
+        SQUARE_GIT,
+        /**
+         * The brands square-github icon.See <a href='https://fontawesome.com/v6/icons/square-github?s=brands'>example</a>
+         */
+        SQUARE_GITHUB,
+        /**
+         * The brands square-gitlab icon.See <a href='https://fontawesome.com/v6/icons/square-gitlab?s=brands'>example</a>
+         */
+        SQUARE_GITLAB,
+        /**
+         * The brands square-google-plus icon.See <a href='https://fontawesome.com/v6/icons/square-google-plus?s=brands'>example</a>
+         */
+        SQUARE_GOOGLE_PLUS,
+        /**
+         * The brands square-hacker-news icon.See <a href='https://fontawesome.com/v6/icons/square-hacker-news?s=brands'>example</a>
+         */
+        SQUARE_HACKER_NEWS,
+        /**
+         * The brands square-instagram icon.See <a href='https://fontawesome.com/v6/icons/square-instagram?s=brands'>example</a>
+         */
+        SQUARE_INSTAGRAM,
+        /**
+         * The brands square-js icon.See <a href='https://fontawesome.com/v6/icons/square-js?s=brands'>example</a>
+         */
+        SQUARE_JS,
+        /**
+         * The brands square-lastfm icon.See <a href='https://fontawesome.com/v6/icons/square-lastfm?s=brands'>example</a>
+         */
+        SQUARE_LASTFM,
+        /**
+         * The brands square-odnoklassniki icon.See <a href='https://fontawesome.com/v6/icons/square-odnoklassniki?s=brands'>example</a>
+         */
+        SQUARE_ODNOKLASSNIKI,
+        /**
+         * The brands square-pied-piper icon.See <a href='https://fontawesome.com/v6/icons/square-pied-piper?s=brands'>example</a>
+         */
+        SQUARE_PIED_PIPER,
+        /**
+         * The brands square-pinterest icon.See <a href='https://fontawesome.com/v6/icons/square-pinterest?s=brands'>example</a>
+         */
+        SQUARE_PINTEREST,
+        /**
+         * The brands square-reddit icon.See <a href='https://fontawesome.com/v6/icons/square-reddit?s=brands'>example</a>
+         */
+        SQUARE_REDDIT,
+        /**
+         * The brands square-snapchat icon.See <a href='https://fontawesome.com/v6/icons/square-snapchat?s=brands'>example</a>
+         */
+        SQUARE_SNAPCHAT,
+        /**
+         * The brands square-steam icon.See <a href='https://fontawesome.com/v6/icons/square-steam?s=brands'>example</a>
+         */
+        SQUARE_STEAM,
+        /**
+         * The brands square-tumblr icon.See <a href='https://fontawesome.com/v6/icons/square-tumblr?s=brands'>example</a>
+         */
+        SQUARE_TUMBLR,
+        /**
+         * The brands square-twitter icon.See <a href='https://fontawesome.com/v6/icons/square-twitter?s=brands'>example</a>
+         */
+        SQUARE_TWITTER,
+        /**
+         * The brands square-viadeo icon.See <a href='https://fontawesome.com/v6/icons/square-viadeo?s=brands'>example</a>
+         */
+        SQUARE_VIADEO,
+        /**
+         * The brands square-vimeo icon.See <a href='https://fontawesome.com/v6/icons/square-vimeo?s=brands'>example</a>
+         */
+        SQUARE_VIMEO,
+        /**
+         * The brands square-whatsapp icon.See <a href='https://fontawesome.com/v6/icons/square-whatsapp?s=brands'>example</a>
+         */
+        SQUARE_WHATSAPP,
+        /**
+         * The brands square-xing icon.See <a href='https://fontawesome.com/v6/icons/square-xing?s=brands'>example</a>
+         */
+        SQUARE_XING,
+        /**
+         * The brands square-youtube icon.See <a href='https://fontawesome.com/v6/icons/square-youtube?s=brands'>example</a>
+         */
+        SQUARE_YOUTUBE,
         /**
          * The brands squarespace icon.See <a href='https://fontawesome.com/v6/icons/squarespace?s=brands'>example</a>
          */
@@ -6863,6 +10699,10 @@ public final class FontAwesome {
          * The brands telegram icon.See <a href='https://fontawesome.com/v6/icons/telegram?s=brands'>example</a>
          */
         TELEGRAM,
+        /**
+         * The brands telegram-plane icon.See <a href='https://fontawesome.com/v6/icons/telegram-plane?s=brands'>example</a>
+         */
+        TELEGRAM_PLANE,
         /**
          * The brands tencent-weibo icon.See <a href='https://fontawesome.com/v6/icons/tencent-weibo?s=brands'>example</a>
          */
@@ -7104,6 +10944,10 @@ public final class FontAwesome {
          */
         WPRESSR,
         /**
+         * The brands wsh icon.See <a href='https://fontawesome.com/v6/icons/wsh?s=brands'>example</a>
+         */
+        WSH,
+        /**
          * The brands xbox icon.See <a href='https://fontawesome.com/v6/icons/xbox?s=brands'>example</a>
          */
         XBOX,
@@ -7200,7 +11044,7 @@ public final class FontAwesome {
          * Server side component for {@code Brands}
          */
         @JsModule("./font-awesome-iron-iconset/fab.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "4.1.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "4.2.0")
         @SuppressWarnings("serial")
         public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
