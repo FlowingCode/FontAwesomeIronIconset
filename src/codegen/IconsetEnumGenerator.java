@@ -48,8 +48,10 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import javax.xml.transform.Result;
+import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
+import javax.xml.transform.URIResolver;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 import org.apache.commons.io.FileUtils;
@@ -209,7 +211,17 @@ public class IconsetEnumGenerator {
 			String licenseComment = license.getContent().replaceAll("\\*", "").replaceFirst("^-", "");
 			Transformer t = new TransformerFactoryImpl().newTransformer(new StreamSource(xslt));
 			t.setParameter("family", family);
+			t.setParameter("familyLong", FilenameUtils.getBaseName(sprites.getName()));
 			t.setParameter("license", licenseComment);
+			t.setURIResolver(new URIResolver() {
+			  @Override
+			  public Source resolve(String href, String base) throws TransformerException {
+				if (href.equals("aliases.xml")) {
+					return new StreamSource(new File(sprites.getParent(), "aliases.xml"));
+				}
+				return null;
+			  }
+			});
 			Result outputTarget = new StreamResult(out);
 			t.transform(new StreamSource(in), outputTarget);
 		} catch (TransformerException e) {
