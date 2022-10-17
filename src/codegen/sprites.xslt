@@ -19,11 +19,13 @@
   -->
 <xsl:stylesheet version="1.0" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions"
 	xmlns:svg="http://www.w3.org/2000/svg">
   
-  <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
+  <xsl:output method="xml" indent="yes" encoding="UTF-8" cdata-section-elements="object"/>
   
   <xsl:param name = "family"/>
+  <xsl:param name = "familyLong"/>
   <xsl:param name = "license"/>
   
   <xsl:template match="/svg:svg">
@@ -34,6 +36,9 @@
   		<xsl:attribute name="name">
   			<xsl:value-of select="$family"/>
   		</xsl:attribute>
+  		
+  		<xsl:call-template name="aliases"/>
+  		
 	  	<svg><defs>
 	
 		<xsl:apply-templates select="svg:symbol"/>		
@@ -57,4 +62,14 @@
     </xsl:copy>
   </xsl:template>
   
+  <xsl:template name="aliases">
+  	<xsl:element name="object">
+  		<xsl:attribute name="type">application/json</xsl:attribute> 
+  		<xsl:attribute name="slot">alias</xsl:attribute>    
+		<xsl:variable name="document" select="document('aliases.xml')"/>
+		<xsl:variable name="aliases"  select="$document//style[@name=$familyLong]/fn:map"/> 
+		<xsl:copy-of select="fn:xml-to-json($aliases, map { 'indent' : true() })"/><xsl:text
+       >&#13;&#10;   </xsl:text>
+    </xsl:element>
+  </xsl:template>
 </xsl:stylesheet>
