@@ -40,7 +40,7 @@ public abstract class FontAwesomeReflect {
 		
 	/**Return a list of all the {@code FontAwesome} icon types defined in the addon.*/
 	public static List<Class<?>> getIconTypes() {
-		return Arrays.asList(Brands.class, Regular.class, Solid.class);
+		return Arrays.asList(Solid.class, Regular.class, Brands.class);
 	}
 	
 	/**Return the iconset name of the given {@code FontAwesome} icon type.*/

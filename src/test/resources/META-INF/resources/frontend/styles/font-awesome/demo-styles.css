@@ -37,36 +37,12 @@ vaadin-dialog-overlay {
 
 .main-icon-view {
 	margin: 8px;
+	align-self: stretch;
 }
-
-.main-icon-view .flex {
-	flex-wrap: wrap;
-}
-
-.main-icon-view vaadin-button  {
-	margin: 4px;
-	margin-bottom: 8px;
-    background: white;
-  		color: black;
-  		cursor: pointer;
-  		min-width: 240px;
-  		flex-grow: 0;
-}
-
-.main-icon-view vaadin-button vaadin-icon {
-    position: absolute;
-    top: 2px;
-    left: 2px;		
-}
-
-.main-icon-view vaadin-button span {
-    position: absolute;
-  		top: 8px;
-  		left: 34px;
-  	}
 
 .main-icon-view .no-results {
 	margin-left: 16px;
+	margin-top: 2ex;
 }
 
 .single-icon-view vaadin-icon {

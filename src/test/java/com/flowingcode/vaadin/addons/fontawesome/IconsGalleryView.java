@@ -20,85 +20,83 @@
 package com.flowingcode.vaadin.addons.fontawesome;
 
 import com.vaadin.flow.component.Component;
-import com.vaadin.flow.component.UI;
+import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.dependency.JsModule;
+import com.vaadin.flow.component.dependency.Uses;
 import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.html.Div;
-import com.vaadin.flow.component.html.H4;
 import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.component.orderedlayout.FlexLayout;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.value.ValueChangeMode;
+import com.vaadin.flow.function.SerializableConsumer;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.WeakHashMap;
-import java.util.stream.Stream;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.tuple.Pair;
 
 @PageTitle("Icons Gallery")
 @SuppressWarnings("serial")
 @Route(value = "font-awesome-iron-iconset/icons", layout = FontawesomeDemoView.class)
+@JsModule("./fc-font-awesome-gallery.ts")
+@Uses(FontAwesome.Solid.Icon.class)
+@Uses(FontAwesome.Regular.Icon.class)
+@Uses(FontAwesome.Brands.Icon.class)
 public class IconsGalleryView extends Div {
 
-  // this demo uses reflection, for a simple example that does not use reflection
-  // see SimpleDemoView
-  private static final Map<UI, String> searchString = new WeakHashMap<>();
+  @Tag("fc-font-awesome-gallery-demo")
+  public static class IconsGallery extends Component {
 
-  private final List<Map<String, Component>> icons = new ArrayList<>();
-  private final List<Pair<H4, FlexLayout>> layouts = new ArrayList<>();
-  private final Div noResults = new Div(new Span("Your search did not match any icons."));
+    private static final String EVENT_DETAIL = "event.detail";
+
+    public IconsGallery(Class<?> type, SerializableConsumer<String> iconClickListener) {
+      String caption = "FontAwesome " + type.getSimpleName();
+      String family = FontAwesomeReflect.getIconset(type);
+      getElement().setProperty("caption", caption);
+      getElement().setProperty("family", family);
+      getElement().addEventListener("iconClick", ev -> {
+        iconClickListener.accept(ev.getEventData().getString(EVENT_DETAIL));
+      }).addEventData(EVENT_DETAIL);
+    }
+
+    public void filter(String filterString) {
+      filterString = StringUtils.lowerCase(filterString);
+      filterString = StringUtils.trimToNull(filterString);
+      getElement().setProperty("filterString", filterString);
+    }
+
+  }
+
 
   {
     TextField filter = new TextField();
     filter.setValueChangeMode(ValueChangeMode.EAGER);
-    filter.setWidth("100%");
+    filter.setWidth("calc(100vw - 56px)");
     filter.addValueChangeListener(ev -> applyFilter(filter.getValue()));
     filter.setPlaceholder("Search icons");
+
     add(filter);
 
     setSizeUndefined();
     addClassName("main-icon-view");
 
-    getIconTypes().forEach(type -> {
-      FlexLayout layout = new FlexLayout();
-      layout.addClassName("flex");
-      H4 h4 = new H4("FontAwesome " + type.getSimpleName());
-      add(h4, layout);
-      layouts.add(Pair.of(h4, layout));
-
-      Map<String, Component> icons = new HashMap<>();
-      this.icons.add(icons);
-      for (Object e : type.getEnumConstants()) {
-        String name = ((Enum<?>) e).name().toLowerCase().replace('_', '-').replaceFirst("^-", "");
-        Button btn = new Button(name, create(type, e));
-        btn.setClassName("text-align-left");
-        btn.addClickListener(ev -> showDetails(e));
-        layout.add(btn);
-        layout.setFlexGrow(0, btn);
-        icons.put(name, btn);
-      }
+    FontAwesomeReflect.getIconTypes().forEach(type -> {
+      add(new IconsGallery(type, this::showDetails));
     });
 
-    add(noResults);
+    Div noResults = new Div(new Span("Your search did not match any icons."));
     noResults.addClassName("no-results");
-    noResults.setVisible(false);
-
-    addAttachListener(ev -> getUI().map(searchString::get).ifPresent(filter::setValue));
+    noResults.getElement().setAttribute("hidden", "true");
+    add(noResults);
   }
 
-  private void showDetails(Object icon) {
+  private void showDetails(String icon) {
     DemoViewSingle view = new DemoViewSingle();
     Button closeButton = new Button(FontAwesome.Solid.XMARK.create());
     closeButton.addClassName("close-button");
     HorizontalLayout top = new HorizontalLayout(closeButton);
 
-    view.setParameter(null, FontAwesomeReflect.getIconName(icon).replace(':', '/'));
+    view.setParameter(null, icon.replace(':', '/'));
     Div div = new Div(top, view);
     div.addClassName("details-dialog");
     Dialog dlg = new Dialog(div);
@@ -107,24 +105,9 @@ public class IconsGalleryView extends Div {
     closeButton.addClickListener(ev -> dlg.close());
   }
 
-  private Component create(Class<?> type, Object e) {
-    try {
-      return (Component) type.getMethod("create").invoke(e);
-    } catch (Exception ex) {
-      throw new RuntimeException(ex);
-    }
+  private void applyFilter(String filterString) {
+    getChildren().filter(IconsGallery.class::isInstance).map(IconsGallery.class::cast)
+        .forEach(gallery -> gallery.filter(filterString));
   }
 
-  private static Stream<Class<?>> getIconTypes() {
-    return Stream.of(FontAwesome.Regular.class, FontAwesome.Solid.class, FontAwesome.Brands.class);
-  }
-
-  private void applyFilter(String value) {
-    searchString.put(getUI().get(), value);
-    icons.forEach(map -> map.forEach((name, icon) -> icon.setVisible(
-        StringUtils.isBlank(value) || name.toLowerCase().contains(value.toLowerCase()))));
-    layouts.forEach(
-        p -> p.getLeft().setVisible(p.getRight().getChildren().anyMatch(Component::isVisible)));
-    noResults.setVisible(layouts.stream().noneMatch(p -> p.getLeft().isVisible()));
-  }
 }
