@@ -25,6 +25,7 @@ import com.flowingcode.vaadin.addons.demo.TabbedDemo;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.dependency.Uses;
+import com.vaadin.flow.router.ParentLayout;
 import com.vaadin.flow.router.Route;
 
 @SuppressWarnings("serial")
@@ -33,7 +34,8 @@ import com.vaadin.flow.router.Route;
 @Uses(FontAwesome.Brands.Icon.class)
 @StyleSheet("context://frontend/styles/font-awesome/demo-styles.css")
 @CssImport(value = "./styles/vaadin-button.css", themeFor = "vaadin-button")
-@Route(value = "font-awesome-iron-iconset", layout = DemoLayout.class)
+@ParentLayout(DemoLayout.class)
+@Route("font-awesome-iron-iconset")
 @GithubLink("https://github.com/FlowingCode/FontAwesomeIronIconset")
 public class FontawesomeDemoView extends TabbedDemo {
 
