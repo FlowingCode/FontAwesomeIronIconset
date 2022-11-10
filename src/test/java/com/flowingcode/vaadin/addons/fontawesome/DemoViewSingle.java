@@ -33,11 +33,13 @@ import com.vaadin.flow.router.BeforeEvent;
 import com.vaadin.flow.router.HasUrlParameter;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.WildcardParameter;
+import org.junit.Ignore;
 
 /**
  * @author Javier Godoy / Flowing Code
  */
 
+@Ignore
 @Route(value = "font-awesome-iron-iconset/view", layout = DemoLayout.class)
 @SuppressWarnings("serial")
 public class DemoViewSingle extends Div implements HasUrlParameter<String> {
