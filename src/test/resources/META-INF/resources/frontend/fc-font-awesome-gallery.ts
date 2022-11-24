@@ -87,9 +87,8 @@ class FontAwesomeGalleryDemo extends LitElement {
   }
   
   __testFilterString(icon: String) {
-	if (!this.filterString) return true;
-	if (this.filterString.includes('-')) return icon.includes(this.filterString);
-	return  icon.split('-').some(word=>word.startsWith(this.filterString));
+	const matches = (s:string) => s.includes('-') ? icon.includes(s) : icon.split('-').some(word=>word.startsWith(s));
+	return !this.filterString || this.filterString.split(' ').filter(s=>s).every(matches);
   }
   
   __handleClick(detail: String) {
