@@ -64,7 +64,7 @@ class FontAwesomeGalleryDemo extends LitElement {
   updated(changedProps : any) {
     if (changedProps.has('family')) {
         const iconset = document.querySelector("fc-iconset[name='"+this.family+"']") as any;
-        let icons = [];
+        let icons = [] as string[];
         if (iconset) {
             (iconset as any).applyIcon(null);
             icons = Object.keys(iconset._icons).concat(Object.keys(iconset._alias)).sort();
