@@ -69,7 +69,11 @@
         <repository>
             <id>Vaadin Directory</id>
             <url>https://maven.vaadin.com/vaadin-addons</url>
-        </repository>		
+        </repository>
+        <repository>
+            <id>Vaadin prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases</url>
+        </repository>
 		<repository>
 			<id>FlowingCode Releases</id>
 			<url>https://maven.flowingcode.com/releases</url>
@@ -85,6 +89,22 @@
 			</releases>
 		</repository>
     </repositories>
+
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <!-- Repository needed for prerelease versions of Vaadin -->
+        <pluginRepository>
+            <id>Vaadin prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencies>
         <dependency>
@@ -474,6 +494,17 @@
 					</plugin>
 				</plugins>
 			</build>
+		</profile>
+
+		<profile>
+			<id>v24</id>
+			<properties>
+				<vaadin.version>24.0.0.alpha5</vaadin.version>
+				<maven.compiler.source>17</maven.compiler.source>
+				<maven.compiler.target>17</maven.compiler.target>
+				<jetty.version>11.0.12</jetty.version>
+				<flowingcode.commons.demo.version>3.5.1</flowingcode.commons.demo.version>
+			</properties>
 		</profile>
 		
     </profiles>
