@@ -15,7 +15,6 @@ drivers
 tsconfig.json
 .idea
 types.d.ts
-/frontend/generated/index.ts
-/frontend/generated/vaadin.ts
+/frontend/generated
 /frontend/index.html
 vite.generated.ts
