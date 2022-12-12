@@ -7,16 +7,16 @@ import '@vaadin/text-field';
 class FontAwesomeGalleryDemo extends LitElement {
 
   @property()
-  family:  string;
+  family:  string = '';
   
   @property()
-  caption: string;
+  caption: string = '';
   
   @property()
-  filterString: string;
+  filterString: string = '';
 
   @property()
-  _icons: string[];
+  _icons: string[] = [];
 
   static styles = css`
     :host([empty]) {
