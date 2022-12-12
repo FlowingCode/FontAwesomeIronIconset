@@ -72,11 +72,11 @@ class FontAwesomeGalleryDemo extends LitElement {
         this._icons = icons;
     }
     
-    let hasVisibleIcons = !!this!.shadowRoot.querySelector(".icon:not([hidden])");
+    let hasVisibleIcons = !!this.shadowRoot!.querySelector(".icon:not([hidden])");
     this.toggleAttribute('empty', !hasVisibleIcons);
     
     let globalHasVisibleIcons = !!document.querySelector("fc-font-awesome-gallery-demo:not([empty])");
-    document.querySelector('.no-results').toggleAttribute('hidden', globalHasVisibleIcons);
+    document.querySelector('.no-results')?.toggleAttribute('hidden', globalHasVisibleIcons);
   }
   
   createButton(icon: String) {
