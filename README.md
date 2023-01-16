@@ -1,6 +1,6 @@
 [![Build Status](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-23-addon/badge/icon)](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-23-addon)
 
-# Iron iconset based on FontAwesome
+# Iconset based on FontAwesome
 
 Integration of FontAwesome and vaadin-icon for Vaadin 10+
 
