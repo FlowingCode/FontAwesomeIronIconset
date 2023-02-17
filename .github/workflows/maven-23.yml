@@ -10,21 +10,21 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "4.x" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "4.x" ]
 
 jobs:
        
-  build-vaadin24:
+  build-vaadin23:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
+        java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Build (Vaadin 24)
+    - name: Build (Vaadin 23)
       run: mvn -B package --file pom.xml
