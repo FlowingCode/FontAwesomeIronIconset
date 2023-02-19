@@ -3,6 +3,7 @@ import { property } from 'lit/decorators.js';
 
 import '@vaadin/button';
 import '@vaadin/text-field';
+import { Iconset } from '@vaadin/icon/vaadin-iconset.js'
 
 class FontAwesomeGalleryDemo extends LitElement {
 
@@ -63,11 +64,10 @@ class FontAwesomeGalleryDemo extends LitElement {
   
   updated(changedProps : any) {
     if (changedProps.has('family')) {
-        const iconset = document.querySelector("fc-iconset[name='"+this.family+"']") as any;
+        const iconset = Iconset.getIconset(this.family);
         let icons = [] as string[];
         if (iconset) {
-            (iconset as any).applyIcon(null);
-            icons = Object.keys(iconset._icons).concat(Object.keys(iconset._alias)).sort();
+            icons = Object.keys(iconset._icons).sort();
         }
         this._icons = icons;
     }
