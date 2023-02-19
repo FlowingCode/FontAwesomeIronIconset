@@ -28,25 +28,37 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/*">
 	<xsl:text disable-output-escaping="yes"
 >
-import '@flowingcode/font-awesome-iron-iconset/fc-iconset.js';
 import '@vaadin/icon/vaadin-icon.js';
-
+import { Iconset } from '@vaadin/icon/vaadin-iconset.js';
 import { css, registerStyles } from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
 </xsl:text>
 
 <xsl:call-template name="registerStyles"/>
 
 <xsl:text>
-const $_documentContainer = document.createElement('template');
+const aliases = </xsl:text>
+<xsl:copy-of select="//fc-iconset/object[@slot='alias']/text()"/>
+<xsl:text>;
 
-$_documentContainer.innerHTML = `
+const template = document.createElement('template');
+
+template.innerHTML = `
 </xsl:text>
-    <xsl:copy-of select="."/>
-    
-    <xsl:text disable-output-escaping="yes"
->`;
+    <xsl:copy-of select="//fc-iconset/svg"/>
+<xsl:text>`;
 
-document.head.appendChild($_documentContainer.content);
+Iconset.register('</xsl:text
+><xsl:value-of select="$family"/><xsl:text
+>', 1000, template);
+
+const iconset = Iconset.getIconset('</xsl:text
+><xsl:value-of select="$family"/><xsl:text
+>');
+
+for (const name in aliases) {
+    iconset._icons[name] = iconset._icons[aliases[name]];
+}
+
 </xsl:text>
 </xsl:template>
 
