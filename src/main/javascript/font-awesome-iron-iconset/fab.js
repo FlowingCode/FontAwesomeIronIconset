@@ -7,7 +7,7 @@ Copyright 2022 Fonticons, Inc.
 
 /*@license
   FontAwesome Iron Iconset
-  Copyright (C) 2019 - 2022 Flowing Code
+  Copyright (C) 2019 - 2023 Flowing Code
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
@@ -2875,7 +2875,7 @@ Iconset.register('fab', 1000, template);
 
 const iconset = Iconset.getIconset('fab');
 
-for (const name in aliases)  {
+for (const name in aliases) {
     iconset._icons[name] = iconset._icons[aliases[name]];
 }
 
