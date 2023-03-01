@@ -495,17 +495,6 @@
 				</plugins>
 			</build>
 		</profile>
-
-		<profile>
-			<id>v24</id>
-			<properties>
-				<vaadin.version>24.0.0.beta1</vaadin.version>
-				<maven.compiler.source>17</maven.compiler.source>
-				<maven.compiler.target>17</maven.compiler.target>
-				<jetty.version>11.0.12</jetty.version>
-				<flowingcode.commons.demo.version>3.5.1</flowingcode.commons.demo.version>
-			</properties>
-		</profile>
 		
     </profiles>
 </project>
