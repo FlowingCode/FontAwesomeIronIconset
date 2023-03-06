@@ -1,6 +1,6 @@
 {
   "name": "@flowingcode/font-awesome-iron-iconset",
-  "version": "5.0.0-rc1",
+  "version": "5.0.0-rc2",
   "description": "Vaadin iconset based on FontAwesome",
   "main": "index.js",
   "repository": {
