@@ -64,6 +64,12 @@
 		</dependency>
 		
 		<dependency>
+			<groupId>org.ow2.asm</groupId>
+			<artifactId>asm</artifactId>
+			<version>9.4</version>
+		</dependency>
+
+		<dependency>
 			<groupId>net.sf.saxon</groupId>
 			<artifactId>Saxon-HE</artifactId>
 			<version>9.8.0-14</version>
@@ -123,6 +129,16 @@
 							</goals>
 							<configuration>
 								<mainClass>IconsetEnumGenerator</mainClass>
+							</configuration>
+						</execution>
+						<execution>
+							<id>compile</id>
+							<phase>prepare-package</phase>
+							<goals>
+								<goal>java</goal>
+							</goals>
+							<configuration>
+								<mainClass>IconsetEnumCompiler</mainClass>
 							</configuration>
 						</execution>
 					</executions>
