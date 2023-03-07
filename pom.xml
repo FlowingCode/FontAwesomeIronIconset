@@ -153,6 +153,7 @@
 			<version>3.5.1</version>
 			<scope>test</scope>
 		</dependency>
+
     </dependencies>
 
     <build>
@@ -413,6 +414,19 @@
 				  	</plugin>
 			
 					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-dependency-plugin</artifactId>
+						<executions>
+							<execution>
+								<phase>initialize</phase>
+								<goals>
+									<goal>properties</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					
+					<plugin>
     					<groupId>org.codehaus.mojo</groupId>
     					<artifactId>exec-maven-plugin</artifactId>
     					<configuration>
@@ -427,12 +441,13 @@
 									<goal>exec</goal>
 								</goals>
 								<configuration>
-								  <arguments>
+								  <arguments combine.children="append">
 									<argument>clean</argument>
 									<argument>compile</argument>
 									<argument>exec:java@download</argument>
 									<argument>exec:java@build-sprites</argument>
 									<argument>exec:java@generate</argument>
+									<argument>exec:java@compile</argument>
 									
 									<!-- The tag of FortAwesome/Font-Awesome that will be checked out -->
 									<argument>-Dcodegen.tag=${fontawesome.version}</argument>
@@ -457,6 +472,9 @@
 									<argument>-Dcodegen.embedded=${codegen.embedded}</argument>
 									<argument>-Dcodegen.npmPackage=${npm.package}</argument>
 									<argument>-Dcodegen.npmVersion=${npm.version}</argument>
+
+									<argument>-Dcodegen.compiler.source=${maven.compiler.source}</argument>
+									<argument>-Dcodegen.compiler.target=${maven.compiler.target}</argument>
 								  </arguments>
 								</configuration>
 						    </execution>							
@@ -466,6 +484,45 @@
     			</plugins>    		
     		</build>
     	</profile>
+
+		<profile>
+			<id>bigenum</id>
+			<properties>
+				<maven.main.skip>true</maven.main.skip>
+			</properties>
+			<build>
+				<resources>
+					<resource>
+						<directory>target/codegen/recompiled</directory>
+					</resource>
+				</resources>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<configuration>
+							<executable>mvn</executable>
+							<workingDirectory>${project.basedir}/src/codegen</workingDirectory>
+						</configuration>
+						<executions>
+							<execution>
+								<id>iron-icons</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+								<configuration>
+								  <arguments combine.children="append">
+									<argument>-Dcodegen.classpath=${com.vaadin:flow-server:jar};${com.vaadin:vaadin-flow-components-base:jar};${com.vaadin:vaadin-icons-flow:jar}</argument>
+									<argument>-Dcodegen.postcompile=true</argument>
+								  </arguments>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
     
     	<profile>
 			<id>demo-jar</id>
