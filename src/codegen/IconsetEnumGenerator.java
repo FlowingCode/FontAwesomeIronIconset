@@ -20,7 +20,7 @@
 
 
 import static com.github.javaparser.ast.Modifier.Keyword.*;
-import static com.github.javaparser.JavaParser.*;
+import static com.github.javaparser.StaticJavaParser.parseStatement;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -59,6 +59,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import com.github.javaparser.JavaParser;
+import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
@@ -419,7 +420,7 @@ public class IconsetEnumGenerator {
 		icon.addSingleMemberAnnotation("SuppressWarnings", new StringLiteralExpr("serial"));
 		decl.addMember(icon);
 
-		ConstructorDeclaration ctor = icon.addConstructor(PACKAGE_PRIVATE);
+		ConstructorDeclaration ctor = icon.addConstructor();
 		ctor.addParameter("String", "icon");
 		ctor.getBody().addStatement(new MethodCallExpr("super", new NameExpr("ICONSET"), new NameExpr("icon")));
 
@@ -437,7 +438,7 @@ public class IconsetEnumGenerator {
 	}
 
 	private static BlockComment getLicenseInformation() throws IOException {
-		CompilationUnit cu = JavaParser.parse(new File("TemplateLicense.java"));
+		CompilationUnit cu = StaticJavaParser.parse(new File("TemplateLicense.java"));
 		return (BlockComment)cu.getOrphanComments().get(0);
 	}
 }
