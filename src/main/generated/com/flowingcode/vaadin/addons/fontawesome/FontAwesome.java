@@ -1122,7 +1122,7 @@ public final class FontAwesome {
         @SuppressWarnings("serial")
         public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
-             Icon(String icon) {
+            Icon(String icon) {
                 super(ICONSET, icon);
             }
         }
@@ -8991,7 +8991,7 @@ public final class FontAwesome {
         @SuppressWarnings("serial")
         public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
-             Icon(String icon) {
+            Icon(String icon) {
                 super(ICONSET, icon);
             }
         }
@@ -11048,7 +11048,7 @@ public final class FontAwesome {
         @SuppressWarnings("serial")
         public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
-             Icon(String icon) {
+            Icon(String icon) {
                 super(ICONSET, icon);
             }
         }
