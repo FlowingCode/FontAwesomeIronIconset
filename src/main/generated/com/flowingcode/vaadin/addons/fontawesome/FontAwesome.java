@@ -734,7 +734,7 @@ public final class FontAwesome {
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
-             Icon(String icon) {
+            Icon(String icon) {
                 super(ICONSET, icon);
             }
         }
@@ -5307,7 +5307,7 @@ public final class FontAwesome {
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
-             Icon(String icon) {
+            Icon(String icon) {
                 super(ICONSET, icon);
             }
         }
@@ -7204,7 +7204,7 @@ public final class FontAwesome {
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
-             Icon(String icon) {
+            Icon(String icon) {
                 super(ICONSET, icon);
             }
         }
