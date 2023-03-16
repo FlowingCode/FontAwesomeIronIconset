@@ -12,7 +12,7 @@
         <vaadin.version>14.9.7</vaadin.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <jetty.version>9.4.15.v20190215</jetty.version>
+        <jetty.version>9.4.36.v20210114</jetty.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
