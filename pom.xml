@@ -5,8 +5,8 @@
     <groupId>com.flowingcode.addons</groupId>
     <artifactId>font-awesome-iron-iconset</artifactId>
     <version>5.1.0-SNAPSHOT</version>
-    <name>FontAwesome Iconset</name>
-    <description>Iconset based on FontAwesome</description>
+    <name>FontAwesome Iron Iconset</name>
+    <description>Iron iconset based on FontAwesome</description>
     
     <properties>
         <vaadin.version>24.0.0.beta2</vaadin.version>
