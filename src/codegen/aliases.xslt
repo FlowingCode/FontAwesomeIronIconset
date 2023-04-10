@@ -32,15 +32,15 @@
 		
 		<xsl:variable name="result"> 
 			<xsl:for-each select="fn:distinct-values($filtered//fn:array[@key='styles']/*)">
-				<xsl:variable name="brand">
+				<xsl:variable name="family">
 					<xsl:value-of select="."/>
 				</xsl:variable>
 				<xsl:element name="style">
 					<xsl:attribute name="name">
-						<xsl:value-of select="$brand"/>
+						<xsl:value-of select="$family"/>
 					</xsl:attribute>
 					<xsl:element name="map" namespace="http://www.w3.org/2005/xpath-functions">
-						<xsl:for-each select="$filtered/fn:map/fn:map[fn:array[@key='styles']/fn:string/text()=$brand]">
+						<xsl:for-each select="$filtered/fn:map/fn:map[fn:array[@key='styles']/fn:string/text()=$family]">
 							<xsl:variable name="key">
 								<xsl:value-of select="@key"/>
 							</xsl:variable>
