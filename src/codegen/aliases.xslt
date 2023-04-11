@@ -53,6 +53,9 @@
 								</xsl:element>					
 							</xsl:for-each>
 						</xsl:for-each>
+						<xsl:if test="$family='brands'">
+							<xsl:call-template name="vaadin-icon"/>
+						</xsl:if>
 					</xsl:element>
 				</xsl:element>
 			</xsl:for-each>
@@ -63,6 +66,15 @@
 		</xsl:element>
 	</xsl:template>
 	 
+	<xsl:template name="vaadin-icon">
+		<xsl:element name="string" namespace="http://www.w3.org/2005/xpath-functions">
+			<xsl:attribute name="key">
+				<xsl:text>vaadin</xsl:text>
+			</xsl:attribute>
+			<xsl:text>vaadin-icon</xsl:text>
+		</xsl:element>
+	</xsl:template>
+	
 	<xsl:template match="/fn:map/fn:map" priority="0"/>
 	<xsl:template match="/fn:map/fn:map[fn:map[@key='aliases']/*]">
 		<xsl:copy>

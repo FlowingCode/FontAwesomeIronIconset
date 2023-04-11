@@ -10816,6 +10816,10 @@ public final class FontAwesome {
          */
         VAADIN,
         /**
+         * The brands vaadin-icon icon.See <a href='https://fontawesome.com/v6/icons/vaadin-icon?s=brands'>example</a>
+         */
+        VAADIN_ICON,
+        /**
          * The brands viacoin icon.See <a href='https://fontawesome.com/v6/icons/viacoin?s=brands'>example</a>
          */
         VIACOIN,
