@@ -703,7 +703,7 @@ public final class FontAwesome {
             return ICONSET+':'+getIconPart();
         }
 
-        private String getIconPart() {
+        protected String getIconPart() {
             return this.name().toLowerCase(Locale.ENGLISH).replace('_', '-');
         }
 
@@ -5276,7 +5276,7 @@ public final class FontAwesome {
             return ICONSET+':'+getIconPart();
         }
 
-        private String getIconPart() {
+        protected String getIconPart() {
             return this.name().toLowerCase(Locale.ENGLISH).replace('_', '-').replaceFirst("^-", "");
         }
 
@@ -6976,6 +6976,17 @@ public final class FontAwesome {
          */
         VAADIN_ICON,
         /**
+         * The brands vaadin icon.See <a href='https://fontawesome.com/v6/icons/vaadin?s=brands'>example</a>
+         */
+        VAADIN {
+
+            @Override()
+            protected String getIconPart() {
+                return "vaadin-icon";
+            }
+        }
+        ,
+        /**
          * The brands viacoin icon.See <a href='https://fontawesome.com/v6/icons/viacoin?s=brands'>example</a>
          */
         VIACOIN,
@@ -7173,7 +7184,7 @@ public final class FontAwesome {
             return ICONSET+':'+getIconPart();
         }
 
-        private String getIconPart() {
+        protected String getIconPart() {
             return this.name().toLowerCase(Locale.ENGLISH).replace('_', '-').replaceFirst("^-", "");
         }
 

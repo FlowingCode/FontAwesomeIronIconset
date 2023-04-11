@@ -65,6 +65,7 @@ import com.github.javaparser.ast.expr.ArrayInitializerExpr;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.expr.Name;
 import com.github.javaparser.ast.expr.NameExpr;
+import com.github.javaparser.ast.expr.SimpleName;
 import com.github.javaparser.ast.expr.SingleMemberAnnotationExpr;
 import com.github.javaparser.ast.expr.StringLiteralExpr;
 import com.github.javaparser.ast.stmt.ReturnStmt;
@@ -300,8 +301,21 @@ public class IconsetEnumGenerator {
 			String version = "v"+fontAwesomeVersion.replaceFirst("^\\D*(\\d+).*", "$1");
 			EnumConstantDeclaration constant = decl.addEnumConstant(name);
 			constant.setJavadocComment(new JavadocComment(String.format("The %1$s %2$s icon."+seeExample, enumName.toLowerCase(Locale.ENGLISH), icon, version)));
+			
+			if (iconset.equals("fab") && icon.equals("vaadin-icon")) {
+				constant = decl.addEnumConstant("VAADIN");
+				constant.setJavadocComment(new JavadocComment(String.format("The %1$s %2$s icon."+seeExample, enumName.toLowerCase(Locale.ENGLISH), "vaadin", version)));
+			
+				MethodDeclaration getIconPart = new MethodDeclaration();
+				getIconPart.setName(new SimpleName("getIconPart"));
+				getIconPart.addModifier(PROTECTED);
+				getIconPart.addAnnotation("Override");
+				getIconPart.setType("String");
+				getIconPart.getBody().get().addStatement(new ReturnStmt(new StringLiteralExpr("vaadin-icon")));
+				constant.setClassBody(new NodeList<>(getIconPart));
+			}
 		}
-
+		
 		String url = "./"+RESOURCE_PATH+"/"+iconset+".js";
 
 		decl.addFieldWithInitializer("String", "ICONSET", new StringLiteralExpr(iconset), PUBLIC, STATIC, FINAL)
@@ -313,7 +327,7 @@ public class IconsetEnumGenerator {
 		getIconName.getBody().get().addStatement(new ReturnStmt("ICONSET+':'+getIconPart()"));
 
 		String removeUnderscorePrefix = hasUnderscorePrefix?".replaceFirst(\"^-\", \"\")":"";
-		MethodDeclaration getIconPart = decl.addMethod("getIconPart", PRIVATE);
+		MethodDeclaration getIconPart = decl.addMethod("getIconPart", PROTECTED);
 		getIconPart.setType("String");
 		getIconPart.getBody().get().addStatement(new ReturnStmt("this.name().toLowerCase(Locale.ENGLISH).replace('_', '-')"+removeUnderscorePrefix));
 
