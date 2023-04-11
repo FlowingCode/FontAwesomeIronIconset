@@ -43,12 +43,18 @@
   
   <xsl:template match="/svg:svg/svg:symbol">
   	<xsl:element name="g">
-  		<xsl:copy-of select="@id"/>
+  		<xsl:apply-templates select="@id"/>
   		<xsl:element name="svg">
   			<xsl:copy-of select="@viewBox"/>
 	  		<xsl:apply-templates/>
   		</xsl:element>
   	</xsl:element>
+  </xsl:template>
+  
+  <xsl:template match="//svg:symbol[@id='vaadin']/@id">
+  	<xsl:attribute name="id">
+  	  <xsl:text>vaadin-icon</xsl:text>
+  	</xsl:attribute>
   </xsl:template>
   
   <xsl:template match="@*|node()">
