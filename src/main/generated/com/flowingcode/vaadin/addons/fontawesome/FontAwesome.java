@@ -730,7 +730,7 @@ public final class FontAwesome {
          * Server side component for {@code Regular}
          */
         @JsModule("./font-awesome-iron-iconset/far.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "3.0.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "3.0.1")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
@@ -5303,7 +5303,7 @@ public final class FontAwesome {
          * Server side component for {@code Solid}
          */
         @JsModule("./font-awesome-iron-iconset/fas.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "3.0.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "3.0.1")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
@@ -7211,7 +7211,7 @@ public final class FontAwesome {
          * Server side component for {@code Brands}
          */
         @JsModule("./font-awesome-iron-iconset/fab.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "3.0.0")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "3.0.1")
         @SuppressWarnings("serial")
         public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
