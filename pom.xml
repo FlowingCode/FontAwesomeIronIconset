@@ -16,6 +16,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
+        
+        <codegen.classname>com.flowingcode.vaadin.addons.fontawesome.FontAwesome</codegen.classname>
         <!-- 
         <fontawesome.version>Pro 6.1.2</fontawesome.version>
         <project.build.generatedResources>${project.basedir}/src/main/resources/META-INF/resources/frontend</project.build.generatedResources>
@@ -445,6 +447,9 @@
 									<argument>-Dcodegen.embedded=${codegen.embedded}</argument>
 									<argument>-Dcodegen.npmPackage=${npm.package}</argument>
 									<argument>-Dcodegen.npmVersion=${npm.version}</argument>
+
+									<!-- fully qualified name of the generated class -->
+									<argument>-Dcodegen.classname=${codegen.classname}</argument>
 
 									<argument>-Dcodegen.compiler.source=${maven.compiler.source}</argument>
 									<argument>-Dcodegen.compiler.target=${maven.compiler.target}</argument>
