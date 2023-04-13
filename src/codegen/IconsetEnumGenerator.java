@@ -83,7 +83,6 @@ import net.sf.saxon.TransformerFactoryImpl;
  */
 public class IconsetEnumGenerator {
 
-	private static final String PACKAGE_NAME = "com.flowingcode.vaadin.addons.fontawesome";
 
 	private static final String RESOURCE_PATH = "font-awesome-iron-iconset";
 
@@ -103,8 +102,12 @@ public class IconsetEnumGenerator {
 
 	private static String npmVersion;
 
+	private static String packageName;
+	private static String className;
+	
 	private static BlockComment license;
 
+	
 	@SuppressWarnings("serial")
 	private static final Map<String,String> mappings = new LinkedHashMap<String,String>() {{
 		put("far", "regular");
@@ -120,7 +123,14 @@ public class IconsetEnumGenerator {
 		sprites = new File(getRequiredProperty("codegen.sprites")); //the location of the SVG sprites
 		sources = getRequiredDirectory("codegen.sources"); //the location of generated sources
 		resources = getRequiredDirectory("codegen.resources"); //the location of generated resources
-
+		
+		String fqName = getRequiredProperty("codegen.classname"); //fully qualified name of the generated sources
+		{
+		  int pos = fqName.lastIndexOf('.');
+		  className = fqName.substring(pos+1);
+		  packageName = fqName.substring(0,pos);
+		}
+		
 		resources = new File(resources, RESOURCE_PATH);
 		resources.mkdirs();
 		
@@ -138,7 +148,7 @@ public class IconsetEnumGenerator {
 		}
 
 		license = getLicenseInformation();
-
+		
 		System.out.println("Sprites directory is "+Paths.get(sprites.getAbsolutePath()).normalize());
 		System.out.println("Output sources directory is "+Paths.get(sources.getAbsolutePath()).normalize());
 		System.out.println("Output resources directory is "+Paths.get(resources.getAbsolutePath()).normalize());
@@ -299,7 +309,7 @@ public class IconsetEnumGenerator {
 	
 	private static CompilationUnit createCompilationUnit() throws FileNotFoundException {
 		CompilationUnit cu = new CompilationUnit();
-		cu.setPackageDeclaration(PACKAGE_NAME);
+		cu.setPackageDeclaration(packageName);
 		cu.addImport("com.vaadin.flow.component.dependency.JsModule");
 		if (npmPackage!=null) {
 			cu.addImport("com.vaadin.flow.component.dependency.NpmPackage");
@@ -311,7 +321,7 @@ public class IconsetEnumGenerator {
 		cu.addImport("java.util.Locale");
 
 		ClassOrInterfaceDeclaration type = new ClassOrInterfaceDeclaration();
-		type.setName("FontAwesome");
+		type.setName(className);
 		type.addModifier(PUBLIC, FINAL);
 		//icon.setJavadocComment(new JavadocComment(String.format("Server side component for {@code %s}", decl.getName())));
 		type.setJavadocComment(new JavadocComment(
@@ -428,7 +438,7 @@ public class IconsetEnumGenerator {
 	}
 
 	private static void save(CompilationUnit cu) throws FileNotFoundException {
-		File pkgDirectory = new File(sources, PACKAGE_NAME.replace('.', '/'));
+		File pkgDirectory = new File(sources, packageName.replace('.', '/'));
 		pkgDirectory.mkdirs();
 
 		PrintStream ps = new PrintStream(new FileOutputStream(new File(pkgDirectory,cu.getType(0).getName()+".java")));

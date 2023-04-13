@@ -78,10 +78,21 @@ public class IconsetEnumCompiler {
   private static String sourceLevel;
   private static String targetLevel;
   private static boolean postcompile;
+  
+  private static String packageName;
+  private static String className;
 
   public static void main(String[] args) throws IOException {
+    String fqName = getRequiredProperty("codegen.classname"); //fully qualified name of the generated sources
+    {
+      int pos = fqName.lastIndexOf('.');
+      className = fqName.substring(pos+1);
+      packageName = fqName.substring(0,pos);
+    }
+    
     sources = getRequiredDirectory("codegen.sources"); //the location of generated sources
-    target = new File(getRequiredDirectory("codegen.target"),"recompiled/com/flowingcode/vaadin/addons/fontawesome"); //project.build.directory
+    
+    target = new File(getRequiredDirectory("codegen.target"),"recompiled/"+packageName.replace('.', '/')); //project.build.directory
     sourceLevel = getRequiredProperty("codegen.compiler.source");
     targetLevel = getRequiredProperty("codegen.compiler.target");
     postcompile = Boolean.parseBoolean(System.getProperty("codegen.postcompile"));
@@ -117,7 +128,8 @@ public class IconsetEnumCompiler {
     cfg.setStoreTokens(false);
     JavaParser parser = new JavaParser(cfg);
 
-    File javaFile = new File(sources, "com\\flowingcode\\vaadin\\addons\\fontawesome\\FontAwesome.java");
+    
+    File javaFile = new File(sources, String.format("%s/%s.java", packageName.replace('.', '/'), className));
     CompilationUnit cu = parser.parse(javaFile).getResult().get();
 
     TypeDeclaration typeDecl = cu.getPrimaryType().get();
@@ -138,7 +150,7 @@ public class IconsetEnumCompiler {
       }
     });
 
-    File rewrittenSource = new File(target, "FontAwesome.java");
+    File rewrittenSource = new File(target, className+".java");
     if (toBeRewritten.isEmpty()) {
       if (postcompile) {
         FileUtils.copyFile(javaFile, rewrittenSource);
@@ -168,7 +180,7 @@ public class IconsetEnumCompiler {
 
 
   private static void compile() throws IOException {
-    System.out.println("Compile FontAwesome.java");
+    System.out.println("Compile "+className+".java");
     
     JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
     if (compiler == null) {
@@ -176,7 +188,7 @@ public class IconsetEnumCompiler {
     }
 
     String classpath = getRequiredProperty("codegen.classpath"); //classpath for compiler
-    File sourceFile = new File(target, "FontAwesome.java");
+    File sourceFile = new File(target, className+".java");
 
     List<String> options = new ArrayList<>();
     options.add("--class-path");
@@ -205,12 +217,12 @@ public class IconsetEnumCompiler {
       return;
     }
     
-    System.out.println("Post-compile FontAwesome.java");
+    System.out.println("Post-compile "+className+".java");
     
-    File sourceFile = new File(target, "FontAwesome.java");        
+    File sourceFile = new File(target, className+".java");        
 
     for (Map.Entry<String, String[]> entry : rewritten.entrySet()) {
-      File classFile = new File(target, String.format("FontAwesome$%s.class", entry.getKey()));
+      File classFile = new File(target, String.format("%s$%s.class", className, entry.getKey()));
       ClassReader reader = new ClassReader(FileUtils.readFileToByteArray(classFile));
 
       ClassVisitor cv;
