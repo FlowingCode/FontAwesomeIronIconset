@@ -37,7 +37,7 @@
         <url>https://github.com/FlowingCode/FontAwesomeIronIconset</url>
         <connection>scm:git:git://github.com/FlowingCode/FontAwesomeIronIconset.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:/FlowingCode/FontAwesomeIronIconset.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>3.x</tag>
     </scm>
 	
     <organization>
