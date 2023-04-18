@@ -20,6 +20,7 @@
 package com.flowingcode.vaadin.addons.fontawesome;
 
 import com.flowingcode.vaadin.addons.DemoLayout;
+import com.flowingcode.vaadin.addons.GithubBranch;
 import com.flowingcode.vaadin.addons.GithubLink;
 import com.flowingcode.vaadin.addons.demo.TabbedDemo;
 import com.vaadin.flow.component.dependency.CssImport;
@@ -37,6 +38,7 @@ import com.vaadin.flow.router.Route;
 @ParentLayout(DemoLayout.class)
 @Route("font-awesome-iron-iconset")
 @GithubLink("https://github.com/FlowingCode/FontAwesomeIronIconset")
+@GithubBranch("4.x")
 public class FontawesomeDemoView extends TabbedDemo {
 
 	public FontawesomeDemoView() {
