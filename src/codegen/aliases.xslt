@@ -30,8 +30,17 @@
 	    	<xsl:apply-templates select="$metadata"/>
 		</xsl:variable>
 		
-		<xsl:variable name="result"> 
+		<xsl:variable name="families">
 			<xsl:for-each select="fn:distinct-values($filtered//fn:array[@key='styles']/*)">
+				<xsl:element name="family">
+					<xsl:value-of select="."/>
+				</xsl:element>
+			</xsl:for-each>
+			<family>brands</family>
+		</xsl:variable>
+		
+		<xsl:variable name="result">
+			<xsl:for-each select="fn:distinct-values($families/family)">
 				<xsl:variable name="family">
 					<xsl:value-of select="."/>
 				</xsl:variable>

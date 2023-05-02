@@ -181,10 +181,8 @@ public class IconsetEnumGenerator {
 
 	private static void processAliases() throws IOException {
 		File file = new File(sprites, "icons.json");
-		if (file.exists()) {
-			System.out.println(String.format("Process aliases"));
-			aliases(file);
-		}
+		System.out.println(String.format("Process aliases"));
+		aliases(file);
 	}
 	
 	private static void process(CompilationUnit cu, String family, File sprites) throws IOException {
@@ -283,7 +281,13 @@ public class IconsetEnumGenerator {
 
 	private static void aliases(File file) throws IOException {
 		File dst = new File(file.getParent(), "aliases.xml");
-		String data = "<root><![CDATA["+FileUtils.readFileToString(file, StandardCharsets.ISO_8859_1)+"]]></root>";
+		String data;
+		if (file.exists()) {
+		  data = "<root><![CDATA["+FileUtils.readFileToString(file, StandardCharsets.ISO_8859_1)+"]]></root>";
+		} else {
+		  data = "<root>{}</root>";
+		}
+
 		try (
 			InputStream in = new ByteArrayInputStream(data.getBytes(StandardCharsets.ISO_8859_1));
 			InputStream xslt = new FileInputStream("aliases.xslt");
