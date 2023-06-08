@@ -76,7 +76,8 @@ Then, follow these steps for creating a contibution:
 
 ## License & Author
 
-Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
+This add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
+
 FontAwesomeIronIconset Addon is written by Flowing Code S.A.
 
 Font Awesome Free 5.13.0 by @fontawesome is distributed under CC BY 4.0 license. For license terms see THIRD-PARTY.txt
