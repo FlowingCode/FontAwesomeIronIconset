@@ -29,7 +29,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import java.util.Locale;
 
 /**
- * FontAwesome 6.1.2 icons.
+ * FontAwesome 6.4.0 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -849,10 +849,6 @@ public final class FontAwesome {
          * The regular newspaper icon.See <a href='https://fontawesome.com/v6/icons/newspaper?s=regular'>example</a>
          */
         NEWSPAPER,
-        /**
-         * The regular notdef icon.See <a href='https://fontawesome.com/v6/icons/notdef?s=regular'>example</a>
-         */
-        NOTDEF,
         /**
          * The regular note-sticky icon.See <a href='https://fontawesome.com/v6/icons/note-sticky?s=regular'>example</a>
          */
@@ -1751,6 +1747,10 @@ public final class FontAwesome {
          */
         BANDAGE,
         /**
+         * The solid bangladeshi-taka-sign icon.See <a href='https://fontawesome.com/v6/icons/bangladeshi-taka-sign?s=solid'>example</a>
+         */
+        BANGLADESHI_TAKA_SIGN,
+        /**
          * The solid bank icon.See <a href='https://fontawesome.com/v6/icons/bank?s=solid'>example</a>
          */
         BANK,
@@ -2634,6 +2634,10 @@ public final class FontAwesome {
          * The solid child icon.See <a href='https://fontawesome.com/v6/icons/child?s=solid'>example</a>
          */
         CHILD,
+        /**
+         * The solid child-combatant icon.See <a href='https://fontawesome.com/v6/icons/child-combatant?s=solid'>example</a>
+         */
+        CHILD_COMBATANT,
         /**
          * The solid child-dress icon.See <a href='https://fontawesome.com/v6/icons/child-dress?s=solid'>example</a>
          */
@@ -10156,6 +10160,10 @@ public final class FontAwesome {
          */
         ODNOKLASSNIKI_SQUARE,
         /**
+         * The brands odysee icon.See <a href='https://fontawesome.com/v6/icons/odysee?s=brands'>example</a>
+         */
+        ODYSEE,
+        /**
          * The brands old-republic icon.See <a href='https://fontawesome.com/v6/icons/old-republic?s=brands'>example</a>
          */
         OLD_REPUBLIC,
@@ -10659,6 +10667,10 @@ public final class FontAwesome {
          * The brands stripe-s icon.See <a href='https://fontawesome.com/v6/icons/stripe-s?s=brands'>example</a>
          */
         STRIPE_S,
+        /**
+         * The brands stubber icon.See <a href='https://fontawesome.com/v6/icons/stubber?s=brands'>example</a>
+         */
+        STUBBER,
         /**
          * The brands studiovinari icon.See <a href='https://fontawesome.com/v6/icons/studiovinari?s=brands'>example</a>
          */
