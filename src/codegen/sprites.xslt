@@ -41,7 +41,9 @@
   		
 	  	<svg><defs>
 	
-		<xsl:apply-templates select="svg:symbol"/>		
+		<xsl:apply-templates select="svg:symbol">
+			<xsl:sort select="@id"/>
+		</xsl:apply-templates>
 		</defs></svg>
 	</xsl:element>	
   </xsl:template>
