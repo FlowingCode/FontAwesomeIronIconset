@@ -24,7 +24,7 @@
         <codegen.skipDownload>true</codegen.skipDownload>
         <codegen.embedded>true</codegen.embedded>
          -->
-        <fontawesome.version>6.1.2</fontawesome.version>
+        <fontawesome.version>6.4.0</fontawesome.version>
 		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
         <codegen.sprites>${project.build.directory}/sprites</codegen.sprites>
         <codegen.skipDownload>false</codegen.skipDownload>
