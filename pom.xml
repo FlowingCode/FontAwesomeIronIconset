@@ -6,7 +6,8 @@
     <artifactId>font-awesome-iron-iconset</artifactId>
     <version>5.2.2-SNAPSHOT</version>
     <name>FontAwesome Iron Iconset</name>
-    <description>Iron iconset based on FontAwesome</description>
+    <description>Icon set based in FontAwesome</description>
+    <url>https://www.flowingcode.com/en/open-source/</url>
     
     <properties>
         <vaadin.version>24.0.3</vaadin.version>
