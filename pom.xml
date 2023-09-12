@@ -533,6 +533,9 @@
 								<goals>
 									<goal>sign</goal>
 								</goals>
+								<configuration>
+									<passphrase>${env.gpg.passphrase}</passphrase>
+								</configuration>
 							</execution>
 						</executions>
 					</plugin>
