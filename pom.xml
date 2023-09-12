@@ -4,7 +4,7 @@
 
     <groupId>com.flowingcode.addons</groupId>
     <artifactId>font-awesome-iron-iconset</artifactId>
-    <version>5.2.2</version>
+    <version>5.2.3-SNAPSHOT</version>
     <name>FontAwesome Iron Iconset</name>
     <description>Icon set based in FontAwesome</description>
     <url>https://www.flowingcode.com/en/open-source/</url>
@@ -38,7 +38,7 @@
         <url>https://github.com/FlowingCode/FontAwesomeIronIconset</url>
         <connection>scm:git:git://github.com/FlowingCode/FontAwesomeIronIconset.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:/FlowingCode/FontAwesomeIronIconset.git</developerConnection>
-        <tag>font-awesome-iron-iconset-5.2.2</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
