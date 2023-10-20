@@ -40,6 +40,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -117,7 +118,8 @@ public class IconsetEnumCompiler {
     cfg.setStoreTokens(false);
     JavaParser parser = new JavaParser(cfg);
 
-    File javaFile = new File(sources, "com\\flowingcode\\vaadin\\addons\\fontawesome\\FontAwesome.java");
+    Path filePath = Path.of("com","flowingcode","vaadin","addons","fontawesome","FontAwesome.java");
+    File javaFile = new File(sources, filePath.toString());
     CompilationUnit cu = parser.parse(javaFile).getResult().get();
 
     TypeDeclaration typeDecl = cu.getPrimaryType().get();
