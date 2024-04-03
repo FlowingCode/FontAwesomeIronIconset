@@ -26,6 +26,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.data.renderer.LitRenderer;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import java.io.Serializable;
 import java.util.List;
 
 @DemoSource
@@ -60,7 +61,7 @@ public class LitRendererDemo extends VerticalLayout {
 		add(grid);
 	}
 
-	private class Person {
+    private static class Person implements Serializable {
 		int id;
 		String name;
 		int age;
