@@ -10,7 +10,7 @@
     <url>https://www.flowingcode.com/en/open-source/</url>
     
     <properties>
-        <vaadin.version>24.0.3</vaadin.version>
+        <vaadin.version>24.3.8</vaadin.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <jetty.version>11.0.13</jetty.version>
@@ -124,7 +124,7 @@
 		<dependency>
 			<groupId>com.flowingcode.vaadin.addons.demo</groupId>
 			<artifactId>commons-demo</artifactId>
-			<version>3.8.0</version>
+			<version>4.0.0</version>
 			<scope>test</scope>
 		</dependency>
 

@@ -21,7 +21,6 @@ Copyright 2023 Fonticons, Inc.
   limitations under the License.
  */
 
-import '@vaadin/icon/vaadin-icon.js';
 import { Iconset } from '@vaadin/icon/vaadin-iconset.js';
 import { css, registerStyles } from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
 

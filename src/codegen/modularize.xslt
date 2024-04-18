@@ -28,7 +28,6 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/*">
 	<xsl:text disable-output-escaping="yes"
 >
-import '@vaadin/icon/vaadin-icon.js';
 import { Iconset } from '@vaadin/icon/vaadin-iconset.js';
 import { css, registerStyles } from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
 </xsl:text>
