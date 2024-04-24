@@ -20,3 +20,4 @@ types.d.ts
 vite.generated.ts
 /src/main/dev-bundle
 /vite.config.ts
+/src/main/frontend
