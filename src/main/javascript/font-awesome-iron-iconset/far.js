@@ -1119,6 +1119,7 @@ template.innerHTML = `
    </defs>
 </svg>`;
 
+customElements.whenDefined('vaadin-iconset').then(Iconset=>{
 Iconset.register('far', 1000, template);
 
 const iconset = Iconset.getIconset('far');
@@ -1126,4 +1127,4 @@ const iconset = Iconset.getIconset('far');
 for (const name in aliases) {
     iconset._icons[name] = iconset._icons[aliases[name]];
 }
-
+});

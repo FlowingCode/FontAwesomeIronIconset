@@ -45,8 +45,9 @@ const template = document.createElement('template');
 template.innerHTML = `
 </xsl:text>
     <xsl:copy-of select="//fc-iconset/svg"/>
-<xsl:text>`;
+<xsl:text disable-output-escaping="yes">`;
 
+customElements.whenDefined('vaadin-iconset').then(Iconset=>{
 Iconset.register('</xsl:text
 ><xsl:value-of select="$family"/><xsl:text
 >', 1000, template);
@@ -58,7 +59,7 @@ const iconset = Iconset.getIconset('</xsl:text
 for (const name in aliases) {
     iconset._icons[name] = iconset._icons[aliases[name]];
 }
-
+});
 </xsl:text>
 </xsl:template>
 
