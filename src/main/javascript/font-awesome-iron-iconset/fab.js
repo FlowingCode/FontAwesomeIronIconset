@@ -2884,6 +2884,7 @@ template.innerHTML = `
    </defs>
 </svg>`;
 
+customElements.whenDefined('vaadin-iconset').then(Iconset=>{
 Iconset.register('fab', 1000, template);
 
 const iconset = Iconset.getIconset('fab');
@@ -2891,4 +2892,4 @@ const iconset = Iconset.getIconset('fab');
 for (const name in aliases) {
     iconset._icons[name] = iconset._icons[aliases[name]];
 }
-
+});
