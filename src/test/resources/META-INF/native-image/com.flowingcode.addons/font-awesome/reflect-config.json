@@ -1,0 +1,26 @@
+[
+{
+  "name":"com.flowingcode.vaadin.addons.fontawesome.FontAwesome$Solid",
+  "fields":[{"name":"ICONSET"}]
+},
+{
+  "name":"com.flowingcode.vaadin.addons.fontawesome.FontAwesome$Regular",
+  "fields":[{"name":"ICONSET"}]
+},
+{
+  "name":"com.flowingcode.vaadin.addons.fontawesome.FontAwesome$Brands",
+  "fields":[{"name":"ICONSET"}]
+},
+{
+  "name":"com.flowingcode.vaadin.addons.fontawesome.FontAwesome$Solid$Icon",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.flowingcode.vaadin.addons.fontawesome.FontAwesome$Regular$Icon",
+  "queryAllDeclaredMethods":true
+},
+{
+  "name":"com.flowingcode.vaadin.addons.fontawesome.FontAwesome$Brands$Icon",
+  "queryAllDeclaredMethods":true
+}
+]
