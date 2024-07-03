@@ -31,7 +31,7 @@ import com.vaadin.flow.router.Route;
  * @author Javier Godoy / Flowing Code
  */
 @DemoSource
-@PageTitle("Simple Demo")
+@PageTitle("Basic Demo")
 @Route(value = "font-awesome-iron-iconset/simple", layout = FontawesomeDemoView.class)
 @SuppressWarnings("serial")
 public class SimpleDemo extends VerticalLayout {
