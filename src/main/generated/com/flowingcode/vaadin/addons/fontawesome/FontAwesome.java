@@ -29,7 +29,7 @@ import com.vaadin.flow.component.ComponentEventListener;
 import java.util.Locale;
 
 /**
- * FontAwesome 6.4.0 icons.
+ * FontAwesome 6.6.0 icons.
  * @author Javier Godoy / Flowing Code
  */
 @SuppressWarnings({ "squid:S4784", "squid:S00115" })
@@ -1114,7 +1114,7 @@ public final class FontAwesome {
          * Server side component for {@code Regular}
          */
         @JsModule("./font-awesome-iron-iconset/far.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "5.1.1")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "5.2.0")
         @SuppressWarnings("serial")
         public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
@@ -1482,10 +1482,6 @@ public final class FontAwesome {
          * The solid arrow-turn-down icon.See <a href='https://fontawesome.com/v6/icons/arrow-turn-down?s=solid'>example</a>
          */
         ARROW_TURN_DOWN,
-        /**
-         * The solid arrow-turn-right icon.See <a href='https://fontawesome.com/v6/icons/arrow-turn-right?s=solid'>example</a>
-         */
-        ARROW_TURN_RIGHT,
         /**
          * The solid arrow-turn-up icon.See <a href='https://fontawesome.com/v6/icons/arrow-turn-up?s=solid'>example</a>
          */
@@ -7739,9 +7735,21 @@ public final class FontAwesome {
          */
         TABLE_CELLS,
         /**
+         * The solid table-cells-column-lock icon.See <a href='https://fontawesome.com/v6/icons/table-cells-column-lock?s=solid'>example</a>
+         */
+        TABLE_CELLS_COLUMN_LOCK,
+        /**
          * The solid table-cells-large icon.See <a href='https://fontawesome.com/v6/icons/table-cells-large?s=solid'>example</a>
          */
         TABLE_CELLS_LARGE,
+        /**
+         * The solid table-cells-row-lock icon.See <a href='https://fontawesome.com/v6/icons/table-cells-row-lock?s=solid'>example</a>
+         */
+        TABLE_CELLS_ROW_LOCK,
+        /**
+         * The solid table-cells-row-unlock icon.See <a href='https://fontawesome.com/v6/icons/table-cells-row-unlock?s=solid'>example</a>
+         */
+        TABLE_CELLS_ROW_UNLOCK,
         /**
          * The solid table-columns icon.See <a href='https://fontawesome.com/v6/icons/table-columns?s=solid'>example</a>
          */
@@ -8039,6 +8047,10 @@ public final class FontAwesome {
          */
         THUMB_TACK,
         /**
+         * The solid thumb-tack-slash icon.See <a href='https://fontawesome.com/v6/icons/thumb-tack-slash?s=solid'>example</a>
+         */
+        THUMB_TACK_SLASH,
+        /**
          * The solid thumbs-down icon.See <a href='https://fontawesome.com/v6/icons/thumbs-down?s=solid'>example</a>
          */
         THUMBS_DOWN,
@@ -8050,6 +8062,10 @@ public final class FontAwesome {
          * The solid thumbtack icon.See <a href='https://fontawesome.com/v6/icons/thumbtack?s=solid'>example</a>
          */
         THUMBTACK,
+        /**
+         * The solid thumbtack-slash icon.See <a href='https://fontawesome.com/v6/icons/thumbtack-slash?s=solid'>example</a>
+         */
+        THUMBTACK_SLASH,
         /**
          * The solid thunderstorm icon.See <a href='https://fontawesome.com/v6/icons/thunderstorm?s=solid'>example</a>
          */
@@ -8799,6 +8815,10 @@ public final class FontAwesome {
          */
         WAVE_SQUARE,
         /**
+         * The solid web-awesome icon.See <a href='https://fontawesome.com/v6/icons/web-awesome?s=solid'>example</a>
+         */
+        WEB_AWESOME,
+        /**
          * The solid weight icon.See <a href='https://fontawesome.com/v6/icons/weight?s=solid'>example</a>
          */
         WEIGHT,
@@ -8991,7 +9011,7 @@ public final class FontAwesome {
          * Server side component for {@code Solid}
          */
         @JsModule("./font-awesome-iron-iconset/fas.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "5.1.1")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "5.2.0")
         @SuppressWarnings("serial")
         public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 
@@ -9184,6 +9204,10 @@ public final class FontAwesome {
          */
         BLOGGER_B,
         /**
+         * The brands bluesky icon.See <a href='https://fontawesome.com/v6/icons/bluesky?s=brands'>example</a>
+         */
+        BLUESKY,
+        /**
          * The brands bluetooth icon.See <a href='https://fontawesome.com/v6/icons/bluetooth?s=brands'>example</a>
          */
         BLUETOOTH,
@@ -9199,6 +9223,14 @@ public final class FontAwesome {
          * The brands bots icon.See <a href='https://fontawesome.com/v6/icons/bots?s=brands'>example</a>
          */
         BOTS,
+        /**
+         * The brands brave icon.See <a href='https://fontawesome.com/v6/icons/brave?s=brands'>example</a>
+         */
+        BRAVE,
+        /**
+         * The brands brave-reverse icon.See <a href='https://fontawesome.com/v6/icons/brave-reverse?s=brands'>example</a>
+         */
+        BRAVE_REVERSE,
         /**
          * The brands btc icon.See <a href='https://fontawesome.com/v6/icons/btc?s=brands'>example</a>
          */
@@ -9412,9 +9444,17 @@ public final class FontAwesome {
          */
         DAILYMOTION,
         /**
+         * The brands dart-lang icon.See <a href='https://fontawesome.com/v6/icons/dart-lang?s=brands'>example</a>
+         */
+        DART_LANG,
+        /**
          * The brands dashcube icon.See <a href='https://fontawesome.com/v6/icons/dashcube?s=brands'>example</a>
          */
         DASHCUBE,
+        /**
+         * The brands debian icon.See <a href='https://fontawesome.com/v6/icons/debian?s=brands'>example</a>
+         */
+        DEBIAN,
         /**
          * The brands deezer icon.See <a href='https://fontawesome.com/v6/icons/deezer?s=brands'>example</a>
          */
@@ -9612,6 +9652,10 @@ public final class FontAwesome {
          */
         FLIPBOARD,
         /**
+         * The brands flutter icon.See <a href='https://fontawesome.com/v6/icons/flutter?s=brands'>example</a>
+         */
+        FLUTTER,
+        /**
          * The brands fly icon.See <a href='https://fontawesome.com/v6/icons/fly?s=brands'>example</a>
          */
         FLY,
@@ -9779,6 +9823,10 @@ public final class FontAwesome {
          * The brands google-plus-square icon.See <a href='https://fontawesome.com/v6/icons/google-plus-square?s=brands'>example</a>
          */
         GOOGLE_PLUS_SQUARE,
+        /**
+         * The brands google-scholar icon.See <a href='https://fontawesome.com/v6/icons/google-scholar?s=brands'>example</a>
+         */
+        GOOGLE_SCHOLAR,
         /**
          * The brands google-wallet icon.See <a href='https://fontawesome.com/v6/icons/google-wallet?s=brands'>example</a>
          */
@@ -9948,6 +9996,10 @@ public final class FontAwesome {
          */
         JSFIDDLE,
         /**
+         * The brands jxl icon.See <a href='https://fontawesome.com/v6/icons/jxl?s=brands'>example</a>
+         */
+        JXL,
+        /**
          * The brands kaggle icon.See <a href='https://fontawesome.com/v6/icons/kaggle?s=brands'>example</a>
          */
         KAGGLE,
@@ -9991,6 +10043,10 @@ public final class FontAwesome {
          * The brands less icon.See <a href='https://fontawesome.com/v6/icons/less?s=brands'>example</a>
          */
         LESS,
+        /**
+         * The brands letterboxd icon.See <a href='https://fontawesome.com/v6/icons/letterboxd?s=brands'>example</a>
+         */
+        LETTERBOXD,
         /**
          * The brands line icon.See <a href='https://fontawesome.com/v6/icons/line?s=brands'>example</a>
          */
@@ -10084,6 +10140,10 @@ public final class FontAwesome {
          */
         MICROSOFT,
         /**
+         * The brands mintbit icon.See <a href='https://fontawesome.com/v6/icons/mintbit?s=brands'>example</a>
+         */
+        MINTBIT,
+        /**
          * The brands mix icon.See <a href='https://fontawesome.com/v6/icons/mix?s=brands'>example</a>
          */
         MIX,
@@ -10175,6 +10235,10 @@ public final class FontAwesome {
          * The brands openid icon.See <a href='https://fontawesome.com/v6/icons/openid?s=brands'>example</a>
          */
         OPENID,
+        /**
+         * The brands opensuse icon.See <a href='https://fontawesome.com/v6/icons/opensuse?s=brands'>example</a>
+         */
+        OPENSUSE,
         /**
          * The brands opera icon.See <a href='https://fontawesome.com/v6/icons/opera?s=brands'>example</a>
          */
@@ -10275,6 +10339,10 @@ public final class FontAwesome {
          * The brands pix icon.See <a href='https://fontawesome.com/v6/icons/pix?s=brands'>example</a>
          */
         PIX,
+        /**
+         * The brands pixiv icon.See <a href='https://fontawesome.com/v6/icons/pixiv?s=brands'>example</a>
+         */
+        PIXIV,
         /**
          * The brands playstation icon.See <a href='https://fontawesome.com/v6/icons/playstation?s=brands'>example</a>
          */
@@ -10432,6 +10500,10 @@ public final class FontAwesome {
          */
         SHIRTSINBULK,
         /**
+         * The brands shoelace icon.See <a href='https://fontawesome.com/v6/icons/shoelace?s=brands'>example</a>
+         */
+        SHOELACE,
+        /**
          * The brands shopify icon.See <a href='https://fontawesome.com/v6/icons/shopify?s=brands'>example</a>
          */
         SHOPIFY,
@@ -10439,6 +10511,10 @@ public final class FontAwesome {
          * The brands shopware icon.See <a href='https://fontawesome.com/v6/icons/shopware?s=brands'>example</a>
          */
         SHOPWARE,
+        /**
+         * The brands signal-messenger icon.See <a href='https://fontawesome.com/v6/icons/signal-messenger?s=brands'>example</a>
+         */
+        SIGNAL_MESSENGER,
         /**
          * The brands simplybuilt icon.See <a href='https://fontawesome.com/v6/icons/simplybuilt?s=brands'>example</a>
          */
@@ -10564,9 +10640,17 @@ public final class FontAwesome {
          */
         SQUARE_JS,
         /**
+         * The brands square-kickstarter icon.See <a href='https://fontawesome.com/v6/icons/square-kickstarter?s=brands'>example</a>
+         */
+        SQUARE_KICKSTARTER,
+        /**
          * The brands square-lastfm icon.See <a href='https://fontawesome.com/v6/icons/square-lastfm?s=brands'>example</a>
          */
         SQUARE_LASTFM,
+        /**
+         * The brands square-letterboxd icon.See <a href='https://fontawesome.com/v6/icons/square-letterboxd?s=brands'>example</a>
+         */
+        SQUARE_LETTERBOXD,
         /**
          * The brands square-odnoklassniki icon.See <a href='https://fontawesome.com/v6/icons/square-odnoklassniki?s=brands'>example</a>
          */
@@ -10592,6 +10676,10 @@ public final class FontAwesome {
          */
         SQUARE_STEAM,
         /**
+         * The brands square-threads icon.See <a href='https://fontawesome.com/v6/icons/square-threads?s=brands'>example</a>
+         */
+        SQUARE_THREADS,
+        /**
          * The brands square-tumblr icon.See <a href='https://fontawesome.com/v6/icons/square-tumblr?s=brands'>example</a>
          */
         SQUARE_TUMBLR,
@@ -10599,6 +10687,10 @@ public final class FontAwesome {
          * The brands square-twitter icon.See <a href='https://fontawesome.com/v6/icons/square-twitter?s=brands'>example</a>
          */
         SQUARE_TWITTER,
+        /**
+         * The brands square-upwork icon.See <a href='https://fontawesome.com/v6/icons/square-upwork?s=brands'>example</a>
+         */
+        SQUARE_UPWORK,
         /**
          * The brands square-viadeo icon.See <a href='https://fontawesome.com/v6/icons/square-viadeo?s=brands'>example</a>
          */
@@ -10608,9 +10700,21 @@ public final class FontAwesome {
          */
         SQUARE_VIMEO,
         /**
+         * The brands square-web-awesome icon.See <a href='https://fontawesome.com/v6/icons/square-web-awesome?s=brands'>example</a>
+         */
+        SQUARE_WEB_AWESOME,
+        /**
+         * The brands square-web-awesome-stroke icon.See <a href='https://fontawesome.com/v6/icons/square-web-awesome-stroke?s=brands'>example</a>
+         */
+        SQUARE_WEB_AWESOME_STROKE,
+        /**
          * The brands square-whatsapp icon.See <a href='https://fontawesome.com/v6/icons/square-whatsapp?s=brands'>example</a>
          */
         SQUARE_WHATSAPP,
+        /**
+         * The brands square-x-twitter icon.See <a href='https://fontawesome.com/v6/icons/square-x-twitter?s=brands'>example</a>
+         */
+        SQUARE_X_TWITTER,
         /**
          * The brands square-xing icon.See <a href='https://fontawesome.com/v6/icons/square-xing?s=brands'>example</a>
          */
@@ -10736,6 +10840,10 @@ public final class FontAwesome {
          */
         THINK_PEAKS,
         /**
+         * The brands threads icon.See <a href='https://fontawesome.com/v6/icons/threads?s=brands'>example</a>
+         */
+        THREADS,
+        /**
          * The brands tiktok icon.See <a href='https://fontawesome.com/v6/icons/tiktok?s=brands'>example</a>
          */
         TIKTOK,
@@ -10812,6 +10920,10 @@ public final class FontAwesome {
          */
         UPS,
         /**
+         * The brands upwork icon.See <a href='https://fontawesome.com/v6/icons/upwork?s=brands'>example</a>
+         */
+        UPWORK,
+        /**
          * The brands usb icon.See <a href='https://fontawesome.com/v6/icons/usb?s=brands'>example</a>
          */
         USB,
@@ -10883,6 +10995,14 @@ public final class FontAwesome {
          * The brands waze icon.See <a href='https://fontawesome.com/v6/icons/waze?s=brands'>example</a>
          */
         WAZE,
+        /**
+         * The brands web-awesome icon.See <a href='https://fontawesome.com/v6/icons/web-awesome?s=brands'>example</a>
+         */
+        WEB_AWESOME,
+        /**
+         * The brands webflow icon.See <a href='https://fontawesome.com/v6/icons/webflow?s=brands'>example</a>
+         */
+        WEBFLOW,
         /**
          * The brands weebly icon.See <a href='https://fontawesome.com/v6/icons/weebly?s=brands'>example</a>
          */
@@ -10963,6 +11083,10 @@ public final class FontAwesome {
          * The brands wsh icon.See <a href='https://fontawesome.com/v6/icons/wsh?s=brands'>example</a>
          */
         WSH,
+        /**
+         * The brands x-twitter icon.See <a href='https://fontawesome.com/v6/icons/x-twitter?s=brands'>example</a>
+         */
+        X_TWITTER,
         /**
          * The brands xbox icon.See <a href='https://fontawesome.com/v6/icons/xbox?s=brands'>example</a>
          */
@@ -11060,7 +11184,7 @@ public final class FontAwesome {
          * Server side component for {@code Brands}
          */
         @JsModule("./font-awesome-iron-iconset/fab.js")
-        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "5.1.1")
+        @NpmPackage(value = "@flowingcode/font-awesome-iron-iconset", version = "5.2.0")
         @SuppressWarnings("serial")
         public static final class Icon extends com.vaadin.flow.component.icon.Icon implements ClickNotifier<com.vaadin.flow.component.icon.Icon> {
 

@@ -25,14 +25,14 @@
         <codegen.skipDownload>true</codegen.skipDownload>
         <codegen.embedded>true</codegen.embedded>
          -->
-        <fontawesome.version>6.4.0</fontawesome.version>
+        <fontawesome.version>6.6.0</fontawesome.version>
 		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
         <codegen.sprites>${project.build.directory}/sprites</codegen.sprites>
         <codegen.icons/>
         <codegen.skipDownload>false</codegen.skipDownload>
         <codegen.embedded>false</codegen.embedded>
         <npm.package>@flowingcode/font-awesome-iron-iconset</npm.package>
-        <npm.version>5.1.1</npm.version>
+        <npm.version>5.2.0</npm.version>
     </properties>
     
 	<scm>
