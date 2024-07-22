@@ -28,6 +28,7 @@
         <fontawesome.version>6.4.0</fontawesome.version>
 		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
         <codegen.sprites>${project.build.directory}/sprites</codegen.sprites>
+        <codegen.icons/>
         <codegen.skipDownload>false</codegen.skipDownload>
         <codegen.embedded>false</codegen.embedded>
         <npm.package>@flowingcode/font-awesome-iron-iconset</npm.package>
