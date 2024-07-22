@@ -10,7 +10,7 @@
     <url>https://www.flowingcode.com/en/open-source/</url>
     
     <properties>
-        <vaadin.version>24.3.10</vaadin.version>
+        <vaadin.version>24.4.6</vaadin.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <jetty.version>11.0.13</jetty.version>
@@ -235,12 +235,12 @@
                     <!-- Use test scope because the UI/demo classes are in
                             the test package. -->
                     <useTestScope>true</useTestScope>
-                    <webAppConfig>
+                    <webApp>
                         <resourceBases>
 	                        <resourceBase>src/test/resources/META-INF/resources</resourceBase>
 	                        <resourceBase>src/main/resources/META-INF/resources</resourceBase>
 	                    </resourceBases>
-                    </webAppConfig>
+                    </webApp>
                     <supportedPackagings>
                         <supportedPackaging>jar</supportedPackaging>
                     </supportedPackagings>
