@@ -1,4 +1,5 @@
 [![Build Status](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-23-addon/badge/icon)](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-23-addon)
+[![Javadoc](https://img.shields.io/badge/javadoc-00b4f0)](https://javadoc.flowingcode.com/artifact/com.flowingcode.addons/font-awesome-iron-iconset)
 
 # Iconset based on FontAwesome
 
