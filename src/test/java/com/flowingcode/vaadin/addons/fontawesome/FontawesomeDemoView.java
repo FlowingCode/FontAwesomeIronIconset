@@ -2,7 +2,7 @@
  * #%L
  * FontAwesome Iron Iconset
  * %%
- * Copyright (C) 2019 - 2023 Flowing Code
+ * Copyright (C) 2019 - 2025 Flowing Code
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,6 @@ package com.flowingcode.vaadin.addons.fontawesome;
 import com.flowingcode.vaadin.addons.DemoLayout;
 import com.flowingcode.vaadin.addons.GithubLink;
 import com.flowingcode.vaadin.addons.demo.TabbedDemo;
-import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.dependency.Uses;
 import com.vaadin.flow.router.ParentLayout;
@@ -33,7 +32,6 @@ import com.vaadin.flow.router.Route;
 @Uses(FontAwesome.Solid.Icon.class)
 @Uses(FontAwesome.Brands.Icon.class)
 @StyleSheet("context://frontend/styles/font-awesome/demo-styles.css")
-@CssImport(value = "./styles/vaadin-button.css", themeFor = "vaadin-button")
 @ParentLayout(DemoLayout.class)
 @Route("font-awesome-iron-iconset")
 @GithubLink("https://github.com/FlowingCode/FontAwesomeIronIconset")
