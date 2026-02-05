@@ -16,6 +16,7 @@
         <jetty.version>11.0.26</jetty.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <flowingcode.commons.demo.version>4.0.0</flowingcode.commons.demo.version>
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
         <!-- 
         <fontawesome.version>Pro 6.1.2</fontawesome.version>
@@ -125,7 +126,7 @@
 		<dependency>
 			<groupId>com.flowingcode.vaadin.addons.demo</groupId>
 			<artifactId>commons-demo</artifactId>
-			<version>4.0.0</version>
+			<version>${flowingcode.commons.demo.version}</version>
 			<scope>test</scope>
 		</dependency>
 
