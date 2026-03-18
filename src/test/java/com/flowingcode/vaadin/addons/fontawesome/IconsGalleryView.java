@@ -32,8 +32,11 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.function.SerializableConsumer;
 import com.vaadin.flow.router.PageTitle;
+import com.flowingcode.vaadin.jsonmigration.JsonMigration;
 import com.vaadin.flow.router.Route;
+import lombok.experimental.ExtensionMethod;
 
+@ExtensionMethod(value = JsonMigration.class, suppressBaseMethods = true)
 @PageTitle("Icons Gallery")
 @SuppressWarnings("serial")
 @Route(value = "font-awesome-iron-iconset/icons", layout = FontawesomeDemoView.class)
