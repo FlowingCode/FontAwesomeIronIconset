@@ -549,6 +549,22 @@
 			</build>
 		</profile>
 
+		<profile>
+			<id>v25</id>
+			<properties>
+				<maven.compiler.source>21</maven.compiler.source>
+				<maven.compiler.target>21</maven.compiler.target>
+				<vaadin.version>25.0.3</vaadin.version>
+			</properties>
+			<dependencies>
+				<dependency>
+					<groupId>com.vaadin</groupId>
+					<artifactId>vaadin-dev</artifactId>
+					<optional>true</optional>
+				</dependency>
+			</dependencies>
+		</profile>
+
         	<profile>
         	    <id>release</id>
 	            <build>
