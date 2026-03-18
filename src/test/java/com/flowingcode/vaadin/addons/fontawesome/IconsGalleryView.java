@@ -33,7 +33,6 @@ import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.function.SerializableConsumer;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import org.apache.commons.lang3.StringUtils;
 
 @PageTitle("Icons Gallery")
 @SuppressWarnings("serial")
@@ -60,8 +59,9 @@ public class IconsGalleryView extends Div {
     }
 
     public void filter(String filterString) {
-      filterString = StringUtils.lowerCase(filterString);
-      filterString = StringUtils.trimToNull(filterString);
+      filterString = filterString != null ? filterString.trim() : null;
+      filterString = filterString != null ? filterString.toLowerCase() : null;
+      filterString = filterString != null && !filterString.isEmpty() ? filterString : null;
       getElement().setProperty("filterString", filterString);
     }
 
