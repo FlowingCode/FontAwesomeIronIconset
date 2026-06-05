@@ -2,7 +2,7 @@
  * #%L
  * FontAwesome Iron Iconset
  * %%
- * Copyright (C) 2019 - 2023 Flowing Code
+ * Copyright (C) 2019 - 2026 Flowing Code
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -427,6 +427,18 @@ public class IconsetEnumGenerator {
 		ConstructorDeclaration ctor = icon.addConstructor();
 		ctor.addParameter("String", "icon");
 		ctor.getBody().addStatement(new MethodCallExpr("super", new NameExpr("ICONSET"), new NameExpr("icon")));
+
+		MethodDeclaration setColor = icon.addMethod("setColor", PUBLIC);
+		setColor.addAnnotation("Override");
+		setColor.setType("void");
+		setColor.addParameter("String", "color");
+		setColor.getBody().get().addStatement(parseStatement(
+				"if (color == null) { getStyle().remove(\"color\"); } else { getStyle().set(\"color\", color); }"));
+
+		MethodDeclaration getColor = icon.addMethod("getColor", PUBLIC);
+		getColor.addAnnotation("Override");
+		getColor.setType("String");
+		getColor.getBody().get().addStatement(new ReturnStmt("getStyle().get(\"color\")"));
 
 		return decl;
 	}

@@ -2,7 +2,7 @@
  * #%L
  * FontAwesome Iron Iconset
  * %%
- * Copyright (C) 2019 - 2023 Flowing Code
+ * Copyright (C) 2019 - 2026 Flowing Code
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -1184,6 +1184,20 @@ public final class FontAwesome {
 
             Icon(String icon) {
                 super(ICONSET, icon);
+            }
+
+            @Override()
+            public void setColor(String color) {
+                if (color == null) {
+                    getStyle().remove("color");
+                } else {
+                    getStyle().set("color", color);
+                }
+            }
+
+            @Override()
+            public String getColor() {
+                return getStyle().get("color");
             }
         }
     }
@@ -9246,6 +9260,20 @@ public final class FontAwesome {
             Icon(String icon) {
                 super(ICONSET, icon);
             }
+
+            @Override()
+            public void setColor(String color) {
+                if (color == null) {
+                    getStyle().remove("color");
+                } else {
+                    getStyle().set("color", color);
+                }
+            }
+
+            @Override()
+            public String getColor() {
+                return getStyle().get("color");
+            }
         }
     }
 
@@ -11658,6 +11686,20 @@ public final class FontAwesome {
 
             Icon(String icon) {
                 super(ICONSET, icon);
+            }
+
+            @Override()
+            public void setColor(String color) {
+                if (color == null) {
+                    getStyle().remove("color");
+                } else {
+                    getStyle().set("color", color);
+                }
+            }
+
+            @Override()
+            public String getColor() {
+                return getStyle().get("color");
             }
         }
     }
