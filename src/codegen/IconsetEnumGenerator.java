@@ -44,6 +44,7 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 import java.util.Vector;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -113,7 +114,10 @@ public class IconsetEnumGenerator {
 		put("fal", "light");
 		put("fad", "duotone");
 		put("thin", "thin");
+		put("fa-kit", "custom-icons");
 	}};
+
+	private static final Pattern kebabCasePattern = Pattern.compile("-([a-z])");
 
 	public static void main(String[] args) throws IOException {
 		fontAwesomeVersion = getRequiredProperty("codegen.tag"); //the version to be mentioned in the documentation
@@ -187,7 +191,8 @@ public class IconsetEnumGenerator {
 	
 	private static void process(CompilationUnit cu, String family, File sprites) throws IOException {
 		String familyName = FilenameUtils.getBaseName(sprites.getName());
-		String enumName = StringUtils.capitalize(familyName);
+		String camelCaseName = kebabCasePattern.matcher(familyName).replaceAll(m -> m.group(1).toUpperCase());
+		String enumName = StringUtils.capitalize(camelCaseName);
 		System.out.println(String.format("Generate %s icons (%s)", enumName, family));
 		File iconset = convertIconset(family, sprites);
 		List<String> icons = new ArrayList<>();
