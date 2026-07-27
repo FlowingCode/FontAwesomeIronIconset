@@ -27,6 +27,7 @@
         <codegen.embedded>true</codegen.embedded>
          -->
         <fontawesome.version>7.2.0</fontawesome.version>
+        <lombok.version>1.18.42</lombok.version>
 		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
         <codegen.sprites>${project.build.directory}/sprites</codegen.sprites>
         <codegen.icons />
@@ -127,7 +128,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.42</version>
+			<version>${lombok.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -149,6 +150,20 @@
     <build>
 		<pluginManagement>
 			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.13.0</version>
+					<configuration>
+						<annotationProcessorPaths>
+							<path>
+								<groupId>org.projectlombok</groupId>
+								<artifactId>lombok</artifactId>
+								<version>${lombok.version}</version>
+							</path>
+						</annotationProcessorPaths>
+					</configuration>
+				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-release-plugin</artifactId>
