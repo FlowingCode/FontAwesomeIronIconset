@@ -27,7 +27,7 @@
         <codegen.embedded>true</codegen.embedded>
          -->
         <fontawesome.version>7.2.0</fontawesome.version>
-        <lombok.version>1.18.42</lombok.version>
+        <lombok.version>1.18.46</lombok.version>
 		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
         <codegen.sprites>${project.build.directory}/sprites</codegen.sprites>
         <codegen.icons />
