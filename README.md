@@ -161,7 +161,7 @@ The JAR created in this way will include a copy of the Font Awesome Pro icons, t
 4. Modify the following properties in the `pom.xml` file:
 ```
 <fontawesome.version>Pro 5.13.1</fontawesome.version>
-<project.build.generatedResources>${project.basedir}/src/main/resources/META-INF/resources/frontend</project.build.generatedResources>
+<project.build.generatedResources>${project.basedir}/src/main/resources/META-INF/frontend</project.build.generatedResources>
 <codegen.sprites>${project.basedir}/src/main/sprites</codegen.sprites>
 <codegen.skipDownload>true</codegen.skipDownload>
 <codegen.embedded>true</codegen.embedded>
