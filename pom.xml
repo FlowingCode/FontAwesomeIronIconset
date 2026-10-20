@@ -20,7 +20,7 @@
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
         <!-- 
         <fontawesome.version>Pro 6.1.2</fontawesome.version>
-        <project.build.generatedResources>${project.basedir}/src/main/resources/META-INF/resources/frontend</project.build.generatedResources>
+        <project.build.generatedResources>${project.basedir}/src/main/resources/META-INF/frontend</project.build.generatedResources>
         <codegen.sprites>${project.basedir}/src/main/sprites</codegen.sprites>
         <codegen.icons>${project.basedir}/src/main/icons</codegen.icons>
         <codegen.skipDownload>true</codegen.skipDownload>

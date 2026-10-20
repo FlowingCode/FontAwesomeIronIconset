@@ -31,7 +31,7 @@ import com.vaadin.flow.router.Route;
 @Uses(FontAwesome.Regular.Icon.class)
 @Uses(FontAwesome.Solid.Icon.class)
 @Uses(FontAwesome.Brands.Icon.class)
-@StyleSheet("context://frontend/styles/font-awesome/demo-styles.css")
+@StyleSheet("context://styles/font-awesome/demo-styles.css")
 @ParentLayout(DemoLayout.class)
 @Route("font-awesome-iron-iconset")
 @GithubLink("https://github.com/FlowingCode/FontAwesomeIronIconset")
