@@ -1,4 +1,5 @@
 [![Build Status](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-24-addon/badge/icon)](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-24-addon)
+[![Maven Central](https://img.shields.io/maven-central/v/com.flowingcode.addons/font-awesome-iron-iconset)](https://mvnrepository.com/artifact/com.flowingcode.addons/font-awesome-iron-iconset)
 [![Javadoc](https://img.shields.io/badge/javadoc-00b4f0)](https://javadoc.flowingcode.com/artifact/com.flowingcode.addons/font-awesome-iron-iconset)
 
 # Iconset based on FontAwesome
@@ -41,14 +42,7 @@ Add the following dependencies in your pom.xml file:
 ```
 <!-- the above dependency should be updated with latest released version information -->
 
-```xml
-<repository>
-   <id>vaadin-addons</id>
-   <url>https://maven.vaadin.com/vaadin-addons</url>
-</repository>
-```
-
-For SNAPSHOT versions see [here](https://maven.flowingcode.com/snapshots/).
+Release versions are available from Maven Central repository. For SNAPSHOT versions see [here](https://maven.flowingcode.com/snapshots/).
 
 ## Building and running demo
 
