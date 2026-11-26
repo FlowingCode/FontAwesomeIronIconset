@@ -1,3 +1,4 @@
+[![Published on Vaadin Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/fontawesome-iron-iconset)
 [![Build Status](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-24-addon/badge/icon)](https://jenkins.flowingcode.com/job/FontAwesomeIronIconset-24-addon)
 [![Maven Central](https://img.shields.io/maven-central/v/com.flowingcode.addons/font-awesome-iron-iconset)](https://mvnrepository.com/artifact/com.flowingcode.addons/font-awesome-iron-iconset)
 [![Javadoc](https://img.shields.io/badge/javadoc-00b4f0)](https://javadoc.flowingcode.com/artifact/com.flowingcode.addons/font-awesome-iron-iconset)
@@ -5,6 +6,14 @@
 # Iconset based on FontAwesome
 
 Integration of FontAwesome and vaadin-icon for Vaadin 10+
+
+## Features
+
+* Font Awesome Free icons as `vaadin-icon` iconsets, for the solid, regular and brands families
+* One enum per family, with a `create` method that returns an `Icon` component (optionally with a click listener and a color)
+* Qualified icon names (e.g. `fas:plane-departure`) for template renderers
+* Also available as an npm package, for Lit or Polymer templates
+* Support for Font Awesome Pro icons, by recompiling the add-on
 
 ## Versions
 
@@ -21,7 +30,7 @@ If you want to use Font Awesome Pro icons with this addon, see [here](#integrati
 
 ## Online demo
 
-[Online demo here](http://addonsv14.flowingcode.com/font-awesome-iron-iconset)
+[Online demo here](https://addonsv25.flowingcode.com/font-awesome-iron-iconset)
 
 ## Download release
 
@@ -50,6 +59,10 @@ Release versions are available from Maven Central repository. For SNAPSHOT versi
 - mvn clean install jetty:run
 
 To see the demo, navigate to http://localhost:8080/
+
+## Release notes
+
+See [here](https://github.com/FlowingCode/FontAwesomeIronIconset/releases)
 
 ## Issue tracking
 
@@ -130,13 +143,16 @@ import '@flowingcode/font-awesome-iron-iconset/fab.js';
 
 ## Special configuration when using Spring
 
-By default, Vaadin Flow only includes ```com/vaadin/flow/component``` to be always scanned for UI components and views. For this reason, the addon might need to be whitelisted in order to display correctly. 
+By default, Vaadin Flow only includes `com/vaadin/flow/component` to be always scanned for UI components and views. For this reason, the add-on might need to be allowed in order to display correctly. 
 
-To do so, just add ```com.flowingcode``` to the ```vaadin.whitelisted-packages``` property in ```src/main/resources/application.properties```, like:
+To do so, just add `com.flowingcode` to the `vaadin.allowed-packages` property in `src/main/resources/application.properties`, like:
 
-```vaadin.whitelisted-packages = com.vaadin,org.vaadin,dev.hilla,com.flowingcode```
+```
+vaadin.allowed-packages = com.vaadin,org.vaadin,dev.hilla,com.flowingcode
+```
  
-More information on Spring whitelisted configuration [here](https://vaadin.com/docs/latest/integrations/spring/configuration/#configure-the-scanning-of-packages).
+More information on Spring scanning configuration [here](https://vaadin.com/docs/latest/integrations/spring/configuration/#configure-the-scanning-of-packages).
+
 ## Integration with Font Awesome Pro
 
 Because of Font Awesome Pro [license terms](https://fontawesome.com/license#what-creators-may-do), the Pro icons cannot published as part of an open source addon. 
